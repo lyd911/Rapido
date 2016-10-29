@@ -11,7 +11,38 @@
     tools:context="com.cs442.iitc_fall2016_g13.mad_proj.MainActivity">
 
     <TextView
+        android:id="@+id/font_test_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:text="Questrial Regular"/>
+
+    <TextView
+        android:id="@+id/font_test_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quicksand Bold"
+        android:layout_below="@+id/font_test_1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="15dp" />
+
+    <TextView
+        android:id="@+id/font_test_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quicksand Regular"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/font_test_3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/font_test_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quicksand Light"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/font_test_2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 </RelativeLayout>
