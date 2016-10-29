@@ -5,13 +5,7 @@
     android:id="@+id/activity_splash_screen"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    tools:context="com.cs442.iitc_fall2016_g13.mad_proj.SplashScreen">
+    tools:context="com.cs442.iitc_fall2016_g13.mad_proj.SplashScreen"
+    android:background="@drawable/splash_01">
 
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:srcCompat="@drawable/splash_01"
-        android:id="@+id/imageView"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true" />
 </RelativeLayout>
