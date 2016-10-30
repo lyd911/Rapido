@@ -84,10 +84,10 @@ public class QRCodeReader extends AppCompatActivity {
 
     }
 
-
     protected void onDestroy() {
         super.onDestroy();
         mCameraSource.release();
         mBarcodeDetector.release();
     }
+
 }
