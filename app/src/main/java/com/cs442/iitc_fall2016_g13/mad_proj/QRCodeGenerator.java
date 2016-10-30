@@ -33,16 +33,20 @@ public class QRCodeGenerator extends Activity {
             @Override
             public void onClick(View v) {
                 String text2Qr = mEditTextQRCodeInput.getText().toString();
-                MultiFormatWriter multiFormatWriter = new MultiFormatWriter();
-                try {
-                    BitMatrix bitMatrix = multiFormatWriter.encode(text2Qr, BarcodeFormat.QR_CODE,200,200);
-                    BarcodeEncoder barcodeEncoder = new BarcodeEncoder();
-                    Bitmap bitmap = barcodeEncoder.createBitmap(bitMatrix);
-                    Intent intent = new Intent(context, QRActivity.class);
-                    intent.putExtra("pic",bitmap);
-                    context.startActivity(intent);
-                } catch (WriterException e) {
-                    e.printStackTrace();
+                if(text2Qr.length() > 0){
+
+                    MultiFormatWriter multiFormatWriter = new MultiFormatWriter();
+                    try {
+                        BitMatrix bitMatrix = multiFormatWriter.encode(text2Qr, BarcodeFormat.QR_CODE,200,200);
+                        BarcodeEncoder barcodeEncoder = new BarcodeEncoder();
+                        Bitmap bitmap = barcodeEncoder.createBitmap(bitMatrix);
+                        Intent intent = new Intent(context, QRActivity.class);
+                        intent.putExtra("pic",bitmap);
+                        context.startActivity(intent);
+                    } catch (WriterException e) {
+                        e.printStackTrace();
+                    }
+
                 }
             }
         });
