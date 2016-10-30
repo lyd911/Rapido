@@ -45,4 +45,25 @@
         android:layout_below="@+id/font_test_2"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
+
+
+    <Button
+        android:text="QRCode Reader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_QRCodeGenerator"
+        android:layout_marginTop="30dp"
+        android:id="@+id/btn_QRCodeReader"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:text="QRCode Generator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="54dp"
+        android:id="@+id/btn_QRCodeGenerator"
+        android:layout_below="@+id/font_test_4"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
 </RelativeLayout>
