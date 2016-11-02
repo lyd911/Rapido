@@ -68,11 +68,20 @@
         android:layout_alignParentEnd="true" />
 
     <Button
-        android:text="Maps"
-        android:layout_width="wrap_content"
+        android:text="Google Map"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:id="@+id/btn_OpenMaps"
         android:layout_below="@+id/btn_QRCodeReader"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="32dp"
-        android:id="@+id/btn_OpenMaps" />
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="28dp" />
+
+    <TextView
+        android:text="Resturant Info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_ResturantInfo"
+        android:layout_marginTop="17dp"
+        android:layout_below="@+id/btn_OpenMaps"
+        android:layout_alignParentStart="true" />
 </RelativeLayout>
