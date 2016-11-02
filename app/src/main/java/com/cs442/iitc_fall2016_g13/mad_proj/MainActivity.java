@@ -10,7 +10,12 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    TextView mQuestrialText, mQuicksandBText, mQuicksandLText, mQuicksandRText;
+    TextView mQuestrialText,
+             mQuicksandBText,
+             mQuicksandLText,
+             mQuicksandRText,
+             mGetPlace;
+
     Button mBtnQRGenerate;
     Button mBtnQRReader;
     Button mBtnOpenMaps;
@@ -59,5 +64,13 @@ public class MainActivity extends AppCompatActivity {
         mQuicksandBText.setTypeface(quicksand_bold);
         mQuicksandLText.setTypeface(quicksand_light);
         mQuicksandRText.setTypeface(quicksand_regular);
+
+        mGetPlace = (TextView) findViewById(R.id.tv_ResturantInfo);
+        mGetPlace.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
     }
 }
