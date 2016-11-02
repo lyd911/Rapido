@@ -13,6 +13,7 @@ public class MainActivity extends AppCompatActivity {
     TextView mQuestrialText, mQuicksandBText, mQuicksandLText, mQuicksandRText;
     Button mBtnQRGenerate;
     Button mBtnQRReader;
+    Button mBtnOpenMaps;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,6 +39,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(getApplicationContext(), QRCodeReader.class));
+            }
+        });
+
+        mBtnOpenMaps = (Button) findViewById(R.id.btn_OpenMaps);
+        mBtnOpenMaps.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(), MapsActivity.class));
             }
         });
 
