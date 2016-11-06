@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <!--GOOGLE PLACES API WEB SERVICE-->
-    <string name="google_places_key" translatable="false" templateMergeStrategy="preserve">
-        AIzaSyABjX1bhTWhWPpraA4yYH-rlHyS3i1rVj4
-    </string>
-</resources>

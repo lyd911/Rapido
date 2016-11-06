@@ -1,5 +1,6 @@
 package com.cs442.iitc_fall2016_g13.mad_proj;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Typeface;
 import android.os.Bundle;
@@ -8,7 +9,14 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.google.android.gms.common.GooglePlayServicesNotAvailableException;
+import com.google.android.gms.common.GooglePlayServicesRepairableException;
+import com.google.android.gms.location.places.Place;
+import com.google.android.gms.location.places.ui.PlacePicker;
+
 public class MainActivity extends AppCompatActivity {
+
+    int PLACE_PICKER_REQUEST = 1;
 
     TextView mQuestrialText,
              mQuicksandBText,
@@ -29,7 +37,6 @@ public class MainActivity extends AppCompatActivity {
         mQuicksandBText = (TextView) findViewById(R.id.font_test_2);
         mQuicksandLText = (TextView) findViewById(R.id.font_test_3);
         mQuicksandRText = (TextView) findViewById(R.id.font_test_4);
-
 
         mBtnQRGenerate = (Button) findViewById(R.id.btn_QRCodeGenerator);
         mBtnQRReader = (Button) findViewById(R.id.btn_QRCodeReader);
@@ -70,7 +77,27 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
+                try {
+                    PlacePicker.IntentBuilder intentBuilder =
+                            new PlacePicker.IntentBuilder();
+                    Intent intent = intentBuilder.build(MainActivity.this);
+                    startActivityForResult(intent, PLACE_PICKER_REQUEST);
+                } catch (GooglePlayServicesRepairableException e) {
+                    e.printStackTrace();
+                } catch (GooglePlayServicesNotAvailableException e) {
+                    e.printStackTrace();
+                }
             }
         });
+    }
+
+    protected void onActivityResult(int requestCode, int resultCode, Intent data){
+        if(requestCode == PLACE_PICKER_REQUEST){
+            if(resultCode == RESULT_OK){
+                final Place place = PlacePicker.getPlace(data,this);
+                String address = String.format("Place: %s", place.getAddress());
+                mGetPlace.setText(address);
+            }
+        }
     }
 }
