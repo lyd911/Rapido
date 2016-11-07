@@ -15,17 +15,17 @@
 
 
         <!-- Email Label -->
+        <EditText android:id="@+id/input_login_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:hint="Email" />
+
         <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:layout_marginBottom="8dp">
-            <EditText android:id="@+id/input_login_username"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="textEmailAddress"
-                android:hint="Email" />
-        </android.support.design.widget.TextInputLayout>
+            android:layout_marginBottom="8dp"></android.support.design.widget.TextInputLayout>
 
         <!-- Password Label -->
         <android.support.design.widget.TextInputLayout
@@ -56,6 +56,15 @@
             android:text="No account yet? Create one"
             android:gravity="center"
             android:textSize="16dip"/>
+
+
+        <com.facebook.login.widget.LoginButton
+            android:id="@+id/login_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+
+            />
 
     </LinearLayout>
 </ScrollView>
