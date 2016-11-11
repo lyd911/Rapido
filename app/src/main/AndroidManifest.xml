@@ -25,6 +25,10 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
+        <meta-data android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id"/>
+
         <activity android:name=".SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -67,8 +71,19 @@
         <activity
             android:name=".ServerConnect.SignUpActivity"
             android:label="@string/title_activity_sign_up"
+<<<<<<< HEAD
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".NearbyPlaces"></activity>
+=======
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+
+        <activity android:name="com.facebook.FacebookActivity"
+            android:configChanges=
+                "keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:label="rapido" />
+
+>>>>>>> 8a681345eade3f4004e64045ca1b03e916cec3cb
     </application>
 
 </manifest>
