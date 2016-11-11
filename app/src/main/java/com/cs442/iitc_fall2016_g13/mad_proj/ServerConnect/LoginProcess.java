@@ -5,12 +5,18 @@ package com.cs442.iitc_fall2016_g13.mad_proj.ServerConnect;
  */
 
 
+        import android.app.Activity;
         import android.app.ProgressDialog;
         import android.content.Context;
+        import android.content.Intent;
         import android.os.AsyncTask;
+        import android.provider.Settings;
         import android.widget.ProgressBar;
         import android.widget.TextView;
         import android.widget.Toast;
+
+        import com.cs442.iitc_fall2016_g13.mad_proj.MainActivity;
+        import com.cs442.iitc_fall2016_g13.mad_proj.NearbyPlaces;
 
         import java.io.BufferedReader;
         import java.io.InputStreamReader;
@@ -89,21 +95,24 @@ public class LoginProcess  extends AsyncTask<String,Void,String> {
 
     @Override
     protected void onPostExecute(String result){
-        if (dialog.isShowing()) {
-            if (result.equals(MD5(password)))
-            {
-                Toast toast = Toast.makeText(context, "Authenticated", Toast.LENGTH_LONG);
-                toast.show();
-                dialog.dismiss();
 
-            }
-            else {
-                dialog.dismiss();
-                Toast toast = Toast.makeText(context, "Invalid Username or Password", Toast.LENGTH_LONG);
-                toast.show();
-                LoginActivity.err=1;
-            }
+        if (result.equals(MD5(password)))
+        {
+
+            Intent intent = new Intent(context, NearbyPlaces.class);
+            context.startActivity(intent);
+           // ((Activity)context).finish();
+            dialog.dismiss();
+
         }
+        else {
+
+
+            dialog.dismiss();
+            Toast toast = Toast.makeText(context, "Invalid Username or Password", Toast.LENGTH_LONG);
+            toast.show();
+        }
+
     }
     public String MD5(String md5) {
         try {

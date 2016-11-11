@@ -11,10 +11,10 @@ package com.cs442.iitc_fall2016_g13.mad_proj.ServerConnect;
         import android.widget.Toast;
 
         import com.cs442.iitc_fall2016_g13.mad_proj.MainActivity;
+        import com.cs442.iitc_fall2016_g13.mad_proj.NearbyPlaces;
         import com.cs442.iitc_fall2016_g13.mad_proj.R;
 
 public class LoginActivity extends AppCompatActivity {
-    public static int err=0;
     EditText username,password;
     Button login;
     TextView signup;
@@ -53,11 +53,7 @@ public class LoginActivity extends AppCompatActivity {
                 else {
 
                     new LoginProcess(v.getContext()).execute(uname, pwd);
-                    if (err == 0) {
-                        Intent i = new Intent(getApplicationContext(), MainActivity.class);
-                        startActivity(i);
-                        finish();
-                    }
+
                 }
 
             }
