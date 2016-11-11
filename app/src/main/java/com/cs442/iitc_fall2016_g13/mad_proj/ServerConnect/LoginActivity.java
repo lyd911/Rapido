@@ -9,8 +9,6 @@ package com.cs442.iitc_fall2016_g13.mad_proj.ServerConnect;
         import android.widget.TextView;
         import android.widget.Toast;
 
-        import com.cs442.iitc_fall2016_g13.mad_proj.MainActivity;
-        import com.cs442.iitc_fall2016_g13.mad_proj.NearbyPlaces;
         import com.cs442.iitc_fall2016_g13.mad_proj.R;
         import com.facebook.AccessToken;
         import com.facebook.AccessTokenTracker;
@@ -123,12 +121,16 @@ public class LoginActivity extends AppCompatActivity {
     public void displayWelcomeMessage(Profile profile){
         if(profile!=null){
             Toast.makeText(getApplicationContext(),"Welcome "+profile.getName(),Toast.LENGTH_LONG).show();
+            GlobalVariables.username=profile.getId();
+            GlobalVariables.FB_Name=profile.getName();
+
         }
     }
 
     private void gotoMainActivity() {
-        Intent intent = new Intent(getApplicationContext(), MainActivity.class);
-        startActivity(intent);
+        System.out.println("Checking FB");
+        new FB_Check(this).execute(GlobalVariables.username);
+
     }
 
     @Override

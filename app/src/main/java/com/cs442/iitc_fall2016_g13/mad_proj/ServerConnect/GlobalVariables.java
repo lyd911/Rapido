@@ -7,4 +7,7 @@ package com.cs442.iitc_fall2016_g13.mad_proj.ServerConnect;
 public class GlobalVariables {
     public static int err=0;
     public static String[][] res_data;
+    public static String username;
+    public static String FB_Name;
+
 }

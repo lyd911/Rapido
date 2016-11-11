@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Final_Rapido_V2.iml" filepath="$PROJECT_DIR$/Final_Rapido_V2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Final_Rapido_V3.iml" filepath="$PROJECT_DIR$/Final_Rapido_V3.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/rapido.iml" filepath="$PROJECT_DIR$/rapido.iml" />
     </modules>
   </component>
 </project>
