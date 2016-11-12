@@ -17,4 +17,10 @@
     </string>
     <string name="title_activity_sign_up">Sign Up</string>
     <string name="facebook_app_id">1132013720179341</string>
+    <string name="title_activity_main_menu">MainMenuActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
 </resources>

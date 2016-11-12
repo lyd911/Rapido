@@ -17,8 +17,6 @@ import java.net.URL;
 import java.net.URLConnection;
 import java.net.URLEncoder;
 
-
-
 /**
  * Created by karti on 29-10-2016.
  */
@@ -91,7 +89,9 @@ public class FetchRestaurantDetails  extends AsyncTask<String,Void,String> {
                 System.out.println(x[0]);
 
             }
+
             return null;
+
         }
         catch(Exception e){
             return new String("Exception: " + e.getMessage());

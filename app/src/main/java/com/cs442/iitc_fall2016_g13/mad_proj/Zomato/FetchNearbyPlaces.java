@@ -99,7 +99,7 @@ public class FetchNearbyPlaces  extends AsyncTask<String,Void,String> {
             load_data(sb.toString());
             return sb.toString();
 
-    }
+        }
         catch(Exception e){
             return("exception"+e);
 

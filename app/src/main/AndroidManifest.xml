@@ -64,12 +64,10 @@
         <activity android:name=".QRCodeGenerator" />
         <activity android:name=".QRActivity" />
         <activity android:name=".QRCodeReader" />
-        <activity android:name=".PlacesActivity" />
         <activity android:name=".NearbyPlaces" />
         <activity
-            android:name=".LoginActivity"
+            android:name=".ServerConnect.LoginActivity"
             android:label="@string/title_activity_login" />
-        <activity android:name=".ServerConnect.LoginActivity" />
         <activity
             android:name=".ServerConnect.SignUpActivity"
             android:label="@string/title_activity_sign_up">
@@ -82,7 +80,7 @@
             android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
             android:label="rapido"
             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-        <activity android:name=".FB_Signup"></activity>
+        <activity android:name=".FB_Signup" />
     </application>
 
 </manifest>
