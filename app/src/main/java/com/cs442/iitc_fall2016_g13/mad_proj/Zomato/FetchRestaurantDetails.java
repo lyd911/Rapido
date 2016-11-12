@@ -6,10 +6,8 @@ package com.cs442.iitc_fall2016_g13.mad_proj.Zomato;
 
 import android.app.ProgressDialog;
 import android.content.Context;
-import android.content.Intent;
 import android.os.AsyncTask;
 
-import com.cs442.iitc_fall2016_g13.mad_proj.MainMenuActivity;
 import com.cs442.iitc_fall2016_g13.mad_proj.ServerConnect.GlobalVariables;
 
 import java.io.BufferedReader;

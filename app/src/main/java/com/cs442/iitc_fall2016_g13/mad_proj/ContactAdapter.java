@@ -1,4 +1,4 @@
-package com.cs442.iitc_fall2016_g13.mad_proj.ContactSetup;
+package com.cs442.iitc_fall2016_g13.mad_proj;
 
 import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
@@ -6,9 +6,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-
-import com.cs442.iitc_fall2016_g13.mad_proj.MainActivity;
-import com.cs442.iitc_fall2016_g13.mad_proj.R;
 
 import java.util.List;
 

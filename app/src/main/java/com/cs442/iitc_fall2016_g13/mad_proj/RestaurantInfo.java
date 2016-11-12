@@ -1,4 +1,4 @@
-package com.cs442.iitc_fall2016_g13.mad_proj.ContactSetup;
+package com.cs442.iitc_fall2016_g13.mad_proj;
 
 /**
  * Created by Sandra Tobias on 11/11/2016.

@@ -10,7 +10,14 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.cs442.iitc_fall2016_g13.mad_proj.MainMenuActivity"
+    tools:context="com.cs442.iitc_fall2016_g13.mad_proj.NearbyPlaces"
     tools:showIn="@layout/app_bar_main_menu">
+
+    <!-- There are a list of cards in the Recycler View -->
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/cardList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"/>
 
 </RelativeLayout>

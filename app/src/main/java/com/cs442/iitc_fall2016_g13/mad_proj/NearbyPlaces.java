@@ -3,18 +3,13 @@ package com.cs442.iitc_fall2016_g13.mad_proj;
 import android.app.Activity;
 import android.content.Context;
 import android.content.pm.PackageManager;
-import android.location.Location;
-import android.location.LocationListener;
-import android.location.LocationManager;
-import android.os.Build;
-import android.support.annotation.NonNull;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.widget.TextView;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.widget.Toast;
-
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.view.View;
@@ -22,13 +17,14 @@ import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
-import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
-
 import com.cs442.iitc_fall2016_g13.mad_proj.Zomato.FetchNearbyPlaces;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class NearbyPlaces extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener{
 
@@ -68,7 +64,40 @@ public class NearbyPlaces extends AppCompatActivity implements NavigationView.On
             requestPermission(android.Manifest.permission.ACCESS_FINE_LOCATION,PERMISSION_REQUEST_CODE_LOCATION,getApplicationContext(),NearbyPlaces.this);
         }
 
+        RecyclerView recList = (RecyclerView) findViewById(R.id.cardList);
+        recList.setHasFixedSize(true);
+        LinearLayoutManager llm = new LinearLayoutManager(this);
+        llm.setOrientation(LinearLayoutManager.VERTICAL);
+        recList.setLayoutManager(llm);
+
+        ContactAdapter ca = new ContactAdapter(createList(30));
+        recList.setAdapter(ca);
+
     }
+
+
+    private List<RestaurantInfo> createList(int size) {
+
+        List<RestaurantInfo> result = new ArrayList<RestaurantInfo>();
+        for (int i=1; i <= size; i++) {
+            RestaurantInfo ri = new RestaurantInfo();
+            ri.mName = RestaurantInfo.NAME_PREFIX + i;
+            ri.mCuisine = RestaurantInfo.CUISINE_PREFIX + i;
+            ri.mBusyness = RestaurantInfo.BUSYNESS_PREFIX + i;
+            ri.mDistance = RestaurantInfo.DISTANCE_PREFIX + i + " miles";
+            ri.mMinSpend = RestaurantInfo.MINSPEND_PREFIX + i;
+            ri.mRating = RestaurantInfo.RATING_PREFIX + i;
+            ri.mReview = RestaurantInfo.REVIEW_PREFIX + i;
+            ri.mPriceRange = RestaurantInfo.PRICERANGE_PREFIX + i;
+
+            result.add(ri);
+
+        }
+
+        return result;
+
+    }
+
 
     public static void requestPermission(String strPermission,int perCode,Context _c,Activity _a){
 
