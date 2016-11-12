@@ -81,6 +81,7 @@
             android:label="rapido"
             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
         <activity android:name=".FB_Signup" />
+        <activity android:name=".LoadData"></activity>
     </application>
 
 </manifest>

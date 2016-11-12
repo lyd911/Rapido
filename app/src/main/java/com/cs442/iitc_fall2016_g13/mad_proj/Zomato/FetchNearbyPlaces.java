@@ -3,8 +3,10 @@ package com.cs442.iitc_fall2016_g13.mad_proj.Zomato;
 /**
  * Created by kartik on 06-11-2016.
  */
+import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.Context;
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.SystemClock;
 import android.provider.Settings;
@@ -13,6 +15,7 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.cs442.iitc_fall2016_g13.mad_proj.NearbyPlaces;
 import com.cs442.iitc_fall2016_g13.mad_proj.ServerConnect.GlobalVariables;
 
 import java.io.BufferedReader;
@@ -126,6 +129,7 @@ public  void load_data(String y)
 
         //System.out.println(result);
     String res_id[]= res_ids.split(",");
+        GlobalVariables.res_ids=res_id;
     String link="http://rapido.counseltech.in/FetchRestaurantDetails.php";
         GlobalVariables.res_data=new String[res_id.length][5];
         System.out.println("lenght of the array is"+res_id.length+"-----");
@@ -175,7 +179,12 @@ public  void load_data(String y)
       {
           System.out.println(x[0]);
 
-      }// code for password match and new activity
+      }
+        System.out.println("Starting Nearby Places");
+        Intent intent = new Intent(context, NearbyPlaces.class);
+        context.startActivity(intent);
+        ((Activity)context).finish();
+        // code for password match and new activity
     }
     catch(Exception e){
         System.out.println(e);

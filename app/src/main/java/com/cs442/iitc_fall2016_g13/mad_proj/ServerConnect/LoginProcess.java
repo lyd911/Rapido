@@ -15,6 +15,7 @@ package com.cs442.iitc_fall2016_g13.mad_proj.ServerConnect;
         import android.widget.TextView;
         import android.widget.Toast;
 
+        import com.cs442.iitc_fall2016_g13.mad_proj.LoadData;
         import com.cs442.iitc_fall2016_g13.mad_proj.MainActivity;
         import com.cs442.iitc_fall2016_g13.mad_proj.NearbyPlaces;
 
@@ -33,6 +34,7 @@ package com.cs442.iitc_fall2016_g13.mad_proj.ServerConnect;
 /**
  * Created by karti on 29-10-2016.
  */
+
 public class LoginProcess  extends AsyncTask<String,Void,String> {
     private Context context;
     public static ProgressDialog dialog ;
@@ -99,7 +101,7 @@ public class LoginProcess  extends AsyncTask<String,Void,String> {
         if (result.equals(MD5(password)))
         {
 
-            Intent intent = new Intent(context, NearbyPlaces.class);
+            Intent intent = new Intent(context, LoadData.class);
             context.startActivity(intent);
            // ((Activity)context).finish();
             dialog.dismiss();

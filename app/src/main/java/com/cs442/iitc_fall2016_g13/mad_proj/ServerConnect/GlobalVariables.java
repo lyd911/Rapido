@@ -9,5 +9,6 @@ public class GlobalVariables {
     public static String[][] res_data;
     public static String username;
     public static String FB_Name;
-
+    public static String SelectedRestaurantName;
+    public static String[] res_ids;
 }

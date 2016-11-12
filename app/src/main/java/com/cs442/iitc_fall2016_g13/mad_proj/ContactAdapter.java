@@ -7,6 +7,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.cs442.iitc_fall2016_g13.mad_proj.ServerConnect.GlobalVariables;
+
 import java.util.List;
 
 /**
@@ -60,7 +62,7 @@ public class ContactAdapter extends RecyclerView.Adapter<ContactAdapter.ContactV
         protected TextView vPriceRange;
 
 
-        public ContactViewHolder(View v) {
+  public ContactViewHolder(View v) {
             super(v);
             vName =  (TextView) v.findViewById(R.id.restaurant_title);
             vCuisine = (TextView)  v.findViewById(R.id.cuisine);
@@ -72,6 +74,8 @@ public class ContactAdapter extends RecyclerView.Adapter<ContactAdapter.ContactV
             vPriceRange = (TextView) v.findViewById(R.id.price_range);
             v.setOnClickListener(new View.OnClickListener() {
                 @Override public void onClick(View v) {
+                   System.out.println( vName.getText());
+                    GlobalVariables.SelectedRestaurantName=vName.getText().toString();
                     v.getContext().startActivity(new Intent(v.getContext(), MainActivity.class));
                 }
             });
