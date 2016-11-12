@@ -6,8 +6,10 @@ package com.cs442.iitc_fall2016_g13.mad_proj.Zomato;
 
 import android.app.ProgressDialog;
 import android.content.Context;
+import android.content.Intent;
 import android.os.AsyncTask;
 
+import com.cs442.iitc_fall2016_g13.mad_proj.MainMenuActivity;
 import com.cs442.iitc_fall2016_g13.mad_proj.ServerConnect.GlobalVariables;
 
 import java.io.BufferedReader;
@@ -16,8 +18,6 @@ import java.io.OutputStreamWriter;
 import java.net.URL;
 import java.net.URLConnection;
 import java.net.URLEncoder;
-
-
 
 /**
  * Created by karti on 29-10-2016.
@@ -91,7 +91,9 @@ public class FetchRestaurantDetails  extends AsyncTask<String,Void,String> {
                 System.out.println(x[0]);
 
             }
+
             return null;
+
         }
         catch(Exception e){
             return new String("Exception: " + e.getMessage());
