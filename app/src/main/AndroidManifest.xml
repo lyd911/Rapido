@@ -64,9 +64,8 @@
         <activity android:name=".QRCodeReader" />
         <activity android:name=".PlacesActivity" />
         <activity
-            android:name=".LoginActivity"
+            android:name=".ServerConnect.LoginActivity"
             android:label="@string/title_activity_login" />
-        <activity android:name=".ServerConnect.LoginActivity" />
         <activity
             android:name=".ServerConnect.SignUpActivity"
             android:label="@string/title_activity_sign_up"
