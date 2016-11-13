@@ -25,6 +25,8 @@ public class LoginActivity extends AppCompatActivity {
     EditText username,password;
     Button login;
     TextView signup;
+    public static String admin="";
+    public static String UserName="";
 
     private LoginButton loginButton;
     private CallbackManager callbackManager;
@@ -108,10 +110,11 @@ public class LoginActivity extends AppCompatActivity {
                     Toast toast = Toast.makeText(getApplicationContext(), "Please enter username and password", Toast.LENGTH_LONG);
                     toast.show();
                 }
+                else if(uname.equals("admin0")||uname.equals("admin1")||uname.equals("admin2")){
+                    new SellerLoginProcess(v.getContext()).execute(uname, pwd);
+                }
                 else {
-
                     new LoginProcess(v.getContext()).execute(uname, pwd);
-
                 }
 
             }

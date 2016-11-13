@@ -82,6 +82,11 @@
             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
         <activity android:name=".FB_Signup" />
         <activity android:name=".LoadData"></activity>
+
+        <activity android:name=".SellerMainActivity" />
+        <activity android:name=".SellerOrderHistoryActivity" />
+        <activity android:name=".SellerOrderDetailActivity" />
+
     </application>
 
 </manifest>
