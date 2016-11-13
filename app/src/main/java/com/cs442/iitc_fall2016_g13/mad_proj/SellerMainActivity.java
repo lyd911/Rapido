@@ -11,7 +11,6 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 import com.cs442.iitc_fall2016_g13.mad_proj.ServerConnect.LoginActivity;
-
 import java.util.ArrayList;
 
 /**
@@ -40,7 +39,6 @@ public class SellerMainActivity extends Activity{
 
         String admin = LoginActivity.admin;
 
-
         order_history_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -51,7 +49,6 @@ public class SellerMainActivity extends Activity{
 
         new SellerGetPendingOrdersProcess(this).execute(LoginActivity.admin);
 
-
         orders_listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
@@ -60,7 +57,6 @@ public class SellerMainActivity extends Activity{
 
                 Intent intent = new Intent(getApplicationContext(),SellerOrderDetailActivity.class);
                 startActivity(intent);
-
             }
         });
     }

@@ -26,7 +26,6 @@ public class SellerGetPendingOrdersProcess extends AsyncTask<String,OneOrder,Str
     private int numberOfOrders;
 
 
-
     public SellerGetPendingOrdersProcess(Context context) {
         this.context = context;
         dialog = new ProgressDialog(context);
@@ -53,8 +52,6 @@ public class SellerGetPendingOrdersProcess extends AsyncTask<String,OneOrder,Str
 
             wr.write( data );
             wr.flush();
-
-
 
             BufferedReader reader = new BufferedReader(new InputStreamReader(conn.getInputStream()));
 
@@ -114,10 +111,8 @@ public class SellerGetPendingOrdersProcess extends AsyncTask<String,OneOrder,Str
         }
     }
 
-
     @Override
-
-   protected void onPostExecute(String result) {
+    protected void onPostExecute(String result) {
                 dialog.dismiss();
     }
 }

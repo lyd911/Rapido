@@ -51,9 +51,6 @@ public class SellerOrderHistoryActivity extends Activity{
     }
 
 
-//    public static void setHisoryOrderListView(ArrayAdapter aa){
-//        aa.notifyDataSetChanged();
-//    }
     public class SellerGetFinishedOrdersProcess extends AsyncTask<String,OneOrder,String> {
 
         private Context context;
@@ -90,8 +87,6 @@ public class SellerOrderHistoryActivity extends Activity{
                 wr.write( data );
                 wr.flush();
 
-
-
                 BufferedReader reader = new BufferedReader(new InputStreamReader(conn.getInputStream()));
 
                 StringBuilder sb = new StringBuilder();
@@ -117,7 +112,8 @@ public class SellerOrderHistoryActivity extends Activity{
                         oneOrder.setStatus(s2[19]);
 
                         orders_finished.add(i,oneOrder);
-                    }}
+                    }
+                }
 
                 if(orders_finished!=null){
                     numberOfOrders = orders_finished.size();
@@ -134,7 +130,8 @@ public class SellerOrderHistoryActivity extends Activity{
                                 Status;
 
                         order_finished_String.add(ss);
-                    }}
+                    }
+                }
 
                 aa.notifyDataSetChanged();
 
@@ -144,9 +141,7 @@ public class SellerOrderHistoryActivity extends Activity{
             }
         }
 
-
         @Override
-
         protected void onPostExecute(String result) {
             dialog.dismiss();
         }

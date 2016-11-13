@@ -12,10 +12,6 @@ public class OneOrder {
     String menu_list;
     String Status;
 
-
-
-
-
     public String getOrder_id() {
         return order_id;
     }

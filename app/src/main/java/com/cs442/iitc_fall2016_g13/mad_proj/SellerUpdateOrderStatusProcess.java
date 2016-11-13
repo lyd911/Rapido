@@ -21,7 +21,6 @@ public class SellerUpdateOrderStatusProcess extends AsyncTask<String,OneOrder,St
     private ProgressDialog dialog;
     private String order_id="";
 
-
     public SellerUpdateOrderStatusProcess(Context context) {
         this.context = context;
         dialog = new ProgressDialog(context);
@@ -66,7 +65,6 @@ public class SellerUpdateOrderStatusProcess extends AsyncTask<String,OneOrder,St
             return new String("Exception: " + e.getMessage());
         }
     }
-
 
     @Override
     protected void onPostExecute(String result) {
