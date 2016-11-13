@@ -42,7 +42,7 @@ public class SellerUpdateOrderStatusProcess extends AsyncTask<String,OneOrder,St
             String data  = URLEncoder.encode("order_id", "UTF-8") + "=" + URLEncoder.encode(order_id, "UTF-8");
             //String data  = "order_id" + "=" + order_id;
 
-            System.out.println("data is: "+data);
+//            System.out.println("data is: "+data);
 
             URL url = new URL(link);
             URLConnection conn = url.openConnection();

@@ -17,7 +17,7 @@ import java.util.ArrayList;
 public class SellerOrderDetailActivity extends Activity{
 
     int order_position;
-    String order_id;
+    String order_id_for_process;
 
     public static ArrayList<String> OneOrderDetail;
 
@@ -34,7 +34,7 @@ public class SellerOrderDetailActivity extends Activity{
         }
 
         order_position = SellerMainActivity.currentPosition;
-        order_id = SellerMainActivity.orders.get(order_position).getOrder_id();
+        order_id_for_process = SellerMainActivity.orders.get(order_position).getOrder_id();
 
         final String order_id = "Order ID: " + SellerMainActivity.orders.get(order_position).getOrder_id();
         String customer_id ="Customer ID: " + SellerMainActivity.orders.get(order_position).getCust_id();
@@ -67,7 +67,7 @@ public class SellerOrderDetailActivity extends Activity{
         proceed_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                new SellerUpdateOrderStatusProcess(SellerOrderDetailActivity.this).execute(order_id);
+                new SellerUpdateOrderStatusProcess(SellerOrderDetailActivity.this).execute(order_id_for_process);
             }
         });
 
