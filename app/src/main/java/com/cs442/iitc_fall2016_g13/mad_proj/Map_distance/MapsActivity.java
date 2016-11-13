@@ -17,12 +17,16 @@ import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AlertDialog;
 import android.util.Log;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import com.cs442.iitc_fall2016_g13.mad_proj.LoadData;
 import com.cs442.iitc_fall2016_g13.mad_proj.R;
+import com.cs442.iitc_fall2016_g13.mad_proj.ServerConnect.GlobalVariables;
+import com.cs442.iitc_fall2016_g13.mad_proj.Zomato.GoogleZomatoFetch;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.location.LocationListener;
@@ -76,6 +80,7 @@ public class MapsActivity extends FragmentActivity implements
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
+       // finish();
 
     }
 
@@ -297,14 +302,26 @@ public class MapsActivity extends FragmentActivity implements
     void fillListView() {
 
         int count = MapView.getInstance().getmCount();
-        ArrayList<Restaurant> restList = MapView.getInstance().getmRestaurantList();
+        final ArrayList<Restaurant> restList = MapView.getInstance().getmRestaurantList();
 
         if (count > 0 && restList != null) {
 
-            ListView mListView = (ListView) findViewById(R.id.myListView);
+            final ListView mListView = (ListView) findViewById(R.id.myListView);
             ArrayList<Restaurant> arrayList = new ArrayList(Arrays.asList(stringArray));
             mArrayAdapter = new CustomAdapter(getApplicationContext(), R.layout.restraunt_list_layout, restList);
             mListView.setAdapter(mArrayAdapter);
+            mListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+                @Override
+                public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                    System.out.println("Value of i"+position);
+                    System.out.println("Value of i"+restList.get(position).getmPlaceName());
+                    GlobalVariables.SelectedRestaurantName=restList.get(position).getmPlaceName();
+                    Intent intent = new Intent(view.getContext(), LoadData.class);
+                    intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                    view.getContext().startActivity(intent);
+
+                }
+            });
         }
     }
 

@@ -2,6 +2,7 @@ package com.cs442.iitc_fall2016_g13.mad_proj;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.provider.Settings;
 import android.support.v4.app.ActivityCompat;
@@ -23,7 +24,9 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import com.cs442.iitc_fall2016_g13.mad_proj.ServerConnect.GlobalVariables;
+import com.cs442.iitc_fall2016_g13.mad_proj.ServerConnect.SignUpActivity;
 import com.cs442.iitc_fall2016_g13.mad_proj.Zomato.FetchNearbyPlaces;
+import com.google.android.gms.location.places.ui.PlacePicker;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -38,6 +41,8 @@ public class NearbyPlaces extends AppCompatActivity implements NavigationView.On
         setContentView(R.layout.activity_main_menu);
         System.out.println("Started Nearby Places");
         setTitle("Nearby Places");
+
+
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -130,6 +135,9 @@ public class NearbyPlaces extends AppCompatActivity implements NavigationView.On
         int id = item.getItemId();
 
         if (id == R.id.nav_camera) {
+
+            Intent i = new Intent(getApplicationContext(), OrderHistory.class);
+            startActivity(i);
             // Handle the camera action
         } else if (id == R.id.nav_gallery) {
 

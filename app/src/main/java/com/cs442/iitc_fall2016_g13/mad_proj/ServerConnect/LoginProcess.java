@@ -17,6 +17,7 @@ package com.cs442.iitc_fall2016_g13.mad_proj.ServerConnect;
 
         import com.cs442.iitc_fall2016_g13.mad_proj.LoadData;
         import com.cs442.iitc_fall2016_g13.mad_proj.MainActivity;
+        import com.cs442.iitc_fall2016_g13.mad_proj.Map_distance.MapsActivity;
         import com.cs442.iitc_fall2016_g13.mad_proj.NearbyPlaces;
 
         import java.io.BufferedReader;
@@ -101,7 +102,7 @@ public class LoginProcess  extends AsyncTask<String,Void,String> {
         if (result.equals(MD5(password)))
         {
 
-            Intent intent = new Intent(context, LoadData.class);
+            Intent intent = new Intent(context, MapsActivity.class);
             context.startActivity(intent);
            // ((Activity)context).finish();
             dialog.dismiss();

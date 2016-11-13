@@ -76,6 +76,7 @@ public class ContactAdapter extends RecyclerView.Adapter<ContactAdapter.ContactV
                 @Override public void onClick(View v) {
                    System.out.println( vName.getText());
                     GlobalVariables.SelectedRestaurantName=vName.getText().toString();
+                    new FetchMenu(v.getContext()).execute(GlobalVariables.SelectedRestaurantName);
                     v.getContext().startActivity(new Intent(v.getContext(), MainActivity.class));
                 }
             });

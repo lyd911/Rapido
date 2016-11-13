@@ -1,13 +1,19 @@
 package com.cs442.iitc_fall2016_g13.mad_proj.Map_distance;
 
 import android.content.Context;
+import android.content.Intent;
 import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
+import com.cs442.iitc_fall2016_g13.mad_proj.FetchMenu;
+import com.cs442.iitc_fall2016_g13.mad_proj.LoadData;
+import com.cs442.iitc_fall2016_g13.mad_proj.MainActivity;
 import com.cs442.iitc_fall2016_g13.mad_proj.R;
+import com.cs442.iitc_fall2016_g13.mad_proj.ServerConnect.GlobalVariables;
+import com.cs442.iitc_fall2016_g13.mad_proj.Zomato.GoogleZomatoFetch;
 
 import java.util.ArrayList;
 
@@ -46,7 +52,7 @@ public class CustomAdapter extends ArrayAdapter {
             v = convertView;
         }
 
-        TextView tvRestrauntName = (TextView) v.findViewById(R.id.txtRestaurant);
+        final TextView tvRestrauntName = (TextView) v.findViewById(R.id.txtRestaurant);
         final Restaurant tempObj = objects.get(position);
         final int pos = position;
 
@@ -60,4 +66,5 @@ public class CustomAdapter extends ArrayAdapter {
 
         return v;
     }
+
 }

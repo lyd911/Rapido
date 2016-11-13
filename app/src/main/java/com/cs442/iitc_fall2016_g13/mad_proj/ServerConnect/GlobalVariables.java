@@ -11,4 +11,8 @@ public class GlobalVariables {
     public static String FB_Name;
     public static String SelectedRestaurantName;
     public static String[] res_ids;
+    public static String cust_id;
+    public static String[][] res_menu;
+    public static int menu_check;
+
 }
