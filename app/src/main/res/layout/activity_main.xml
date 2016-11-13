@@ -84,4 +84,12 @@
         android:layout_marginTop="17dp"
         android:layout_below="@+id/btn_OpenMaps"
         android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="GOOGLE DIRECTION"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_map_direction"
+        android:layout_below="@+id/tv_ResturantInfo"
+        android:layout_marginTop="30dp" />
 </RelativeLayout>

@@ -58,13 +58,14 @@
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_places_key" />
 
-        <activity
-            android:name=".MapsActivity"
-            android:label="@string/title_activity_maps" />
         <activity android:name=".QRCodeGenerator" />
         <activity android:name=".QRActivity" />
         <activity android:name=".QRCodeReader" />
         <activity android:name=".NearbyPlaces" />
+        <activity android:name=".Map_distance.MapsActivity" />
+        <activity android:name=".Map_alert.MapsActivity_direction" />
+
+
         <activity
             android:name=".ServerConnect.LoginActivity"
             android:label="@string/title_activity_login" />
@@ -72,7 +73,6 @@
             android:name=".ServerConnect.SignUpActivity"
             android:label="@string/title_activity_sign_up">
             android:theme="@style/AppTheme.NoActionBar" />
-            <activity android:name=".NearbyPlaces" />
             android:theme="@style/AppTheme.NoActionBar">
         </activity>
         <activity

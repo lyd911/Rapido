@@ -9,6 +9,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.cs442.iitc_fall2016_g13.mad_proj.Map_alert.MapsActivity_direction;
+import com.cs442.iitc_fall2016_g13.mad_proj.Map_distance.MapsActivity;
 import com.google.android.gms.common.GooglePlayServicesNotAvailableException;
 import com.google.android.gms.common.GooglePlayServicesRepairableException;
 import com.google.android.gms.location.places.Place;
@@ -27,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
     Button mBtnQRGenerate;
     Button mBtnQRReader;
     Button mBtnOpenMaps;
+    Button mBtnOpenMapsDirection;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,6 +62,16 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(getApplicationContext(), MapsActivity.class));
+            }
+        });
+
+        mBtnOpenMapsDirection = (Button) findViewById(R.id.btn_map_direction);
+
+
+        mBtnOpenMapsDirection.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(), MapsActivity_direction.class));
             }
         });
 
