@@ -80,20 +80,20 @@ public class SellerGetPendingOrdersProcess extends AsyncTask<String,OneOrder,Str
                 oneOrder.setMenu_list(s2[15]);
                 oneOrder.setStatus(s2[19]);
 
-                SellerMainActivity.orders.add(i,oneOrder);
+                SellerMainActivity.pendingOrders.add(i,oneOrder);
             }}
 
-            if(SellerMainActivity.orders!=null){
-            numberOfOrders = SellerMainActivity.orders.size();
+            if(SellerMainActivity.pendingOrders !=null){
+            numberOfOrders = SellerMainActivity.pendingOrders.size();
             for(i=0;i<numberOfOrders;i++){
                 String Status;
-                if(SellerMainActivity.orders.get(i).getStatus().equals("0")){
+                if(SellerMainActivity.pendingOrders.get(i).getStatus().equals("0")){
                     Status = "Status: Not Started";
                 }
                 else Status = "Status: Cooking";
-                String ss= "Order ID: " + SellerMainActivity.orders.get(i).getOrder_id()+"\n"+
-                            "Customer ID: " + SellerMainActivity.orders.get(i).getCust_id()+"\n"+
-                            "Menu List: " + SellerMainActivity.orders.get(i).getMenu_list()+"\n"+
+                String ss= "Order ID: " + SellerMainActivity.pendingOrders.get(i).getOrder_id()+"\n"+
+                            "Customer ID: " + SellerMainActivity.pendingOrders.get(i).getCust_id()+"\n"+
+                            "Menu List: " + SellerMainActivity.pendingOrders.get(i).getMenu_list()+"\n"+
                             Status;
 
                 SellerMainActivity.orderString.add(ss);
@@ -105,7 +105,6 @@ public class SellerGetPendingOrdersProcess extends AsyncTask<String,OneOrder,Str
                     android.R.layout.simple_list_item_1,
                     SellerMainActivity.orderString);
 
-            // Bind the Array Adapter to the List View
             SellerMainActivity.setOrderListView(aa);
             aa.notifyDataSetChanged();
 
@@ -113,16 +112,12 @@ public class SellerGetPendingOrdersProcess extends AsyncTask<String,OneOrder,Str
         }catch (Exception e){
             return new String("Exception: " + e.getMessage());
         }
-
-
-
     }
 
 
     @Override
 
    protected void onPostExecute(String result) {
-
                 dialog.dismiss();
     }
 }

@@ -20,17 +20,18 @@ import java.util.ArrayList;
 
 public class SellerMainActivity extends Activity{
 
-    public static ArrayList<OneOrder> orders;
+    public static ArrayList<OneOrder> pendingOrders;
+    private ArrayAdapter<String> aa;
 
     public static ListView orders_listview;
     public static ArrayList<String> orderString;
-    public static int currentPosition;
+    public static int currentOrder;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.seller_main_page);
-        orders = new ArrayList<OneOrder>();
+        pendingOrders = new ArrayList<OneOrder>();
         orderString = new ArrayList<String>();
 
         TextView pending_textview=(TextView)findViewById(R.id.detail_textview);
@@ -48,26 +49,36 @@ public class SellerMainActivity extends Activity{
             }
         });
 
-
         new SellerGetPendingOrdersProcess(this).execute(LoginActivity.admin);
 
 
         orders_listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                currentPosition = position;
+
+                currentOrder = position;
+
                 Intent intent = new Intent(getApplicationContext(),SellerOrderDetailActivity.class);
                 startActivity(intent);
 
             }
         });
+    }
 
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+
+        aa = new ArrayAdapter<String>(this,
+                android.R.layout.simple_list_item_1,
+                SellerMainActivity.orderString);
+        orders_listview.setAdapter(aa);
+        aa.notifyDataSetChanged();
     }
 
     public static void setOrderListView(ArrayAdapter aa){
         orders_listview.setAdapter(aa);
         aa.notifyDataSetChanged();
     }
-
-
 }

@@ -136,11 +136,6 @@ public class SellerOrderHistoryActivity extends Activity{
                         order_finished_String.add(ss);
                     }}
 
-
-
-
-                // Bind the Array Adapter to the List View
-               // setHisoryOrderListView(aa);
                 aa.notifyDataSetChanged();
 
                 return null;
@@ -153,7 +148,6 @@ public class SellerOrderHistoryActivity extends Activity{
         @Override
 
         protected void onPostExecute(String result) {
-
             dialog.dismiss();
         }
     }
