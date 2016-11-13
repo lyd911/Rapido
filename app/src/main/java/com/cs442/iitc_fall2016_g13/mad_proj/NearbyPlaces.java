@@ -1,19 +1,9 @@
 package com.cs442.iitc_fall2016_g13.mad_proj;
 
-import android.app.Activity;
-import android.content.Context;
-import android.content.pm.PackageManager;
-import android.provider.Settings;
-import android.support.v4.app.ActivityCompat;
-import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.widget.Toast;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
@@ -23,25 +13,32 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import com.cs442.iitc_fall2016_g13.mad_proj.ServerConnect.GlobalVariables;
-import com.cs442.iitc_fall2016_g13.mad_proj.Zomato.FetchNearbyPlaces;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class NearbyPlaces extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener{
-
-
     private static final int PERMISSION_REQUEST_CODE_LOCATION = 1;
+
+    NavigationView navigationView = null;
+    Toolbar toolbar = null;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_menu);
+
+        //Set the fragment initially
+        MenuFragment fragment = new MenuFragment();
+        android.support.v4.app.FragmentTransaction fragmentTransaction =
+                getSupportFragmentManager().beginTransaction();
+        fragmentTransaction.replace(R.id.fragment_container, fragment);
+        fragmentTransaction.commit();
+
         System.out.println("Started Nearby Places");
         setTitle("Nearby Places");
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
-
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -49,9 +46,8 @@ public class NearbyPlaces extends AppCompatActivity implements NavigationView.On
         drawer.setDrawerListener(toggle);
         toggle.syncState();
 
-        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
+        navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
-
 
 
         RecyclerView recList = (RecyclerView) findViewById(R.id.cardList);
@@ -64,7 +60,6 @@ public class NearbyPlaces extends AppCompatActivity implements NavigationView.On
         recList.setAdapter(ca);
 
     }
-
 
     private List<RestaurantInfo> createList(int size) {
 
@@ -87,9 +82,6 @@ public class NearbyPlaces extends AppCompatActivity implements NavigationView.On
         return result;
 
     }
-
-
-
 
     @Override
     public void onBackPressed() {
@@ -130,9 +122,17 @@ public class NearbyPlaces extends AppCompatActivity implements NavigationView.On
         int id = item.getItemId();
 
         if (id == R.id.nav_camera) {
-            // Handle the camera action
+            MenuFragment fragment = new MenuFragment();
+            android.support.v4.app.FragmentTransaction fragmentTransaction =
+                    getSupportFragmentManager().beginTransaction();
+            fragmentTransaction.replace(R.id.fragment_container, fragment);
+            fragmentTransaction.commit();
         } else if (id == R.id.nav_gallery) {
-
+            CartFragment fragment = new CartFragment();
+            android.support.v4.app.FragmentTransaction fragmentTransaction =
+                    getSupportFragmentManager().beginTransaction();
+            fragmentTransaction.replace(R.id.fragment_container, fragment);
+            fragmentTransaction.commit();
         } else if (id == R.id.nav_slideshow) {
 
         } else if (id == R.id.nav_manage) {
