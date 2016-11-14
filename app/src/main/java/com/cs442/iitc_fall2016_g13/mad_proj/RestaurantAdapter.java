@@ -15,11 +15,11 @@ import java.util.List;
  * Created by Sandra Tobias on 11/11/2016.
  */
 
-public class ContactAdapter extends RecyclerView.Adapter<ContactAdapter.ContactViewHolder> {
+public class RestaurantAdapter extends RecyclerView.Adapter<RestaurantAdapter.ContactViewHolder> {
 
     private List<RestaurantInfo> restaurantList;
 
-    public ContactAdapter(List<RestaurantInfo> restaurantList) {
+    public RestaurantAdapter(List<RestaurantInfo> restaurantList) {
         this.restaurantList = restaurantList;
     }
 
@@ -76,8 +76,12 @@ public class ContactAdapter extends RecyclerView.Adapter<ContactAdapter.ContactV
                 @Override public void onClick(View v) {
                    System.out.println( vName.getText());
                     GlobalVariables.SelectedRestaurantName=vName.getText().toString();
+<<<<<<< HEAD:app/src/main/java/com/cs442/iitc_fall2016_g13/mad_proj/ContactAdapter.java
                     new FetchMenu(v.getContext()).execute(GlobalVariables.SelectedRestaurantName);
                     v.getContext().startActivity(new Intent(v.getContext(), MainActivity.class));
+=======
+                    v.getContext().startActivity(new Intent(v.getContext(), FoodMenu.class));
+>>>>>>> f27713f60bf9192097f491b642bf43336429e4c7:app/src/main/java/com/cs442/iitc_fall2016_g13/mad_proj/RestaurantAdapter.java
                 }
             });
 

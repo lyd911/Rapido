@@ -53,11 +53,6 @@
             android:name="com.google.android.maps.v2.API_KEY_MAPS"
             android:value="@string/google_maps_key" />
 
-        <!-- Google Places API Key -->
-        <meta-data
-            android:name="com.google.android.geo.API_KEY"
-            android:value="@string/google_places_key" />
-
         <activity android:name=".QRCodeGenerator" />
         <activity android:name=".QRActivity" />
         <activity android:name=".QRCodeReader" />
@@ -83,8 +78,13 @@
         <activity android:name=".SellerMainActivity" />
         <activity android:name=".SellerOrderHistoryActivity" />
         <activity android:name=".SellerOrderDetailActivity" />
+<<<<<<< HEAD
         <activity android:name=".OrderHistory" />
         <activity android:name=".MenuWeb"></activity>
+=======
+        <activity android:name=".FoodMenu" />
+        <activity android:name=".Cart"></activity>
+>>>>>>> f27713f60bf9192097f491b642bf43336429e4c7
     </application>
 
 </manifest>
