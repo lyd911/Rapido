@@ -56,14 +56,9 @@ public class NearbyPlaces extends AppCompatActivity implements NavigationView.On
 
         System.out.println("Started Nearby Places");
         setTitle("Nearby Places");
-<<<<<<< HEAD
 
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        toolbar = (Toolbar) findViewById(R.id.toolbar);
-=======
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
->>>>>>> f27713f60bf9192097f491b642bf43336429e4c7
         setSupportActionBar(toolbar);
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -150,23 +145,16 @@ public class NearbyPlaces extends AppCompatActivity implements NavigationView.On
         int id = item.getItemId();
 
         if (id == R.id.nav_camera) {
-<<<<<<< HEAD
 
             Intent i = new Intent(getApplicationContext(), OrderHistory.class);
             startActivity(i);
             // Handle the camera action
-            MenuFragment fragment = new MenuFragment();
-            android.support.v4.app.FragmentTransaction fragmentTransaction =
-                    getSupportFragmentManager().beginTransaction();
-            fragmentTransaction.replace(R.id.fragment_container, fragment);
-            fragmentTransaction.commit();
-=======
+
             //MenuFragment fragment = new MenuFragment();
             //android.support.v4.app.FragmentTransaction fragmentTransaction =
             //        getSupportFragmentManager().beginTransaction();
             //fragmentTransaction.replace(R.id.fragment_container, fragment);
             //fragmentTransaction.commit();
->>>>>>> f27713f60bf9192097f491b642bf43336429e4c7
         } else if (id == R.id.nav_gallery) {
             //CartFragment fragment = new CartFragment();
             //android.support.v4.app.FragmentTransaction fragmentTransaction =
