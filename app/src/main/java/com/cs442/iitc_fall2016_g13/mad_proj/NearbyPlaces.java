@@ -11,8 +11,10 @@ import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
 
 import com.cs442.iitc_fall2016_g13.mad_proj.ServerConnect.GlobalVariables;
+import com.google.android.gms.location.places.ui.PlaceAutocompleteFragment;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -20,24 +22,28 @@ import java.util.List;
 public class NearbyPlaces extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener{
     private static final int PERMISSION_REQUEST_CODE_LOCATION = 1;
 
-    NavigationView navigationView = null;
-    Toolbar toolbar = null;
+    private TextView mPlaceDetailsText;
+    private TextView mPlaceAttribution;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_menu);
 
+        // Retrieve the PlaceAutocompleteFragment.
+        //PlaceAutocompleteFragment autocompleteFragment = (PlaceAutocompleteFragment)
+        //        getFragmentManager().findFragmentById(R.id.autocomplete_fragment);
+
         //Set the fragment initially
-        MenuFragment fragment = new MenuFragment();
-        android.support.v4.app.FragmentTransaction fragmentTransaction =
-                getSupportFragmentManager().beginTransaction();
-        fragmentTransaction.replace(R.id.fragment_container, fragment);
-        fragmentTransaction.commit();
+        //MenuFragment fragment = new MenuFragment();
+        //android.support.v4.app.FragmentTransaction fragmentTransaction =
+        //        getSupportFragmentManager().beginTransaction();
+        //fragmentTransaction.replace(R.id.fragment_container, fragment);
+        //fragmentTransaction.commit();
 
         System.out.println("Started Nearby Places");
         setTitle("Nearby Places");
-        toolbar = (Toolbar) findViewById(R.id.toolbar);
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -46,7 +52,7 @@ public class NearbyPlaces extends AppCompatActivity implements NavigationView.On
         drawer.setDrawerListener(toggle);
         toggle.syncState();
 
-        navigationView = (NavigationView) findViewById(R.id.nav_view);
+        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
 
@@ -61,6 +67,8 @@ public class NearbyPlaces extends AppCompatActivity implements NavigationView.On
 
     }
 
+
+    //I would need to populate this.
     private List<RestaurantInfo> createList(int size) {
 
         List<RestaurantInfo> result = new ArrayList<RestaurantInfo>();
@@ -122,17 +130,17 @@ public class NearbyPlaces extends AppCompatActivity implements NavigationView.On
         int id = item.getItemId();
 
         if (id == R.id.nav_camera) {
-            MenuFragment fragment = new MenuFragment();
-            android.support.v4.app.FragmentTransaction fragmentTransaction =
-                    getSupportFragmentManager().beginTransaction();
-            fragmentTransaction.replace(R.id.fragment_container, fragment);
-            fragmentTransaction.commit();
+            //MenuFragment fragment = new MenuFragment();
+            //android.support.v4.app.FragmentTransaction fragmentTransaction =
+            //        getSupportFragmentManager().beginTransaction();
+            //fragmentTransaction.replace(R.id.fragment_container, fragment);
+            //fragmentTransaction.commit();
         } else if (id == R.id.nav_gallery) {
-            CartFragment fragment = new CartFragment();
-            android.support.v4.app.FragmentTransaction fragmentTransaction =
-                    getSupportFragmentManager().beginTransaction();
-            fragmentTransaction.replace(R.id.fragment_container, fragment);
-            fragmentTransaction.commit();
+            //CartFragment fragment = new CartFragment();
+            //android.support.v4.app.FragmentTransaction fragmentTransaction =
+            //        getSupportFragmentManager().beginTransaction();
+            //fragmentTransaction.replace(R.id.fragment_container, fragment);
+            //fragmentTransaction.commit();
         } else if (id == R.id.nav_slideshow) {
 
         } else if (id == R.id.nav_manage) {
