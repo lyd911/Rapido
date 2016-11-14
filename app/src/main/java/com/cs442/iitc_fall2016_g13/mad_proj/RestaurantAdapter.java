@@ -76,7 +76,7 @@ public class RestaurantAdapter extends RecyclerView.Adapter<RestaurantAdapter.Co
                 @Override public void onClick(View v) {
                    System.out.println( vName.getText());
                     GlobalVariables.SelectedRestaurantName=vName.getText().toString();
-                    v.getContext().startActivity(new Intent(v.getContext(), MainActivity.class));
+                    v.getContext().startActivity(new Intent(v.getContext(), FoodMenu.class));
                 }
             });
 
