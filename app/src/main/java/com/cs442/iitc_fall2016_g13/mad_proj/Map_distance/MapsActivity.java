@@ -43,6 +43,8 @@ import com.google.android.gms.maps.model.MarkerOptions;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
+import java.util.Comparator;
 
 public class MapsActivity extends FragmentActivity implements
         OnMapReadyCallback,
@@ -134,6 +136,9 @@ public class MapsActivity extends FragmentActivity implements
 
                 }
                 mMap.clear();
+                Location mylocation = new Location("");
+                mylocation.setLatitude(mLatitude);
+                mylocation.setLongitude(mLongitude);
                 Object[] DataTransfer = new Object[4];
                 DataTransfer[0] = mMap;
                 DataTransfer[1] = url;
@@ -153,6 +158,28 @@ public class MapsActivity extends FragmentActivity implements
                 mMap.setMapType(MapView.getInstance().getNextMapView());
             }
         });
+
+        Button btnSortByDistance = (Button) findViewById(R.id.btn_sortDistance);
+
+        btnSortByDistance.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                updateListViewOrderByDistance();
+            }
+        });
+
+
+        Button btnSortByRating = (Button) findViewById(R.id.btn_sortRating);
+
+        btnSortByRating.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                updateListViewOrderByRating();
+            }
+        });
+
 
 
         // Add a marker in Sydney and move the camera
@@ -306,8 +333,7 @@ public class MapsActivity extends FragmentActivity implements
 
         if (count > 0 && restList != null) {
 
-            final ListView mListView = (ListView) findViewById(R.id.myListView);
-            ArrayList<Restaurant> arrayList = new ArrayList(Arrays.asList(stringArray));
+            ListView mListView = (ListView) findViewById(R.id.myListView);
             mArrayAdapter = new CustomAdapter(getApplicationContext(), R.layout.restraunt_list_layout, restList);
             mListView.setAdapter(mArrayAdapter);
             mListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -323,6 +349,28 @@ public class MapsActivity extends FragmentActivity implements
                 }
             });
         }
+    }
+
+    void updateListViewOrderByDistance(){
+
+
+        if(mArrayAdapter != null){
+            mArrayAdapter.sortByDistance();
+        }
+
+
+    }
+
+
+
+    void updateListViewOrderByRating(){
+
+
+        if(mArrayAdapter != null){
+            mArrayAdapter.sortByRating();
+        }
+
+
     }
 
     @Override

@@ -6,7 +6,6 @@
     android:orientation="vertical"
     tools:context="com.cs442.iitc_fall2016_g13.mad_proj.Map_distance.MapsActivity">
 
-
     <TextView
         android:text="Search below for distance in meters"
         android:layout_width="match_parent"
@@ -35,7 +34,6 @@
             android:inputType="number"
             android:ems="8"
             android:id="@+id/edtTxtDistanceInput"
-            android:text="1000"
             android:layout_weight="1" />
 
         <Button
@@ -50,28 +48,30 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="340dp"
-        android:orientation="horizontal">
-
-
-        <fragment xmlns:android="http://schemas.android.com/apk/res/android"
-            xmlns:map="http://schemas.android.com/apk/res-auto"
-            xmlns:tools="http://schemas.android.com/tools"
-            android:id="@+id/map"
-            android:name="com.google.android.gms.maps.SupportMapFragment"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            tools:context="com.cs442.iitc_fall2016_g13.maps_detainincircle.MapsActivity" />
-
-
-    </LinearLayout>
-
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="132dp"
+        android:orientation="vertical"
         >
 
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="43dp">
+
+            <Button
+                android:text="Sort Distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_sortDistance"
+                android:layout_weight="1" />
+
+            <Button
+                android:text="Sort by rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_sortRating"
+                android:layout_weight="1" />
+        </LinearLayout>
 
         <ListView
             android:id="@+id/myListView"
@@ -86,16 +86,33 @@
             android:cacheColorHint="#ffffff"
             android:scrollbars="none" />
 
-<!--
-        <ListView
-            android:id="@+id/myListView"
+        <!--
+                <ListView
+                    android:id="@+id/myListView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                     />
+        -->
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+
+        <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:map="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-             />
--->
+            tools:context="com.cs442.iitc_fall2016_g13.maps_detainincircle.MapsActivity" />
 
 
-        </LinearLayout>
+    </LinearLayout>
 
 
 </LinearLayout>

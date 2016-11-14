@@ -16,6 +16,8 @@ import com.cs442.iitc_fall2016_g13.mad_proj.ServerConnect.GlobalVariables;
 import com.cs442.iitc_fall2016_g13.mad_proj.Zomato.GoogleZomatoFetch;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 
 /**
  * Created by KiranCD on 11/11/2016.
@@ -28,6 +30,11 @@ public class CustomAdapter extends ArrayAdapter {
     private Context mContext;
     private ArrayList<Restaurant> objects;
 
+    TextView tvRestrauntName;
+    TextView tvRating;
+    TextView tvDistanct;
+
+
     public CustomAdapter(Context context, int textViewResourceId, ArrayList<Restaurant> objects) {
         super(context, textViewResourceId, objects);
         this.mContext = context;
@@ -35,6 +42,53 @@ public class CustomAdapter extends ArrayAdapter {
 
 
         Log.v(TAG,"object "+objects.toString());
+    }
+
+    public void sortByRating(){
+
+        Log.v(TAG,"sortByRating");
+
+        Log.v(TAG,"sortByRating notifyDataset"+objects);
+
+        if ( objects != null) {
+
+            Collections.sort(objects, new Comparator<Restaurant>() {
+                @Override
+                public int compare(Restaurant o1, Restaurant o2) {
+                    return  Double.compare(o1.getmRating(),o2.getmRating());
+                }
+            });
+
+            Collections.reverse(objects);
+
+
+
+            Log.v(TAG,"sortByRating notifyDataset"+objects);
+            this.notifyDataSetInvalidated();
+        }
+    }
+
+
+    public void sortByDistance(){
+
+        Log.v(TAG,"sortByDistance");
+
+        Log.v(TAG,"sortByDistance notifyDataset"+objects);
+
+        if ( objects != null) {
+
+            Collections.sort(objects, new Comparator<Restaurant>() {
+                @Override
+                public int compare(Restaurant o1, Restaurant o2) {
+                    return  Double.compare(o1.getmDistance(),o2.getmDistance());
+                }
+            });
+
+
+
+            Log.v(TAG,"sortByDistance notifyDataset"+objects);
+            this.notifyDataSetInvalidated();
+        }
     }
 
     @Override
@@ -52,7 +106,9 @@ public class CustomAdapter extends ArrayAdapter {
             v = convertView;
         }
 
-        final TextView tvRestrauntName = (TextView) v.findViewById(R.id.txtRestaurant);
+        tvRating = (TextView) v.findViewById(R.id.txtRating);
+        tvDistanct = (TextView) v.findViewById(R.id.txtDistance);
+        tvRestrauntName = (TextView) v.findViewById(R.id.txtRestaurant);
         final Restaurant tempObj = objects.get(position);
         final int pos = position;
 
@@ -61,6 +117,11 @@ public class CustomAdapter extends ArrayAdapter {
             if(tvRestrauntName != null){
                // Toast.makeText(getContext(), "restaurnat", Toast.LENGTH_SHORT).show();
                 tvRestrauntName.setText(tempObj.getmPlaceName());
+
+                String distance = String.format("%.2f",tempObj.getmDistance());
+                tvDistanct.setText(distance);
+                String rating = Double.toString(tempObj.getmRating());
+                tvRating.setText(rating);
             }
         }
 

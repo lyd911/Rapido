@@ -3,13 +3,33 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+
+
     <TextView
-        android:text="TextView"
+        android:text="Name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/txtRestaurant"
-
         android:padding="5dp"
         android:textColor="#ffff"
         android:layout_weight="1" />
+
+
+    <TextView
+        android:text="Distance"
+        android:layout_width="62dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtDistance"
+        android:padding="5dp"
+        android:textColor="#ffff" />
+
+    <TextView
+        android:text="Rating"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtRating"
+        android:padding="5dp"
+        android:textColor="#ffff" />
+
+
 </LinearLayout>
