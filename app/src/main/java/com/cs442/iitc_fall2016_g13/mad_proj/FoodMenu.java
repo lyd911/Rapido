@@ -17,7 +17,7 @@ public class FoodMenu extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_food_menu);
 
-        RecyclerView recList = (RecyclerView) findViewById(R.id.cardList);
+        RecyclerView recList = (RecyclerView) findViewById(R.id.cardFoodItemList);
         recList.setHasFixedSize(true);
         LinearLayoutManager llm = new LinearLayoutManager(this);
         llm.setOrientation(LinearLayoutManager.VERTICAL);
@@ -25,7 +25,6 @@ public class FoodMenu extends AppCompatActivity {
 
         MenuItemAdapter ca = new MenuItemAdapter(createList(GlobalVariables.res_data.length));
         recList.setAdapter(ca);
-
     }
 
     private List<MenuItemInfo> createList(int size) {

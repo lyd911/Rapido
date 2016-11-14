@@ -82,7 +82,6 @@ public class NearbyPlaces extends AppCompatActivity implements NavigationView.On
 
     }
 
-
     //I would need to populate this.
     private List<RestaurantInfo> createList(int size) {
 
