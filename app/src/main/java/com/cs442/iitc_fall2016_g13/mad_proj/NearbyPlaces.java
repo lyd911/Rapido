@@ -14,7 +14,6 @@ import android.view.MenuItem;
 import android.widget.TextView;
 
 import com.cs442.iitc_fall2016_g13.mad_proj.ServerConnect.GlobalVariables;
-import com.google.android.gms.location.places.ui.PlaceAutocompleteFragment;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -62,7 +61,7 @@ public class NearbyPlaces extends AppCompatActivity implements NavigationView.On
         llm.setOrientation(LinearLayoutManager.VERTICAL);
         recList.setLayoutManager(llm);
 
-        ContactAdapter ca = new ContactAdapter(createList(GlobalVariables.res_data.length));
+        RestaurantAdapter ca = new RestaurantAdapter(createList(GlobalVariables.res_data.length));
         recList.setAdapter(ca);
 
     }

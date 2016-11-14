@@ -15,11 +15,11 @@ import java.util.List;
  * Created by Sandra Tobias on 11/11/2016.
  */
 
-public class ContactAdapter extends RecyclerView.Adapter<ContactAdapter.ContactViewHolder> {
+public class RestaurantAdapter extends RecyclerView.Adapter<RestaurantAdapter.ContactViewHolder> {
 
     private List<RestaurantInfo> restaurantList;
 
-    public ContactAdapter(List<RestaurantInfo> restaurantList) {
+    public RestaurantAdapter(List<RestaurantInfo> restaurantList) {
         this.restaurantList = restaurantList;
     }
 
