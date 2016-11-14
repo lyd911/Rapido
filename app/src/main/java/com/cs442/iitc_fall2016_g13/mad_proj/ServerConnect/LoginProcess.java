@@ -45,7 +45,6 @@ public class LoginProcess  extends AsyncTask<String,Void,String> {
     public LoginProcess(Context context) {
         this.context = context;
         dialog = new ProgressDialog(context);
-
     }
 
     protected void onPreExecute(){
@@ -102,7 +101,8 @@ public class LoginProcess  extends AsyncTask<String,Void,String> {
         if (result.equals(MD5(password)))
         {
 
-            Intent intent = new Intent(context, MapsActivity.class);
+            //Intent intent = new Intent(context, MapsActivity.class);
+            Intent intent = new Intent(context, MainActivity.class);
             context.startActivity(intent);
            // ((Activity)context).finish();
             dialog.dismiss();

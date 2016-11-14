@@ -11,6 +11,7 @@ import android.widget.TextView;
 
 import com.cs442.iitc_fall2016_g13.mad_proj.Map_alert.MapsActivity_direction;
 import com.cs442.iitc_fall2016_g13.mad_proj.Map_distance.MapsActivity;
+import com.cs442.iitc_fall2016_g13.mad_proj.Payment.Paypal;
 import com.google.android.gms.common.GooglePlayServicesNotAvailableException;
 import com.google.android.gms.common.GooglePlayServicesRepairableException;
 import com.google.android.gms.location.places.Place;
@@ -30,6 +31,8 @@ public class MainActivity extends AppCompatActivity {
     Button mBtnQRReader;
     Button mBtnOpenMaps;
     Button mBtnOpenMapsDirection;
+    Button mBtnPayment;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -72,6 +75,16 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(getApplicationContext(), MapsActivity_direction.class));
+            }
+        });
+
+
+        mBtnPayment = (Button)findViewById(R.id.btn_payment);
+
+        mBtnPayment.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(), Paypal.class));
             }
         });
 

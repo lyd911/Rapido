@@ -316,9 +316,9 @@ public class MapsActivity extends FragmentActivity implements
                     System.out.println("Value of i"+position);
                     System.out.println("Value of i"+restList.get(position).getmPlaceName());
                     GlobalVariables.SelectedRestaurantName=restList.get(position).getmPlaceName();
-                    Intent intent = new Intent(view.getContext(), LoadData.class);
+                  /*  Intent intent = new Intent(view.getContext(), LoadData.class);
                     intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                    view.getContext().startActivity(intent);
+                    view.getContext().startActivity(intent);*/
 
                 }
             });

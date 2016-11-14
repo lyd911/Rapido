@@ -63,6 +63,8 @@
         <activity android:name=".NearbyPlaces" />
         <activity android:name=".Map_distance.MapsActivity" />
         <activity android:name=".Map_alert.MapsActivity_direction" />
+        <activity android:name=".Payment.Paypal" />
+        <activity android:name=".Payment.PaypalConfirmation" />
         <activity
             android:name=".ServerConnect.LoginActivity"
             android:label="@string/title_activity_login" />
