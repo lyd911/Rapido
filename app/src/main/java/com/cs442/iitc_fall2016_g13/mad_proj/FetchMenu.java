@@ -104,7 +104,13 @@ public class FetchMenu  extends AsyncTask<String,Void,String> {
             Log.d("Fetch Menu","Loaded Menu Url");
 
             load_data(sb.toString());
+                if (GlobalVariables.menu_check==0)
+                {
+                    Intent intent = new Intent(context, MenuWeb.class);
+                    intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                    context.startActivity(intent);
 
+                }
             //code to go to menu list
             //check data exists or not in global variables res_menu and check global variables menu_check value
             //if there a menu then go to the card list actvity
@@ -137,6 +143,7 @@ public class FetchMenu  extends AsyncTask<String,Void,String> {
             String url = y;
             System.out.println(url);
             url=url.replaceAll("\"","");
+            GlobalVariables.url=url;
            // url="https://www.zomato.com/chicago/nana-bridgeport/menu?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1&openSwipeBox=menu&showMinimal=1#tabtop";
             Document doc = Jsoup.connect(url).timeout(10*1000).get();
             Elements newsHeadlines = doc.select(".tmi");
@@ -146,7 +153,6 @@ public class FetchMenu  extends AsyncTask<String,Void,String> {
 
             }
             else {
-                GlobalVariables.menu_check=1;
 
                 GlobalVariables.res_menu = new String[3][3];
                 System.out.println(newsHeadlines.size());

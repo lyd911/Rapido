@@ -14,5 +14,6 @@ public class GlobalVariables {
     public static String cust_id;
     public static String[][] res_menu;
     public static int menu_check;
+    public static String url;
 
 }

@@ -83,7 +83,8 @@
         <activity android:name=".SellerMainActivity" />
         <activity android:name=".SellerOrderHistoryActivity" />
         <activity android:name=".SellerOrderDetailActivity" />
-        <activity android:name=".OrderHistory"></activity>
+        <activity android:name=".OrderHistory" />
+        <activity android:name=".MenuWeb"></activity>
     </application>
 
 </manifest>
