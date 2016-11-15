@@ -71,12 +71,30 @@ public class GetPlaceDetail extends AsyncTask<Object, String, String> {
             double lng = Double.parseDouble(googlePlace.get("lng"));
             String placeName = googlePlace.get("place_name");
             String vicinity = googlePlace.get("vicinity");
+            String rating = googlePlace.get("rating");
+            Double ratingVal =0.0;
+            float distance = 0;
+
+            if(rating.trim().length() > 0){
+
+                 ratingVal = Double.valueOf(rating);
+                Log.v(TAG," rating "+ratingVal+"rating String"+rating);
+
+
+            }
             LatLng latLng = new LatLng(lat, lng);
             markerOptions.position(latLng);
             builder.include(latLng);
             markerOptions.title(placeName + " : " + vicinity);
             counter++;
-            restList.add(new Restaurant(placeName,vicinity,latLng));  // saving data
+
+            Location destination = new Location("");
+            destination.setLongitude(lng);
+            destination.setLatitude(lat);
+
+            distance = mSearchFromLocation.distanceTo(destination);
+            restList.add(new Restaurant(placeName,vicinity,latLng,ratingVal,distance));  // saving data
+            Log.v(TAG," rating "+rating+"distance"+distance);
             mMap.addMarker(markerOptions);
             markerOptions.icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_RED));
             //move map camera

@@ -6,7 +6,7 @@ import android.content.Intent;
 import android.os.AsyncTask;
 import android.widget.Toast;
 
-import com.cs442.iitc_fall2016_g13.mad_proj.SellerMainActivity;
+import com.cs442.iitc_fall2016_g13.mad_proj.Seller.SellerMainActivity;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;

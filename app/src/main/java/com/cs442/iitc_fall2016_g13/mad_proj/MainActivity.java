@@ -16,6 +16,7 @@ import com.google.android.gms.common.GooglePlayServicesRepairableException;
 import com.google.android.gms.location.places.Place;
 import com.google.android.gms.location.places.ui.PlacePicker;
 
+// demo
 public class MainActivity extends AppCompatActivity {
 
     int PLACE_PICKER_REQUEST = 1;

@@ -11,12 +11,31 @@ public class Restaurant {
     private String mPlaceName;
     private String mVicinity;
     private LatLng mLatLng;
+    private double mRating;
+    private double mDistance;
 
-
-    public Restaurant(String mPlaceName, String mVicinity, LatLng mLatLng) {
+    public Restaurant(String mPlaceName, String mVicinity, LatLng mLatLng, double mRating,float mDistance) {
         this.mPlaceName = mPlaceName;
         this.mVicinity = mVicinity;
         this.mLatLng = mLatLng;
+        this.mRating = mRating;
+        this.mDistance = mDistance;
+    }
+
+    public double getmDistance() {
+        return mDistance;
+    }
+
+    public void setmDistance(double mDistance) {
+        this.mDistance = mDistance;
+    }
+
+    public double getmRating() {
+        return mRating;
+    }
+
+    public void setmRating(double mRating) {
+        this.mRating = mRating;
     }
 
 

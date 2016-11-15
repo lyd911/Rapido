@@ -9,7 +9,8 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import com.cs442.iitc_fall2016_g13.mad_proj.ServerConnect.LoginActivity;
+import com.cs442.iitc_fall2016_g13.mad_proj.Seller.OneOrder;
+import com.cs442.iitc_fall2016_g13.mad_proj.Seller.SellerOrderHistoryActivity;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
