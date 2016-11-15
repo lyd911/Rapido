@@ -10,7 +10,6 @@ import android.widget.TextView;
 
 import com.cs442.iitc_fall2016_g13.mad_proj.FetchMenu;
 import com.cs442.iitc_fall2016_g13.mad_proj.LoadData;
-import com.cs442.iitc_fall2016_g13.mad_proj.MainActivity;
 import com.cs442.iitc_fall2016_g13.mad_proj.R;
 import com.cs442.iitc_fall2016_g13.mad_proj.ServerConnect.GlobalVariables;
 import com.cs442.iitc_fall2016_g13.mad_proj.Zomato.GoogleZomatoFetch;

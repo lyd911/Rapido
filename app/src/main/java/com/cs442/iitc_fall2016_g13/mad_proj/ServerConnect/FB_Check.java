@@ -16,7 +16,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.cs442.iitc_fall2016_g13.mad_proj.FB_Signup;
-import com.cs442.iitc_fall2016_g13.mad_proj.MainActivity;
 import com.cs442.iitc_fall2016_g13.mad_proj.NearbyPlaces;
 
 import java.io.BufferedReader;

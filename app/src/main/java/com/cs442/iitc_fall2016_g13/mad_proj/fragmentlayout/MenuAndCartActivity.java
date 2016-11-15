@@ -27,7 +27,7 @@ public class MenuAndCartActivity extends AppCompatActivity implements TitleFragm
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_menu_and_cart );
+        setContentView(R.layout.activity_cart_and_menu);
 
         if (savedInstanceState != null) {
             mPositionForDfragment = savedInstanceState.getInt(ARG_POSITION);

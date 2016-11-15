@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:2:1-87:12
+ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:2:1-90:12
 	package
 		ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:3:5-51
 		INJECTED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml
@@ -75,7 +75,7 @@ ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app
 	android:name
 		ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:21:22-78
 application
-ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:23:5-85:19
+ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:23:5-88:19
 MERGED from [com.google.android.gms:play-services:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\9.0.2\AndroidManifest.xml:5:5-20
 MERGED from [com.google.android.gms:play-services-ads-lite:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads-lite\9.0.2\AndroidManifest.xml:24:5-32:19
 MERGED from [com.google.android.gms:play-services-analytics:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics\9.0.2\AndroidManifest.xml:27:5-20
@@ -158,99 +158,111 @@ category#android.intent.category.LAUNCHER
 ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:37:17-77
 	android:name
 		ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:37:27-74
-activity#com.cs442.iitc_fall2016_g13.mad_proj.MainActivity
-ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:40:9-50
+activity#com.cs442.iitc_fall2016_g13.mad_proj.TypographyActivity
+ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:40:9-55
 	android:name
-		ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:40:19-47
+		ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:40:19-53
+activity#com.cs442.iitc_fall2016_g13.mad_proj.fragmentlayout.billingactivity
+ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:41:9-68
+	android:name
+		ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:41:19-65
+activity#com.cs442.iitc_fall2016_g13.mad_proj.fragmentlayout.HistoryActivity
+ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:42:9-67
+	android:name
+		ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:42:19-65
+activity#com.cs442.iitc_fall2016_g13.mad_proj.fragmentlayout.MenuAndCartActivity
+ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:43:9-71
+	android:name
+		ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:43:19-69
 meta-data#com.google.android.geo.API_KEY
-ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:52:9-54:55
+ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:55:9-57:55
 	android:value
-		ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:54:13-52
+		ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:57:13-52
 	android:name
-		ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:53:13-58
+		ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:56:13-58
 activity#com.cs442.iitc_fall2016_g13.mad_proj.QRCodeGenerator
-ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:56:9-53
+ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:59:9-53
 	android:name
-		ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:56:19-50
+		ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:59:19-50
 activity#com.cs442.iitc_fall2016_g13.mad_proj.QRActivity
-ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:57:9-48
+ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:60:9-48
 	android:name
-		ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:57:19-45
+		ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:60:19-45
 activity#com.cs442.iitc_fall2016_g13.mad_proj.QRCodeReader
-ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:58:9-50
+ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:61:9-50
 	android:name
-		ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:58:19-47
+		ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:61:19-47
 activity#com.cs442.iitc_fall2016_g13.mad_proj.NearbyPlaces
-ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:59:9-50
+ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:62:9-50
 	android:name
-		ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:59:19-47
+		ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:62:19-47
 activity#com.cs442.iitc_fall2016_g13.mad_proj.Map_distance.MapsActivity
-ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:60:9-63
+ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:63:9-63
 	android:name
-		ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:60:19-60
+		ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:63:19-60
 activity#com.cs442.iitc_fall2016_g13.mad_proj.Map_alert.MapsActivity_direction
-ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:61:9-70
+ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:64:9-70
 	android:name
-		ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:61:19-67
+		ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:64:19-67
 activity#com.cs442.iitc_fall2016_g13.mad_proj.ServerConnect.LoginActivity
-ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:62:9-64:60
+ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:65:9-67:60
 	android:label
-		ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:64:13-57
+		ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:67:13-57
 	android:name
-		ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:63:13-56
+		ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:66:13-56
 activity#com.cs442.iitc_fall2016_g13.mad_proj.ServerConnect.SignUpActivity
-ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:65:9-70:20
+ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:68:9-73:20
 	android:label
-		ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:67:13-59
+		ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:70:13-59
 	android:name
-		ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:66:13-57
+		ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:69:13-57
 activity#com.facebook.FacebookActivity
-ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:71:9-75:75
+ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:74:9-78:75
 MERGED from [com.facebook.android:facebook-android-sdk:4.15.0] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.facebook.android\facebook-android-sdk\4.15.0\AndroidManifest.xml:29:9-32:75
 	android:label
-		ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:74:13-35
+		ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:77:13-35
 	android:configChanges
-		ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:73:13-96
+		ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:76:13-96
 	android:theme
-		ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:75:13-72
+		ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:78:13-72
 	android:name
-		ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:72:13-57
+		ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:75:13-57
 activity#com.cs442.iitc_fall2016_g13.mad_proj.FB_Signup
-ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:76:9-47
+ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:79:9-47
 	android:name
-		ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:76:19-44
+		ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:79:19-44
 activity#com.cs442.iitc_fall2016_g13.mad_proj.LoadData
-ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:77:9-46
+ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:80:9-46
 	android:name
-		ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:77:19-43
+		ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:80:19-43
 activity#com.cs442.iitc_fall2016_g13.mad_proj.SellerMainActivity
-ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:78:9-56
+ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:81:9-56
 	android:name
-		ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:78:19-53
+		ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:81:19-53
 activity#com.cs442.iitc_fall2016_g13.mad_proj.SellerOrderHistoryActivity
-ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:79:9-64
+ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:82:9-64
 	android:name
-		ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:79:19-61
+		ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:82:19-61
 activity#com.cs442.iitc_fall2016_g13.mad_proj.SellerOrderDetailActivity
-ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:80:9-63
+ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:83:9-63
 	android:name
-		ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:80:19-60
+		ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:83:19-60
 activity#com.cs442.iitc_fall2016_g13.mad_proj.OrderHistory
-ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:81:9-50
+ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:84:9-50
 	android:name
-		ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:81:19-47
+		ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:84:19-47
 activity#com.cs442.iitc_fall2016_g13.mad_proj.MenuWeb
-ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:82:9-54
+ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:85:9-54
 	android:name
-		ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:82:19-42
+		ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:85:19-42
 activity#com.cs442.iitc_fall2016_g13.mad_proj.FoodMenu
-ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:83:9-46
+ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:86:9-46
 	android:name
-		ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:83:19-43
+		ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:86:19-43
 activity#com.cs442.iitc_fall2016_g13.mad_proj.Cart
-ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:84:9-51
+ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:87:9-51
 	android:name
-		ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:84:19-39
+		ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:87:19-39
 uses-sdk
 INJECTED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:multidex:1.0.1] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.android.support\multidex\1.0.1\AndroidManifest.xml:18:5-42

@@ -7,7 +7,7 @@ import android.content.SharedPreferences;
 import java.util.ArrayList;
 import java.util.Set;
 
-import static com.cs442.kdakshinamurthy.fragmentlayout.billingactivity.PREFS_NAME;
+import static com.cs442.iitc_fall2016_g13.mad_proj.fragmentlayout.billingactivity.PREFS_NAME;
 
 /**
  * Created by KiranCD on 10/2/2016.

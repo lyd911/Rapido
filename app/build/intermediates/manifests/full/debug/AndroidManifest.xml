@@ -78,7 +78,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.cs442.iitc_fall2016_g13.mad_proj.MainActivity" />
+        <activity android:name="com.cs442.iitc_fall2016_g13.mad_proj.TypographyActivity" />
+        <activity android:name="com.cs442.iitc_fall2016_g13.mad_proj.fragmentlayout.billingactivity" />
+        <activity android:name="com.cs442.iitc_fall2016_g13.mad_proj.fragmentlayout.HistoryActivity" />
+        <activity android:name="com.cs442.iitc_fall2016_g13.mad_proj.fragmentlayout.MenuAndCartActivity" />
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
