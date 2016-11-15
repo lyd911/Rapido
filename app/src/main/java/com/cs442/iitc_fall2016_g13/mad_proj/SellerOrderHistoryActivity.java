@@ -19,7 +19,11 @@ import java.net.URLConnection;
 import java.net.URLEncoder;
 import java.util.ArrayList;
 
-public class OrderHistory extends Activity {
+/**
+ * Created by lyd on 2016/11/9.
+ */
+
+public class SellerOrderHistoryActivity extends Activity{
     public static ArrayAdapter<String> aa;
 
     public static ArrayList<OneOrder> orders_finished;
@@ -36,26 +40,26 @@ public class OrderHistory extends Activity {
         TextView history_textview = (TextView)findViewById(R.id.detail_textview);
         history_listview = (ListView)findViewById(R.id.history_listview);
 
-
+        String admin = LoginActivity.admin;
 
         aa = new ArrayAdapter<String>(this,
                 android.R.layout.simple_list_item_1,
                 SellerOrderHistoryActivity.order_finished_String);
         history_listview.setAdapter(aa);
 
-        new UserGetFinishedOrdersProcess(this).execute();
+        new SellerGetFinishedOrdersProcess(this).execute(LoginActivity.admin);
     }
 
 
-    public class UserGetFinishedOrdersProcess extends AsyncTask<String,OneOrder,String> {
+    public class SellerGetFinishedOrdersProcess extends AsyncTask<String,OneOrder,String> {
 
         private Context context;
         private ProgressDialog dialog;
-        private String cust_id="kartik";
+        private String admin="";
         private String rawdata;
         private int numberOfOrders;
 
-        public UserGetFinishedOrdersProcess(Context context) {
+        public SellerGetFinishedOrdersProcess(Context context) {
             this.context = context;
             dialog = new ProgressDialog(context);
         }
@@ -69,10 +73,10 @@ public class OrderHistory extends Activity {
         protected String doInBackground(String... params) {
 
             try{
-                cust_id = (String)params[0];
+                admin = (String)params[0];
 
-                String link="http://rapido.counseltech.in/UserOrderHistory.php";
-                String data  = URLEncoder.encode("cust_id", "UTF-8") + "=" + URLEncoder.encode(cust_id, "UTF-8");
+                String link="http://rapido.counseltech.in/sellerGetFinished.php";
+                String data  = URLEncoder.encode("admin", "UTF-8") + "=" + URLEncoder.encode(admin, "UTF-8");
 
                 URL url = new URL(link);
                 URLConnection conn = url.openConnection();
@@ -143,4 +147,3 @@ public class OrderHistory extends Activity {
         }
     }
 }
-
