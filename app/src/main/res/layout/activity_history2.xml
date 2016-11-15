@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_history2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.cs442.kdakshinamurthy.fragmentlayout.HistoryActivity">
+
+    <TextView
+        android:text="ORDER HISTORY"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:padding="10dp"
+        android:textColor="#000"
+        android:background="#ffff4d"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/textView3" />
+
+    <FrameLayout
+        android:id="@+id/historyPlaceholder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </FrameLayout>
+
+</LinearLayout>

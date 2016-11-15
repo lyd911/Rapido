@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/FinalSubmission.iml" filepath="$PROJECT_DIR$/FinalSubmission.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Rapido_Repositroy.iml" filepath="$PROJECT_DIR$/Rapido_Repositroy.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
