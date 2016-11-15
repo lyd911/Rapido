@@ -103,6 +103,8 @@ public class GetPlaceDetail extends AsyncTask<Object, String, String> {
         }
 
 
+
+
         MapView.getInstance().setmCount(counter);
 
         if(counter > 0){

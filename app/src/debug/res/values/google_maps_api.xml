@@ -20,6 +20,6 @@
     </string>-->
     <!--GOOGLE PLACES API WEB SERVICE-->
     <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">
-        AIzaSyB2i8IWp5u0cajWS9o7lEGsIB7YdEgorYI
+        AIzaSyBuKVDmAmlAQsIMMn8vNXCd1JySQhIiV9c
     </string>
 </resources>
