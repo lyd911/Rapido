@@ -1765,30 +1765,28 @@
                     "startLine": 259,
                     "startColumn": 4,
                     "startOffset": 18751,
-                    "endLine": 260,
-                    "endColumn": 8,
-                    "endOffset": 18876
+                    "endColumn": 121,
+                    "endOffset": 18868
                 },
                 "from": {
-                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-appinvite\\9.8.0\\res\\values-v21\\values.xml",
+                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-appinvite\\9.0.2\\res\\values-v21\\values.xml",
                     "position": {
                         "startLine": 4,
-                        "startColumn": 0,
-                        "startOffset": 172,
-                        "endLine": 5,
-                        "endColumn": 8,
-                        "endOffset": 297
+                        "startColumn": 4,
+                        "startOffset": 220,
+                        "endColumn": 121,
+                        "endOffset": 337
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 261,
+                    "startLine": 260,
                     "startColumn": 4,
-                    "startOffset": 18881,
-                    "endLine": 263,
+                    "startOffset": 18873,
+                    "endLine": 262,
                     "endColumn": 12,
-                    "endOffset": 19070
+                    "endOffset": 19062
                 },
                 "from": {
                     "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\24.2.1\\res\\values-v21\\values-v21.xml",

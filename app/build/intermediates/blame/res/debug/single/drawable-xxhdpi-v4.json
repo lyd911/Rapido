@@ -8,8 +8,20 @@
         "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\drawable-xxhdpi-v4\\abc_tab_indicator_mtrl_alpha.9.png"
     },
     {
+        "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\common_plus_signin_btn_icon_dark_disabled.9.png",
+        "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.0.2\\res\\drawable-xxhdpi-v4\\common_plus_signin_btn_icon_dark_disabled.9.png"
+    },
+    {
         "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_media_route_connecting_08_dark.png",
         "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\drawable-xxhdpi-v4\\ic_media_route_connecting_08_dark.png"
+    },
+    {
+        "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\common_plus_signin_btn_text_light_focused.9.png",
+        "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.0.2\\res\\drawable-xxhdpi-v4\\common_plus_signin_btn_text_light_focused.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\common_plus_signin_btn_icon_dark_normal.9.png",
+        "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.0.2\\res\\drawable-xxhdpi-v4\\common_plus_signin_btn_icon_dark_normal.9.png"
     },
     {
         "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\quantum_ic_art_track_grey600_48.png",
@@ -24,12 +36,16 @@
         "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\drawable-xxhdpi-v4\\ic_close_light.png"
     },
     {
+        "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_spinner_mtrl_am_alpha.9.png",
+        "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\drawable-xxhdpi-v4\\abc_spinner_mtrl_am_alpha.9.png"
+    },
+    {
         "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\quantum_ic_clear_white_24.png",
         "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.8.0\\res\\drawable-xxhdpi-v4\\quantum_ic_clear_white_24.png"
     },
     {
-        "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_spinner_mtrl_am_alpha.9.png",
-        "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\drawable-xxhdpi-v4\\abc_spinner_mtrl_am_alpha.9.png"
+        "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\common_full_open_on_phone.png",
+        "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.0.2\\res\\drawable-xxhdpi-v4\\common_full_open_on_phone.png"
     },
     {
         "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_speaker_dark.png",
@@ -65,11 +81,11 @@
     },
     {
         "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_plusone_tall_off_client.png",
-        "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-plus\\9.8.0\\res\\drawable-xxhdpi-v4\\ic_plusone_tall_off_client.png"
+        "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-plus\\9.0.2\\res\\drawable-xxhdpi-v4\\ic_plusone_tall_off_client.png"
     },
     {
         "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_plusone_standard_off_client.png",
-        "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-plus\\9.8.0\\res\\drawable-xxhdpi-v4\\ic_plusone_standard_off_client.png"
+        "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-plus\\9.0.2\\res\\drawable-xxhdpi-v4\\ic_plusone_standard_off_client.png"
     },
     {
         "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_media_route_connecting_09_dark.png",
@@ -108,16 +124,20 @@
         "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.8.0\\res\\drawable-xxhdpi-v4\\quantum_ic_skip_previous_white_36.png"
     },
     {
-        "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\places_ic_search.png",
-        "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-places\\9.8.0\\res\\drawable-xxhdpi-v4\\places_ic_search.png"
+        "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\common_plus_signin_btn_icon_light_normal.9.png",
+        "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.0.2\\res\\drawable-xxhdpi-v4\\common_plus_signin_btn_icon_light_normal.9.png"
     },
     {
-        "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_media_route_connecting_10_light.png",
-        "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\drawable-xxhdpi-v4\\ic_media_route_connecting_10_light.png"
+        "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\places_ic_search.png",
+        "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-location\\9.0.2\\res\\drawable-xxhdpi-v4\\places_ic_search.png"
     },
     {
         "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_btn_check_to_on_mtrl_000.png",
         "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\drawable-xxhdpi-v4\\abc_btn_check_to_on_mtrl_000.png"
+    },
+    {
+        "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_media_route_connecting_10_light.png",
+        "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\drawable-xxhdpi-v4\\ic_media_route_connecting_10_light.png"
     },
     {
         "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_media_route_connecting_20_light.png",
@@ -145,11 +165,15 @@
     },
     {
         "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\common_google_signin_btn_icon_dark_disabled.9.png",
-        "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.8.0\\res\\drawable-xxhdpi-v4\\common_google_signin_btn_icon_dark_disabled.9.png"
+        "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.0.2\\res\\drawable-xxhdpi-v4\\common_google_signin_btn_icon_dark_disabled.9.png"
     },
     {
         "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_media_route_connecting_17_dark.png",
         "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\drawable-xxhdpi-v4\\ic_media_route_connecting_17_dark.png"
+    },
+    {
+        "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\common_ic_googleplayservices.png",
+        "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.0.2\\res\\drawable-xxhdpi-v4\\common_ic_googleplayservices.png"
     },
     {
         "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_media_route_on_07_light.png",
@@ -165,7 +189,7 @@
     },
     {
         "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\cast_ic_notification_1.png",
-        "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast\\9.8.0\\res\\drawable-xxhdpi-v4\\cast_ic_notification_1.png"
+        "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast\\9.0.2\\res\\drawable-xxhdpi-v4\\cast_ic_notification_1.png"
     },
     {
         "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\quantum_ic_pause_circle_filled_white_36.png",
@@ -188,16 +212,16 @@
         "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\drawable-xxhdpi-v4\\ic_media_route_on_08_light.png"
     },
     {
-        "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\common_google_signin_btn_text_dark_normal.9.png",
-        "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.8.0\\res\\drawable-xxhdpi-v4\\common_google_signin_btn_text_dark_normal.9.png"
+        "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_media_route_connecting_11_light.png",
+        "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\drawable-xxhdpi-v4\\ic_media_route_connecting_11_light.png"
     },
     {
         "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\cast_ic_stop_circle_filled_white.png",
         "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.8.0\\res\\drawable-xxhdpi-v4\\cast_ic_stop_circle_filled_white.png"
     },
     {
-        "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_media_route_connecting_11_light.png",
-        "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\drawable-xxhdpi-v4\\ic_media_route_connecting_11_light.png"
+        "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\common_google_signin_btn_text_dark_normal.9.png",
+        "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.0.2\\res\\drawable-xxhdpi-v4\\common_google_signin_btn_text_dark_normal.9.png"
     },
     {
         "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_media_route_connecting_01_light.png",
@@ -212,12 +236,12 @@
         "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\drawable-xxhdpi-v4\\ic_media_route_connecting_07_dark.png"
     },
     {
-        "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\common_google_signin_btn_icon_light_pressed.9.png",
-        "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.8.0\\res\\drawable-xxhdpi-v4\\common_google_signin_btn_icon_light_pressed.9.png"
-    },
-    {
         "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_media_route_on_03_dark.png",
         "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\drawable-xxhdpi-v4\\ic_media_route_on_03_dark.png"
+    },
+    {
+        "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\common_google_signin_btn_icon_light_pressed.9.png",
+        "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.0.2\\res\\drawable-xxhdpi-v4\\common_google_signin_btn_icon_light_pressed.9.png"
     },
     {
         "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_media_route_on_09_light.png",
@@ -228,8 +252,16 @@
         "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\drawable-xxhdpi-v4\\ic_media_route_connecting_22_dark.png"
     },
     {
+        "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\common_google_signin_btn_text_light_focused.9.png",
+        "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.0.2\\res\\drawable-xxhdpi-v4\\common_google_signin_btn_text_light_focused.9.png"
+    },
+    {
         "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_media_route_connecting_22_light.png",
         "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\drawable-xxhdpi-v4\\ic_media_route_connecting_22_light.png"
+    },
+    {
+        "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\common_plus_signin_btn_text_dark_focused.9.png",
+        "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.0.2\\res\\drawable-xxhdpi-v4\\common_plus_signin_btn_text_dark_focused.9.png"
     },
     {
         "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_media_route_connecting_12_light.png",
@@ -237,7 +269,7 @@
     },
     {
         "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\common_google_signin_btn_icon_light_normal.9.png",
-        "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.8.0\\res\\drawable-xxhdpi-v4\\common_google_signin_btn_icon_light_normal.9.png"
+        "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.0.2\\res\\drawable-xxhdpi-v4\\common_google_signin_btn_icon_light_normal.9.png"
     },
     {
         "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\messenger_bubble_small_white.png",
@@ -269,7 +301,7 @@
     },
     {
         "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_plusone_small_off_client.png",
-        "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-plus\\9.8.0\\res\\drawable-xxhdpi-v4\\ic_plusone_small_off_client.png"
+        "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-plus\\9.0.2\\res\\drawable-xxhdpi-v4\\ic_plusone_small_off_client.png"
     },
     {
         "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_list_longpressed_holo.9.png",
@@ -337,7 +369,7 @@
     },
     {
         "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\common_google_signin_btn_text_dark_disabled.9.png",
-        "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.8.0\\res\\drawable-xxhdpi-v4\\common_google_signin_btn_text_dark_disabled.9.png"
+        "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.0.2\\res\\drawable-xxhdpi-v4\\common_google_signin_btn_text_dark_disabled.9.png"
     },
     {
         "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\quantum_ic_forward_30_grey600_36.png",
@@ -365,7 +397,7 @@
     },
     {
         "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\common_google_signin_btn_icon_dark_pressed.9.png",
-        "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.8.0\\res\\drawable-xxhdpi-v4\\common_google_signin_btn_icon_dark_pressed.9.png"
+        "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.0.2\\res\\drawable-xxhdpi-v4\\common_google_signin_btn_icon_dark_pressed.9.png"
     },
     {
         "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_media_route_on_21_dark.png",
@@ -378,6 +410,10 @@
     {
         "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_media_route_connecting_11_dark.png",
         "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\drawable-xxhdpi-v4\\ic_media_route_connecting_11_dark.png"
+    },
+    {
+        "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\common_plus_signin_btn_icon_light_pressed.9.png",
+        "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.0.2\\res\\drawable-xxhdpi-v4\\common_plus_signin_btn_icon_light_pressed.9.png"
     },
     {
         "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_text_select_handle_middle_mtrl_light.png",
@@ -393,7 +429,7 @@
     },
     {
         "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\cast_ic_notification_2.png",
-        "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast\\9.8.0\\res\\drawable-xxhdpi-v4\\cast_ic_notification_2.png"
+        "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast\\9.0.2\\res\\drawable-xxhdpi-v4\\cast_ic_notification_2.png"
     },
     {
         "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_cast_disabled_light.png",
@@ -512,6 +548,10 @@
         "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\drawable-xxhdpi-v4\\abc_scrubber_track_mtrl_alpha.9.png"
     },
     {
+        "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\common_plus_signin_btn_text_dark_disabled.9.png",
+        "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.0.2\\res\\drawable-xxhdpi-v4\\common_plus_signin_btn_text_dark_disabled.9.png"
+    },
+    {
         "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\messenger_bubble_small_blue.png",
         "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.15.0\\res\\drawable-xxhdpi-v4\\messenger_bubble_small_blue.png"
     },
@@ -533,7 +573,7 @@
     },
     {
         "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\common_google_signin_btn_text_light_pressed.9.png",
-        "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.8.0\\res\\drawable-xxhdpi-v4\\common_google_signin_btn_text_light_pressed.9.png"
+        "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.0.2\\res\\drawable-xxhdpi-v4\\common_google_signin_btn_text_light_pressed.9.png"
     },
     {
         "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_media_route_on_08_dark.png",
@@ -542,6 +582,10 @@
     {
         "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_media_route_connecting_01_dark.png",
         "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\drawable-xxhdpi-v4\\ic_media_route_connecting_01_dark.png"
+    },
+    {
+        "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\common_google_signin_btn_icon_light_focused.9.png",
+        "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.0.2\\res\\drawable-xxhdpi-v4\\common_google_signin_btn_icon_light_focused.9.png"
     },
     {
         "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\quantum_ic_forward_30_white_36.png",
@@ -569,7 +613,11 @@
     },
     {
         "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\powered_by_google_light.png",
-        "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-places\\9.8.0\\res\\drawable-xxhdpi-v4\\powered_by_google_light.png"
+        "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-location\\9.0.2\\res\\drawable-xxhdpi-v4\\powered_by_google_light.png"
+    },
+    {
+        "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\common_plus_signin_btn_icon_dark_pressed.9.png",
+        "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.0.2\\res\\drawable-xxhdpi-v4\\common_plus_signin_btn_icon_dark_pressed.9.png"
     },
     {
         "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_audiotrack_light.png",
@@ -594,6 +642,10 @@
     {
         "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_media_route_on_15_light.png",
         "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\drawable-xxhdpi-v4\\ic_media_route_on_15_light.png"
+    },
+    {
+        "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\common_plus_signin_btn_text_dark_pressed.9.png",
+        "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.0.2\\res\\drawable-xxhdpi-v4\\common_plus_signin_btn_text_dark_pressed.9.png"
     },
     {
         "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_media_route_on_09_dark.png",
@@ -633,7 +685,7 @@
     },
     {
         "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\cast_ic_notification_on.png",
-        "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast\\9.8.0\\res\\drawable-xxhdpi-v4\\cast_ic_notification_on.png"
+        "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast\\9.0.2\\res\\drawable-xxhdpi-v4\\cast_ic_notification_on.png"
     },
     {
         "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_media_route_on_06_dark.png",
@@ -645,11 +697,11 @@
     },
     {
         "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\common_google_signin_btn_icon_light_disabled.9.png",
-        "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.8.0\\res\\drawable-xxhdpi-v4\\common_google_signin_btn_icon_light_disabled.9.png"
+        "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.0.2\\res\\drawable-xxhdpi-v4\\common_google_signin_btn_icon_light_disabled.9.png"
     },
     {
         "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\places_ic_clear.png",
-        "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-places\\9.8.0\\res\\drawable-xxhdpi-v4\\places_ic_clear.png"
+        "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-location\\9.0.2\\res\\drawable-xxhdpi-v4\\places_ic_clear.png"
     },
     {
         "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_media_route_connecting_03_light.png",
@@ -670,6 +722,10 @@
     {
         "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_cast_dark.png",
         "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\drawable-xxhdpi-v4\\ic_cast_dark.png"
+    },
+    {
+        "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\common_plus_signin_btn_text_light_disabled.9.png",
+        "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.0.2\\res\\drawable-xxhdpi-v4\\common_plus_signin_btn_text_light_disabled.9.png"
     },
     {
         "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_pause_dark.png",
@@ -701,7 +757,11 @@
     },
     {
         "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\common_google_signin_btn_icon_dark_normal.9.png",
-        "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.8.0\\res\\drawable-xxhdpi-v4\\common_google_signin_btn_icon_dark_normal.9.png"
+        "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.0.2\\res\\drawable-xxhdpi-v4\\common_google_signin_btn_icon_dark_normal.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\common_plus_signin_btn_icon_light_focused.9.png",
+        "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.0.2\\res\\drawable-xxhdpi-v4\\common_plus_signin_btn_icon_light_focused.9.png"
     },
     {
         "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_media_route_on_13_dark.png",
@@ -716,6 +776,10 @@
         "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.8.0\\res\\drawable-xxhdpi-v4\\quantum_ic_cast_white_36.png"
     },
     {
+        "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\common_google_signin_btn_text_dark_focused.9.png",
+        "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.0.2\\res\\drawable-xxhdpi-v4\\common_google_signin_btn_text_dark_focused.9.png"
+    },
+    {
         "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\quantum_ic_volume_up_grey600_36.png",
         "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.8.0\\res\\drawable-xxhdpi-v4\\quantum_ic_volume_up_grey600_36.png"
     },
@@ -725,7 +789,7 @@
     },
     {
         "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\powered_by_google_dark.png",
-        "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-places\\9.8.0\\res\\drawable-xxhdpi-v4\\powered_by_google_dark.png"
+        "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-location\\9.0.2\\res\\drawable-xxhdpi-v4\\powered_by_google_dark.png"
     },
     {
         "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_media_route_on_13_light.png",
@@ -734,6 +798,10 @@
     {
         "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_media_route_on_12_dark.png",
         "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\drawable-xxhdpi-v4\\ic_media_route_on_12_dark.png"
+    },
+    {
+        "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\common_google_signin_btn_icon_dark_focused.9.png",
+        "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.0.2\\res\\drawable-xxhdpi-v4\\common_google_signin_btn_icon_dark_focused.9.png"
     },
     {
         "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_media_route_on_00_light.png",
@@ -749,7 +817,7 @@
     },
     {
         "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\common_google_signin_btn_text_light_normal.9.png",
-        "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.8.0\\res\\drawable-xxhdpi-v4\\common_google_signin_btn_text_light_normal.9.png"
+        "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.0.2\\res\\drawable-xxhdpi-v4\\common_google_signin_btn_text_light_normal.9.png"
     },
     {
         "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\quantum_ic_skip_next_white_36.png",
@@ -797,7 +865,7 @@
     },
     {
         "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\common_google_signin_btn_text_dark_pressed.9.png",
-        "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.8.0\\res\\drawable-xxhdpi-v4\\common_google_signin_btn_text_dark_pressed.9.png"
+        "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.0.2\\res\\drawable-xxhdpi-v4\\common_google_signin_btn_text_dark_pressed.9.png"
     },
     {
         "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_media_route_on_05_dark.png",
@@ -805,7 +873,7 @@
     },
     {
         "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\cast_ic_notification_0.png",
-        "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast\\9.8.0\\res\\drawable-xxhdpi-v4\\cast_ic_notification_0.png"
+        "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast\\9.0.2\\res\\drawable-xxhdpi-v4\\cast_ic_notification_0.png"
     },
     {
         "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_tv_light.png",
@@ -814,6 +882,10 @@
     {
         "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_media_route_connecting_21_dark.png",
         "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\drawable-xxhdpi-v4\\ic_media_route_connecting_21_dark.png"
+    },
+    {
+        "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\common_plus_signin_btn_text_dark_normal.9.png",
+        "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.0.2\\res\\drawable-xxhdpi-v4\\common_plus_signin_btn_text_dark_normal.9.png"
     },
     {
         "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\quantum_ic_replay_30_grey600_36.png",
@@ -864,6 +936,10 @@
         "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\drawable-xxhdpi-v4\\abc_list_divider_mtrl_alpha.9.png"
     },
     {
+        "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\common_plus_signin_btn_text_light_normal.9.png",
+        "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.0.2\\res\\drawable-xxhdpi-v4\\common_plus_signin_btn_text_light_normal.9.png"
+    },
+    {
         "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\quantum_ic_forward_10_white_24.png",
         "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.8.0\\res\\drawable-xxhdpi-v4\\quantum_ic_forward_10_white_24.png"
     },
@@ -901,11 +977,15 @@
     },
     {
         "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_plusone_medium_off_client.png",
-        "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-plus\\9.8.0\\res\\drawable-xxhdpi-v4\\ic_plusone_medium_off_client.png"
+        "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-plus\\9.0.2\\res\\drawable-xxhdpi-v4\\ic_plusone_medium_off_client.png"
     },
     {
         "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_media_route_on_17_dark.png",
         "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\drawable-xxhdpi-v4\\ic_media_route_on_17_dark.png"
+    },
+    {
+        "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\common_plus_signin_btn_icon_dark_focused.9.png",
+        "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.0.2\\res\\drawable-xxhdpi-v4\\common_plus_signin_btn_icon_dark_focused.9.png"
     },
     {
         "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\quantum_ic_replay_white_24.png",
@@ -960,12 +1040,20 @@
         "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\drawable-xxhdpi-v4\\ic_media_route_connecting_09_light.png"
     },
     {
+        "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\common_plus_signin_btn_icon_light_disabled.9.png",
+        "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.0.2\\res\\drawable-xxhdpi-v4\\common_plus_signin_btn_icon_light_disabled.9.png"
+    },
+    {
         "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_media_route_on_20_light.png",
         "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\drawable-xxhdpi-v4\\ic_media_route_on_20_light.png"
     },
     {
+        "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\common_plus_signin_btn_text_light_pressed.9.png",
+        "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.0.2\\res\\drawable-xxhdpi-v4\\common_plus_signin_btn_text_light_pressed.9.png"
+    },
+    {
         "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\common_google_signin_btn_text_light_disabled.9.png",
-        "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.8.0\\res\\drawable-xxhdpi-v4\\common_google_signin_btn_text_light_disabled.9.png"
+        "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.0.2\\res\\drawable-xxhdpi-v4\\common_google_signin_btn_text_light_disabled.9.png"
     },
     {
         "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\quantum_ic_play_circle_filled_white_36.png",

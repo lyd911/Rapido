@@ -710,17 +710,17 @@
                     "startLine": 39,
                     "startColumn": 4,
                     "startOffset": 3675,
-                    "endColumn": 104,
-                    "endOffset": 3775
+                    "endColumn": 110,
+                    "endOffset": 3781
                 },
                 "from": {
-                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\values-pt\\values-pt.xml",
+                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.0.0\\res\\values-pt\\values-pt.xml",
                     "position": {
-                        "startLine": 2,
+                        "startLine": 4,
                         "startColumn": 4,
-                        "startOffset": 55,
-                        "endColumn": 104,
-                        "endOffset": 155
+                        "startOffset": 278,
+                        "endColumn": 110,
+                        "endOffset": 384
                     }
                 }
             },
@@ -728,18 +728,18 @@
                 "to": {
                     "startLine": 40,
                     "startColumn": 4,
-                    "startOffset": 3780,
-                    "endColumn": 103,
-                    "endOffset": 3879
+                    "startOffset": 3786,
+                    "endColumn": 115,
+                    "endOffset": 3897
                 },
                 "from": {
-                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\values-pt\\values-pt.xml",
+                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.0.0\\res\\values-pt\\values-pt.xml",
                     "position": {
-                        "startLine": 3,
+                        "startLine": 5,
                         "startColumn": 4,
-                        "startOffset": 160,
-                        "endColumn": 103,
-                        "endOffset": 259
+                        "startOffset": 389,
+                        "endColumn": 115,
+                        "endOffset": 500
                     }
                 }
             },
@@ -747,18 +747,18 @@
                 "to": {
                     "startLine": 41,
                     "startColumn": 4,
-                    "startOffset": 3884,
-                    "endColumn": 89,
-                    "endOffset": 3969
+                    "startOffset": 3902,
+                    "endColumn": 110,
+                    "endOffset": 4008
                 },
                 "from": {
-                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\values-pt\\values-pt.xml",
+                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.0.0\\res\\values-pt\\values-pt.xml",
                     "position": {
-                        "startLine": 4,
+                        "startLine": 6,
                         "startColumn": 4,
-                        "startOffset": 264,
-                        "endColumn": 89,
-                        "endOffset": 349
+                        "startOffset": 505,
+                        "endColumn": 110,
+                        "endOffset": 611
                     }
                 }
             },
@@ -766,18 +766,18 @@
                 "to": {
                     "startLine": 42,
                     "startColumn": 4,
-                    "startOffset": 3974,
-                    "endColumn": 95,
-                    "endOffset": 4065
+                    "startOffset": 4013,
+                    "endColumn": 105,
+                    "endOffset": 4114
                 },
                 "from": {
-                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\values-pt\\values-pt.xml",
+                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.0.0\\res\\values-pt\\values-pt.xml",
                     "position": {
-                        "startLine": 5,
+                        "startLine": 7,
                         "startColumn": 4,
-                        "startOffset": 354,
-                        "endColumn": 95,
-                        "endOffset": 445
+                        "startOffset": 616,
+                        "endColumn": 105,
+                        "endOffset": 717
                     }
                 }
             },
@@ -785,18 +785,18 @@
                 "to": {
                     "startLine": 43,
                     "startColumn": 4,
-                    "startOffset": 4070,
-                    "endColumn": 106,
-                    "endOffset": 4172
+                    "startOffset": 4119,
+                    "endColumn": 131,
+                    "endOffset": 4246
                 },
                 "from": {
-                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\values-pt\\values-pt.xml",
+                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.0.0\\res\\values-pt\\values-pt.xml",
                     "position": {
-                        "startLine": 6,
+                        "startLine": 8,
                         "startColumn": 4,
-                        "startOffset": 450,
-                        "endColumn": 106,
-                        "endOffset": 552
+                        "startOffset": 722,
+                        "endColumn": 131,
+                        "endOffset": 849
                     }
                 }
             },
@@ -804,18 +804,18 @@
                 "to": {
                     "startLine": 44,
                     "startColumn": 4,
-                    "startOffset": 4177,
+                    "startOffset": 4251,
                     "endColumn": 96,
-                    "endOffset": 4269
+                    "endOffset": 4343
                 },
                 "from": {
-                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\values-pt\\values-pt.xml",
+                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.0.0\\res\\values-pt\\values-pt.xml",
                     "position": {
-                        "startLine": 7,
+                        "startLine": 9,
                         "startColumn": 4,
-                        "startOffset": 557,
+                        "startOffset": 854,
                         "endColumn": 96,
-                        "endOffset": 649
+                        "endOffset": 946
                     }
                 }
             },
@@ -823,18 +823,18 @@
                 "to": {
                     "startLine": 45,
                     "startColumn": 4,
-                    "startOffset": 4274,
-                    "endColumn": 95,
-                    "endOffset": 4365
+                    "startOffset": 4348,
+                    "endColumn": 99,
+                    "endOffset": 4443
                 },
                 "from": {
-                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\values-pt\\values-pt.xml",
+                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.0.0\\res\\values-pt\\values-pt.xml",
                     "position": {
-                        "startLine": 8,
+                        "startLine": 10,
                         "startColumn": 4,
-                        "startOffset": 654,
-                        "endColumn": 95,
-                        "endOffset": 745
+                        "startOffset": 951,
+                        "endColumn": 99,
+                        "endOffset": 1046
                     }
                 }
             },
@@ -842,18 +842,18 @@
                 "to": {
                     "startLine": 46,
                     "startColumn": 4,
-                    "startOffset": 4370,
-                    "endColumn": 94,
-                    "endOffset": 4460
+                    "startOffset": 4448,
+                    "endColumn": 125,
+                    "endOffset": 4569
                 },
                 "from": {
-                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\values-pt\\values-pt.xml",
+                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.0.0\\res\\values-pt\\values-pt.xml",
                     "position": {
-                        "startLine": 9,
+                        "startLine": 11,
                         "startColumn": 4,
-                        "startOffset": 750,
-                        "endColumn": 94,
-                        "endOffset": 840
+                        "startOffset": 1051,
+                        "endColumn": 125,
+                        "endOffset": 1172
                     }
                 }
             },
@@ -861,18 +861,18 @@
                 "to": {
                     "startLine": 47,
                     "startColumn": 4,
-                    "startOffset": 4465,
-                    "endColumn": 93,
-                    "endOffset": 4554
+                    "startOffset": 4574,
+                    "endColumn": 112,
+                    "endOffset": 4682
                 },
                 "from": {
-                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\values-pt\\values-pt.xml",
+                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.0.0\\res\\values-pt\\values-pt.xml",
                     "position": {
-                        "startLine": 10,
+                        "startLine": 12,
                         "startColumn": 4,
-                        "startOffset": 845,
-                        "endColumn": 93,
-                        "endOffset": 934
+                        "startOffset": 1177,
+                        "endColumn": 112,
+                        "endOffset": 1285
                     }
                 }
             },
@@ -880,18 +880,18 @@
                 "to": {
                     "startLine": 48,
                     "startColumn": 4,
-                    "startOffset": 4559,
-                    "endColumn": 119,
-                    "endOffset": 4674
+                    "startOffset": 4687,
+                    "endColumn": 86,
+                    "endOffset": 4769
                 },
                 "from": {
-                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\values-pt\\values-pt.xml",
+                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.0.0\\res\\values-pt\\values-pt.xml",
                     "position": {
-                        "startLine": 11,
+                        "startLine": 13,
                         "startColumn": 4,
-                        "startOffset": 939,
-                        "endColumn": 119,
-                        "endOffset": 1054
+                        "startOffset": 1290,
+                        "endColumn": 86,
+                        "endOffset": 1372
                     }
                 }
             },
@@ -899,18 +899,18 @@
                 "to": {
                     "startLine": 49,
                     "startColumn": 4,
-                    "startOffset": 4679,
-                    "endColumn": 115,
-                    "endOffset": 4790
+                    "startOffset": 4774,
+                    "endColumn": 98,
+                    "endOffset": 4868
                 },
                 "from": {
-                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\values-pt\\values-pt.xml",
+                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.0.0\\res\\values-pt\\values-pt.xml",
                     "position": {
-                        "startLine": 12,
+                        "startLine": 14,
                         "startColumn": 4,
-                        "startOffset": 1059,
-                        "endColumn": 115,
-                        "endOffset": 1170
+                        "startOffset": 1377,
+                        "endColumn": 98,
+                        "endOffset": 1471
                     }
                 }
             },
@@ -918,104 +918,9 @@
                 "to": {
                     "startLine": 50,
                     "startColumn": 4,
-                    "startOffset": 4795,
+                    "startOffset": 4873,
                     "endColumn": 84,
-                    "endOffset": 4875
-                },
-                "from": {
-                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\values-pt\\values-pt.xml",
-                    "position": {
-                        "startLine": 13,
-                        "startColumn": 4,
-                        "startOffset": 1175,
-                        "endColumn": 84,
-                        "endOffset": 1255
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 51,
-                    "startColumn": 4,
-                    "startOffset": 4880,
-                    "endColumn": 86,
-                    "endOffset": 4962
-                },
-                "from": {
-                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\values-pt\\values-pt.xml",
-                    "position": {
-                        "startLine": 14,
-                        "startColumn": 4,
-                        "startOffset": 1260,
-                        "endColumn": 86,
-                        "endOffset": 1342
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 52,
-                    "startColumn": 4,
-                    "startOffset": 4967,
-                    "endColumn": 100,
-                    "endOffset": 5063
-                },
-                "from": {
-                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\values-pt\\values-pt.xml",
-                    "position": {
-                        "startLine": 15,
-                        "startColumn": 4,
-                        "startOffset": 1347,
-                        "endColumn": 100,
-                        "endOffset": 1443
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 53,
-                    "startColumn": 4,
-                    "startOffset": 5068,
-                    "endColumn": 86,
-                    "endOffset": 5150
-                },
-                "from": {
-                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\values-pt\\values-pt.xml",
-                    "position": {
-                        "startLine": 16,
-                        "startColumn": 4,
-                        "startOffset": 1448,
-                        "endColumn": 86,
-                        "endOffset": 1530
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 54,
-                    "startColumn": 4,
-                    "startOffset": 5155,
-                    "endColumn": 98,
-                    "endOffset": 5249
-                },
-                "from": {
-                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\values-pt\\values-pt.xml",
-                    "position": {
-                        "startLine": 17,
-                        "startColumn": 4,
-                        "startOffset": 1535,
-                        "endColumn": 98,
-                        "endOffset": 1629
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 55,
-                    "startColumn": 4,
-                    "startOffset": 5254,
-                    "endColumn": 84,
-                    "endOffset": 5334
+                    "endOffset": 4953
                 },
                 "from": {
                     "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-pt\\values-pt.xml",
@@ -1030,11 +935,11 @@
             },
             {
                 "to": {
-                    "startLine": 56,
+                    "startLine": 51,
                     "startColumn": 4,
-                    "startOffset": 5339,
+                    "startOffset": 4958,
                     "endColumn": 100,
-                    "endOffset": 5435
+                    "endOffset": 5054
                 },
                 "from": {
                     "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-pt\\values-pt.xml",
@@ -1049,11 +954,11 @@
             },
             {
                 "to": {
-                    "startLine": 57,
+                    "startLine": 52,
                     "startColumn": 4,
-                    "startOffset": 5440,
+                    "startOffset": 5059,
                     "endColumn": 58,
-                    "endOffset": 5494
+                    "endOffset": 5113
                 },
                 "from": {
                     "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.journeyapps\\zxing-android-embedded\\3.2.0\\res\\values-pt\\values-pt.xml",
@@ -1068,11 +973,11 @@
             },
             {
                 "to": {
-                    "startLine": 58,
+                    "startLine": 53,
                     "startColumn": 4,
-                    "startOffset": 5499,
+                    "startOffset": 5118,
                     "endColumn": 46,
-                    "endOffset": 5541
+                    "endOffset": 5160
                 },
                 "from": {
                     "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.journeyapps\\zxing-android-embedded\\3.2.0\\res\\values-pt\\values-pt.xml",
@@ -1087,11 +992,11 @@
             },
             {
                 "to": {
-                    "startLine": 59,
+                    "startLine": 54,
                     "startColumn": 4,
-                    "startOffset": 5546,
+                    "startOffset": 5165,
                     "endColumn": 155,
-                    "endOffset": 5697
+                    "endOffset": 5316
                 },
                 "from": {
                     "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.journeyapps\\zxing-android-embedded\\3.2.0\\res\\values-pt\\values-pt.xml",
@@ -1106,11 +1011,11 @@
             },
             {
                 "to": {
-                    "startLine": 60,
+                    "startLine": 55,
                     "startColumn": 4,
-                    "startOffset": 5702,
+                    "startOffset": 5321,
                     "endColumn": 106,
-                    "endOffset": 5804
+                    "endOffset": 5423
                 },
                 "from": {
                     "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.journeyapps\\zxing-android-embedded\\3.2.0\\res\\values-pt\\values-pt.xml",

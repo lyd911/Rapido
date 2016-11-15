@@ -1,15 +1,15 @@
 [
     {
-        "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_send_button_icon.xml",
-        "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.15.0\\res\\drawable\\com_facebook_send_button_icon.xml"
+        "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_auth_dialog_cancel_background.xml",
+        "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.15.0\\res\\drawable\\com_facebook_auth_dialog_cancel_background.xml"
     },
     {
         "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_tick_mark_material.xml",
         "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\drawable\\abc_seekbar_tick_mark_material.xml"
     },
     {
-        "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_auth_dialog_cancel_background.xml",
-        "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.15.0\\res\\drawable\\com_facebook_auth_dialog_cancel_background.xml"
+        "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_send_button_icon.xml",
+        "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.15.0\\res\\drawable\\com_facebook_send_button_icon.xml"
     },
     {
         "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_expanded_controller_seekbar_thumb.xml",
@@ -24,12 +24,12 @@
         "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.8.0\\res\\drawable\\cast_ic_notification_forward30.xml"
     },
     {
-        "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_edit_text_material.xml",
-        "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\drawable\\abc_edit_text_material.xml"
-    },
-    {
         "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_clock.png",
         "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\src\\main\\res\\drawable\\ic_clock.png"
+    },
+    {
+        "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_edit_text_material.xml",
+        "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\drawable\\abc_edit_text_material.xml"
     },
     {
         "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_dark.xml",
@@ -53,7 +53,7 @@
     },
     {
         "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_icon_light.xml",
-        "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.8.0\\res\\drawable\\common_google_signin_btn_icon_light.xml"
+        "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.0.2\\res\\drawable\\common_google_signin_btn_icon_light.xml"
     },
     {
         "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_light.xml",
@@ -64,12 +64,16 @@
         "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\src\\main\\res\\drawable\\side_nav_bar.xml"
     },
     {
+        "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_notification_forward.xml",
+        "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.8.0\\res\\drawable\\cast_ic_notification_forward.xml"
+    },
+    {
         "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_expanded_controller_forward30.xml",
         "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.8.0\\res\\drawable\\cast_ic_expanded_controller_forward30.xml"
     },
     {
-        "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_notification_forward.xml",
-        "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.8.0\\res\\drawable\\cast_ic_notification_forward.xml"
+        "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_ic_media_route_connecting_mono_dark.xml",
+        "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.0.0\\res\\drawable\\mr_ic_media_route_connecting_mono_dark.xml"
     },
     {
         "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_switch_thumb_material.xml",
@@ -84,16 +88,16 @@
         "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.8.0\\res\\drawable\\cast_ic_notification_disconnect.xml"
     },
     {
-        "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_mini_controller_skip_prev.xml",
-        "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.8.0\\res\\drawable\\cast_ic_mini_controller_skip_prev.xml"
+        "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_go_search_api_material.xml",
+        "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\drawable\\abc_ic_go_search_api_material.xml"
     },
     {
         "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_ic_media_route_mono_dark.xml",
-        "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\drawable\\mr_ic_media_route_mono_dark.xml"
+        "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.0.0\\res\\drawable\\mr_ic_media_route_mono_dark.xml"
     },
     {
-        "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_go_search_api_material.xml",
-        "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\drawable\\abc_ic_go_search_api_material.xml"
+        "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_mini_controller_skip_prev.xml",
+        "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.8.0\\res\\drawable\\cast_ic_mini_controller_skip_prev.xml"
     },
     {
         "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_ic_close_dark.xml",
@@ -108,12 +112,12 @@
         "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.8.0\\res\\drawable\\cast_ic_mini_controller_play_large.xml"
     },
     {
-        "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_auth_dialog_background.xml",
-        "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.15.0\\res\\drawable\\com_facebook_auth_dialog_background.xml"
-    },
-    {
         "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\splash_01.png",
         "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\src\\main\\res\\drawable\\splash_01.png"
+    },
+    {
+        "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_auth_dialog_background.xml",
+        "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.15.0\\res\\drawable\\com_facebook_auth_dialog_background.xml"
     },
     {
         "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_button_send_background.xml",
@@ -125,7 +129,7 @@
     },
     {
         "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_ic_cast_light.xml",
-        "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\drawable\\mr_ic_cast_light.xml"
+        "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.0.0\\res\\drawable\\mr_ic_cast_light.xml"
     },
     {
         "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_notification_skip_prev.xml",
@@ -145,7 +149,11 @@
     },
     {
         "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_ic_media_route_mono_light.xml",
-        "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\drawable\\mr_ic_media_route_mono_light.xml"
+        "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.0.0\\res\\drawable\\mr_ic_media_route_mono_light.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_plus_signin_btn_icon_light.xml",
+        "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.0.2\\res\\drawable\\common_plus_signin_btn_icon_light.xml"
     },
     {
         "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_notification_play.xml",
@@ -173,7 +181,7 @@
     },
     {
         "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_icon_dark.xml",
-        "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.8.0\\res\\drawable\\common_google_signin_btn_icon_dark.xml"
+        "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.0.2\\res\\drawable\\common_google_signin_btn_icon_dark.xml"
     },
     {
         "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_notification_rewind10.xml",
@@ -265,7 +273,7 @@
     },
     {
         "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_text_dark.xml",
-        "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.8.0\\res\\drawable\\common_google_signin_btn_text_dark.xml"
+        "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.0.2\\res\\drawable\\common_google_signin_btn_text_dark.xml"
     },
     {
         "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_mini_controller_stop.xml",
@@ -277,7 +285,7 @@
     },
     {
         "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_ic_cast_dark.xml",
-        "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\drawable\\mr_ic_cast_dark.xml"
+        "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.0.0\\res\\drawable\\mr_ic_cast_dark.xml"
     },
     {
         "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_search_api_material.xml",
@@ -332,6 +340,14 @@
         "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\drawable\\abc_ratingbar_indicator_material.xml"
     },
     {
+        "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_plus_signin_btn_icon_dark.xml",
+        "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.0.2\\res\\drawable\\common_plus_signin_btn_icon_dark.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_plus_signin_btn_text_light.xml",
+        "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.0.2\\res\\drawable\\common_plus_signin_btn_text_light.xml"
+    },
+    {
         "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_spinner_textfield_background_material.xml",
         "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\drawable\\abc_spinner_textfield_background_material.xml"
     },
@@ -344,16 +360,20 @@
         "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\src\\main\\res\\drawable\\ic_distance.png"
     },
     {
+        "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\food_blur1.png",
+        "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\src\\main\\res\\drawable\\food_blur1.png"
+    },
+    {
         "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_internal_bg.xml",
         "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\drawable\\abc_cab_background_internal_bg.xml"
     },
     {
         "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_ic_pause_light.xml",
-        "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\drawable\\mr_ic_pause_light.xml"
+        "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.0.0\\res\\drawable\\mr_ic_pause_light.xml"
     },
     {
         "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_notification_connecting.xml",
-        "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast\\9.8.0\\res\\drawable\\cast_ic_notification_connecting.xml"
+        "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast\\9.0.2\\res\\drawable\\cast_ic_notification_connecting.xml"
     },
     {
         "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_icon_light_focused.xml",
@@ -366,6 +386,10 @@
     {
         "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_ic_media_route_on_light.xml",
         "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\drawable\\mr_ic_media_route_on_light.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_ic_settings_light.xml",
+        "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.0.0\\res\\drawable\\mr_ic_settings_light.xml"
     },
     {
         "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_ic_close_light.xml",
@@ -390,6 +414,10 @@
     {
         "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_small_material.xml",
         "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\drawable\\abc_ratingbar_small_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_ic_settings_dark.xml",
+        "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.0.0\\res\\drawable\\mr_ic_settings_dark.xml"
     },
     {
         "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_mini_controller_skip_next.xml",
@@ -445,7 +473,7 @@
     },
     {
         "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_ic_play_dark.xml",
-        "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\drawable\\mr_ic_play_dark.xml"
+        "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.0.0\\res\\drawable\\mr_ic_play_dark.xml"
     },
     {
         "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\navigation_empty_icon.xml",
@@ -453,7 +481,7 @@
     },
     {
         "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_ic_play_light.xml",
-        "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\drawable\\mr_ic_play_light.xml"
+        "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.0.0\\res\\drawable\\mr_ic_play_light.xml"
     },
     {
         "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_notification_rewind30.xml",
@@ -466,6 +494,10 @@
     {
         "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_notification_small_icon.xml",
         "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.8.0\\res\\drawable\\cast_ic_notification_small_icon.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_plus_signin_btn_text_dark.xml",
+        "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.0.2\\res\\drawable\\common_plus_signin_btn_text_dark.xml"
     },
     {
         "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_mini_controller_gradient_light.xml",
@@ -481,7 +513,7 @@
     },
     {
         "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_text_light.xml",
-        "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.8.0\\res\\drawable\\common_google_signin_btn_text_light.xml"
+        "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.0.2\\res\\drawable\\common_google_signin_btn_text_light.xml"
     },
     {
         "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\messenger_button_white_bg_round.xml",
@@ -497,7 +529,7 @@
     },
     {
         "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_ic_pause_dark.xml",
-        "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\drawable\\mr_ic_pause_dark.xml"
+        "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.0.0\\res\\drawable\\mr_ic_pause_dark.xml"
     },
     {
         "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_expanded_controller_play.xml",
@@ -514,5 +546,9 @@
     {
         "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_collapse.xml",
         "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\drawable\\ic_collapse.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_ic_media_route_connecting_mono_light.xml",
+        "source": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.0.0\\res\\drawable\\mr_ic_media_route_connecting_mono_light.xml"
     }
 ]

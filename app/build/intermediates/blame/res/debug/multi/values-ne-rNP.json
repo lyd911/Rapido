@@ -368,17 +368,17 @@
                     "startLine": 21,
                     "startColumn": 4,
                     "startOffset": 2104,
-                    "endColumn": 96,
-                    "endOffset": 2196
+                    "endColumn": 105,
+                    "endOffset": 2205
                 },
                 "from": {
-                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\values-ne-rNP\\values-ne-rNP.xml",
+                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.0.0\\res\\values-ne-rNP\\values-ne-rNP.xml",
                     "position": {
-                        "startLine": 2,
+                        "startLine": 4,
                         "startColumn": 4,
-                        "startOffset": 55,
-                        "endColumn": 96,
-                        "endOffset": 147
+                        "startOffset": 282,
+                        "endColumn": 105,
+                        "endOffset": 383
                     }
                 }
             },
@@ -386,18 +386,18 @@
                 "to": {
                     "startLine": 22,
                     "startColumn": 4,
-                    "startOffset": 2201,
-                    "endColumn": 102,
-                    "endOffset": 2299
+                    "startOffset": 2210,
+                    "endColumn": 121,
+                    "endOffset": 2327
                 },
                 "from": {
-                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\values-ne-rNP\\values-ne-rNP.xml",
+                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.0.0\\res\\values-ne-rNP\\values-ne-rNP.xml",
                     "position": {
-                        "startLine": 3,
+                        "startLine": 5,
                         "startColumn": 4,
-                        "startOffset": 152,
-                        "endColumn": 102,
-                        "endOffset": 250
+                        "startOffset": 388,
+                        "endColumn": 121,
+                        "endOffset": 505
                     }
                 }
             },
@@ -405,18 +405,18 @@
                 "to": {
                     "startLine": 23,
                     "startColumn": 4,
-                    "startOffset": 2304,
-                    "endColumn": 93,
-                    "endOffset": 2393
+                    "startOffset": 2332,
+                    "endColumn": 110,
+                    "endOffset": 2438
                 },
                 "from": {
-                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\values-ne-rNP\\values-ne-rNP.xml",
+                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.0.0\\res\\values-ne-rNP\\values-ne-rNP.xml",
                     "position": {
-                        "startLine": 4,
+                        "startLine": 6,
                         "startColumn": 4,
-                        "startOffset": 255,
-                        "endColumn": 93,
-                        "endOffset": 344
+                        "startOffset": 510,
+                        "endColumn": 110,
+                        "endOffset": 616
                     }
                 }
             },
@@ -424,18 +424,18 @@
                 "to": {
                     "startLine": 24,
                     "startColumn": 4,
-                    "startOffset": 2398,
-                    "endColumn": 92,
-                    "endOffset": 2486
+                    "startOffset": 2443,
+                    "endColumn": 112,
+                    "endOffset": 2551
                 },
                 "from": {
-                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\values-ne-rNP\\values-ne-rNP.xml",
+                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.0.0\\res\\values-ne-rNP\\values-ne-rNP.xml",
                     "position": {
-                        "startLine": 5,
+                        "startLine": 7,
                         "startColumn": 4,
-                        "startOffset": 349,
-                        "endColumn": 92,
-                        "endOffset": 437
+                        "startOffset": 621,
+                        "endColumn": 112,
+                        "endOffset": 729
                     }
                 }
             },
@@ -443,18 +443,18 @@
                 "to": {
                     "startLine": 25,
                     "startColumn": 4,
-                    "startOffset": 2491,
-                    "endColumn": 105,
-                    "endOffset": 2592
+                    "startOffset": 2556,
+                    "endColumn": 120,
+                    "endOffset": 2672
                 },
                 "from": {
-                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\values-ne-rNP\\values-ne-rNP.xml",
+                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.0.0\\res\\values-ne-rNP\\values-ne-rNP.xml",
                     "position": {
-                        "startLine": 6,
+                        "startLine": 8,
                         "startColumn": 4,
-                        "startOffset": 442,
-                        "endColumn": 105,
-                        "endOffset": 543
+                        "startOffset": 734,
+                        "endColumn": 120,
+                        "endOffset": 850
                     }
                 }
             },
@@ -462,18 +462,18 @@
                 "to": {
                     "startLine": 26,
                     "startColumn": 4,
-                    "startOffset": 2597,
-                    "endColumn": 104,
-                    "endOffset": 2697
+                    "startOffset": 2677,
+                    "endColumn": 100,
+                    "endOffset": 2773
                 },
                 "from": {
-                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\values-ne-rNP\\values-ne-rNP.xml",
+                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.0.0\\res\\values-ne-rNP\\values-ne-rNP.xml",
                     "position": {
-                        "startLine": 7,
+                        "startLine": 9,
                         "startColumn": 4,
-                        "startOffset": 548,
-                        "endColumn": 104,
-                        "endOffset": 648
+                        "startOffset": 855,
+                        "endColumn": 100,
+                        "endOffset": 951
                     }
                 }
             },
@@ -481,18 +481,18 @@
                 "to": {
                     "startLine": 27,
                     "startColumn": 4,
-                    "startOffset": 2702,
-                    "endColumn": 107,
-                    "endOffset": 2805
+                    "startOffset": 2778,
+                    "endColumn": 99,
+                    "endOffset": 2873
                 },
                 "from": {
-                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\values-ne-rNP\\values-ne-rNP.xml",
+                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.0.0\\res\\values-ne-rNP\\values-ne-rNP.xml",
                     "position": {
-                        "startLine": 8,
+                        "startLine": 10,
                         "startColumn": 4,
-                        "startOffset": 653,
-                        "endColumn": 107,
-                        "endOffset": 756
+                        "startOffset": 956,
+                        "endColumn": 99,
+                        "endOffset": 1051
                     }
                 }
             },
@@ -500,18 +500,18 @@
                 "to": {
                     "startLine": 28,
                     "startColumn": 4,
-                    "startOffset": 2810,
-                    "endColumn": 100,
-                    "endOffset": 2906
+                    "startOffset": 2878,
+                    "endColumn": 115,
+                    "endOffset": 2989
                 },
                 "from": {
-                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\values-ne-rNP\\values-ne-rNP.xml",
+                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.0.0\\res\\values-ne-rNP\\values-ne-rNP.xml",
                     "position": {
-                        "startLine": 9,
+                        "startLine": 11,
                         "startColumn": 4,
-                        "startOffset": 761,
-                        "endColumn": 100,
-                        "endOffset": 857
+                        "startOffset": 1056,
+                        "endColumn": 115,
+                        "endOffset": 1167
                     }
                 }
             },
@@ -519,18 +519,18 @@
                 "to": {
                     "startLine": 29,
                     "startColumn": 4,
-                    "startOffset": 2911,
-                    "endColumn": 102,
-                    "endOffset": 3009
+                    "startOffset": 2994,
+                    "endColumn": 108,
+                    "endOffset": 3098
                 },
                 "from": {
-                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\values-ne-rNP\\values-ne-rNP.xml",
+                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.0.0\\res\\values-ne-rNP\\values-ne-rNP.xml",
                     "position": {
-                        "startLine": 10,
+                        "startLine": 12,
                         "startColumn": 4,
-                        "startOffset": 862,
-                        "endColumn": 102,
-                        "endOffset": 960
+                        "startOffset": 1172,
+                        "endColumn": 108,
+                        "endOffset": 1276
                     }
                 }
             },
@@ -538,18 +538,18 @@
                 "to": {
                     "startLine": 30,
                     "startColumn": 4,
-                    "startOffset": 3014,
-                    "endColumn": 108,
-                    "endOffset": 3118
+                    "startOffset": 3103,
+                    "endColumn": 86,
+                    "endOffset": 3185
                 },
                 "from": {
-                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\values-ne-rNP\\values-ne-rNP.xml",
+                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.0.0\\res\\values-ne-rNP\\values-ne-rNP.xml",
                     "position": {
-                        "startLine": 11,
+                        "startLine": 13,
                         "startColumn": 4,
-                        "startOffset": 965,
-                        "endColumn": 108,
-                        "endOffset": 1069
+                        "startOffset": 1281,
+                        "endColumn": 86,
+                        "endOffset": 1363
                     }
                 }
             },
@@ -557,18 +557,18 @@
                 "to": {
                     "startLine": 31,
                     "startColumn": 4,
-                    "startOffset": 3123,
-                    "endColumn": 114,
-                    "endOffset": 3233
+                    "startOffset": 3190,
+                    "endColumn": 94,
+                    "endOffset": 3280
                 },
                 "from": {
-                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\values-ne-rNP\\values-ne-rNP.xml",
+                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.0.0\\res\\values-ne-rNP\\values-ne-rNP.xml",
                     "position": {
-                        "startLine": 12,
+                        "startLine": 14,
                         "startColumn": 4,
-                        "startOffset": 1074,
-                        "endColumn": 114,
-                        "endOffset": 1184
+                        "startOffset": 1368,
+                        "endColumn": 94,
+                        "endOffset": 1458
                     }
                 }
             },
@@ -576,104 +576,9 @@
                 "to": {
                     "startLine": 32,
                     "startColumn": 4,
-                    "startOffset": 3238,
-                    "endColumn": 88,
-                    "endOffset": 3322
-                },
-                "from": {
-                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\values-ne-rNP\\values-ne-rNP.xml",
-                    "position": {
-                        "startLine": 13,
-                        "startColumn": 4,
-                        "startOffset": 1189,
-                        "endColumn": 88,
-                        "endOffset": 1273
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 33,
-                    "startColumn": 4,
-                    "startOffset": 3327,
-                    "endColumn": 86,
-                    "endOffset": 3409
-                },
-                "from": {
-                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\values-ne-rNP\\values-ne-rNP.xml",
-                    "position": {
-                        "startLine": 14,
-                        "startColumn": 4,
-                        "startOffset": 1278,
-                        "endColumn": 86,
-                        "endOffset": 1360
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 34,
-                    "startColumn": 4,
-                    "startOffset": 3414,
-                    "endColumn": 95,
-                    "endOffset": 3505
-                },
-                "from": {
-                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\values-ne-rNP\\values-ne-rNP.xml",
-                    "position": {
-                        "startLine": 15,
-                        "startColumn": 4,
-                        "startOffset": 1365,
-                        "endColumn": 95,
-                        "endOffset": 1456
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 35,
-                    "startColumn": 4,
-                    "startOffset": 3510,
-                    "endColumn": 86,
-                    "endOffset": 3592
-                },
-                "from": {
-                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\values-ne-rNP\\values-ne-rNP.xml",
-                    "position": {
-                        "startLine": 16,
-                        "startColumn": 4,
-                        "startOffset": 1461,
-                        "endColumn": 86,
-                        "endOffset": 1543
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 36,
-                    "startColumn": 4,
-                    "startOffset": 3597,
-                    "endColumn": 94,
-                    "endOffset": 3687
-                },
-                "from": {
-                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\values-ne-rNP\\values-ne-rNP.xml",
-                    "position": {
-                        "startLine": 17,
-                        "startColumn": 4,
-                        "startOffset": 1548,
-                        "endColumn": 94,
-                        "endOffset": 1638
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 37,
-                    "startColumn": 4,
-                    "startOffset": 3692,
+                    "startOffset": 3285,
                     "endColumn": 85,
-                    "endOffset": 3773
+                    "endOffset": 3366
                 },
                 "from": {
                     "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-ne-rNP\\values-ne-rNP.xml",
@@ -688,11 +593,11 @@
             },
             {
                 "to": {
-                    "startLine": 38,
+                    "startLine": 33,
                     "startColumn": 4,
-                    "startOffset": 3778,
+                    "startOffset": 3371,
                     "endColumn": 100,
-                    "endOffset": 3874
+                    "endOffset": 3467
                 },
                 "from": {
                     "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-ne-rNP\\values-ne-rNP.xml",

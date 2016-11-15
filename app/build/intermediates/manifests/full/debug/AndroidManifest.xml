@@ -91,11 +91,6 @@
 
         <!-- Google Maps API Key -->
         <meta-data
-            android:name="com.google.android.maps.v2.API_KEY_MAPS"
-            android:value="@string/google_maps_key" />
-
-        <!-- Google Places API Key -->
-        <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
 
@@ -105,8 +100,6 @@
         <activity android:name="com.cs442.iitc_fall2016_g13.mad_proj.NearbyPlaces" />
         <activity android:name="com.cs442.iitc_fall2016_g13.mad_proj.Map_distance.MapsActivity" />
         <activity android:name="com.cs442.iitc_fall2016_g13.mad_proj.Map_alert.MapsActivity_direction" />
-        <activity android:name="com.cs442.iitc_fall2016_g13.mad_proj.Payment.Paypal" />
-        <activity android:name="com.cs442.iitc_fall2016_g13.mad_proj.Payment.PaypalConfirmation" />
         <activity
             android:name="com.cs442.iitc_fall2016_g13.mad_proj.ServerConnect.LoginActivity"
             android:label="@string/title_activity_login" />
@@ -123,9 +116,9 @@
             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
         <activity android:name="com.cs442.iitc_fall2016_g13.mad_proj.FB_Signup" />
         <activity android:name="com.cs442.iitc_fall2016_g13.mad_proj.LoadData" />
-        <activity android:name="com.cs442.iitc_fall2016_g13.mad_proj.Seller.SellerMainActivity" />
-        <activity android:name="com.cs442.iitc_fall2016_g13.mad_proj.Seller.SellerOrderHistoryActivity" />
-        <activity android:name="com.cs442.iitc_fall2016_g13.mad_proj.Seller.SellerOrderDetailActivity" />
+        <activity android:name="com.cs442.iitc_fall2016_g13.mad_proj.SellerMainActivity" />
+        <activity android:name="com.cs442.iitc_fall2016_g13.mad_proj.SellerOrderHistoryActivity" />
+        <activity android:name="com.cs442.iitc_fall2016_g13.mad_proj.SellerOrderDetailActivity" />
         <activity android:name="com.cs442.iitc_fall2016_g13.mad_proj.OrderHistory" />
         <activity android:name="com.cs442.iitc_fall2016_g13.mad_proj.MenuWeb" />
         <activity android:name="com.cs442.iitc_fall2016_g13.mad_proj.FoodMenu" />
@@ -161,11 +154,12 @@ Service handling Google Sign-In user revocation. For apps that do not integrate 
             android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
             android:exported="true"
             android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" />
-
-        <receiver android:name="com.google.android.gms.cast.framework.media.MediaIntentReceiver" />
-
-        <service android:name="com.google.android.gms.cast.framework.media.MediaNotificationService" />
-        <service android:name="com.google.android.gms.cast.framework.ReconnectionService" />
+        <service
+            android:name="com.google.firebase.crash.internal.service.FirebaseCrashReceiverService"
+            android:process=":background_crash" />
+        <service
+            android:name="com.google.firebase.crash.internal.service.FirebaseCrashSenderService"
+            android:process=":background_crash" />
         <!--
  FirebaseMessagingService performs security checks at runtime,
              no need for explicit permissions despite exported="true"
@@ -197,15 +191,9 @@ Service handling Google Sign-In user revocation. For apps that do not integrate 
 
         <receiver
             android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
-            android:enabled="true"
-            android:exported="false" >
-        </receiver>
-        <receiver
-            android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver"
-            android:enabled="true"
-            android:permission="android.permission.INSTALL_PACKAGES" >
+            android:enabled="true" >
             <intent-filter>
-                <action android:name="com.android.vending.INSTALL_REFERRER" />
+                <action android:name="com.google.android.gms.measurement.UPLOAD" />
             </intent-filter>
         </receiver>
 
@@ -244,16 +232,16 @@ Service handling Google Sign-In user revocation. For apps that do not integrate 
             </intent-filter>
         </service>
 
+        <activity
+            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
         <provider
             android:name="com.google.firebase.provider.FirebaseInitProvider"
             android:authorities="com.cs442.iitc_fall2016_g13.mad_proj.firebaseinitprovider"
             android:exported="false"
             android:initOrder="100" />
-
-        <activity
-            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-            android:exported="false"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
 
         <meta-data
             android:name="com.google.android.gms.version"

@@ -368,730 +368,8 @@
                     "startLine": 21,
                     "startColumn": 4,
                     "startOffset": 2078,
-                    "endColumn": 73,
-                    "endOffset": 2147
-                },
-                "from": {
-                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-ads\\9.8.0\\res\\values-hr\\values.xml",
-                    "position": {
-                        "startLine": 4,
-                        "startColumn": 0,
-                        "startOffset": 237,
-                        "endColumn": 69,
-                        "endOffset": 306
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 22,
-                    "startColumn": 4,
-                    "startOffset": 2152,
-                    "endColumn": 77,
-                    "endOffset": 2225
-                },
-                "from": {
-                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.8.0\\res\\values-hr\\values.xml",
-                    "position": {
-                        "startLine": 4,
-                        "startColumn": 0,
-                        "startOffset": 298,
-                        "endColumn": 73,
-                        "endOffset": 371
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 23,
-                    "startColumn": 4,
-                    "startOffset": 2230,
-                    "endColumn": 105,
-                    "endOffset": 2331
-                },
-                "from": {
-                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.8.0\\res\\values-hr\\values.xml",
-                    "position": {
-                        "startLine": 5,
-                        "startColumn": 0,
-                        "startOffset": 372,
-                        "endColumn": 101,
-                        "endOffset": 473
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 24,
-                    "startColumn": 4,
-                    "startOffset": 2336,
-                    "endColumn": 86,
-                    "endOffset": 2418
-                },
-                "from": {
-                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.8.0\\res\\values-hr\\values.xml",
-                    "position": {
-                        "startLine": 6,
-                        "startColumn": 0,
-                        "startOffset": 474,
-                        "endColumn": 82,
-                        "endOffset": 556
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 25,
-                    "startColumn": 4,
-                    "startOffset": 2423,
-                    "endColumn": 112,
-                    "endOffset": 2531
-                },
-                "from": {
-                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.8.0\\res\\values-hr\\values.xml",
-                    "position": {
-                        "startLine": 7,
-                        "startColumn": 0,
-                        "startOffset": 557,
-                        "endColumn": 108,
-                        "endOffset": 665
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 26,
-                    "startColumn": 4,
-                    "startOffset": 2536,
-                    "endColumn": 86,
-                    "endOffset": 2618
-                },
-                "from": {
-                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.8.0\\res\\values-hr\\values.xml",
-                    "position": {
-                        "startLine": 8,
-                        "startColumn": 0,
-                        "startOffset": 666,
-                        "endColumn": 82,
-                        "endOffset": 748
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 27,
-                    "startColumn": 4,
-                    "startOffset": 2623,
-                    "endColumn": 113,
-                    "endOffset": 2732
-                },
-                "from": {
-                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.8.0\\res\\values-hr\\values.xml",
-                    "position": {
-                        "startLine": 9,
-                        "startColumn": 0,
-                        "startOffset": 749,
-                        "endColumn": 109,
-                        "endOffset": 858
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 28,
-                    "startColumn": 4,
-                    "startOffset": 2737,
-                    "endColumn": 117,
-                    "endOffset": 2850
-                },
-                "from": {
-                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.8.0\\res\\values-hr\\values.xml",
-                    "position": {
-                        "startLine": 10,
-                        "startColumn": 0,
-                        "startOffset": 859,
-                        "endColumn": 113,
-                        "endOffset": 972
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 29,
-                    "startColumn": 4,
-                    "startOffset": 2855,
-                    "endColumn": 120,
-                    "endOffset": 2971
-                },
-                "from": {
-                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.8.0\\res\\values-hr\\values.xml",
-                    "position": {
-                        "startLine": 11,
-                        "startColumn": 0,
-                        "startOffset": 973,
-                        "endColumn": 116,
-                        "endOffset": 1089
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 30,
-                    "startColumn": 4,
-                    "startOffset": 2976,
-                    "endColumn": 102,
-                    "endOffset": 3074
-                },
-                "from": {
-                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.8.0\\res\\values-hr\\values.xml",
-                    "position": {
-                        "startLine": 12,
-                        "startColumn": 0,
-                        "startOffset": 1090,
-                        "endColumn": 98,
-                        "endOffset": 1188
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 31,
-                    "startColumn": 4,
-                    "startOffset": 3079,
-                    "endColumn": 105,
-                    "endOffset": 3180
-                },
-                "from": {
-                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.8.0\\res\\values-hr\\values.xml",
-                    "position": {
-                        "startLine": 13,
-                        "startColumn": 0,
-                        "startOffset": 1189,
-                        "endColumn": 101,
-                        "endOffset": 1290
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 32,
-                    "startColumn": 4,
-                    "startOffset": 3185,
-                    "endColumn": 80,
-                    "endOffset": 3261
-                },
-                "from": {
-                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.8.0\\res\\values-hr\\values.xml",
-                    "position": {
-                        "startLine": 14,
-                        "startColumn": 0,
-                        "startOffset": 1291,
-                        "endColumn": 76,
-                        "endOffset": 1367
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 33,
-                    "startColumn": 4,
-                    "startOffset": 3266,
-                    "endColumn": 97,
-                    "endOffset": 3359
-                },
-                "from": {
-                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.8.0\\res\\values-hr\\values.xml",
-                    "position": {
-                        "startLine": 15,
-                        "startColumn": 0,
-                        "startOffset": 1368,
-                        "endColumn": 93,
-                        "endOffset": 1461
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 34,
-                    "startColumn": 4,
-                    "startOffset": 3364,
-                    "endColumn": 100,
-                    "endOffset": 3460
-                },
-                "from": {
-                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.8.0\\res\\values-hr\\values.xml",
-                    "position": {
-                        "startLine": 16,
-                        "startColumn": 0,
-                        "startOffset": 1462,
-                        "endColumn": 96,
-                        "endOffset": 1558
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 35,
-                    "startColumn": 4,
-                    "startOffset": 3465,
-                    "endColumn": 107,
-                    "endOffset": 3568
-                },
-                "from": {
-                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.8.0\\res\\values-hr\\values.xml",
-                    "position": {
-                        "startLine": 17,
-                        "startColumn": 0,
-                        "startOffset": 1559,
-                        "endColumn": 103,
-                        "endOffset": 1662
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 36,
-                    "startColumn": 4,
-                    "startOffset": 3573,
-                    "endColumn": 81,
-                    "endOffset": 3650
-                },
-                "from": {
-                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.8.0\\res\\values-hr\\values.xml",
-                    "position": {
-                        "startLine": 18,
-                        "startColumn": 0,
-                        "startOffset": 1663,
-                        "endColumn": 77,
-                        "endOffset": 1740
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 37,
-                    "startColumn": 4,
-                    "startOffset": 3655,
-                    "endColumn": 143,
-                    "endOffset": 3794
-                },
-                "from": {
-                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast\\9.8.0\\res\\values-hr\\values.xml",
-                    "position": {
-                        "startLine": 4,
-                        "startColumn": 0,
-                        "startOffset": 288,
-                        "endColumn": 143,
-                        "endOffset": 431
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 38,
-                    "startColumn": 4,
-                    "startOffset": 3799,
-                    "endColumn": 147,
-                    "endOffset": 3942
-                },
-                "from": {
-                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast\\9.8.0\\res\\values-hr\\values.xml",
-                    "position": {
-                        "startLine": 5,
-                        "startColumn": 0,
-                        "startOffset": 432,
-                        "endColumn": 147,
-                        "endOffset": 579
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 39,
-                    "startColumn": 4,
-                    "startOffset": 3947,
-                    "endColumn": 99,
-                    "endOffset": 4042
-                },
-                "from": {
-                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast\\9.8.0\\res\\values-hr\\values.xml",
-                    "position": {
-                        "startLine": 6,
-                        "startColumn": 0,
-                        "startOffset": 580,
-                        "endColumn": 95,
-                        "endOffset": 675
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 40,
-                    "startColumn": 4,
-                    "startOffset": 4047,
-                    "endColumn": 77,
-                    "endOffset": 4120
-                },
-                "from": {
-                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.8.0\\res\\values-hr\\values.xml",
-                    "position": {
-                        "startLine": 19,
-                        "startColumn": 0,
-                        "startOffset": 1741,
-                        "endColumn": 73,
-                        "endOffset": 1814
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 41,
-                    "startColumn": 4,
-                    "startOffset": 4125,
-                    "endColumn": 80,
-                    "endOffset": 4201
-                },
-                "from": {
-                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.8.0\\res\\values-hr\\values.xml",
-                    "position": {
-                        "startLine": 20,
-                        "startColumn": 0,
-                        "startOffset": 1815,
-                        "endColumn": 76,
-                        "endOffset": 1891
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 42,
-                    "startColumn": 4,
-                    "startOffset": 4206,
-                    "endColumn": 77,
-                    "endOffset": 4279
-                },
-                "from": {
-                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.8.0\\res\\values-hr\\values.xml",
-                    "position": {
-                        "startLine": 21,
-                        "startColumn": 0,
-                        "startOffset": 1892,
-                        "endColumn": 73,
-                        "endOffset": 1965
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 43,
-                    "startColumn": 4,
-                    "startOffset": 4284,
-                    "endColumn": 94,
-                    "endOffset": 4374
-                },
-                "from": {
-                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.8.0\\res\\values-hr\\values.xml",
-                    "position": {
-                        "startLine": 22,
-                        "startColumn": 0,
-                        "startOffset": 1966,
-                        "endColumn": 90,
-                        "endOffset": 2056
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 44,
-                    "startColumn": 4,
-                    "startOffset": 4379,
-                    "endColumn": 97,
-                    "endOffset": 4472
-                },
-                "from": {
-                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.8.0\\res\\values-hr\\values.xml",
-                    "position": {
-                        "startLine": 23,
-                        "startColumn": 0,
-                        "startOffset": 2057,
-                        "endColumn": 93,
-                        "endOffset": 2150
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 45,
-                    "startColumn": 4,
-                    "startOffset": 4477,
-                    "endColumn": 108,
-                    "endOffset": 4581
-                },
-                "from": {
-                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.8.0\\res\\values-hr\\values.xml",
-                    "position": {
-                        "startLine": 24,
-                        "startColumn": 0,
-                        "startOffset": 2151,
-                        "endColumn": 104,
-                        "endOffset": 2255
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 46,
-                    "startColumn": 4,
-                    "startOffset": 4586,
-                    "endColumn": 100,
-                    "endOffset": 4682
-                },
-                "from": {
-                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.8.0\\res\\values-hr\\values.xml",
-                    "position": {
-                        "startLine": 25,
-                        "startColumn": 0,
-                        "startOffset": 2256,
-                        "endColumn": 96,
-                        "endOffset": 2352
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 47,
-                    "startColumn": 4,
-                    "startOffset": 4687,
-                    "endColumn": 101,
-                    "endOffset": 4784
-                },
-                "from": {
-                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.8.0\\res\\values-hr\\values.xml",
-                    "position": {
-                        "startLine": 26,
-                        "startColumn": 0,
-                        "startOffset": 2353,
-                        "endColumn": 97,
-                        "endOffset": 2450
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 48,
-                    "startColumn": 4,
-                    "startOffset": 4789,
-                    "endColumn": 76,
-                    "endOffset": 4861
-                },
-                "from": {
-                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.8.0\\res\\values-hr\\values.xml",
-                    "position": {
-                        "startLine": 27,
-                        "startColumn": 0,
-                        "startOffset": 2451,
-                        "endColumn": 72,
-                        "endOffset": 2523
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 49,
-                    "startColumn": 4,
-                    "startOffset": 4866,
-                    "endColumn": 101,
-                    "endOffset": 4963
-                },
-                "from": {
-                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.8.0\\res\\values-hr\\values.xml",
-                    "position": {
-                        "startLine": 28,
-                        "startColumn": 0,
-                        "startOffset": 2524,
-                        "endColumn": 97,
-                        "endOffset": 2621
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 50,
-                    "startColumn": 4,
-                    "startOffset": 4968,
-                    "endColumn": 101,
-                    "endOffset": 5065
-                },
-                "from": {
-                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.8.0\\res\\values-hr\\values.xml",
-                    "position": {
-                        "startLine": 29,
-                        "startColumn": 0,
-                        "startOffset": 2622,
-                        "endColumn": 97,
-                        "endOffset": 2719
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 51,
-                    "startColumn": 4,
-                    "startOffset": 5070,
-                    "endColumn": 100,
-                    "endOffset": 5166
-                },
-                "from": {
-                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.8.0\\res\\values-hr\\values.xml",
-                    "position": {
-                        "startLine": 30,
-                        "startColumn": 0,
-                        "startOffset": 2720,
-                        "endColumn": 96,
-                        "endOffset": 2816
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 52,
-                    "startColumn": 4,
-                    "startOffset": 5171,
-                    "endColumn": 143,
-                    "endOffset": 5310
-                },
-                "from": {
-                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.8.0\\res\\values-hr\\values.xml",
-                    "position": {
-                        "startLine": 31,
-                        "startColumn": 0,
-                        "startOffset": 2817,
-                        "endColumn": 143,
-                        "endOffset": 2960
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 53,
-                    "startColumn": 4,
-                    "startOffset": 5315,
-                    "endColumn": 126,
-                    "endOffset": 5437
-                },
-                "from": {
-                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.8.0\\res\\values-hr\\values.xml",
-                    "position": {
-                        "startLine": 32,
-                        "startColumn": 0,
-                        "startOffset": 2961,
-                        "endColumn": 122,
-                        "endOffset": 3083
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 54,
-                    "startColumn": 4,
-                    "startOffset": 5442,
-                    "endColumn": 131,
-                    "endOffset": 5569
-                },
-                "from": {
-                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.8.0\\res\\values-hr\\values.xml",
-                    "position": {
-                        "startLine": 33,
-                        "startColumn": 0,
-                        "startOffset": 3084,
-                        "endColumn": 127,
-                        "endOffset": 3211
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 55,
-                    "startColumn": 4,
-                    "startOffset": 5574,
-                    "endColumn": 95,
-                    "endOffset": 5665
-                },
-                "from": {
-                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.8.0\\res\\values-hr\\values.xml",
-                    "position": {
-                        "startLine": 34,
-                        "startColumn": 0,
-                        "startOffset": 3212,
-                        "endColumn": 91,
-                        "endOffset": 3303
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 56,
-                    "startColumn": 4,
-                    "startOffset": 5670,
-                    "endColumn": 94,
-                    "endOffset": 5760
-                },
-                "from": {
-                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.8.0\\res\\values-hr\\values.xml",
-                    "position": {
-                        "startLine": 35,
-                        "startColumn": 0,
-                        "startOffset": 3304,
-                        "endColumn": 90,
-                        "endOffset": 3394
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 57,
-                    "startColumn": 4,
-                    "startOffset": 5765,
-                    "endColumn": 102,
-                    "endOffset": 5863
-                },
-                "from": {
-                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.8.0\\res\\values-hr\\values.xml",
-                    "position": {
-                        "startLine": 36,
-                        "startColumn": 0,
-                        "startOffset": 3395,
-                        "endColumn": 98,
-                        "endOffset": 3493
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 58,
-                    "startColumn": 4,
-                    "startOffset": 5868,
-                    "endColumn": 82,
-                    "endOffset": 5946
-                },
-                "from": {
-                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.8.0\\res\\values-hr\\values.xml",
-                    "position": {
-                        "startLine": 37,
-                        "startColumn": 0,
-                        "startOffset": 3494,
-                        "endColumn": 78,
-                        "endOffset": 3572
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 59,
-                    "startColumn": 4,
-                    "startOffset": 5951,
                     "endColumn": 162,
-                    "endOffset": 6109
+                    "endOffset": 2236
                 },
                 "from": {
                     "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.15.0\\res\\values-hr\\values-hr.xml",
@@ -1106,11 +384,11 @@
             },
             {
                 "to": {
-                    "startLine": 60,
+                    "startLine": 22,
                     "startColumn": 4,
-                    "startOffset": 6114,
+                    "startOffset": 2241,
                     "endColumn": 130,
-                    "endOffset": 6240
+                    "endOffset": 2367
                 },
                 "from": {
                     "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.15.0\\res\\values-hr\\values-hr.xml",
@@ -1125,11 +403,11 @@
             },
             {
                 "to": {
-                    "startLine": 61,
+                    "startLine": 23,
                     "startColumn": 4,
-                    "startOffset": 6245,
+                    "startOffset": 2372,
                     "endColumn": 135,
-                    "endOffset": 6376
+                    "endOffset": 2503
                 },
                 "from": {
                     "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.15.0\\res\\values-hr\\values-hr.xml",
@@ -1144,11 +422,11 @@
             },
             {
                 "to": {
-                    "startLine": 62,
+                    "startLine": 24,
                     "startColumn": 4,
-                    "startOffset": 6381,
+                    "startOffset": 2508,
                     "endColumn": 106,
-                    "endOffset": 6483
+                    "endOffset": 2610
                 },
                 "from": {
                     "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.15.0\\res\\values-hr\\values-hr.xml",
@@ -1163,11 +441,11 @@
             },
             {
                 "to": {
-                    "startLine": 63,
+                    "startLine": 25,
                     "startColumn": 4,
-                    "startOffset": 6488,
+                    "startOffset": 2615,
                     "endColumn": 84,
-                    "endOffset": 6568
+                    "endOffset": 2695
                 },
                 "from": {
                     "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.15.0\\res\\values-hr\\values-hr.xml",
@@ -1182,11 +460,11 @@
             },
             {
                 "to": {
-                    "startLine": 64,
+                    "startLine": 26,
                     "startColumn": 4,
-                    "startOffset": 6573,
+                    "startOffset": 2700,
                     "endColumn": 74,
-                    "endOffset": 6643
+                    "endOffset": 2770
                 },
                 "from": {
                     "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.15.0\\res\\values-hr\\values-hr.xml",
@@ -1201,11 +479,11 @@
             },
             {
                 "to": {
-                    "startLine": 65,
+                    "startLine": 27,
                     "startColumn": 4,
-                    "startOffset": 6648,
+                    "startOffset": 2775,
                     "endColumn": 69,
-                    "endOffset": 6713
+                    "endOffset": 2840
                 },
                 "from": {
                     "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.15.0\\res\\values-hr\\values-hr.xml",
@@ -1220,11 +498,11 @@
             },
             {
                 "to": {
-                    "startLine": 66,
+                    "startLine": 28,
                     "startColumn": 4,
-                    "startOffset": 6718,
+                    "startOffset": 2845,
                     "endColumn": 73,
-                    "endOffset": 6787
+                    "endOffset": 2914
                 },
                 "from": {
                     "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.15.0\\res\\values-hr\\values-hr.xml",
@@ -1239,11 +517,11 @@
             },
             {
                 "to": {
-                    "startLine": 67,
+                    "startLine": 29,
                     "startColumn": 4,
-                    "startOffset": 6792,
+                    "startOffset": 2919,
                     "endColumn": 75,
-                    "endOffset": 6863
+                    "endOffset": 2990
                 },
                 "from": {
                     "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.15.0\\res\\values-hr\\values-hr.xml",
@@ -1258,11 +536,11 @@
             },
             {
                 "to": {
-                    "startLine": 68,
+                    "startLine": 30,
                     "startColumn": 4,
-                    "startOffset": 6868,
+                    "startOffset": 2995,
                     "endColumn": 93,
-                    "endOffset": 6957
+                    "endOffset": 3084
                 },
                 "from": {
                     "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.15.0\\res\\values-hr\\values-hr.xml",
@@ -1277,11 +555,11 @@
             },
             {
                 "to": {
-                    "startLine": 69,
+                    "startLine": 31,
                     "startColumn": 4,
-                    "startOffset": 6962,
+                    "startOffset": 3089,
                     "endColumn": 75,
-                    "endOffset": 7033
+                    "endOffset": 3160
                 },
                 "from": {
                     "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.15.0\\res\\values-hr\\values-hr.xml",
@@ -1296,11 +574,11 @@
             },
             {
                 "to": {
-                    "startLine": 70,
+                    "startLine": 32,
                     "startColumn": 4,
-                    "startOffset": 7038,
+                    "startOffset": 3165,
                     "endColumn": 75,
-                    "endOffset": 7109
+                    "endOffset": 3236
                 },
                 "from": {
                     "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.15.0\\res\\values-hr\\values-hr.xml",
@@ -1315,11 +593,11 @@
             },
             {
                 "to": {
-                    "startLine": 71,
+                    "startLine": 33,
                     "startColumn": 4,
-                    "startOffset": 7114,
+                    "startOffset": 3241,
                     "endColumn": 84,
-                    "endOffset": 7194
+                    "endOffset": 3321
                 },
                 "from": {
                     "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.15.0\\res\\values-hr\\values-hr.xml",
@@ -1334,11 +612,11 @@
             },
             {
                 "to": {
-                    "startLine": 72,
+                    "startLine": 34,
                     "startColumn": 4,
-                    "startOffset": 7199,
+                    "startOffset": 3326,
                     "endColumn": 102,
-                    "endOffset": 7297
+                    "endOffset": 3424
                 },
                 "from": {
                     "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.15.0\\res\\values-hr\\values-hr.xml",
@@ -1353,11 +631,11 @@
             },
             {
                 "to": {
-                    "startLine": 73,
+                    "startLine": 35,
                     "startColumn": 4,
-                    "startOffset": 7302,
+                    "startOffset": 3429,
                     "endColumn": 65,
-                    "endOffset": 7363
+                    "endOffset": 3490
                 },
                 "from": {
                     "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.15.0\\res\\values-hr\\values-hr.xml",
@@ -1372,11 +650,11 @@
             },
             {
                 "to": {
-                    "startLine": 74,
+                    "startLine": 36,
                     "startColumn": 4,
-                    "startOffset": 7368,
+                    "startOffset": 3495,
                     "endColumn": 65,
-                    "endOffset": 7429
+                    "endOffset": 3556
                 },
                 "from": {
                     "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.15.0\\res\\values-hr\\values-hr.xml",
@@ -1391,11 +669,11 @@
             },
             {
                 "to": {
-                    "startLine": 75,
+                    "startLine": 37,
                     "startColumn": 4,
-                    "startOffset": 7434,
+                    "startOffset": 3561,
                     "endColumn": 139,
-                    "endOffset": 7569
+                    "endOffset": 3696
                 },
                 "from": {
                     "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.15.0\\res\\values-hr\\values-hr.xml",
@@ -1410,20 +688,742 @@
             },
             {
                 "to": {
-                    "startLine": 76,
+                    "startLine": 38,
                     "startColumn": 4,
-                    "startOffset": 7574,
-                    "endColumn": 107,
-                    "endOffset": 7677
+                    "startOffset": 3701,
+                    "endColumn": 259,
+                    "endOffset": 3956
                 },
                 "from": {
-                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.8.0\\res\\values-hr\\values.xml",
+                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.0.2\\res\\values-hr\\values.xml",
                     "position": {
                         "startLine": 4,
-                        "startColumn": 0,
-                        "startOffset": 283,
-                        "endColumn": 103,
-                        "endOffset": 386
+                        "startColumn": 4,
+                        "startOffset": 323,
+                        "endColumn": 259,
+                        "endOffset": 578
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 39,
+                    "startColumn": 4,
+                    "startOffset": 3961,
+                    "endColumn": 129,
+                    "endOffset": 4086
+                },
+                "from": {
+                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.0.2\\res\\values-hr\\values.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 583,
+                        "endColumn": 129,
+                        "endOffset": 708
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 40,
+                    "startColumn": 4,
+                    "startOffset": 4091,
+                    "endColumn": 188,
+                    "endOffset": 4275
+                },
+                "from": {
+                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.0.2\\res\\values-hr\\values.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 713,
+                        "endColumn": 188,
+                        "endOffset": 897
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 41,
+                    "startColumn": 4,
+                    "startOffset": 4280,
+                    "endColumn": 131,
+                    "endOffset": 4407
+                },
+                "from": {
+                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.0.2\\res\\values-hr\\values.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 902,
+                        "endColumn": 131,
+                        "endOffset": 1029
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 42,
+                    "startColumn": 4,
+                    "startOffset": 4412,
+                    "endColumn": 128,
+                    "endOffset": 4536
+                },
+                "from": {
+                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.0.2\\res\\values-hr\\values.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 1034,
+                        "endColumn": 128,
+                        "endOffset": 1158
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 43,
+                    "startColumn": 4,
+                    "startOffset": 4541,
+                    "endColumn": 222,
+                    "endOffset": 4759
+                },
+                "from": {
+                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.0.2\\res\\values-hr\\values.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 4,
+                        "startOffset": 1163,
+                        "endColumn": 222,
+                        "endOffset": 1381
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 44,
+                    "startColumn": 4,
+                    "startOffset": 4764,
+                    "endColumn": 222,
+                    "endOffset": 4982
+                },
+                "from": {
+                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.0.2\\res\\values-hr\\values.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 4,
+                        "startOffset": 1386,
+                        "endColumn": 222,
+                        "endOffset": 1604
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 45,
+                    "startColumn": 4,
+                    "startOffset": 4987,
+                    "endColumn": 131,
+                    "endOffset": 5114
+                },
+                "from": {
+                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.0.2\\res\\values-hr\\values.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 4,
+                        "startOffset": 1609,
+                        "endColumn": 131,
+                        "endOffset": 1736
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 46,
+                    "startColumn": 4,
+                    "startOffset": 5119,
+                    "endColumn": 176,
+                    "endOffset": 5291
+                },
+                "from": {
+                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.0.2\\res\\values-hr\\values.xml",
+                    "position": {
+                        "startLine": 12,
+                        "startColumn": 4,
+                        "startOffset": 1741,
+                        "endColumn": 176,
+                        "endOffset": 1913
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 47,
+                    "startColumn": 4,
+                    "startOffset": 5296,
+                    "endColumn": 122,
+                    "endOffset": 5414
+                },
+                "from": {
+                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.0.2\\res\\values-hr\\values.xml",
+                    "position": {
+                        "startLine": 13,
+                        "startColumn": 4,
+                        "startOffset": 1918,
+                        "endColumn": 122,
+                        "endOffset": 2036
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 48,
+                    "startColumn": 4,
+                    "startOffset": 5419,
+                    "endColumn": 172,
+                    "endOffset": 5587
+                },
+                "from": {
+                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.0.2\\res\\values-hr\\values.xml",
+                    "position": {
+                        "startLine": 14,
+                        "startColumn": 4,
+                        "startOffset": 2041,
+                        "endColumn": 172,
+                        "endOffset": 2209
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 49,
+                    "startColumn": 4,
+                    "startOffset": 5592,
+                    "endColumn": 121,
+                    "endOffset": 5709
+                },
+                "from": {
+                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.0.2\\res\\values-hr\\values.xml",
+                    "position": {
+                        "startLine": 15,
+                        "startColumn": 4,
+                        "startOffset": 2214,
+                        "endColumn": 121,
+                        "endOffset": 2331
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 50,
+                    "startColumn": 4,
+                    "startOffset": 5714,
+                    "endColumn": 135,
+                    "endOffset": 5845
+                },
+                "from": {
+                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.0.2\\res\\values-hr\\values.xml",
+                    "position": {
+                        "startLine": 16,
+                        "startColumn": 4,
+                        "startOffset": 2336,
+                        "endColumn": 135,
+                        "endOffset": 2467
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 51,
+                    "startColumn": 4,
+                    "startOffset": 5850,
+                    "endColumn": 187,
+                    "endOffset": 6033
+                },
+                "from": {
+                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.0.2\\res\\values-hr\\values.xml",
+                    "position": {
+                        "startLine": 17,
+                        "startColumn": 4,
+                        "startOffset": 2472,
+                        "endColumn": 187,
+                        "endOffset": 2655
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 52,
+                    "startColumn": 4,
+                    "startOffset": 6038,
+                    "endColumn": 150,
+                    "endOffset": 6184
+                },
+                "from": {
+                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.0.2\\res\\values-hr\\values.xml",
+                    "position": {
+                        "startLine": 18,
+                        "startColumn": 4,
+                        "startOffset": 2660,
+                        "endColumn": 150,
+                        "endOffset": 2806
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 53,
+                    "startColumn": 4,
+                    "startOffset": 6189,
+                    "endColumn": 169,
+                    "endOffset": 6354
+                },
+                "from": {
+                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.0.2\\res\\values-hr\\values.xml",
+                    "position": {
+                        "startLine": 19,
+                        "startColumn": 4,
+                        "startOffset": 2811,
+                        "endColumn": 169,
+                        "endOffset": 2976
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 54,
+                    "startColumn": 4,
+                    "startOffset": 6359,
+                    "endColumn": 128,
+                    "endOffset": 6483
+                },
+                "from": {
+                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.0.2\\res\\values-hr\\values.xml",
+                    "position": {
+                        "startLine": 20,
+                        "startColumn": 4,
+                        "startOffset": 2981,
+                        "endColumn": 128,
+                        "endOffset": 3105
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 55,
+                    "startColumn": 4,
+                    "startOffset": 6488,
+                    "endColumn": 178,
+                    "endOffset": 6662
+                },
+                "from": {
+                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.0.2\\res\\values-hr\\values.xml",
+                    "position": {
+                        "startLine": 21,
+                        "startColumn": 4,
+                        "startOffset": 3110,
+                        "endColumn": 178,
+                        "endOffset": 3284
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 56,
+                    "startColumn": 4,
+                    "startOffset": 6667,
+                    "endColumn": 127,
+                    "endOffset": 6790
+                },
+                "from": {
+                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.0.2\\res\\values-hr\\values.xml",
+                    "position": {
+                        "startLine": 22,
+                        "startColumn": 4,
+                        "startOffset": 3289,
+                        "endColumn": 127,
+                        "endOffset": 3412
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 57,
+                    "startColumn": 4,
+                    "startOffset": 6795,
+                    "endColumn": 234,
+                    "endOffset": 7025
+                },
+                "from": {
+                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\9.0.2\\res\\values-hr\\values.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 323,
+                        "endColumn": 234,
+                        "endOffset": 553
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 58,
+                    "startColumn": 4,
+                    "startOffset": 7030,
+                    "endColumn": 235,
+                    "endOffset": 7261
+                },
+                "from": {
+                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.0.2\\res\\values-hr\\values.xml",
+                    "position": {
+                        "startLine": 23,
+                        "startColumn": 4,
+                        "startOffset": 3417,
+                        "endColumn": 235,
+                        "endOffset": 3648
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 59,
+                    "startColumn": 4,
+                    "startOffset": 7266,
+                    "endColumn": 124,
+                    "endOffset": 7386
+                },
+                "from": {
+                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.0.2\\res\\values-hr\\values.xml",
+                    "position": {
+                        "startLine": 24,
+                        "startColumn": 4,
+                        "startOffset": 3653,
+                        "endColumn": 124,
+                        "endOffset": 3773
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 60,
+                    "startColumn": 4,
+                    "startOffset": 7391,
+                    "endColumn": 108,
+                    "endOffset": 7495
+                },
+                "from": {
+                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.0.2\\res\\values-hr\\values.xml",
+                    "position": {
+                        "startLine": 25,
+                        "startColumn": 4,
+                        "startOffset": 3778,
+                        "endColumn": 108,
+                        "endOffset": 3882
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 61,
+                    "startColumn": 4,
+                    "startOffset": 7500,
+                    "endColumn": 187,
+                    "endOffset": 7683
+                },
+                "from": {
+                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.0.2\\res\\values-hr\\values.xml",
+                    "position": {
+                        "startLine": 26,
+                        "startColumn": 4,
+                        "startOffset": 3887,
+                        "endColumn": 187,
+                        "endOffset": 4070
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 62,
+                    "startColumn": 4,
+                    "startOffset": 7688,
+                    "endColumn": 129,
+                    "endOffset": 7813
+                },
+                "from": {
+                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.0.2\\res\\values-hr\\values.xml",
+                    "position": {
+                        "startLine": 27,
+                        "startColumn": 4,
+                        "startOffset": 4075,
+                        "endColumn": 129,
+                        "endOffset": 4200
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 63,
+                    "startColumn": 4,
+                    "startOffset": 7818,
+                    "endColumn": 205,
+                    "endOffset": 8019
+                },
+                "from": {
+                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.0.2\\res\\values-hr\\values.xml",
+                    "position": {
+                        "startLine": 28,
+                        "startColumn": 4,
+                        "startOffset": 4205,
+                        "endColumn": 205,
+                        "endOffset": 4406
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 64,
+                    "startColumn": 4,
+                    "startOffset": 8024,
+                    "endColumn": 140,
+                    "endOffset": 8160
+                },
+                "from": {
+                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.0.2\\res\\values-hr\\values.xml",
+                    "position": {
+                        "startLine": 29,
+                        "startColumn": 4,
+                        "startOffset": 4411,
+                        "endColumn": 140,
+                        "endOffset": 4547
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 65,
+                    "startColumn": 4,
+                    "startOffset": 8165,
+                    "endColumn": 172,
+                    "endOffset": 8333
+                },
+                "from": {
+                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.0.2\\res\\values-hr\\values.xml",
+                    "position": {
+                        "startLine": 30,
+                        "startColumn": 4,
+                        "startOffset": 4552,
+                        "endColumn": 172,
+                        "endOffset": 4720
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 66,
+                    "startColumn": 4,
+                    "startOffset": 8338,
+                    "endColumn": 97,
+                    "endOffset": 8431
+                },
+                "from": {
+                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.0.2\\res\\values-hr\\values.xml",
+                    "position": {
+                        "startLine": 31,
+                        "startColumn": 4,
+                        "startOffset": 4725,
+                        "endColumn": 97,
+                        "endOffset": 4818
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 67,
+                    "startColumn": 4,
+                    "startOffset": 8436,
+                    "endColumn": 91,
+                    "endOffset": 8523
+                },
+                "from": {
+                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.0.2\\res\\values-hr\\values.xml",
+                    "position": {
+                        "startLine": 32,
+                        "startColumn": 4,
+                        "startOffset": 4823,
+                        "endColumn": 91,
+                        "endOffset": 4910
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 68,
+                    "startColumn": 4,
+                    "startOffset": 8528,
+                    "endColumn": 109,
+                    "endOffset": 8633
+                },
+                "from": {
+                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.0.2\\res\\values-hr\\values.xml",
+                    "position": {
+                        "startLine": 33,
+                        "startColumn": 4,
+                        "startOffset": 4915,
+                        "endColumn": 109,
+                        "endOffset": 5020
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 69,
+                    "startColumn": 4,
+                    "startOffset": 8638,
+                    "endColumn": 110,
+                    "endOffset": 8744
+                },
+                "from": {
+                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.0.0\\res\\values-hr\\values-hr.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 278,
+                        "endColumn": 110,
+                        "endOffset": 384
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 70,
+                    "startColumn": 4,
+                    "startOffset": 8749,
+                    "endColumn": 108,
+                    "endOffset": 8853
+                },
+                "from": {
+                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.0.0\\res\\values-hr\\values-hr.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 389,
+                        "endColumn": 108,
+                        "endOffset": 493
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 71,
+                    "startColumn": 4,
+                    "startOffset": 8858,
+                    "endColumn": 109,
+                    "endOffset": 8963
+                },
+                "from": {
+                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.0.0\\res\\values-hr\\values-hr.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 498,
+                        "endColumn": 109,
+                        "endOffset": 603
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 72,
+                    "startColumn": 4,
+                    "startOffset": 8968,
+                    "endColumn": 106,
+                    "endOffset": 9070
+                },
+                "from": {
+                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.0.0\\res\\values-hr\\values-hr.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 608,
+                        "endColumn": 106,
+                        "endOffset": 710
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 73,
+                    "startColumn": 4,
+                    "startOffset": 9075,
+                    "endColumn": 127,
+                    "endOffset": 9198
+                },
+                "from": {
+                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.0.0\\res\\values-hr\\values-hr.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 715,
+                        "endColumn": 127,
+                        "endOffset": 838
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 74,
+                    "startColumn": 4,
+                    "startOffset": 9203,
+                    "endColumn": 98,
+                    "endOffset": 9297
+                },
+                "from": {
+                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.0.0\\res\\values-hr\\values-hr.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 4,
+                        "startOffset": 843,
+                        "endColumn": 98,
+                        "endOffset": 937
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 75,
+                    "startColumn": 4,
+                    "startOffset": 9302,
+                    "endColumn": 101,
+                    "endOffset": 9399
+                },
+                "from": {
+                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.0.0\\res\\values-hr\\values-hr.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 4,
+                        "startOffset": 942,
+                        "endColumn": 101,
+                        "endOffset": 1039
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 76,
+                    "startColumn": 4,
+                    "startOffset": 9404,
+                    "endColumn": 117,
+                    "endOffset": 9517
+                },
+                "from": {
+                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.0.0\\res\\values-hr\\values-hr.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 4,
+                        "startOffset": 1044,
+                        "endColumn": 117,
+                        "endOffset": 1157
                     }
                 }
             },
@@ -1431,18 +1431,18 @@
                 "to": {
                     "startLine": 77,
                     "startColumn": 4,
-                    "startOffset": 7682,
-                    "endColumn": 188,
-                    "endOffset": 7866
+                    "startOffset": 9522,
+                    "endColumn": 108,
+                    "endOffset": 9626
                 },
                 "from": {
-                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.8.0\\res\\values-hr\\values.xml",
+                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.0.0\\res\\values-hr\\values-hr.xml",
                     "position": {
-                        "startLine": 5,
-                        "startColumn": 0,
-                        "startOffset": 387,
-                        "endColumn": 188,
-                        "endOffset": 575
+                        "startLine": 12,
+                        "startColumn": 4,
+                        "startOffset": 1162,
+                        "endColumn": 108,
+                        "endOffset": 1266
                     }
                 }
             },
@@ -1450,18 +1450,18 @@
                 "to": {
                     "startLine": 78,
                     "startColumn": 4,
-                    "startOffset": 7871,
-                    "endColumn": 131,
-                    "endOffset": 7998
+                    "startOffset": 9631,
+                    "endColumn": 85,
+                    "endOffset": 9712
                 },
                 "from": {
-                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.8.0\\res\\values-hr\\values.xml",
+                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.0.0\\res\\values-hr\\values-hr.xml",
                     "position": {
-                        "startLine": 6,
-                        "startColumn": 0,
-                        "startOffset": 576,
-                        "endColumn": 127,
-                        "endOffset": 703
+                        "startLine": 13,
+                        "startColumn": 4,
+                        "startOffset": 1271,
+                        "endColumn": 85,
+                        "endOffset": 1352
                     }
                 }
             },
@@ -1469,18 +1469,18 @@
                 "to": {
                     "startLine": 79,
                     "startColumn": 4,
-                    "startOffset": 8003,
-                    "endColumn": 111,
-                    "endOffset": 8110
+                    "startOffset": 9717,
+                    "endColumn": 93,
+                    "endOffset": 9806
                 },
                 "from": {
-                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.8.0\\res\\values-hr\\values.xml",
+                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.0.0\\res\\values-hr\\values-hr.xml",
                     "position": {
-                        "startLine": 7,
-                        "startColumn": 0,
-                        "startOffset": 704,
-                        "endColumn": 107,
-                        "endOffset": 811
+                        "startLine": 14,
+                        "startColumn": 4,
+                        "startOffset": 1357,
+                        "endColumn": 93,
+                        "endOffset": 1446
                     }
                 }
             },
@@ -1488,18 +1488,18 @@
                 "to": {
                     "startLine": 80,
                     "startColumn": 4,
-                    "startOffset": 8115,
-                    "endColumn": 215,
-                    "endOffset": 8326
+                    "startOffset": 9811,
+                    "endColumn": 112,
+                    "endOffset": 9919
                 },
                 "from": {
-                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.8.0\\res\\values-hr\\values.xml",
+                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-location\\9.0.2\\res\\values-hr\\values.xml",
                     "position": {
-                        "startLine": 8,
-                        "startColumn": 0,
-                        "startOffset": 812,
-                        "endColumn": 215,
-                        "endOffset": 1027
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 275,
+                        "endColumn": 112,
+                        "endOffset": 383
                     }
                 }
             },
@@ -1507,18 +1507,18 @@
                 "to": {
                     "startLine": 81,
                     "startColumn": 4,
-                    "startOffset": 8331,
-                    "endColumn": 131,
-                    "endOffset": 8458
+                    "startOffset": 9924,
+                    "endColumn": 99,
+                    "endOffset": 10019
                 },
                 "from": {
-                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.8.0\\res\\values-hr\\values.xml",
+                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-location\\9.0.2\\res\\values-hr\\values.xml",
                     "position": {
-                        "startLine": 9,
-                        "startColumn": 0,
-                        "startOffset": 1028,
-                        "endColumn": 127,
-                        "endOffset": 1155
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 388,
+                        "endColumn": 99,
+                        "endOffset": 483
                     }
                 }
             },
@@ -1526,693 +1526,9 @@
                 "to": {
                     "startLine": 82,
                     "startColumn": 4,
-                    "startOffset": 8463,
-                    "endColumn": 135,
-                    "endOffset": 8594
-                },
-                "from": {
-                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.8.0\\res\\values-hr\\values.xml",
-                    "position": {
-                        "startLine": 10,
-                        "startColumn": 0,
-                        "startOffset": 1156,
-                        "endColumn": 131,
-                        "endOffset": 1287
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 83,
-                    "startColumn": 4,
-                    "startOffset": 8599,
-                    "endColumn": 190,
-                    "endOffset": 8785
-                },
-                "from": {
-                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\9.8.0\\res\\values-hr\\values.xml",
-                    "position": {
-                        "startLine": 4,
-                        "startColumn": 0,
-                        "startOffset": 285,
-                        "endColumn": 190,
-                        "endOffset": 475
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 84,
-                    "startColumn": 4,
-                    "startOffset": 8790,
-                    "endColumn": 208,
-                    "endOffset": 8994
-                },
-                "from": {
-                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.8.0\\res\\values-hr\\values.xml",
-                    "position": {
-                        "startLine": 11,
-                        "startColumn": 0,
-                        "startOffset": 1288,
-                        "endColumn": 208,
-                        "endOffset": 1496
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 85,
-                    "startColumn": 4,
-                    "startOffset": 8999,
-                    "endColumn": 108,
-                    "endOffset": 9103
-                },
-                "from": {
-                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.8.0\\res\\values-hr\\values.xml",
-                    "position": {
-                        "startLine": 12,
-                        "startColumn": 0,
-                        "startOffset": 1497,
-                        "endColumn": 104,
-                        "endOffset": 1601
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 86,
-                    "startColumn": 4,
-                    "startOffset": 9108,
-                    "endColumn": 187,
-                    "endOffset": 9291
-                },
-                "from": {
-                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.8.0\\res\\values-hr\\values.xml",
-                    "position": {
-                        "startLine": 13,
-                        "startColumn": 0,
-                        "startOffset": 1602,
-                        "endColumn": 187,
-                        "endOffset": 1789
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 87,
-                    "startColumn": 4,
-                    "startOffset": 9296,
-                    "endColumn": 129,
-                    "endOffset": 9421
-                },
-                "from": {
-                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.8.0\\res\\values-hr\\values.xml",
-                    "position": {
-                        "startLine": 14,
-                        "startColumn": 0,
-                        "startOffset": 1790,
-                        "endColumn": 125,
-                        "endOffset": 1915
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 88,
-                    "startColumn": 4,
-                    "startOffset": 9426,
-                    "endColumn": 205,
-                    "endOffset": 9627
-                },
-                "from": {
-                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.8.0\\res\\values-hr\\values.xml",
-                    "position": {
-                        "startLine": 15,
-                        "startColumn": 0,
-                        "startOffset": 1916,
-                        "endColumn": 205,
-                        "endOffset": 2121
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 89,
-                    "startColumn": 4,
-                    "startOffset": 9632,
-                    "endColumn": 172,
-                    "endOffset": 9800
-                },
-                "from": {
-                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.8.0\\res\\values-hr\\values.xml",
-                    "position": {
-                        "startLine": 16,
-                        "startColumn": 0,
-                        "startOffset": 2122,
-                        "endColumn": 168,
-                        "endOffset": 2290
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 90,
-                    "startColumn": 4,
-                    "startOffset": 9805,
-                    "endColumn": 97,
-                    "endOffset": 9898
-                },
-                "from": {
-                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.8.0\\res\\values-hr\\values.xml",
-                    "position": {
-                        "startLine": 17,
-                        "startColumn": 0,
-                        "startOffset": 2291,
-                        "endColumn": 93,
-                        "endOffset": 2384
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 91,
-                    "startColumn": 4,
-                    "startOffset": 9903,
-                    "endColumn": 91,
-                    "endOffset": 9990
-                },
-                "from": {
-                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.8.0\\res\\values-hr\\values.xml",
-                    "position": {
-                        "startLine": 18,
-                        "startColumn": 0,
-                        "startOffset": 2385,
-                        "endColumn": 87,
-                        "endOffset": 2472
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 92,
-                    "startColumn": 4,
-                    "startOffset": 9995,
-                    "endColumn": 109,
-                    "endOffset": 10100
-                },
-                "from": {
-                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.8.0\\res\\values-hr\\values.xml",
-                    "position": {
-                        "startLine": 19,
-                        "startColumn": 0,
-                        "startOffset": 2473,
-                        "endColumn": 105,
-                        "endOffset": 2578
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 93,
-                    "startColumn": 4,
-                    "startOffset": 10105,
-                    "endColumn": 139,
-                    "endOffset": 10240
-                },
-                "from": {
-                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-ads\\9.8.0\\res\\values-hr\\values.xml",
-                    "position": {
-                        "startLine": 5,
-                        "startColumn": 0,
-                        "startOffset": 307,
-                        "endColumn": 135,
-                        "endOffset": 442
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 94,
-                    "startColumn": 4,
-                    "startOffset": 10245,
-                    "endColumn": 107,
-                    "endOffset": 10348
-                },
-                "from": {
-                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-ads\\9.8.0\\res\\values-hr\\values.xml",
-                    "position": {
-                        "startLine": 6,
-                        "startColumn": 0,
-                        "startOffset": 443,
-                        "endColumn": 103,
-                        "endOffset": 546
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 95,
-                    "startColumn": 4,
-                    "startOffset": 10353,
-                    "endColumn": 99,
-                    "endOffset": 10448
-                },
-                "from": {
-                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-ads\\9.8.0\\res\\values-hr\\values.xml",
-                    "position": {
-                        "startLine": 7,
-                        "startColumn": 0,
-                        "startOffset": 547,
-                        "endColumn": 95,
-                        "endOffset": 642
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 96,
-                    "startColumn": 4,
-                    "startOffset": 10453,
-                    "endColumn": 100,
-                    "endOffset": 10549
-                },
-                "from": {
-                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-ads\\9.8.0\\res\\values-hr\\values.xml",
-                    "position": {
-                        "startLine": 8,
-                        "startColumn": 0,
-                        "startOffset": 643,
-                        "endColumn": 96,
-                        "endOffset": 739
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 97,
-                    "startColumn": 4,
-                    "startOffset": 10554,
-                    "endColumn": 112,
-                    "endOffset": 10662
-                },
-                "from": {
-                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-ads\\9.8.0\\res\\values-hr\\values.xml",
-                    "position": {
-                        "startLine": 9,
-                        "startColumn": 0,
-                        "startOffset": 740,
-                        "endColumn": 108,
-                        "endOffset": 848
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 98,
-                    "startColumn": 4,
-                    "startOffset": 10667,
-                    "endColumn": 104,
-                    "endOffset": 10767
-                },
-                "from": {
-                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-ads\\9.8.0\\res\\values-hr\\values.xml",
-                    "position": {
-                        "startLine": 10,
-                        "startColumn": 0,
-                        "startOffset": 849,
-                        "endColumn": 100,
-                        "endOffset": 949
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 99,
-                    "startColumn": 4,
-                    "startOffset": 10772,
-                    "endColumn": 71,
-                    "endOffset": 10839
-                },
-                "from": {
-                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-ads\\9.8.0\\res\\values-hr\\values.xml",
-                    "position": {
-                        "startLine": 11,
-                        "startColumn": 0,
-                        "startOffset": 950,
-                        "endColumn": 67,
-                        "endOffset": 1017
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 100,
-                    "startColumn": 4,
-                    "startOffset": 10844,
-                    "endColumn": 106,
-                    "endOffset": 10946
-                },
-                "from": {
-                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\values-hr\\values-hr.xml",
-                    "position": {
-                        "startLine": 2,
-                        "startColumn": 4,
-                        "startOffset": 55,
-                        "endColumn": 106,
-                        "endOffset": 157
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 101,
-                    "startColumn": 4,
-                    "startOffset": 10951,
-                    "endColumn": 95,
-                    "endOffset": 11042
-                },
-                "from": {
-                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\values-hr\\values-hr.xml",
-                    "position": {
-                        "startLine": 3,
-                        "startColumn": 4,
-                        "startOffset": 162,
-                        "endColumn": 95,
-                        "endOffset": 253
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 102,
-                    "startColumn": 4,
-                    "startOffset": 11047,
-                    "endColumn": 87,
-                    "endOffset": 11130
-                },
-                "from": {
-                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\values-hr\\values-hr.xml",
-                    "position": {
-                        "startLine": 4,
-                        "startColumn": 4,
-                        "startOffset": 258,
-                        "endColumn": 87,
-                        "endOffset": 341
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 103,
-                    "startColumn": 4,
-                    "startOffset": 11135,
-                    "endColumn": 99,
-                    "endOffset": 11230
-                },
-                "from": {
-                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\values-hr\\values-hr.xml",
-                    "position": {
-                        "startLine": 5,
-                        "startColumn": 4,
-                        "startOffset": 346,
-                        "endColumn": 99,
-                        "endOffset": 441
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 104,
-                    "startColumn": 4,
-                    "startOffset": 11235,
-                    "endColumn": 105,
-                    "endOffset": 11336
-                },
-                "from": {
-                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\values-hr\\values-hr.xml",
-                    "position": {
-                        "startLine": 6,
-                        "startColumn": 4,
-                        "startOffset": 446,
-                        "endColumn": 105,
-                        "endOffset": 547
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 105,
-                    "startColumn": 4,
-                    "startOffset": 11341,
-                    "endColumn": 100,
-                    "endOffset": 11437
-                },
-                "from": {
-                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\values-hr\\values-hr.xml",
-                    "position": {
-                        "startLine": 7,
-                        "startColumn": 4,
-                        "startOffset": 552,
-                        "endColumn": 100,
-                        "endOffset": 648
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 106,
-                    "startColumn": 4,
-                    "startOffset": 11442,
-                    "endColumn": 96,
-                    "endOffset": 11534
-                },
-                "from": {
-                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\values-hr\\values-hr.xml",
-                    "position": {
-                        "startLine": 8,
-                        "startColumn": 4,
-                        "startOffset": 653,
-                        "endColumn": 96,
-                        "endOffset": 745
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 107,
-                    "startColumn": 4,
-                    "startOffset": 11539,
-                    "endColumn": 95,
-                    "endOffset": 11630
-                },
-                "from": {
-                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\values-hr\\values-hr.xml",
-                    "position": {
-                        "startLine": 9,
-                        "startColumn": 4,
-                        "startOffset": 750,
-                        "endColumn": 95,
-                        "endOffset": 841
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 108,
-                    "startColumn": 4,
-                    "startOffset": 11635,
-                    "endColumn": 97,
-                    "endOffset": 11728
-                },
-                "from": {
-                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\values-hr\\values-hr.xml",
-                    "position": {
-                        "startLine": 10,
-                        "startColumn": 4,
-                        "startOffset": 846,
-                        "endColumn": 97,
-                        "endOffset": 939
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 109,
-                    "startColumn": 4,
-                    "startOffset": 11733,
-                    "endColumn": 115,
-                    "endOffset": 11844
-                },
-                "from": {
-                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\values-hr\\values-hr.xml",
-                    "position": {
-                        "startLine": 11,
-                        "startColumn": 4,
-                        "startOffset": 944,
-                        "endColumn": 115,
-                        "endOffset": 1055
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 110,
-                    "startColumn": 4,
-                    "startOffset": 11849,
-                    "endColumn": 116,
-                    "endOffset": 11961
-                },
-                "from": {
-                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\values-hr\\values-hr.xml",
-                    "position": {
-                        "startLine": 12,
-                        "startColumn": 4,
-                        "startOffset": 1060,
-                        "endColumn": 116,
-                        "endOffset": 1172
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 111,
-                    "startColumn": 4,
-                    "startOffset": 11966,
+                    "startOffset": 10024,
                     "endColumn": 88,
-                    "endOffset": 12050
-                },
-                "from": {
-                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\values-hr\\values-hr.xml",
-                    "position": {
-                        "startLine": 13,
-                        "startColumn": 4,
-                        "startOffset": 1177,
-                        "endColumn": 88,
-                        "endOffset": 1261
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 112,
-                    "startColumn": 4,
-                    "startOffset": 12055,
-                    "endColumn": 88,
-                    "endOffset": 12139
-                },
-                "from": {
-                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\values-hr\\values-hr.xml",
-                    "position": {
-                        "startLine": 14,
-                        "startColumn": 4,
-                        "startOffset": 1266,
-                        "endColumn": 88,
-                        "endOffset": 1350
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 113,
-                    "startColumn": 4,
-                    "startOffset": 12144,
-                    "endColumn": 96,
-                    "endOffset": 12236
-                },
-                "from": {
-                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\values-hr\\values-hr.xml",
-                    "position": {
-                        "startLine": 15,
-                        "startColumn": 4,
-                        "startOffset": 1355,
-                        "endColumn": 96,
-                        "endOffset": 1447
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 114,
-                    "startColumn": 4,
-                    "startOffset": 12241,
-                    "endColumn": 85,
-                    "endOffset": 12322
-                },
-                "from": {
-                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\values-hr\\values-hr.xml",
-                    "position": {
-                        "startLine": 16,
-                        "startColumn": 4,
-                        "startOffset": 1452,
-                        "endColumn": 85,
-                        "endOffset": 1533
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 115,
-                    "startColumn": 4,
-                    "startOffset": 12327,
-                    "endColumn": 93,
-                    "endOffset": 12416
-                },
-                "from": {
-                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\values-hr\\values-hr.xml",
-                    "position": {
-                        "startLine": 17,
-                        "startColumn": 4,
-                        "startOffset": 1538,
-                        "endColumn": 93,
-                        "endOffset": 1627
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 116,
-                    "startColumn": 4,
-                    "startOffset": 12421,
-                    "endColumn": 112,
-                    "endOffset": 12529
-                },
-                "from": {
-                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-places\\9.8.0\\res\\values-hr\\values.xml",
-                    "position": {
-                        "startLine": 4,
-                        "startColumn": 0,
-                        "startOffset": 233,
-                        "endColumn": 108,
-                        "endOffset": 341
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 117,
-                    "startColumn": 4,
-                    "startOffset": 12534,
-                    "endColumn": 99,
-                    "endOffset": 12629
-                },
-                "from": {
-                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-places\\9.8.0\\res\\values-hr\\values.xml",
-                    "position": {
-                        "startLine": 5,
-                        "startColumn": 0,
-                        "startOffset": 342,
-                        "endColumn": 95,
-                        "endOffset": 437
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 118,
-                    "startColumn": 4,
-                    "startOffset": 12634,
-                    "endColumn": 88,
-                    "endOffset": 12718
+                    "endOffset": 10108
                 },
                 "from": {
                     "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-hr\\values-hr.xml",
@@ -2227,11 +1543,11 @@
             },
             {
                 "to": {
-                    "startLine": 119,
+                    "startLine": 83,
                     "startColumn": 4,
-                    "startOffset": 12723,
+                    "startOffset": 10113,
                     "endColumn": 100,
-                    "endOffset": 12819
+                    "endOffset": 10209
                 },
                 "from": {
                     "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values-hr\\values-hr.xml",
@@ -2241,63 +1557,6 @@
                         "startOffset": 2117,
                         "endColumn": 100,
                         "endOffset": 2213
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 120,
-                    "startColumn": 4,
-                    "startOffset": 12824,
-                    "endColumn": 140,
-                    "endOffset": 12960
-                },
-                "from": {
-                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-ads\\9.8.0\\res\\values-hr\\values.xml",
-                    "position": {
-                        "startLine": 12,
-                        "startColumn": 0,
-                        "startOffset": 1018,
-                        "endColumn": 136,
-                        "endOffset": 1154
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 121,
-                    "startColumn": 4,
-                    "startOffset": 12965,
-                    "endColumn": 93,
-                    "endOffset": 13054
-                },
-                "from": {
-                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-ads\\9.8.0\\res\\values-hr\\values.xml",
-                    "position": {
-                        "startLine": 13,
-                        "startColumn": 0,
-                        "startOffset": 1155,
-                        "endColumn": 89,
-                        "endOffset": 1244
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 122,
-                    "startColumn": 4,
-                    "startOffset": 13059,
-                    "endColumn": 106,
-                    "endOffset": 13161
-                },
-                "from": {
-                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-wallet\\9.8.0\\res\\values-hr\\values.xml",
-                    "position": {
-                        "startLine": 4,
-                        "startColumn": 0,
-                        "startOffset": 240,
-                        "endColumn": 102,
-                        "endOffset": 342
                     }
                 }
             }

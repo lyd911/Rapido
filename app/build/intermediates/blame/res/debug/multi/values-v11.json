@@ -394,30 +394,28 @@
                     "startLine": 170,
                     "startColumn": 4,
                     "startOffset": 12634,
-                    "endLine": 171,
-                    "endColumn": 8,
-                    "endOffset": 12755
+                    "endColumn": 117,
+                    "endOffset": 12747
                 },
                 "from": {
-                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-appinvite\\9.8.0\\res\\values-v11\\values.xml",
+                    "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-appinvite\\9.0.2\\res\\values-v11\\values.xml",
                     "position": {
                         "startLine": 4,
-                        "startColumn": 0,
-                        "startOffset": 172,
-                        "endLine": 5,
-                        "endColumn": 8,
-                        "endOffset": 293
+                        "startColumn": 4,
+                        "startOffset": 220,
+                        "endColumn": 117,
+                        "endOffset": 333
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 172,
+                    "startLine": 171,
                     "startColumn": 4,
-                    "startOffset": 12760,
-                    "endLine": 173,
+                    "startOffset": 12752,
+                    "endLine": 172,
                     "endColumn": 10,
-                    "endOffset": 12855
+                    "endOffset": 12847
                 },
                 "from": {
                     "file": "C:\\Users\\Sandra_Tobias\\Documents\\CodeRepository\\Rapido_Repositroy\\app\\build\\intermediates\\exploded-aar\\com.journeyapps\\zxing-android-embedded\\3.2.0\\res\\values-v11\\values-v11.xml",
