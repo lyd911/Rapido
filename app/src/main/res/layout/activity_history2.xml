@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.cs442.kdakshinamurthy.fragmentlayout.HistoryActivity">
+    tools:context="com.cs442.iitc_fall2016_g13.mad_proj.fragmentlayout.HistoryActivity">
 
     <TextView
         android:text="ORDER HISTORY"
