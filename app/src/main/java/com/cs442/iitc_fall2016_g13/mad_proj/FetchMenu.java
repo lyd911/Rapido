@@ -17,6 +17,7 @@ import android.widget.Toast;
 
 import com.cs442.iitc_fall2016_g13.mad_proj.NearbyPlaces;
 import com.cs442.iitc_fall2016_g13.mad_proj.ServerConnect.GlobalVariables;
+import com.cs442.iitc_fall2016_g13.mad_proj.fragmentlayout.MenuAndCartActivity;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -106,7 +107,7 @@ public class FetchMenu  extends AsyncTask<String,Void,String> {
             load_data(sb.toString());
                 if (GlobalVariables.menu_check==0)
                 {
-                    Intent intent = new Intent(context, MenuWeb.class);
+                    Intent intent = new Intent(context, MenuAndCartActivity.class); //MenuWeb.class was launched here.
                     intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                     context.startActivity(intent);
 
