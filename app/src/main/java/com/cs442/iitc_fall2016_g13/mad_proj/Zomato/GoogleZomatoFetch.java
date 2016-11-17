@@ -94,10 +94,19 @@ public class GoogleZomatoFetch  extends AsyncTask<String,Void,String> {
 
         try{
             String search=(String)arg0[0];
+            String lat=(String)arg0[1];
+            String lon=(String)arg0[2];
+
+            search=search.replaceAll("'","");
+            search=search.replaceAll(" ","%20");
+            System.out.println("Search: "+search);
+            System.out.println("Lat: "+lat);
+            System.out.println("Long: "+lon);
 
             String link="http://rapido.counseltech.in/GoogleZomatoFetch.php";
             String data  = URLEncoder.encode("search", "UTF-8") + "=" + URLEncoder.encode(search, "UTF-8");
-
+            data  += URLEncoder.encode("lat", "UTF-8") + "=" + URLEncoder.encode(lat, "UTF-8");
+            data  += URLEncoder.encode("lon", "UTF-8") + "=" + URLEncoder.encode(lon, "UTF-8");
             URL url = new URL(link);
             URLConnection conn = url.openConnection();
 
@@ -124,7 +133,7 @@ public class GoogleZomatoFetch  extends AsyncTask<String,Void,String> {
 
             Log.d("Fetch Menu","Loaded Menu Url");
 
-            load_data(sb.toString());
+
             return sb.toString();
 
         }
@@ -137,6 +146,7 @@ public class GoogleZomatoFetch  extends AsyncTask<String,Void,String> {
 
     @Override
     protected void onPostExecute(String result){
+        load_data(result);
         if (dialog.isShowing()) {
 
             //System.out.println(res_ids[0]);
@@ -148,8 +158,9 @@ public class GoogleZomatoFetch  extends AsyncTask<String,Void,String> {
     public  void load_data(String y)
     {
         System.out.println("getting Menu Items");
+
         try{
-            Looper.prepare();
+           // Looper.prepare();
             new FetchMenu(context).execute(y);
             // Check menu here
             // code for password match and new activity

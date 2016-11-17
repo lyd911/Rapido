@@ -10,9 +10,29 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.cs442.iitc_fall2016_g13.mad_proj.MenuWeb">
 
-    <WebView
+    <LinearLayout
+        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_alignParentEnd="true"
-        android:id="@+id/webView1" />
+        android:layout_height="match_parent">
+
+        <TextView
+            android:text="This Place do not provide a digital menu or does not offer online ordering."
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView5" />
+
+        <Button
+            android:text="Rapido Provided Menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/menu_rapido" />
+
+        <Button
+            android:text="Menu By Zomato"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ZomatoButton" />
+
+    </LinearLayout>
+
 </RelativeLayout>

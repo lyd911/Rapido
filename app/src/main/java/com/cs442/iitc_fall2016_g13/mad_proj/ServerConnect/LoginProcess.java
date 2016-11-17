@@ -15,7 +15,7 @@ package com.cs442.iitc_fall2016_g13.mad_proj.ServerConnect;
         import android.widget.TextView;
         import android.widget.Toast;
 
-        import com.cs442.iitc_fall2016_g13.mad_proj.LoadData;
+
         import com.cs442.iitc_fall2016_g13.mad_proj.Map_distance.MapsActivity;
         import com.cs442.iitc_fall2016_g13.mad_proj.NearbyPlaces;
 

@@ -23,7 +23,7 @@ import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.Toast;
 
-import com.cs442.iitc_fall2016_g13.mad_proj.LoadData;
+
 import com.cs442.iitc_fall2016_g13.mad_proj.R;
 import com.cs442.iitc_fall2016_g13.mad_proj.ServerConnect.GlobalVariables;
 import com.cs442.iitc_fall2016_g13.mad_proj.Zomato.GoogleZomatoFetch;
@@ -342,9 +342,11 @@ public class MapsActivity extends FragmentActivity implements
                     System.out.println("Value of i"+position);
                     System.out.println("Value of i"+restList.get(position).getmPlaceName());
                     GlobalVariables.SelectedRestaurantName=restList.get(position).getmPlaceName();
-                    Intent intent = new Intent(view.getContext(), LoadData.class);
-                    intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                    view.getContext().startActivity(intent);
+                    new GoogleZomatoFetch(mContext).execute(GlobalVariables.SelectedRestaurantName,""+mLatitude,""+mLongitude);
+
+                    //Intent intent = new Intent(view.getContext(), LoadData.class);
+                    //intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                    //view.getContext().startActivity(intent);
 
                 }
             });
