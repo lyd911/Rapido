@@ -8,6 +8,7 @@ import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.os.AsyncTask;
+import android.os.Looper;
 import android.os.SystemClock;
 import android.provider.Settings;
 import android.util.Log;
@@ -76,7 +77,7 @@ public class FetchMenu  extends AsyncTask<String,Void,String> {
 
             String res_id = (String)arg0[0];
 
-
+            System.out.println(res_id);
             String link="http://rapido.counseltech.in/FetchMenuUrl.php";
             String data  = URLEncoder.encode("res_id", "UTF-8") + "=" + URLEncoder.encode(res_id, "UTF-8");
 
@@ -104,14 +105,7 @@ public class FetchMenu  extends AsyncTask<String,Void,String> {
             System.out.println("Loaded Menu URL");
             Log.d("Fetch Menu","Loaded Menu Url");
 
-            load_data(sb.toString());
-                if (GlobalVariables.menu_check==0)
-                {
-                    Intent intent = new Intent(context, MenuAndCartActivity.class); //MenuWeb.class was launched here.
-                    intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                    context.startActivity(intent);
 
-                }
             //code to go to menu list
             //check data exists or not in global variables res_menu and check global variables menu_check value
             //if there a menu then go to the card list actvity
@@ -127,6 +121,21 @@ public class FetchMenu  extends AsyncTask<String,Void,String> {
 
     @Override
     protected void onPostExecute(String result){
+        load_data(result);
+        if (GlobalVariables.menu_check==1)
+        {
+            Intent intent = new Intent(context, MenuAndCartActivity.class); //Menu and Cart.class was launched here.
+            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            context.startActivity(intent);
+
+        }
+        else
+        {
+            Intent intent = new Intent(context, MenuWeb.class); //MenuWeb.class was launched here.
+            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            context.startActivity(intent);
+
+        }
         if (dialog.isShowing()) {
 
             //System.out.println(res_ids[0]);
@@ -140,6 +149,7 @@ public class FetchMenu  extends AsyncTask<String,Void,String> {
         System.out.println("getting Menu Items");
         System.out.println(y);
         try{
+
             String url = y;
             System.out.println(url);
             url=url.replaceAll("\"","");
@@ -153,7 +163,7 @@ public class FetchMenu  extends AsyncTask<String,Void,String> {
 
             }
             else {
-
+                GlobalVariables.menu_check=1;
                 GlobalVariables.res_menu = new String[3][3];
                 System.out.println(newsHeadlines.size());
                 for (int i = 0; i < 3; i++) {
@@ -169,6 +179,7 @@ public class FetchMenu  extends AsyncTask<String,Void,String> {
                     System.out.println(x[0]);
                 }
             }
+            doc.remove();
 
             // JSoup Code here
             // code for password match and new activity
