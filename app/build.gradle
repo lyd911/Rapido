@@ -41,3 +41,5 @@ dependencies {
     compile 'com.paypal.sdk:paypal-android-sdk:2.15.0'
     testCompile 'junit:junit:4.12'
 }
+
+apply plugin: 'com.google.gms.google-services'

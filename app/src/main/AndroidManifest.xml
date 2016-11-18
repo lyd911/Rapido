@@ -62,6 +62,7 @@
         <activity android:name=".NearbyPlaces" />
         <activity android:name=".Map_distance.MapsActivity" />
         <activity android:name=".Map_alert.MapsActivity_direction" />
+        <activity android:name=".Dynamic_menu_update.MainActivity" />
         <activity
             android:name=".ServerConnect.LoginActivity"
             android:label="@string/title_activity_login" />
@@ -77,7 +78,7 @@
             android:label="rapido"
             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
         <activity android:name=".FB_Signup" />
-        <activity android:name=".LoadData" />
+        <!--<activity android:name=".LoadData" />-->
         <activity android:name=".SellerMainActivity" />
         <activity android:name=".SellerOrderHistoryActivity" />
         <activity android:name=".SellerOrderDetailActivity" />

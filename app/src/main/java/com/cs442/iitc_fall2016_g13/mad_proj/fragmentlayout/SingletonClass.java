@@ -4,6 +4,8 @@ import android.app.Application;
 import android.content.Context;
 import android.content.SharedPreferences;
 
+import com.cs442.iitc_fall2016_g13.mad_proj.Dynamic_menu_update.MenuItems;
+
 import java.util.ArrayList;
 import java.util.Set;
 
@@ -41,12 +43,16 @@ public class SingletonClass extends Application{
 
     private SingletonClass() {
         mArrayList = new ArrayList<>();
-        mArrayList.add(new MenuItemObject("Foiled Fish  ","10","The filet is herb-crusted, and then cooked in foil with lemon and butter. Served with campfire roasted local squash and corn"));
-        mArrayList.add(new MenuItemObject("Veggie Medley","20","Campfire grilled Portobello mushrooms, locally grown squash, peppers, onions, and cherry tomatoes, served over seasoned rice."));
-        mArrayList.add(new MenuItemObject(" Red Rice","30","Corn, black beans, and garbanzos in a blend of rice and salsa, accented by cilantro. Partnered with Tex-Mex mashers."));
-        mArrayList.add(new MenuItemObject("Stir-Fry","40","Carrots, broccoli, cauliflower, peppers, onion,and snap peas sautéed in sesame oil over Teriyaki rice."));
-        mArrayList.add(new MenuItemObject("Pot Roast","50","Baked with carrots and potatoes. Topped with gravy made from the drippings, accompanied by a side salad."));
-        mArrayList.add(new MenuItemObject("Beef Stew","60"," Chunks of seasoned beef, browned, and then cooked with potatoes, carrots, corn, onion, and peas in a full-flavored brown sauce."));
+
+    }
+
+
+    public static void updateArray(ArrayList<MenuItems> menuItemsarray){
+
+
+        for(MenuItems menutItemsIttr:menuItemsarray)
+        mArrayList.add(new MenuItemObject(menutItemsIttr.getmMenuName(),menutItemsIttr.getmPrice(),menutItemsIttr.getmMenuDescription()));
+
 
     }
 
