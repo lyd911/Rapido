@@ -30,7 +30,16 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/proceed_button"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="6dp" />
+        android:layout_below="@+id/detail_listview"
+        android:layout_alignEnd="@+id/detail_textview"
+        android:layout_marginEnd="20dp" />
+
+    <Button
+        android:text="Get Phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="41dp"
+        android:id="@+id/get_phone_button"
+        android:layout_below="@+id/detail_listview"
+        android:layout_toEndOf="@+id/proceed_button" />
 </RelativeLayout>

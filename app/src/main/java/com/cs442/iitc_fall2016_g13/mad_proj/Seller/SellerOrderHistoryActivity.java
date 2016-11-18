@@ -1,4 +1,4 @@
-package com.cs442.iitc_fall2016_g13.mad_proj;
+package com.cs442.iitc_fall2016_g13.mad_proj.Seller;
 
 import android.app.Activity;
 import android.app.ProgressDialog;
@@ -9,6 +9,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import com.cs442.iitc_fall2016_g13.mad_proj.R;
 import com.cs442.iitc_fall2016_g13.mad_proj.ServerConnect.LoginActivity;
 
 import java.io.BufferedReader;

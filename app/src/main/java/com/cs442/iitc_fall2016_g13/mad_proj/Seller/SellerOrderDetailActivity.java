@@ -1,4 +1,4 @@
-package com.cs442.iitc_fall2016_g13.mad_proj;
+package com.cs442.iitc_fall2016_g13.mad_proj.Seller;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -8,6 +8,9 @@ import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.cs442.iitc_fall2016_g13.mad_proj.R;
+
 import java.util.ArrayList;
 
 /**
@@ -29,6 +32,7 @@ public class SellerOrderDetailActivity extends Activity{
         TextView detail_textview = (TextView) findViewById(R.id.detail_textview);
         ListView detail_listview = (ListView) findViewById(R.id.detail_listview);
         Button proceed_button = (Button)findViewById(R.id.proceed_button);
+        Button get_phone_button =(Button)findViewById(R.id.get_phone_button);
         selected_order_position = SellerMainActivity.currentOrder;
 
         order_id_for_process = SellerMainActivity.pendingOrders.get(selected_order_position).getOrder_id();
@@ -57,6 +61,15 @@ public class SellerOrderDetailActivity extends Activity{
 
         detail_listview.setAdapter(aa);
         aa.notifyDataSetChanged();
+
+
+        get_phone_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                new SellerGetPhoneProcess(SellerOrderDetailActivity.this).execute(SellerMainActivity.pendingOrders.get(selected_order_position).getCust_id());
+            }
+        });
+
 
         proceed_button.setOnClickListener(new View.OnClickListener() {
             @Override

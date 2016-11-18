@@ -1,4 +1,4 @@
-package com.cs442.iitc_fall2016_g13.mad_proj;
+package com.cs442.iitc_fall2016_g13.mad_proj.Seller;
 
 import android.app.ProgressDialog;
 import android.content.Context;
@@ -12,16 +12,15 @@ import java.net.URLConnection;
 import java.net.URLEncoder;
 
 /**
- * Created by lyd on 2016/11/12.
+ * Created by lyd on 2016/11/17.
  */
 
-public class SellerUpdateOrderStatusProcess extends AsyncTask<String,OneOrder,String> {
-
+public class SellerGetPhoneProcess extends AsyncTask<String,Void,String> {
     private Context context;
     private ProgressDialog dialog;
-    private String order_id="";
+    private String cust_id="";
 
-    public SellerUpdateOrderStatusProcess(Context context) {
+    public SellerGetPhoneProcess(Context context) {
         this.context = context;
         dialog = new ProgressDialog(context);
     }
@@ -31,14 +30,15 @@ public class SellerUpdateOrderStatusProcess extends AsyncTask<String,OneOrder,St
         dialog.show();
     }
 
+
     @Override
     protected String doInBackground(String... params) {
 
         try{
-            order_id = (String)params[0];
+            cust_id = (String)params[0];
 
-            String link="http://rapido.counseltech.in/sellerUpdateOrders.php";
-            String data  = URLEncoder.encode("order_id", "UTF-8") + "=" + URLEncoder.encode(order_id, "UTF-8");
+            String link="http://rapido.counseltech.in/sellerGetUserPhone.php";
+            String data  = URLEncoder.encode("cust_id", "UTF-8") + "=" + URLEncoder.encode(cust_id, "UTF-8");
 
             URL url = new URL(link);
             URLConnection conn = url.openConnection();
@@ -60,6 +60,9 @@ public class SellerUpdateOrderStatusProcess extends AsyncTask<String,OneOrder,St
                 break;
             }
 
+            String ss[] = sb.toString().split("\"");
+            System.out.println("User Phone number is: "+ss[3]);
+
             return null;
         }catch (Exception e){
             return new String("Exception: " + e.getMessage());
@@ -71,3 +74,4 @@ public class SellerUpdateOrderStatusProcess extends AsyncTask<String,OneOrder,St
         dialog.dismiss();
     }
 }
+

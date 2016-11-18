@@ -1,4 +1,4 @@
-package com.cs442.iitc_fall2016_g13.mad_proj;
+package com.cs442.iitc_fall2016_g13.mad_proj.Seller;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -10,7 +10,9 @@ import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import com.cs442.iitc_fall2016_g13.mad_proj.R;
 import com.cs442.iitc_fall2016_g13.mad_proj.ServerConnect.LoginActivity;
+
 import java.util.ArrayList;
 
 /**
@@ -35,6 +37,7 @@ public class SellerMainActivity extends Activity{
 
         TextView pending_textview=(TextView)findViewById(R.id.detail_textview);
         Button order_history_button=(Button)findViewById(R.id.order_history_button);
+        Button get_menu_list_button=(Button)findViewById(R.id.get_menu_list_button);
         orders_listview =(ListView)findViewById(R.id.orders_listview);
 
         String admin = LoginActivity.admin;
@@ -43,6 +46,14 @@ public class SellerMainActivity extends Activity{
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(),SellerOrderHistoryActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        get_menu_list_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(),SellerGetMenuListActivity.class);
                 startActivity(intent);
             }
         });

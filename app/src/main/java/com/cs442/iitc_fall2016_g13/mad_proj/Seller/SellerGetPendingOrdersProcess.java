@@ -1,4 +1,4 @@
-package com.cs442.iitc_fall2016_g13.mad_proj;
+package com.cs442.iitc_fall2016_g13.mad_proj.Seller;
 
 import android.app.ProgressDialog;
 import android.content.Context;
