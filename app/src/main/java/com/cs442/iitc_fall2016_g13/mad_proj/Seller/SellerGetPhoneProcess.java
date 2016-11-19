@@ -61,7 +61,7 @@ public class SellerGetPhoneProcess extends AsyncTask<String,Void,String> {
             }
 
             String ss[] = sb.toString().split("\"");
-            System.out.println("User Phone number is: "+ss[3]);
+            SellerOrderDetailActivity.cust_phone = ss[3];
 
             return null;
         }catch (Exception e){
