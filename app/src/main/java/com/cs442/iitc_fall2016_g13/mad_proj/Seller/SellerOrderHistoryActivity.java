@@ -124,7 +124,8 @@ public class SellerOrderHistoryActivity extends Activity{
                             Status = "Status: Not Started";
                         }
                         else if(orders_finished.get(i).getStatus().equals("1")){Status = "Status: Cooking";}
-                        else {Status = "Status: Finished";}
+                        else if(orders_finished.get(i).getStatus().equals("2")){Status = "Status: Finished Cooking";}
+                        else {Status = "Status: Taken Away";}
                         String ss= "Order ID: " + orders_finished.get(i).getOrder_id()+"\n"+
                                 "Customer ID: " + orders_finished.get(i).getCust_id()+"\n"+
                                 "Menu List: " + orders_finished.get(i).getMenu_list()+"\n"+

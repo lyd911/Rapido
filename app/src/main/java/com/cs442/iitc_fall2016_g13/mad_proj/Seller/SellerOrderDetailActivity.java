@@ -44,7 +44,12 @@ public class SellerOrderDetailActivity extends Activity{
         if(SellerMainActivity.pendingOrders.get(selected_order_position).getStatus().equals("0")){
             Status = "Status: Not Started";
         }
-        else Status = "Status: Cooking";
+        else if(SellerMainActivity.pendingOrders.get(selected_order_position).getStatus().equals("1")){
+            Status = "Status: Cooking";
+        }
+        else {
+            Status = "Status: Finished Cooking";
+        }
 
         OneOrderDetail = new ArrayList<String>();
 
@@ -74,7 +79,7 @@ public class SellerOrderDetailActivity extends Activity{
         proceed_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(SellerMainActivity.pendingOrders.get(selected_order_position).getStatus().equals("2")){
+                if(SellerMainActivity.pendingOrders.get(selected_order_position).getStatus().equals("3")){
                     Toast.makeText(getApplicationContext(),"Already finished.",Toast.LENGTH_LONG).show();
                 }
                 else if(SellerMainActivity.pendingOrders.get(selected_order_position).getStatus().equals("0")){
@@ -89,15 +94,27 @@ public class SellerOrderDetailActivity extends Activity{
                     aa.notifyDataSetChanged();
                     new SellerUpdateOrderStatusProcess(SellerOrderDetailActivity.this).execute(order_id_for_process);
                 }
-                else{
-                    Toast.makeText(getApplicationContext(),"Order is now finished!",Toast.LENGTH_LONG).show();
+                else if(SellerMainActivity.pendingOrders.get(selected_order_position).getStatus().equals("1")){
+                    Toast.makeText(getApplicationContext(),"Finished Cooking",Toast.LENGTH_LONG).show();
                     SellerMainActivity.pendingOrders.get(selected_order_position).setStatus("2");
                     SellerMainActivity.orderString.set(selected_order_position,
                             "Order ID: " + SellerMainActivity.pendingOrders.get(selected_order_position).getOrder_id()+"\n"+
                                     "Customer ID: " + SellerMainActivity.pendingOrders.get(selected_order_position).getCust_id()+"\n"+
                                     "Menu List: " + SellerMainActivity.pendingOrders.get(selected_order_position).getMenu_list()+"\n"+
+                                    "Status: Finished Cooking");
+                    OneOrderDetail.set(3,"Status: Finished Cooking");
+                    aa.notifyDataSetChanged();
+                    new SellerUpdateOrderStatusProcess(SellerOrderDetailActivity.this).execute(order_id_for_process);
+                }
+                else{
+                    Toast.makeText(getApplicationContext(),"Order is now finished!",Toast.LENGTH_LONG).show();
+                    SellerMainActivity.pendingOrders.get(selected_order_position).setStatus("3");
+                    SellerMainActivity.orderString.set(selected_order_position,
+                            "Order ID: " + SellerMainActivity.pendingOrders.get(selected_order_position).getOrder_id()+"\n"+
+                                    "Customer ID: " + SellerMainActivity.pendingOrders.get(selected_order_position).getCust_id()+"\n"+
+                                    "Menu List: " + SellerMainActivity.pendingOrders.get(selected_order_position).getMenu_list()+"\n"+
                                     "Status: Finished");
-                    OneOrderDetail.set(3,"Status: Finished");
+                    OneOrderDetail.set(3,"Status: Taken Away");
                     OneOrderDetail.removeAll(OneOrderDetail);
                     aa.notifyDataSetChanged();
                     SellerMainActivity.orderString.remove(selected_order_position);

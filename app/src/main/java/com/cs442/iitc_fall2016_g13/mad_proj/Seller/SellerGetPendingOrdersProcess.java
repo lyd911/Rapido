@@ -87,7 +87,10 @@ public class SellerGetPendingOrdersProcess extends AsyncTask<String,OneOrder,Str
                 if(SellerMainActivity.pendingOrders.get(i).getStatus().equals("0")){
                     Status = "Status: Not Started";
                 }
-                else Status = "Status: Cooking";
+                else if(SellerMainActivity.pendingOrders.get(i).getStatus().equals("1")){
+                    Status = "Status: Cooking";
+                }
+                else Status = "Status: Finished Cooking";
                 String ss= "Order ID: " + SellerMainActivity.pendingOrders.get(i).getOrder_id()+"\n"+
                             "Customer ID: " + SellerMainActivity.pendingOrders.get(i).getCust_id()+"\n"+
                             "Menu List: " + SellerMainActivity.pendingOrders.get(i).getMenu_list()+"\n"+
