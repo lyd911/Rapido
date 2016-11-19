@@ -49,6 +49,7 @@ public class SingletonClass extends Application{
 
     public static void updateArray(ArrayList<MenuItems> menuItemsarray){
 
+        mArrayList.clear();
 
         for(MenuItems menutItemsIttr:menuItemsarray)
         mArrayList.add(new MenuItemObject(menutItemsIttr.getmMenuName(),menutItemsIttr.getmPrice(),menutItemsIttr.getmMenuDescription()));

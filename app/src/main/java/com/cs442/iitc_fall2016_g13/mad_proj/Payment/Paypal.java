@@ -52,9 +52,13 @@ public class Paypal extends AppCompatActivity implements View.OnClickListener {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.layout_payment);
+        Intent intent1 = getIntent();
 
+        Double fillAmountToBePaid;
+        fillAmountToBePaid = intent1.getDoubleExtra("paymentAmount",0);
         buttonPay = (Button) findViewById(R.id.buttonPay);
         editTextAmount = (EditText) findViewById(R.id.editTextAmount);
+        editTextAmount.setText(String.valueOf(fillAmountToBePaid));
 
         buttonPay.setOnClickListener(this);
 
@@ -118,10 +122,12 @@ public class Paypal extends AppCompatActivity implements View.OnClickListener {
                         String paymentDetails = confirm.toJSONObject().toString(4);
                         Log.i("paymentExample", paymentDetails);
 
-                        //Starting a new activity for the payment details and also putting the payment details with intent
+                        sendResultBack(paymentDetails,paymentAmount);
+
+/*                        //Starting a new activity for the payment details and also putting the payment details with intent
                         startActivity(new Intent(this, PaypalConfirmation.class)
                                 .putExtra("PaymentDetails", paymentDetails)
-                                .putExtra("PaymentAmount", paymentAmount));
+                                .putExtra("PaymentAmount", paymentAmount));*/
 
                     } catch (JSONException e) {
                         Log.e("paymentExample", "an extremely unlikely failure occurred: ", e);
@@ -138,6 +144,25 @@ public class Paypal extends AppCompatActivity implements View.OnClickListener {
     @Override
     public void onClick(View v) {
         getPayment();
+    }
+
+
+    public void sendResultBack(String paymentDeatil, String paymentAmount){
+
+
+        Intent data = new Intent();
+
+        String billingConfirmation = paymentDeatil;
+/*
+        SharedPreferences settings = getSharedPreferences(PREFS_NAME, 0);
+        SharedPreferences.Editor editor = settings.edit();
+//        Set<String> set = editor.putStringSet("HISTORY")
+        settings.getStringSet("HISTORY",)*/
+
+        data.putExtra("paymentDeatil",paymentDeatil);
+        data.putExtra("paymentAmount",paymentAmount);
+        setResult(1,data);
+        finish();
     }
 }
 

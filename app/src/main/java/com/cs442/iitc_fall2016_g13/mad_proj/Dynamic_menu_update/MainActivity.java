@@ -132,6 +132,7 @@ public class MainActivity extends AppCompatActivity {
 
 
                 mFlag = false;
+                Log.v(TAG,"Setting flag to false");
                 myRef.child(mLatLongString).child(dbKeyRestaurantName).setValue(restaurantName); // add name
                 myRef.child(mLatLongString).child(dbKeyRestaurantMenu).child(menuName).child(dbKeyPrice).setValue(menuPrice);  // add price
                 myRef.child(mLatLongString).child(dbKeyRestaurantMenu).child(menuName).child(dbKeyIngredients).setValue(menuIngrediants).addOnCompleteListener(new OnCompleteListener<Void>() {
@@ -192,6 +193,7 @@ public class MainActivity extends AppCompatActivity {
                             String menuName = menuIttr.getKey();
                             String price = menuIttr.child(dbKeyPrice).getValue().toString();
                             String description = menuIttr.child(dbKeyIngredients).getValue().toString();
+                            Log.v(TAG,"menuName"+menuName+"price"+price+"description"+description);
 //                            String description = "junk";
                             menuItems.add(new MenuItems(menuName,price,description));
                         }
@@ -237,8 +239,8 @@ public class MainActivity extends AppCompatActivity {
             }else{
 
                 Log.v(TAG,"updating  adapter");
-                mArrayAdapter.setmMenuItems(mRestaurantMenu.getmMenuList());
-                mArrayAdapter.notifyDataSetInvalidated();
+                //mArrayAdapter.setmMenuItems(mRestaurantMenu.getmMenuList());
+                mArrayAdapter.notifyDataSetChanged();
 
             }
 

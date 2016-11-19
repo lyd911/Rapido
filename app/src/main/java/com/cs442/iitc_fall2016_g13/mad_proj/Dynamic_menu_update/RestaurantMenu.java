@@ -14,13 +14,14 @@ public class RestaurantMenu {
 
     public RestaurantMenu(String mRestaurantName, ArrayList<MenuItems> mMenuList) {
         this.mRestaurantName = mRestaurantName;
-        this.mMenuList = mMenuList;
+        this.mMenuList = new ArrayList<>();
+        this.mMenuList.addAll(mMenuList);
     }
 
     public void clearRestaurantMenu(){
 
         this.mRestaurantName = null;
-        this.mMenuList = null;
+        this.mMenuList.clear();
 
     }
 
@@ -37,6 +38,7 @@ public class RestaurantMenu {
     }
 
     public void setmMenuList(ArrayList<MenuItems> mMenuList) {
-        this.mMenuList = mMenuList;
+        this.mMenuList.clear();
+        this.mMenuList.addAll(mMenuList);
     }
 }

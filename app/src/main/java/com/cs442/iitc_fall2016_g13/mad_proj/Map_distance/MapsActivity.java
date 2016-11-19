@@ -123,7 +123,7 @@ public class MapsActivity extends FragmentActivity implements
                 Log.d(TAG, "Button is Clicked");
 
                 String url;
-                if (mETxtDistanceInput != null && mETxtDistanceInput.getText().toString().trim() != null) {
+                if (mETxtDistanceInput != null && mETxtDistanceInput.getText().toString().trim().length() > 0) {
 
                     int distance = Integer.parseInt(mETxtDistanceInput.getText().toString());
                     Log.v(TAG, "distance +" + distance);
@@ -344,9 +344,11 @@ public class MapsActivity extends FragmentActivity implements
                     System.out.println("Value of i"+restList.get(position).getmPlaceName());
                     GlobalVariables.SelectedRestaurantName=restList.get(position).getmPlaceName();
 
+                    LatLng currentPlaceLatlng = restList.get(position).getmLatLng();
+
                     Intent intent = new Intent(view.getContext(), MainActivity.class);
-                    intent.putExtra("LAT",mLatitude);
-                    intent.putExtra("LON",mLongitude);
+                    intent.putExtra("LAT",currentPlaceLatlng.latitude);
+                    intent.putExtra("LON",currentPlaceLatlng.longitude);
                     intent.putExtra("restaurantName",restList.get(position).getmPlaceName());
                     intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                     view.getContext().startActivity(intent);

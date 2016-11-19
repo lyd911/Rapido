@@ -12,8 +12,14 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import com.cs442.iitc_fall2016_g13.mad_proj.Map_distance.MapsActivity;
+import com.cs442.iitc_fall2016_g13.mad_proj.Payment.Paypal;
 import com.cs442.iitc_fall2016_g13.mad_proj.R;
+
+import org.json.JSONException;
+import org.json.JSONObject;
 
 import java.text.DateFormat;
 import java.util.ArrayList;
@@ -21,9 +27,14 @@ import java.util.Date;
 import java.util.HashSet;
 import java.util.Set;
 
+import static com.cs442.iitc_fall2016_g13.mad_proj.Payment.Paypal.PAYPAL_REQUEST_CODE;
+
+
 public class billingactivity extends AppCompatActivity {
 
     public static final String PREFS_NAME = "MyPrefsFile";
+    private static final int PAYMENT_RESULT = 999;
+    private static final String TAG = "billingactivity";
     ArrayList<MenuItemObject> mArrayList ;
     ArrayList<MenuItemObject> mBillingArrayList;
     ArrayAdapter<String> mArrayAdapter;
@@ -47,32 +58,19 @@ public class billingactivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                ArrayList<String> historyArrayList;
 
-                Intent data = new Intent();
-                String billingConfirmation;
+
                 if(finalBill > 0){
 
+//kiran
+                    Intent data = new Intent(getApplicationContext(),Paypal.class);
+                    data.putExtra("paymentAmount",finalBill);
+                    startActivityForResult(data, PAYMENT_RESULT);
 
-                    historyArrayList = SingletonClass.initInstance(getApplicationContext()).getmHistoryArray();
-
-                    billingConfirmation = " Thanks for purchasing your total billed amout is "+ finalBill.toString() +"$"+" billed items are"+currentBilledItemNumbers;
-                    String currentDateTimeString = DateFormat.getDateTimeInstance().format(new Date());
-
-                    if(historyArrayList != null){
-                        historyArrayList.add((historyArrayList.size()+1)+") "+currentDateTimeString+ "Total amount "+ finalBill.toString() +"$"+"  billed items are"+currentBilledItemNumbers);
-                        SharedPreferences pref = getApplicationContext().getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE);
-                        SharedPreferences.Editor editor = pref.edit();
-                        if(historyArrayList != null){
-                            Set<String> set = new HashSet<String>(historyArrayList);
-                            editor.putStringSet("HISTORY", set);
-                            editor.commit();
-                        }
-                    }
 //                    SingletonClass.initInstance().getmHistoryArray().add(currentDateTimeString+ "Total amount "+ finalBill.toString() +"$");
                 }else{
 
-                    billingConfirmation = "No item selected by you, try again";
+                    //billingConfirmation = "No item selected by you, try again";
                 }
 
                 if(mArrayList != null){
@@ -81,10 +79,12 @@ public class billingactivity extends AppCompatActivity {
                     }
                 }
 
-                data.putExtra("RESULT",billingConfirmation);
+
+
+               /* data.putExtra("RESULT",billingConfirmation);
                 setResult(1,data);
                 finish();
-
+*/
 
             }
         });
@@ -102,6 +102,112 @@ public class billingactivity extends AppCompatActivity {
 
     }
 
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+
+        Toast.makeText(this, "onActivityResult billingactivity PAYMENT_RESULT0", Toast.LENGTH_LONG).show();
+        if (requestCode == PAYMENT_RESULT) {
+
+            Toast.makeText(this, "onActivityResult billingactivity PAYMENT_RESULT1", Toast.LENGTH_LONG).show();
+            if (resultCode == 1) {
+
+                String paymentDeatil,paymentAmount;
+
+                paymentDeatil = data.getStringExtra("paymentDeatil");
+                paymentAmount = data.getStringExtra("paymentAmount");
+
+
+                try {
+                    JSONObject jsonDetails = new JSONObject(paymentDeatil);
+                    JSONObject jsonResponse = jsonDetails.getJSONObject("response");
+                    String paymentState = jsonResponse.getString("state");
+                    String paymentId = jsonResponse.getString("id");
+
+                    if(paymentState.compareTo("approved") == 0){
+
+                        String billingDetail = "Payment Successful paymentId"
+                                +paymentId+"paymentState"+paymentState;
+                        Toast.makeText(this, "Payment Successful paymentId"
+                                +paymentId+"paymentState"+paymentState, Toast.LENGTH_LONG).show();
+                        updateHistory();
+                        sendResultBack(billingDetail);
+
+
+                    }else{
+
+                        Toast.makeText(this, "paymentId"
+                                +paymentId+"paymentState"+paymentState, Toast.LENGTH_LONG).show();
+                        String billingConfirmation = "Billing not done try again";
+
+/*
+        SharedPreferences settings = getSharedPreferences(PREFS_NAME, 0);
+        SharedPreferences.Editor editor = settings.edit();
+//        Set<String> set = editor.putStringSet("HISTORY")
+        settings.getStringSet("HISTORY",)*/
+
+                        data.putExtra("RESULT",billingConfirmation);
+                        setResult(1,data);
+                        finish();
+
+
+                    }
+                } catch (JSONException e) {
+                    Toast.makeText(this, e.getMessage(), Toast.LENGTH_SHORT).show();
+                }
+
+
+                Log.v(TAG,"paymentDetail"+paymentDeatil+"paymentAmount"+paymentAmount);
+
+
+            }
+        }
+    }
+
+    public void updateHistory(){
+
+
+        ArrayList<String> historyArrayList;
+
+        String billingConfirmation;
+
+        historyArrayList = SingletonClass.initInstance(getApplicationContext()).getmHistoryArray();
+
+        billingConfirmation = " Thanks for purchasing your total billed amout is "+ finalBill.toString() +"$"+" billed items are"+currentBilledItemNumbers;
+        String currentDateTimeString = DateFormat.getDateTimeInstance().format(new Date());
+
+        if(historyArrayList != null){
+            historyArrayList.add((historyArrayList.size()+1)+") "+currentDateTimeString+ "Total amount "+ finalBill.toString() +"$"+"  billed items are"+currentBilledItemNumbers);
+            SharedPreferences pref = getApplicationContext().getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE);
+            SharedPreferences.Editor editor = pref.edit();
+            if(historyArrayList != null){
+                Set<String> set = new HashSet<String>(historyArrayList);
+                editor.putStringSet("HISTORY", set);
+                editor.commit();
+            }
+        }
+
+
+
+
+    }
+
+    public void sendResultBack(String billingDeatil){
+
+
+        Intent data = new Intent();
+
+        String billingConfirmation = billingDeatil;
+/*
+        SharedPreferences settings = getSharedPreferences(PREFS_NAME, 0);
+        SharedPreferences.Editor editor = settings.edit();
+//        Set<String> set = editor.putStringSet("HISTORY")
+        settings.getStringSet("HISTORY",)*/
+
+        data.putExtra("RESULT",billingConfirmation);
+        setResult(1,data);
+        finish();
+    }
 
     private class DownloadFilesTask extends AsyncTask<String, String, String> {
 
