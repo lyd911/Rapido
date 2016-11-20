@@ -60,7 +60,7 @@ public class LoginProcess  extends AsyncTask<String,Void,String> {
             String username = (String)arg0[0];
            password = (String)arg0[1];
 
-
+            GlobalVariables.username=username;
             String link="http://rapido.counseltech.in/login.php";
             String data  = URLEncoder.encode("username", "UTF-8") + "=" + URLEncoder.encode(username, "UTF-8");
 

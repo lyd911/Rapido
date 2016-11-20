@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.provider.Settings;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
@@ -17,6 +18,8 @@ import android.widget.Toast;
 import com.cs442.iitc_fall2016_g13.mad_proj.Map_distance.MapsActivity;
 import com.cs442.iitc_fall2016_g13.mad_proj.Payment.Paypal;
 import com.cs442.iitc_fall2016_g13.mad_proj.R;
+import com.cs442.iitc_fall2016_g13.mad_proj.ServerConnect.CustomerPlaceOrderProcess;
+import com.cs442.iitc_fall2016_g13.mad_proj.ServerConnect.GlobalVariables;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -70,7 +73,7 @@ public class billingactivity extends AppCompatActivity {
 //                    SingletonClass.initInstance().getmHistoryArray().add(currentDateTimeString+ "Total amount "+ finalBill.toString() +"$");
                 }else{
 
-                    //billingConfirmation = "No item selected by you, try again";
+                    new CustomerPlaceOrderProcess(getApplicationContext()).execute(GlobalVariables.SellerUsername,GlobalVariables.username,GlobalVariables.OrderDetails);//billingConfirmation = "No item selected by you, try again";
                 }
 
                 if(mArrayList != null){
@@ -132,7 +135,8 @@ public class billingactivity extends AppCompatActivity {
                                 +paymentId+"paymentState"+paymentState, Toast.LENGTH_LONG).show();
                         updateHistory();
                         sendResultBack(billingDetail);
-
+                        new CustomerPlaceOrderProcess(this).execute(GlobalVariables.SellerUsername,GlobalVariables.username,GlobalVariables.OrderDetails);
+                        // upload the order to database
 
                     }else{
 

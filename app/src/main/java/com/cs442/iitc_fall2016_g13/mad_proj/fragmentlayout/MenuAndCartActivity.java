@@ -11,6 +11,7 @@ import android.util.Log;
 import android.widget.TextView;
 
 import com.cs442.iitc_fall2016_g13.mad_proj.R;
+import com.cs442.iitc_fall2016_g13.mad_proj.ServerConnect.GlobalVariables;
 
 import java.util.ArrayList;
 
@@ -195,9 +196,15 @@ public class MenuAndCartActivity extends AppCompatActivity implements TitleFragm
         ArrayList<MenuItemObject> arrayList = SingletonClass.initInstance(getApplicationContext()).getListArray();
         for (int i = 0; i < arrayList.size(); i++) {
             Log.v(TAG, "Count = " + arrayList.get(i).getmOrderCount() + "Index =" + i);
-        }
+            if (arrayList.get(i).getmOrderCount()>0) {
+                GlobalVariables.OrderDetails += arrayList.get(i).getmItemName() + "*" + arrayList.get(i).getmOrderCount() + ",";
+            }
+            }
+        System.out.println(GlobalVariables.OrderDetails);
         Intent i = new Intent(this, billingactivity.class);
         startActivityForResult(i, RESULT_CODE);
+
+
 
     }
 

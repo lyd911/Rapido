@@ -15,5 +15,7 @@ public class GlobalVariables {
     public static String[][] res_menu;
     public static int menu_check;
     public static String url;
+    public static String SellerUsername="admin0";
+    public static String OrderDetails="";
 
 }
