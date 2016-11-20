@@ -86,6 +86,7 @@
         <activity android:name=".Seller.SellerOrderHistoryActivity" />
         <activity android:name=".Seller.SellerOrderDetailActivity" />
         <activity android:name=".Seller.SellerGetMenuListActivity"/>
+        <activity android:name=".fragmentlayout.CustomerOrderHistoryActivity"/>
         <activity android:name=".OrderHistory" />
         <activity android:name=".MenuWeb"></activity>
         <activity android:name=".FoodMenu" />

@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+import com.cs442.iitc_fall2016_g13.mad_proj.ServerConnect.GlobalVariables;
 import com.google.zxing.BarcodeFormat;
 import com.google.zxing.MultiFormatWriter;
 import com.google.zxing.WriterException;
@@ -30,16 +31,14 @@ public class QRCodeGenerator extends Activity {
         String billNumber = getData.getStringExtra("BILL#");
 
         final Context context = this;
-        mEditTextQRCodeInput = (EditText) this.findViewById(R.id.et_GenerateQR);
 
 
-        mEditTextQRCodeInput.setText(billNumber);
 
         mGenerateButton = (Button) this.findViewById(R.id.btn_QRCodeGenerate);
         mGenerateButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String text2Qr = mEditTextQRCodeInput.getText().toString();
+                String text2Qr = GlobalVariables.orderID_QR;
                 if(text2Qr.length() > 0){
 
                     MultiFormatWriter multiFormatWriter = new MultiFormatWriter();
