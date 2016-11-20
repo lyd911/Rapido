@@ -1,5 +1,6 @@
 package com.cs442.iitc_fall2016_g13.mad_proj.fragmentlayout;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -8,6 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListView;
 
+import com.cs442.iitc_fall2016_g13.mad_proj.QRCodeGenerator;
 import com.cs442.iitc_fall2016_g13.mad_proj.R;
 
 import java.util.ArrayList;
@@ -62,14 +64,21 @@ public class HistoryListFragment extends Fragment {
 
         // Create ArrayAdapter object to wrap the data source
 //        ArrayAdapter<String> adapter=new ArrayAdapter<String>(getActivity(),R.layout.rowlayout,R.id.txtitem,datasource);
-        mAdapter = new HistoryAdapter(getActivity(),R.layout.historylayout,mArrayList);
-
-
+        mAdapter = new HistoryAdapter(getActivity(),R.layout.historylayout,mArrayList,this);
 
         ListView lv = (ListView) rootView.findViewById(R.id.listViewHistory);
         lv.setAdapter(mAdapter);
 
         return rootView;
+
+    }
+
+// getting bill  QR kiran
+    public void startQrCode(String billNumber){
+
+        Intent intent = new Intent(getContext(),QRCodeGenerator.class);
+        intent.putExtra("BILL#",billNumber);
+        startActivity(intent);
 
     }
 }

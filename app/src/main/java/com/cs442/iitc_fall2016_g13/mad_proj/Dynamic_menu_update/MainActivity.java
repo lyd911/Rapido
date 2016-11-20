@@ -68,6 +68,8 @@ public class MainActivity extends AppCompatActivity {
         Log.v(TAG,"mLatLongString"+mLatLongString);
 
         mContext = this;
+        TextView restaurantName = (TextView) findViewById(R.id.txtRestaurantName);
+        restaurantName.setText(mRestautantName);
 
         mMenuNameTxt = (TextView) findViewById(R.id.editTextName);
         mMenuPrieTxt = (TextView) findViewById(R.id.editTextPrice);

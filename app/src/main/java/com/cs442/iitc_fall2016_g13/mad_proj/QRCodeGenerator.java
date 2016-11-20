@@ -26,8 +26,15 @@ public class QRCodeGenerator extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_qrcode_generator);
 
+        Intent getData = getIntent();
+        String billNumber = getData.getStringExtra("BILL#");
+
         final Context context = this;
         mEditTextQRCodeInput = (EditText) this.findViewById(R.id.et_GenerateQR);
+
+
+        mEditTextQRCodeInput.setText(billNumber);
+
         mGenerateButton = (Button) this.findViewById(R.id.btn_QRCodeGenerate);
         mGenerateButton.setOnClickListener(new View.OnClickListener() {
             @Override

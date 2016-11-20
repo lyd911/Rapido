@@ -125,7 +125,13 @@ public class MapsActivity extends FragmentActivity implements
                 String url;
                 if (mETxtDistanceInput != null && mETxtDistanceInput.getText().toString().trim().length() > 0) {
 
+
                     int distance = Integer.parseInt(mETxtDistanceInput.getText().toString());
+                    if(distance > 15000 || distance <= 0){
+                        Toast.makeText(MapsActivity.this, "Distance should be less than 15000", Toast.LENGTH_LONG).show();
+                        return;
+                    }
+
                     Log.v(TAG, "distance +" + distance);
                     url = getUrl(mLatitude, mLongitude, Restaurant, distance);
                     Log.v(TAG, "Url " + url);

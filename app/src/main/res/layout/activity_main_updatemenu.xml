@@ -27,6 +27,15 @@
         android:layout_alignParentStart="true"
         android:layout_below="@+id/button">
 
+        <TextView
+            android:text="Restaurant Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:id="@+id/txtRestaurantName" />
+
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -54,15 +63,12 @@
         <ListView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:id="@+id/myListView"
-
-            />
-
+            android:id="@+id/myListView" />
 
     </LinearLayout>
 
     <Button
-        android:text="Refresh Menu"
+        android:text="Order Food"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"

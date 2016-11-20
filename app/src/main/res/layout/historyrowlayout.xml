@@ -12,4 +12,11 @@
         android:textColor="#000"
         android:padding="10dp"
         android:layout_weight="1" />
+
+    <Button
+        android:text="QR"
+        android:layout_width="56dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnQr"
+        android:layout_weight="0.08" />
 </LinearLayout>

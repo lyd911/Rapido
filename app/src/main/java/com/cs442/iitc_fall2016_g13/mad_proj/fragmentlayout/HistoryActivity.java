@@ -1,8 +1,10 @@
 package com.cs442.iitc_fall2016_g13.mad_proj.fragmentlayout;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
+import com.cs442.iitc_fall2016_g13.mad_proj.QRCodeGenerator;
 import com.cs442.iitc_fall2016_g13.mad_proj.R;
 
 public class HistoryActivity extends AppCompatActivity {
@@ -27,4 +29,6 @@ public class HistoryActivity extends AppCompatActivity {
 
 
     }
+
+
 }
