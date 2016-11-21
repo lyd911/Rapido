@@ -20,13 +20,13 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
-
         <Button
             android:text="Search"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/btn_search"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:background="@color/accent_color_1" />
 
         <EditText
             android:layout_width="wrap_content"
@@ -41,17 +41,16 @@
             android:layout_width="109dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:id="@+id/btn_changeView" />
+            android:id="@+id/btn_changeView"
+            android:background="@color/accent_color_1" />
 
     </LinearLayout>
-
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="132dp"
         android:orientation="vertical"
         >
-
 
         <LinearLayout
             android:orientation="horizontal"
@@ -63,14 +62,16 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/btn_sortDistance"
-                android:layout_weight="1" />
+                android:layout_weight="1"
+                android:background="@color/accent_color_1" />
 
             <Button
                 android:text="Sort by rating"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/btn_sortRating"
-                android:layout_weight="1" />
+                android:layout_weight="1"
+                android:background="@color/accent_color_1" />
         </LinearLayout>
 
         <ListView
@@ -82,7 +83,7 @@
             android:dividerHeight="2dp"
             android:layout_margin="3dp"
             android:padding="5dp"
-            android:background="#0033cc"
+            android:background="@color/accent_color_3"
             android:cacheColorHint="#ffffff"
             android:scrollbars="none" />
 
@@ -99,18 +100,15 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:weightSum="1">
 
-
-        <fragment xmlns:android="http://schemas.android.com/apk/res/android"
-            xmlns:map="http://schemas.android.com/apk/res-auto"
-            xmlns:tools="http://schemas.android.com/tools"
+        <fragment
             android:id="@+id/map"
             android:name="com.google.android.gms.maps.SupportMapFragment"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             tools:context="com.cs442.iitc_fall2016_g13.maps_detainincircle.MapsActivity" />
-
 
     </LinearLayout>
 

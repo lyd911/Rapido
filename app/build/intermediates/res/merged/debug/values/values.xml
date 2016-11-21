@@ -21,14 +21,14 @@
     <color name="abc_search_url_text_normal">#7fa87f</color>
     <color name="abc_search_url_text_pressed">@android:color/black</color>
     <color name="abc_search_url_text_selected">@android:color/black</color>
-    <color name="accent_color_1">#6CCECB</color>
-    <color name="accent_color_2">#F9E559</color>
-    <color name="accent_color_3">#EF7126</color>
-    <color name="accent_color_4">#8EDC9D</color>
-    <color name="accent_color_5">#473E3F</color>
+    <color name="accent_color_1">#218c8d</color>
+    <color name="accent_color_2">#35c4b5</color>
+    <color name="accent_color_3">#f9e559</color>
+    <color name="accent_color_4">#EF7126</color>
+    <color name="accent_color_5">#8EDC9D</color>
+    <color name="accent_color_6">#473e3f</color>
     <color name="accent_material_dark">@color/material_deep_teal_200</color>
     <color name="accent_material_light">@color/material_deep_teal_500</color>
-    <color name="background_color">#218C8D</color>
     <color name="background_floating_material_dark">@color/material_grey_800</color>
     <color name="background_floating_material_light">@android:color/white</color>
     <color name="background_material_dark">@color/material_grey_850</color>
@@ -45,9 +45,6 @@
     <color name="cardview_light_background">#FFFFFFFF</color>
     <color name="cardview_shadow_end_color">#03000000</color>
     <color name="cardview_shadow_start_color">#37000000</color>
-    <color name="colorAccent">#FF4081</color>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
     <color name="com_facebook_blue">#3B5998</color>
     <color name="com_facebook_button_background_color">#415dae</color>
     <color name="com_facebook_button_background_color_disabled">#bdc1c9</color>
@@ -776,14 +773,21 @@
     <string name="create_calendar_message">Allow Ad to create a calendar event?</string>
     <string name="create_calendar_title">Create calendar event</string>
     <string name="decline">Decline</string>
+    <string name="default_web_client_id" translatable="false">563258390740-hlqjvj50o139fh69o01jh3051hrpr5gq.apps.googleusercontent.com</string>
     <string name="error_field_required">This field is required</string>
     <string name="error_incorrect_password">This password is incorrect</string>
     <string name="error_invalid_email">This email address is invalid</string>
     <string name="error_invalid_password">This password is too short</string>
     <string name="facebook_app_id">1132013720179341</string>
+    <string name="firebase_database_url" translatable="false">https://rapido-f6846.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">563258390740</string>
+    <string name="google_api_key" translatable="false">AIzaSyCFxSNPAkFFrKpXV8tKQ2GX7rs2-sk_pkU</string>
+    <string name="google_app_id" translatable="false">1:563258390740:android:52baf708f5924f3e</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyCFxSNPAkFFrKpXV8tKQ2GX7rs2-sk_pkU</string>
     <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">
         AIzaSyBuKVDmAmlAQsIMMn8vNXCd1JySQhIiV9c
     </string>
+    <string name="google_storage_bucket" translatable="false">rapido-f6846.appspot.com</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="hello_cart_fragment">Hello cart fragment</string>
     <string name="messenger_send_button_text">Send</string>
@@ -833,9 +837,9 @@
     </style>
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/background_color</item>
-        <item name="colorPrimaryDark">@color/accent_color_1</item>
-        <item name="colorAccent">@color/accent_color_2</item>
+        <item name="colorPrimary">@color/accent_color_1</item>
+        <item name="colorPrimaryDark">@color/accent_color_2</item>
+        <item name="colorAccent">@color/accent_color_3</item>
     </style>
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
     <style name="AppTheme.NoActionBar">

@@ -24,11 +24,11 @@ MERGED from [com.google.android.gms:play-services-analytics:9.0.2] C:\Users\Sand
 MERGED from [com.google.android.gms:play-services-nearby:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-nearby\9.0.2\AndroidManifest.xml:19:5-79
 MERGED from [com.google.android.gms:play-services-analytics-impl:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics-impl\9.0.2\AndroidManifest.xml:22:5-79
 MERGED from [com.google.android.gms:play-services-tagmanager-api:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tagmanager-api\9.0.2\AndroidManifest.xml:22:5-79
+MERGED from [com.google.android.gms:play-services-maps:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\9.0.2\AndroidManifest.xml:20:5-78
+MERGED from [com.paypal.sdk:paypal-android-sdk:2.15.0] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.paypal.sdk\paypal-android-sdk\2.15.0\AndroidManifest.xml:9:5-79
 MERGED from [com.google.firebase:firebase-analytics:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\9.0.2\AndroidManifest.xml:22:5-79
 MERGED from [com.google.firebase:firebase-analytics-impl:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics-impl\9.0.2\AndroidManifest.xml:22:5-79
 MERGED from [com.google.firebase:firebase-iid:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\9.0.2\AndroidManifest.xml:20:5-79
-MERGED from [com.google.android.gms:play-services-maps:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\9.0.2\AndroidManifest.xml:20:5-78
-MERGED from [com.paypal.sdk:paypal-android-sdk:2.15.0] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.paypal.sdk\paypal-android-sdk\2.15.0\AndroidManifest.xml:9:5-79
 	android:name
 		ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:11:22-76
 uses-permission#android.permission.CAMERA
@@ -51,11 +51,11 @@ MERGED from [com.google.android.gms:play-services-gcm:9.0.2] C:\Users\Sandra_Tob
 MERGED from [com.google.android.gms:play-services-iid:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-iid\9.0.2\AndroidManifest.xml:22:5-67
 MERGED from [com.google.android.gms:play-services-analytics-impl:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics-impl\9.0.2\AndroidManifest.xml:21:5-67
 MERGED from [com.google.android.gms:play-services-tagmanager-api:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tagmanager-api\9.0.2\AndroidManifest.xml:21:5-67
+MERGED from [com.google.android.gms:play-services-maps:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\9.0.2\AndroidManifest.xml:21:5-66
+MERGED from [com.paypal.sdk:paypal-android-sdk:2.15.0] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.paypal.sdk\paypal-android-sdk\2.15.0\AndroidManifest.xml:10:5-67
 MERGED from [com.google.firebase:firebase-analytics:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\9.0.2\AndroidManifest.xml:21:5-67
 MERGED from [com.google.firebase:firebase-analytics-impl:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics-impl\9.0.2\AndroidManifest.xml:21:5-67
 MERGED from [com.google.firebase:firebase-iid:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\9.0.2\AndroidManifest.xml:21:5-67
-MERGED from [com.google.android.gms:play-services-maps:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\9.0.2\AndroidManifest.xml:21:5-66
-MERGED from [com.paypal.sdk:paypal-android-sdk:2.15.0] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.paypal.sdk\paypal-android-sdk\2.15.0\AndroidManifest.xml:10:5-67
 	android:name
 		ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:14:22-64
 uses-permission#android.permission.GET_ACCOUNTS
@@ -101,17 +101,10 @@ MERGED from [com.google.android.gms:play-services-plus:9.0.2] C:\Users\Sandra_To
 MERGED from [com.google.android.gms:play-services-safetynet:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-safetynet\9.0.2\AndroidManifest.xml:19:5-20
 MERGED from [com.google.android.gms:play-services-analytics-impl:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics-impl\9.0.2\AndroidManifest.xml:27:5-20
 MERGED from [com.google.android.gms:play-services-tagmanager-api:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tagmanager-api\9.0.2\AndroidManifest.xml:24:5-38:19
-MERGED from [com.google.firebase:firebase-analytics:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\9.0.2\AndroidManifest.xml:26:5-41:19
-MERGED from [com.google.firebase:firebase-analytics-impl:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics-impl\9.0.2\AndroidManifest.xml:26:5-41:19
-MERGED from [com.google.firebase:firebase-iid:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\9.0.2\AndroidManifest.xml:30:5-59:19
 MERGED from [com.google.android.gms:play-services-vision:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-vision\9.0.2\AndroidManifest.xml:5:5-20
 MERGED from [com.google.android.gms:play-services-identity:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-identity\9.0.2\AndroidManifest.xml:19:5-20
 MERGED from [com.google.android.gms:play-services-maps:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\9.0.2\AndroidManifest.xml:27:5-20
 MERGED from [com.google.android.gms:play-services-wearable:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-wearable\9.0.2\AndroidManifest.xml:19:5-20
-MERGED from [com.google.android.gms:play-services-base:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\9.0.2\AndroidManifest.xml:19:5-23:19
-MERGED from [com.google.firebase:firebase-common:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.firebase\firebase-common\9.0.2\AndroidManifest.xml:5:5-12:19
-MERGED from [com.google.android.gms:play-services-tasks:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks\9.0.2\AndroidManifest.xml:5:5-20
-MERGED from [com.google.android.gms:play-services-basement:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.0.2\AndroidManifest.xml:20:5-24:19
 MERGED from [com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.journeyapps\zxing-android-embedded\3.2.0\AndroidManifest.xml:45:5-53:19
 MERGED from [com.android.support:design:24.2.1] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.android.support\design\24.2.1\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:appcompat-v7:24.2.1] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.2.1\AndroidManifest.xml:25:5-20
@@ -120,14 +113,22 @@ MERGED from [com.android.support:support-vector-drawable:24.2.1] C:\Users\Sandra
 MERGED from [com.facebook.android:facebook-android-sdk:4.15.0] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.facebook.android\facebook-android-sdk\4.15.0\AndroidManifest.xml:28:5-38:19
 MERGED from [com.android.support:cardview-v7:23.4.0] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\23.4.0\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:customtabs:23.4.0] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.android.support\customtabs\23.4.0\AndroidManifest.xml:22:5-20
+MERGED from [com.paypal.sdk:paypal-android-sdk:2.15.0] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.paypal.sdk\paypal-android-sdk\2.15.0\AndroidManifest.xml:12:5-26:19
+MERGED from [io.card:android-sdk:5.4.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\io.card\android-sdk\5.4.2\AndroidManifest.xml:19:5-24:19
+MERGED from [com.google.firebase:firebase-core:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.firebase\firebase-core\9.0.2\AndroidManifest.xml:5:5-20
+MERGED from [com.google.firebase:firebase-analytics:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\9.0.2\AndroidManifest.xml:26:5-41:19
+MERGED from [com.google.firebase:firebase-analytics-impl:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics-impl\9.0.2\AndroidManifest.xml:26:5-41:19
+MERGED from [com.google.android.gms:play-services-base:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\9.0.2\AndroidManifest.xml:19:5-23:19
+MERGED from [com.google.firebase:firebase-iid:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\9.0.2\AndroidManifest.xml:30:5-59:19
+MERGED from [com.google.firebase:firebase-common:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.firebase\firebase-common\9.0.2\AndroidManifest.xml:5:5-12:19
+MERGED from [com.google.android.gms:play-services-tasks:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks\9.0.2\AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-basement:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.0.2\AndroidManifest.xml:20:5-24:19
 MERGED from [com.android.support:support-v4:24.2.1] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.2.1\AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:support-fragment:24.2.1] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:support-media-compat:24.2.1] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:support-core-ui:24.2.1] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:support-core-utils:24.2.1] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:support-compat:24.2.1] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\AndroidManifest.xml:25:5-20
-MERGED from [com.paypal.sdk:paypal-android-sdk:2.15.0] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.paypal.sdk\paypal-android-sdk\2.15.0\AndroidManifest.xml:12:5-26:19
-MERGED from [io.card:android-sdk:5.4.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\io.card\android-sdk\5.4.2\AndroidManifest.xml:19:5-24:19
 	android:label
 		ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:26:9-41
 	android:supportsRtl
@@ -204,61 +205,57 @@ activity#com.cs442.iitc_fall2016_g13.mad_proj.Map_alert.MapsActivity_direction
 ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:64:9-70
 	android:name
 		ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:64:19-67
+activity#com.cs442.iitc_fall2016_g13.mad_proj.Dynamic_menu_update.MainActivity
+ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:65:9-70
+	android:name
+		ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:65:19-67
 activity#com.cs442.iitc_fall2016_g13.mad_proj.ServerConnect.LoginActivity
-ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:65:9-67:60
+ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:66:9-68:60
 	android:label
-		ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:67:13-57
+		ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:68:13-57
 	android:name
-		ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:66:13-56
+		ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:67:13-56
 activity#com.cs442.iitc_fall2016_g13.mad_proj.ServerConnect.SignUpActivity
-ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:68:9-73:20
+ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:69:9-74:20
 	android:label
-		ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:70:13-59
+		ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:71:13-59
 	android:name
-		ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:69:13-57
+		ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:70:13-57
 activity#com.facebook.FacebookActivity
-ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:74:9-78:75
+ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:75:9-79:75
 MERGED from [com.facebook.android:facebook-android-sdk:4.15.0] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.facebook.android\facebook-android-sdk\4.15.0\AndroidManifest.xml:29:9-32:75
 	android:label
-		ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:77:13-35
+		ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:78:13-35
 	android:configChanges
-		ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:76:13-96
+		ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:77:13-96
 	android:theme
-		ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:78:13-72
+		ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:79:13-72
 	android:name
-		ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:75:13-57
+		ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:76:13-57
 activity#com.cs442.iitc_fall2016_g13.mad_proj.FB_Signup
-ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:79:9-47
+ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:80:9-47
 	android:name
-		ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:79:19-44
-activity#com.cs442.iitc_fall2016_g13.mad_proj.LoadData
-ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:80:9-46
-	android:name
-		ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:80:19-43
+		ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:80:19-44
 activity#com.cs442.iitc_fall2016_g13.mad_proj.SellerMainActivity
-ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:81:9-56
+ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:82:9-56
 	android:name
-		ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:81:19-53
+		ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:82:19-53
 activity#com.cs442.iitc_fall2016_g13.mad_proj.SellerOrderHistoryActivity
-ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:82:9-64
+ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:83:9-64
 	android:name
-		ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:82:19-61
+		ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:83:19-61
 activity#com.cs442.iitc_fall2016_g13.mad_proj.SellerOrderDetailActivity
-ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:83:9-63
+ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:84:9-63
 	android:name
-		ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:83:19-60
+		ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:84:19-60
 activity#com.cs442.iitc_fall2016_g13.mad_proj.OrderHistory
-ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:84:9-50
+ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:85:9-50
 	android:name
-		ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:84:19-47
+		ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:85:19-47
 activity#com.cs442.iitc_fall2016_g13.mad_proj.MenuWeb
-ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:85:9-54
+ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:86:9-54
 	android:name
-		ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:85:19-42
-activity#com.cs442.iitc_fall2016_g13.mad_proj.FoodMenu
-ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:86:9-46
-	android:name
-		ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:86:19-43
+		ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:86:19-42
 activity#com.cs442.iitc_fall2016_g13.mad_proj.Cart
 ADDED from C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\src\main\AndroidManifest.xml:87:9-51
 	android:name
@@ -299,18 +296,11 @@ MERGED from [com.google.android.gms:play-services-safetynet:9.0.2] C:\Users\Sand
 MERGED from [com.google.android.gms:play-services-tagmanager:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tagmanager\9.0.2\AndroidManifest.xml:18:5-42
 MERGED from [com.google.android.gms:play-services-analytics-impl:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics-impl\9.0.2\AndroidManifest.xml:18:5-42
 MERGED from [com.google.android.gms:play-services-tagmanager-api:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tagmanager-api\9.0.2\AndroidManifest.xml:18:5-42
-MERGED from [com.google.firebase:firebase-analytics:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\9.0.2\AndroidManifest.xml:18:5-42
-MERGED from [com.google.firebase:firebase-analytics-impl:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics-impl\9.0.2\AndroidManifest.xml:18:5-42
-MERGED from [com.google.firebase:firebase-iid:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\9.0.2\AndroidManifest.xml:18:5-42
 MERGED from [com.google.android.gms:play-services-vision:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-vision\9.0.2\AndroidManifest.xml:4:5-42
 MERGED from [com.google.android.gms:play-services-wallet:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-wallet\9.0.2\AndroidManifest.xml:19:5-42
 MERGED from [com.google.android.gms:play-services-identity:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-identity\9.0.2\AndroidManifest.xml:18:5-42
 MERGED from [com.google.android.gms:play-services-maps:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\9.0.2\AndroidManifest.xml:26:5-42
 MERGED from [com.google.android.gms:play-services-wearable:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-wearable\9.0.2\AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-base:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\9.0.2\AndroidManifest.xml:18:5-42
-MERGED from [com.google.firebase:firebase-common:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.firebase\firebase-common\9.0.2\AndroidManifest.xml:4:5-43
-MERGED from [com.google.android.gms:play-services-tasks:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks\9.0.2\AndroidManifest.xml:4:5-43
-MERGED from [com.google.android.gms:play-services-basement:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.0.2\AndroidManifest.xml:18:5-42
 MERGED from [com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.journeyapps\zxing-android-embedded\3.2.0\AndroidManifest.xml:19:5-43
 MERGED from [com.android.support:design:24.2.1] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.android.support\design\24.2.1\AndroidManifest.xml:20:5-43
 MERGED from [com.android.support:appcompat-v7:24.2.1] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.2.1\AndroidManifest.xml:21:5-23:78
@@ -320,14 +310,22 @@ MERGED from [com.android.support:recyclerview-v7:24.2.1] C:\Users\Sandra_Tobias\
 MERGED from [com.facebook.android:facebook-android-sdk:4.15.0] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.facebook.android\facebook-android-sdk\4.15.0\AndroidManifest.xml:24:5-26:41
 MERGED from [com.android.support:cardview-v7:23.4.0] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\23.4.0\AndroidManifest.xml:20:5-43
 MERGED from [com.android.support:customtabs:23.4.0] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.android.support\customtabs\23.4.0\AndroidManifest.xml:20:5-44
+MERGED from [com.paypal.sdk:paypal-android-sdk:2.15.0] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.paypal.sdk\paypal-android-sdk\2.15.0\AndroidManifest.xml:5:5-7:41
+MERGED from [io.card:android-sdk:5.4.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\io.card\android-sdk\5.4.2\AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.firebase:firebase-core:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.firebase\firebase-core\9.0.2\AndroidManifest.xml:4:5-42
+MERGED from [com.google.firebase:firebase-analytics:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\9.0.2\AndroidManifest.xml:18:5-42
+MERGED from [com.google.firebase:firebase-analytics-impl:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics-impl\9.0.2\AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-base:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\9.0.2\AndroidManifest.xml:18:5-42
+MERGED from [com.google.firebase:firebase-iid:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\9.0.2\AndroidManifest.xml:18:5-42
+MERGED from [com.google.firebase:firebase-common:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.firebase\firebase-common\9.0.2\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-tasks:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks\9.0.2\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-basement:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.0.2\AndroidManifest.xml:18:5-42
 MERGED from [com.android.support:support-v4:24.2.1] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.2.1\AndroidManifest.xml:21:5-23:54
 MERGED from [com.android.support:support-fragment:24.2.1] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\AndroidManifest.xml:21:5-23:60
 MERGED from [com.android.support:support-media-compat:24.2.1] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\AndroidManifest.xml:21:5-23:63
 MERGED from [com.android.support:support-core-ui:24.2.1] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\AndroidManifest.xml:21:5-23:58
 MERGED from [com.android.support:support-core-utils:24.2.1] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\AndroidManifest.xml:21:5-23:61
 MERGED from [com.android.support:support-compat:24.2.1] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\AndroidManifest.xml:21:5-23:58
-MERGED from [com.paypal.sdk:paypal-android-sdk:2.15.0] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.paypal.sdk\paypal-android-sdk\2.15.0\AndroidManifest.xml:5:5-7:41
-MERGED from [io.card:android-sdk:5.4.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\io.card\android-sdk\5.4.2\AndroidManifest.xml:5:5-7:41
 	tools:overrideLibrary
 		ADDED from [com.android.support:appcompat-v7:24.2.1] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.2.1\AndroidManifest.xml:23:9-75
 	android:targetSdkVersion
@@ -454,110 +452,12 @@ category#android.intent.category.BROWSABLE
 ADDED from [com.google.android.gms:play-services-tagmanager-api:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tagmanager-api\9.0.2\AndroidManifest.xml:35:17-77
 	android:name
 		ADDED from [com.google.android.gms:play-services-tagmanager-api:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tagmanager-api\9.0.2\AndroidManifest.xml:35:27-75
-receiver#com.google.android.gms.measurement.AppMeasurementReceiver
-ADDED from [com.google.firebase:firebase-analytics:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\9.0.2\AndroidManifest.xml:28:7-34:18
-MERGED from [com.google.firebase:firebase-analytics-impl:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics-impl\9.0.2\AndroidManifest.xml:28:7-34:18
-	android:enabled
-		ADDED from [com.google.firebase:firebase-analytics:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\9.0.2\AndroidManifest.xml:30:11-33
-	android:name
-		ADDED from [com.google.firebase:firebase-analytics:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\9.0.2\AndroidManifest.xml:29:11-83
-intent-filter#com.google.android.gms.measurement.UPLOAD
-ADDED from [com.google.firebase:firebase-analytics:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\9.0.2\AndroidManifest.xml:31:9-33:25
-action#com.google.android.gms.measurement.UPLOAD
-ADDED from [com.google.firebase:firebase-analytics:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\9.0.2\AndroidManifest.xml:32:11-77
-	android:name
-		ADDED from [com.google.firebase:firebase-analytics:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\9.0.2\AndroidManifest.xml:32:19-75
-service#com.google.android.gms.measurement.AppMeasurementService
-ADDED from [com.google.firebase:firebase-analytics:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\9.0.2\AndroidManifest.xml:36:7-39:37
-MERGED from [com.google.firebase:firebase-analytics-impl:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics-impl\9.0.2\AndroidManifest.xml:36:7-39:37
-	android:enabled
-		ADDED from [com.google.firebase:firebase-analytics:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\9.0.2\AndroidManifest.xml:38:11-33
-	android:exported
-		ADDED from [com.google.firebase:firebase-analytics:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\9.0.2\AndroidManifest.xml:39:11-35
-	android:name
-		ADDED from [com.google.firebase:firebase-analytics:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\9.0.2\AndroidManifest.xml:37:11-82
-permission#${applicationId}.permission.C2D_MESSAGE
-ADDED from [com.google.firebase:firebase-iid:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\9.0.2\AndroidManifest.xml:25:5-26:47
-	android:protectionLevel
-		ADDED from [com.google.firebase:firebase-iid:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\9.0.2\AndroidManifest.xml:26:9-44
-	android:name
-		ADDED from [com.google.firebase:firebase-iid:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\9.0.2\AndroidManifest.xml:25:17-71
-uses-permission#${applicationId}.permission.C2D_MESSAGE
-ADDED from [com.google.firebase:firebase-iid:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\9.0.2\AndroidManifest.xml:28:5-79
-	android:name
-		ADDED from [com.google.firebase:firebase-iid:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\9.0.2\AndroidManifest.xml:28:22-76
-receiver#com.google.firebase.iid.FirebaseInstanceIdReceiver
-ADDED from [com.google.firebase:firebase-iid:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\9.0.2\AndroidManifest.xml:32:9-41:20
-	android:exported
-		ADDED from [com.google.firebase:firebase-iid:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\9.0.2\AndroidManifest.xml:34:13-36
-	android:permission
-		ADDED from [com.google.firebase:firebase-iid:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\9.0.2\AndroidManifest.xml:35:13-73
-	android:name
-		ADDED from [com.google.firebase:firebase-iid:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\9.0.2\AndroidManifest.xml:33:13-78
-intent-filter#${applicationId}+com.google.android.c2dm.intent.RECEIVE+com.google.android.c2dm.intent.REGISTRATION
-ADDED from [com.google.firebase:firebase-iid:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\9.0.2\AndroidManifest.xml:36:13-40:29
-action#com.google.android.c2dm.intent.RECEIVE
-ADDED from [com.google.firebase:firebase-iid:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\9.0.2\AndroidManifest.xml:37:17-81
-	android:name
-		ADDED from [com.google.firebase:firebase-iid:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\9.0.2\AndroidManifest.xml:37:25-78
-action#com.google.android.c2dm.intent.REGISTRATION
-ADDED from [com.google.firebase:firebase-iid:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\9.0.2\AndroidManifest.xml:38:17-86
-	android:name
-		ADDED from [com.google.firebase:firebase-iid:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\9.0.2\AndroidManifest.xml:38:25-83
-category#${applicationId}
-ADDED from [com.google.firebase:firebase-iid:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\9.0.2\AndroidManifest.xml:39:17-61
-	android:name
-		ADDED from [com.google.firebase:firebase-iid:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\9.0.2\AndroidManifest.xml:39:27-58
-receiver#com.google.firebase.iid.FirebaseInstanceIdInternalReceiver
-ADDED from [com.google.firebase:firebase-iid:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\9.0.2\AndroidManifest.xml:45:9-47:40
-	android:exported
-		ADDED from [com.google.firebase:firebase-iid:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\9.0.2\AndroidManifest.xml:47:13-37
-	android:name
-		ADDED from [com.google.firebase:firebase-iid:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\9.0.2\AndroidManifest.xml:46:13-86
-service#com.google.firebase.iid.FirebaseInstanceIdService
-ADDED from [com.google.firebase:firebase-iid:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\9.0.2\AndroidManifest.xml:51:9-57:19
-	android:exported
-		ADDED from [com.google.firebase:firebase-iid:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\9.0.2\AndroidManifest.xml:53:13-36
-	android:name
-		ADDED from [com.google.firebase:firebase-iid:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\9.0.2\AndroidManifest.xml:52:13-77
-intent-filter#com.google.firebase.INSTANCE_ID_EVENT
-ADDED from [com.google.firebase:firebase-iid:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\9.0.2\AndroidManifest.xml:54:13-56:29
-	android:priority
-		ADDED from [com.google.firebase:firebase-iid:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\9.0.2\AndroidManifest.xml:54:28-51
-action#com.google.firebase.INSTANCE_ID_EVENT
-ADDED from [com.google.firebase:firebase-iid:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\9.0.2\AndroidManifest.xml:55:17-80
-	android:name
-		ADDED from [com.google.firebase:firebase-iid:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\9.0.2\AndroidManifest.xml:55:25-77
 uses-feature#0x00020000
 ADDED from [com.google.android.gms:play-services-maps:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\9.0.2\AndroidManifest.xml:22:5-24:33
 	android:glEsVersion
 		ADDED from [com.google.android.gms:play-services-maps:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\9.0.2\AndroidManifest.xml:23:8-40
 	android:required
 		ADDED from [com.google.android.gms:play-services-maps:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\9.0.2\AndroidManifest.xml:24:8-31
-activity#com.google.android.gms.common.api.GoogleApiActivity
-ADDED from [com.google.android.gms:play-services-base:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\9.0.2\AndroidManifest.xml:20:9-22:45
-	android:exported
-		ADDED from [com.google.android.gms:play-services-base:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\9.0.2\AndroidManifest.xml:22:19-43
-	android:theme
-		ADDED from [com.google.android.gms:play-services-base:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\9.0.2\AndroidManifest.xml:21:19-78
-	android:name
-		ADDED from [com.google.android.gms:play-services-base:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\9.0.2\AndroidManifest.xml:20:19-85
-provider#com.google.firebase.provider.FirebaseInitProvider
-ADDED from [com.google.firebase:firebase-common:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.firebase\firebase-common\9.0.2\AndroidManifest.xml:7:9-11:39
-	android:authorities
-		ADDED from [com.google.firebase:firebase-common:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.firebase\firebase-common\9.0.2\AndroidManifest.xml:8:13-72
-	android:exported
-		ADDED from [com.google.firebase:firebase-common:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.firebase\firebase-common\9.0.2\AndroidManifest.xml:10:13-37
-	android:initOrder
-		ADDED from [com.google.firebase:firebase-common:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.firebase\firebase-common\9.0.2\AndroidManifest.xml:11:13-36
-	android:name
-		ADDED from [com.google.firebase:firebase-common:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.firebase\firebase-common\9.0.2\AndroidManifest.xml:9:13-58
-meta-data#com.google.android.gms.version
-ADDED from [com.google.android.gms:play-services-basement:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.0.2\AndroidManifest.xml:21:9-23:69
-	android:value
-		ADDED from [com.google.android.gms:play-services-basement:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.0.2\AndroidManifest.xml:23:13-66
-	android:name
-		ADDED from [com.google.android.gms:play-services-basement:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.0.2\AndroidManifest.xml:22:13-58
 uses-feature#android.hardware.camera
 ADDED from [com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.journeyapps\zxing-android-embedded\3.2.0\AndroidManifest.xml:24:5-26:36
 MERGED from [io.card:android-sdk:5.4.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\io.card\android-sdk\5.4.2\AndroidManifest.xml:12:5-14:36
@@ -676,3 +576,101 @@ activity#io.card.payment.DataEntryActivity
 ADDED from [io.card:android-sdk:5.4.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\io.card\android-sdk\5.4.2\AndroidManifest.xml:23:9-70
 	android:name
 		ADDED from [io.card:android-sdk:5.4.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\io.card\android-sdk\5.4.2\AndroidManifest.xml:23:19-67
+receiver#com.google.android.gms.measurement.AppMeasurementReceiver
+ADDED from [com.google.firebase:firebase-analytics:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\9.0.2\AndroidManifest.xml:28:7-34:18
+MERGED from [com.google.firebase:firebase-analytics-impl:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics-impl\9.0.2\AndroidManifest.xml:28:7-34:18
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\9.0.2\AndroidManifest.xml:30:11-33
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\9.0.2\AndroidManifest.xml:29:11-83
+intent-filter#com.google.android.gms.measurement.UPLOAD
+ADDED from [com.google.firebase:firebase-analytics:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\9.0.2\AndroidManifest.xml:31:9-33:25
+action#com.google.android.gms.measurement.UPLOAD
+ADDED from [com.google.firebase:firebase-analytics:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\9.0.2\AndroidManifest.xml:32:11-77
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\9.0.2\AndroidManifest.xml:32:19-75
+service#com.google.android.gms.measurement.AppMeasurementService
+ADDED from [com.google.firebase:firebase-analytics:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\9.0.2\AndroidManifest.xml:36:7-39:37
+MERGED from [com.google.firebase:firebase-analytics-impl:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics-impl\9.0.2\AndroidManifest.xml:36:7-39:37
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\9.0.2\AndroidManifest.xml:38:11-33
+	android:exported
+		ADDED from [com.google.firebase:firebase-analytics:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\9.0.2\AndroidManifest.xml:39:11-35
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\9.0.2\AndroidManifest.xml:37:11-82
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\9.0.2\AndroidManifest.xml:20:9-22:45
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\9.0.2\AndroidManifest.xml:22:19-43
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\9.0.2\AndroidManifest.xml:21:19-78
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\9.0.2\AndroidManifest.xml:20:19-85
+permission#${applicationId}.permission.C2D_MESSAGE
+ADDED from [com.google.firebase:firebase-iid:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\9.0.2\AndroidManifest.xml:25:5-26:47
+	android:protectionLevel
+		ADDED from [com.google.firebase:firebase-iid:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\9.0.2\AndroidManifest.xml:26:9-44
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\9.0.2\AndroidManifest.xml:25:17-71
+uses-permission#${applicationId}.permission.C2D_MESSAGE
+ADDED from [com.google.firebase:firebase-iid:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\9.0.2\AndroidManifest.xml:28:5-79
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\9.0.2\AndroidManifest.xml:28:22-76
+receiver#com.google.firebase.iid.FirebaseInstanceIdReceiver
+ADDED from [com.google.firebase:firebase-iid:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\9.0.2\AndroidManifest.xml:32:9-41:20
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\9.0.2\AndroidManifest.xml:34:13-36
+	android:permission
+		ADDED from [com.google.firebase:firebase-iid:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\9.0.2\AndroidManifest.xml:35:13-73
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\9.0.2\AndroidManifest.xml:33:13-78
+intent-filter#${applicationId}+com.google.android.c2dm.intent.RECEIVE+com.google.android.c2dm.intent.REGISTRATION
+ADDED from [com.google.firebase:firebase-iid:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\9.0.2\AndroidManifest.xml:36:13-40:29
+action#com.google.android.c2dm.intent.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\9.0.2\AndroidManifest.xml:37:17-81
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\9.0.2\AndroidManifest.xml:37:25-78
+action#com.google.android.c2dm.intent.REGISTRATION
+ADDED from [com.google.firebase:firebase-iid:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\9.0.2\AndroidManifest.xml:38:17-86
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\9.0.2\AndroidManifest.xml:38:25-83
+category#${applicationId}
+ADDED from [com.google.firebase:firebase-iid:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\9.0.2\AndroidManifest.xml:39:17-61
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\9.0.2\AndroidManifest.xml:39:27-58
+receiver#com.google.firebase.iid.FirebaseInstanceIdInternalReceiver
+ADDED from [com.google.firebase:firebase-iid:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\9.0.2\AndroidManifest.xml:45:9-47:40
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\9.0.2\AndroidManifest.xml:47:13-37
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\9.0.2\AndroidManifest.xml:46:13-86
+service#com.google.firebase.iid.FirebaseInstanceIdService
+ADDED from [com.google.firebase:firebase-iid:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\9.0.2\AndroidManifest.xml:51:9-57:19
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\9.0.2\AndroidManifest.xml:53:13-36
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\9.0.2\AndroidManifest.xml:52:13-77
+intent-filter#com.google.firebase.INSTANCE_ID_EVENT
+ADDED from [com.google.firebase:firebase-iid:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\9.0.2\AndroidManifest.xml:54:13-56:29
+	android:priority
+		ADDED from [com.google.firebase:firebase-iid:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\9.0.2\AndroidManifest.xml:54:28-51
+action#com.google.firebase.INSTANCE_ID_EVENT
+ADDED from [com.google.firebase:firebase-iid:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\9.0.2\AndroidManifest.xml:55:17-80
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\9.0.2\AndroidManifest.xml:55:25-77
+provider#com.google.firebase.provider.FirebaseInitProvider
+ADDED from [com.google.firebase:firebase-common:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.firebase\firebase-common\9.0.2\AndroidManifest.xml:7:9-11:39
+	android:authorities
+		ADDED from [com.google.firebase:firebase-common:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.firebase\firebase-common\9.0.2\AndroidManifest.xml:8:13-72
+	android:exported
+		ADDED from [com.google.firebase:firebase-common:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.firebase\firebase-common\9.0.2\AndroidManifest.xml:10:13-37
+	android:initOrder
+		ADDED from [com.google.firebase:firebase-common:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.firebase\firebase-common\9.0.2\AndroidManifest.xml:11:13-36
+	android:name
+		ADDED from [com.google.firebase:firebase-common:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.firebase\firebase-common\9.0.2\AndroidManifest.xml:9:13-58
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.0.2\AndroidManifest.xml:21:9-23:69
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.0.2\AndroidManifest.xml:23:13-66
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:9.0.2] C:\Users\Sandra_Tobias\Documents\CodeRepository\Rapido_Repositroy\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.0.2\AndroidManifest.xml:22:13-58

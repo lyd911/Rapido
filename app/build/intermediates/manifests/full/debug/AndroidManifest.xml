@@ -30,12 +30,6 @@
     <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- Permissions required for GCM -->
     <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
 
-    <permission
-        android:name="com.cs442.iitc_fall2016_g13.mad_proj.permission.C2D_MESSAGE"
-        android:protectionLevel="signature" />
-
-    <uses-permission android:name="com.cs442.iitc_fall2016_g13.mad_proj.permission.C2D_MESSAGE" />
-
     <uses-feature
         android:glEsVersion="0x00020000"
         android:required="true" /> <!-- Don't require camera, as this requires a rear camera. This allows it to work on the Nexus 7 -->
@@ -60,6 +54,12 @@
         android:required="false" />
 
     <uses-permission android:name="android.permission.VIBRATE" />
+
+    <permission
+        android:name="com.cs442.iitc_fall2016_g13.mad_proj.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.cs442.iitc_fall2016_g13.mad_proj.permission.C2D_MESSAGE" />
 
     <application
         android:allowBackup="true"
@@ -103,6 +103,7 @@
         <activity android:name="com.cs442.iitc_fall2016_g13.mad_proj.NearbyPlaces" />
         <activity android:name="com.cs442.iitc_fall2016_g13.mad_proj.Map_distance.MapsActivity" />
         <activity android:name="com.cs442.iitc_fall2016_g13.mad_proj.Map_alert.MapsActivity_direction" />
+        <activity android:name="com.cs442.iitc_fall2016_g13.mad_proj.Dynamic_menu_update.MainActivity" />
         <activity
             android:name="com.cs442.iitc_fall2016_g13.mad_proj.ServerConnect.LoginActivity"
             android:label="@string/title_activity_login" />
@@ -118,13 +119,12 @@
             android:label="rapido"
             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
         <activity android:name="com.cs442.iitc_fall2016_g13.mad_proj.FB_Signup" />
-        <activity android:name="com.cs442.iitc_fall2016_g13.mad_proj.LoadData" />
+        <!-- <activity android:name=".LoadData" /> -->
         <activity android:name="com.cs442.iitc_fall2016_g13.mad_proj.SellerMainActivity" />
         <activity android:name="com.cs442.iitc_fall2016_g13.mad_proj.SellerOrderHistoryActivity" />
         <activity android:name="com.cs442.iitc_fall2016_g13.mad_proj.SellerOrderDetailActivity" />
         <activity android:name="com.cs442.iitc_fall2016_g13.mad_proj.OrderHistory" />
         <activity android:name="com.cs442.iitc_fall2016_g13.mad_proj.MenuWeb" />
-        <activity android:name="com.cs442.iitc_fall2016_g13.mad_proj.FoodMenu" />
         <activity android:name="com.cs442.iitc_fall2016_g13.mad_proj.Cart" />
         <!-- Include the AdActivity and InAppPurchaseActivity configChanges and themes. -->
         <activity
@@ -191,6 +191,36 @@ Service handling Google Sign-In user revocation. For apps that do not integrate 
                 <category android:name="android.intent.category.BROWSABLE" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="com.journeyapps.barcodescanner.CaptureActivity"
+            android:clearTaskOnLaunch="true"
+            android:screenOrientation="sensorLandscape"
+            android:stateNotNeeded="true"
+            android:theme="@style/zxing_CaptureTheme"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true" >
+        </activity>
+        <activity android:name="com.facebook.CustomTabMainActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.PaymentActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.PaymentMethodActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.PaymentConfirmActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.LoginActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.PayPalFuturePaymentActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.FuturePaymentConsentActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.FuturePaymentInfoActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.PayPalProfileSharingActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.ProfileSharingConsentActivity" />
+
+        <service
+            android:name="com.paypal.android.sdk.payments.PayPalService"
+            android:exported="false" />
+
+        <activity
+            android:name="io.card.payment.CardIOActivity"
+            android:configChanges="keyboardHidden|orientation" />
+        <activity android:name="io.card.payment.DataEntryActivity" />
 
         <receiver
             android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
@@ -204,6 +234,11 @@ Service handling Google Sign-In user revocation. For apps that do not integrate 
             android:name="com.google.android.gms.measurement.AppMeasurementService"
             android:enabled="true"
             android:exported="false" />
+
+        <activity
+            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
 
         <receiver
             android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
@@ -235,11 +270,6 @@ Service handling Google Sign-In user revocation. For apps that do not integrate 
             </intent-filter>
         </service>
 
-        <activity
-            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-            android:exported="false"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-
         <provider
             android:name="com.google.firebase.provider.FirebaseInitProvider"
             android:authorities="com.cs442.iitc_fall2016_g13.mad_proj.firebaseinitprovider"
@@ -249,37 +279,6 @@ Service handling Google Sign-In user revocation. For apps that do not integrate 
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
-
-        <activity
-            android:name="com.journeyapps.barcodescanner.CaptureActivity"
-            android:clearTaskOnLaunch="true"
-            android:screenOrientation="sensorLandscape"
-            android:stateNotNeeded="true"
-            android:theme="@style/zxing_CaptureTheme"
-            android:windowSoftInputMode="stateAlwaysHidden" />
-        <activity
-            android:name="com.facebook.CustomTabActivity"
-            android:exported="true" >
-        </activity>
-        <activity android:name="com.facebook.CustomTabMainActivity" />
-        <activity android:name="com.paypal.android.sdk.payments.PaymentActivity" />
-        <activity android:name="com.paypal.android.sdk.payments.PaymentMethodActivity" />
-        <activity android:name="com.paypal.android.sdk.payments.PaymentConfirmActivity" />
-        <activity android:name="com.paypal.android.sdk.payments.LoginActivity" />
-        <activity android:name="com.paypal.android.sdk.payments.PayPalFuturePaymentActivity" />
-        <activity android:name="com.paypal.android.sdk.payments.FuturePaymentConsentActivity" />
-        <activity android:name="com.paypal.android.sdk.payments.FuturePaymentInfoActivity" />
-        <activity android:name="com.paypal.android.sdk.payments.PayPalProfileSharingActivity" />
-        <activity android:name="com.paypal.android.sdk.payments.ProfileSharingConsentActivity" />
-
-        <service
-            android:name="com.paypal.android.sdk.payments.PayPalService"
-            android:exported="false" />
-
-        <activity
-            android:name="io.card.payment.CardIOActivity"
-            android:configChanges="keyboardHidden|orientation" />
-        <activity android:name="io.card.payment.DataEntryActivity" />
     </application>
 
 </manifest>

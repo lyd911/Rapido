@@ -2,25 +2,27 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:fitsSystemWindows="true">
+    android:fitsSystemWindows="true"
+    android:background="@drawable/rapido_background">
 
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingTop="100dp"
+        android:paddingTop="150dp"
         android:paddingLeft="24dp"
-        android:paddingRight="24dp">
-
-
+        android:paddingRight="24dp"
+        android:weightSum="1">
 
         <!-- Email Label -->
         <EditText android:id="@+id/input_login_username"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
             android:inputType="textEmailAddress"
             android:text="kartik"
-            android:hint="Email" />
+            android:hint="Email"
+            android:textColor="@color/accent_color_6"
+            android:layout_weight="0.21"
+            android:layout_height="60dp" />
 
         <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
@@ -33,7 +35,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:layout_marginBottom="8dp">
+            android:layout_marginBottom="8dp"
+            android:textColorHint="#80000000">
             <EditText android:id="@+id/input_login_password"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -49,7 +52,9 @@
             android:layout_marginTop="24dp"
             android:layout_marginBottom="24dp"
             android:padding="12dp"
-            android:text="Login"/>
+            android:text="Login"
+            android:background="@color/accent_color_1"
+            android:textColor="@android:color/white" />
 
         <TextView android:id="@+id/link_signup"
             android:layout_width="fill_parent"
@@ -65,8 +70,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
-
-            />
+            android:background="@color/accent_color_2" />
 
     </LinearLayout>
 </ScrollView>

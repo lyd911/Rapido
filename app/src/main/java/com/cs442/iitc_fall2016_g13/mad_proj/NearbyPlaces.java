@@ -69,39 +69,6 @@ public class NearbyPlaces extends AppCompatActivity implements NavigationView.On
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
-
-        RecyclerView recList = (RecyclerView) findViewById(R.id.cardList);
-        recList.setHasFixedSize(true);
-        LinearLayoutManager llm = new LinearLayoutManager(this);
-        llm.setOrientation(LinearLayoutManager.VERTICAL);
-        recList.setLayoutManager(llm);
-
-        RestaurantAdapter ca = new RestaurantAdapter(createList(GlobalVariables.res_data.length));
-        recList.setAdapter(ca);
-
-    }
-
-    //I would need to populate this.
-    private List<RestaurantInfo> createList(int size) {
-
-        List<RestaurantInfo> result = new ArrayList<RestaurantInfo>();
-        for (int i=1; i < size; i++) {
-            RestaurantInfo ri = new RestaurantInfo();
-            ri.mName = GlobalVariables.res_data[i][0];
-            ri.mCuisine = GlobalVariables.res_data[i][1];
-            ri.mBusyness = RestaurantInfo.BUSYNESS_PREFIX + i;
-            ri.mDistance = RestaurantInfo.DISTANCE_PREFIX + i + " miles";
-            ri.mMinSpend = RestaurantInfo.MINSPEND_PREFIX + i;
-            ri.mRating = GlobalVariables.res_data[i][2];
-            ri.mReview = RestaurantInfo.REVIEW_PREFIX + i;
-            ri.mPriceRange = GlobalVariables.res_data[i][3];
-
-            result.add(ri);
-
-        }
-
-        return result;
-
     }
 
     @Override

@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:tag="small_screen"
-    android:background="@drawable/food_blur1"
+    android:background="@color/accent_color_2"
     tools:context="com.cs442.iitc_fall2016_g13.mad_proj.fragmentlayout.MenuAndCartActivity">
 
     <FrameLayout
@@ -15,7 +15,6 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
     </FrameLayout>
-
 
 
 </LinearLayout>

@@ -84,7 +84,6 @@
         <activity android:name=".SellerOrderDetailActivity" />
         <activity android:name=".OrderHistory" />
         <activity android:name=".MenuWeb"></activity>
-        <activity android:name=".FoodMenu" />
         <activity android:name=".Cart"></activity>
     </application>
 
