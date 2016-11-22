@@ -9,6 +9,7 @@ import android.widget.Toast;
 
 import com.cs442.iitc_fall2016_g13.mad_proj.Map_distance.MapsActivity;
 import com.cs442.iitc_fall2016_g13.mad_proj.NearbyPlaces;
+import com.cs442.iitc_fall2016_g13.mad_proj.fragmentlayout.CustomerOrderHistoryActivity;
 import com.cs442.iitc_fall2016_g13.mad_proj.fragmentlayout.billingactivity;
 
 import java.io.BufferedReader;
@@ -80,11 +81,10 @@ public class CustomerPlaceOrderProcess extends AsyncTask<String,Void,String> {
                 sb.append(line);
                 break;
             }
-            Intent intent = new Intent(context, NearbyPlaces.class);
-            context.startActivity(intent);
 
-            Intent i = new Intent(context, MapsActivity.class);
-            context.startActivity(i);
+
+            dialog.dismiss();
+
             return sb.toString();
         }
         catch(Exception e){
@@ -98,7 +98,7 @@ public class CustomerPlaceOrderProcess extends AsyncTask<String,Void,String> {
 
         Toast.makeText(getApplicationContext(),"Order placed!",Toast.LENGTH_LONG).show();
 
-        dialog.dismiss();
+
 
 
     }

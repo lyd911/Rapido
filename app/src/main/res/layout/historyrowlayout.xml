@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:text="textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/historyRowText"
+        android:textColor="#000"
+        android:padding="10dp"
+        android:layout_weight="1" />
+
+    <Button
+        android:text="QR"
+        android:layout_width="56dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnQr"
+        android:layout_weight="0.08" />
+</LinearLayout>

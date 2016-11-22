@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "563258390740",
+    "firebase_url": "https://rapido-f6846.firebaseio.com",
+    "project_id": "rapido-f6846",
+    "storage_bucket": "rapido-f6846.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:563258390740:android:52baf708f5924f3e",
+        "android_client_info": {
+          "package_name": "com.cs442.iitc_fall2016_g13.mad_proj"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "563258390740-hlqjvj50o139fh69o01jh3051hrpr5gq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCFxSNPAkFFrKpXV8tKQ2GX7rs2-sk_pkU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

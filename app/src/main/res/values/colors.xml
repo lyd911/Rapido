@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="background_color">#218C8D</color>
+    <color name="accent_color_1">#6CCECB</color>
+    <color name="accent_color_2">#F9E559</color>
+    <color name="accent_color_3">#EF7126</color>
+    <color name="accent_color_4">#8EDC9D</color>
+    <color name="accent_color_5">#473E3F</color>
+</resources>

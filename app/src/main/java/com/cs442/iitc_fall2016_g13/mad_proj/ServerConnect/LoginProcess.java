@@ -18,6 +18,7 @@ package com.cs442.iitc_fall2016_g13.mad_proj.ServerConnect;
 
         import com.cs442.iitc_fall2016_g13.mad_proj.Map_distance.MapsActivity;
         import com.cs442.iitc_fall2016_g13.mad_proj.NearbyPlaces;
+        import com.cs442.iitc_fall2016_g13.mad_proj.fragmentlayout.CustomerOrderHistoryActivity;
 
         import java.io.BufferedReader;
         import java.io.InputStreamReader;

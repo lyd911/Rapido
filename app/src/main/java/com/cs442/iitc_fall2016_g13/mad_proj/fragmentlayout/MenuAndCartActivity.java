@@ -234,6 +234,8 @@ public class MenuAndCartActivity extends AppCompatActivity implements TitleFragm
                 });
                 builder.setView(tv);
                 builder.show();
+                Intent intent = new Intent(this,CustomerOrderHistoryActivity.class);
+                startActivity(intent);
             }
         }
     }
