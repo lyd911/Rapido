@@ -2,6 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/food"
     android:paddingLeft="16dp"
     android:paddingRight="16dp" >
 
@@ -15,7 +16,7 @@
         android:layout_marginStart="9dp"
         android:layout_marginTop="14dp"
         android:id="@+id/detail_textview"
-        android:textSize="24sp" />
+        android:textSize="30sp" />
 
     <ListView
         android:layout_width="match_parent"

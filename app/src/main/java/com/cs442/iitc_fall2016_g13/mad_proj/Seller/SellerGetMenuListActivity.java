@@ -26,7 +26,7 @@ public class SellerGetMenuListActivity extends Activity {
         TextView title_textview = (TextView)findViewById(R.id.title_textview);
         menu_list_textview = (TextView)findViewById(R.id.menu_list_textview);
         final EditText order_id_edittext = (EditText)findViewById(R.id.order_id_editText);
-        Button get_menu_list_button = (Button)findViewById(R.id.get_menu_list_button);
+        Button get_menu_list_button = (Button)findViewById(R.id.QR_reader_button);
 
         get_menu_list_button.setOnClickListener(new View.OnClickListener() {
             @Override

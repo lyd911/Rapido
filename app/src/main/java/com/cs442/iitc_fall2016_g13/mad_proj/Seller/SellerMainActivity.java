@@ -1,12 +1,12 @@
 package com.cs442.iitc_fall2016_g13.mad_proj.Seller;
 
 import android.app.Activity;
-import android.app.Dialog;
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
-
+import android.os.Handler;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -14,6 +14,7 @@ import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import com.cs442.iitc_fall2016_g13.mad_proj.QRCodeReader;
 import com.cs442.iitc_fall2016_g13.mad_proj.R;
 import com.cs442.iitc_fall2016_g13.mad_proj.ServerConnect.LoginActivity;
 
@@ -24,9 +25,6 @@ import java.net.URL;
 import java.net.URLConnection;
 import java.net.URLEncoder;
 import java.util.ArrayList;
-import android.os.Handler;
-
-
 import java.util.Timer;
 import java.util.TimerTask;
 
@@ -39,12 +37,12 @@ public class SellerMainActivity extends Activity{
 
     public static ArrayList<OneOrder> pendingOrders;
     public static ArrayAdapter<String> aa;
-    public static Dialog dialog;
+    private ProgressDialog dialog;
 
     public static ListView orders_listview;
     public static ArrayList<String> orderString;
     public static int currentOrder;
-   private int numberOfOrders;
+    private int numberOfOrders;
 
 
     @Override
@@ -57,7 +55,7 @@ public class SellerMainActivity extends Activity{
 
         TextView pending_textview=(TextView)findViewById(R.id.detail_textview);
         Button order_history_button=(Button)findViewById(R.id.order_history_button);
-        Button get_menu_list_button=(Button)findViewById(R.id.get_menu_list_button);
+        Button QR_reader_button=(Button)findViewById(R.id.QR_reader_button);
         orders_listview =(ListView)findViewById(R.id.orders_listview);
 
         String admin = LoginActivity.admin;
@@ -70,10 +68,10 @@ public class SellerMainActivity extends Activity{
             }
         });
 
-        get_menu_list_button.setOnClickListener(new View.OnClickListener() {
+        QR_reader_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(),SellerGetMenuListActivity.class);
+                Intent intent = new Intent(getApplicationContext(), QRCodeReader.class);
                 startActivity(intent);
             }
         });
@@ -139,8 +137,6 @@ public class SellerMainActivity extends Activity{
             @Override
             protected void onPreExecute() {
                 super.onPreExecute();
-//                dialog.setMessage("Please wait");
-//                dialog.show();
             }
 
 
@@ -208,7 +204,6 @@ public class SellerMainActivity extends Activity{
 
                             orderString.add(ss);
                         }}
-
 
                     aa.notifyDataSetChanged();
 
