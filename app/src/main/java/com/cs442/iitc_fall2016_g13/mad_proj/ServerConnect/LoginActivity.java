@@ -6,10 +6,13 @@ package com.cs442.iitc_fall2016_g13.mad_proj.ServerConnect;
         import android.view.View;
         import android.widget.Button;
         import android.widget.EditText;
+        import android.widget.RadioButton;
+        import android.widget.RadioGroup;
         import android.widget.TextView;
         import android.widget.Toast;
 
         import com.cs442.iitc_fall2016_g13.mad_proj.R;
+        import com.cs442.iitc_fall2016_g13.mad_proj.Seller.SellerSignUp;
         import com.facebook.AccessToken;
         import com.facebook.AccessTokenTracker;
         import com.facebook.CallbackManager;
@@ -24,12 +27,14 @@ package com.cs442.iitc_fall2016_g13.mad_proj.ServerConnect;
 public class LoginActivity extends AppCompatActivity {
     EditText username,password;
     Button login;
-    TextView signup;
+    TextView signup,SellerSignup;
     public static String admin="";
     public static String UserName="";
 
     private LoginButton loginButton;
     private CallbackManager callbackManager;
+
+    private RadioButton SellerRadio,CustomerRadio;
 
     private FacebookCallback<LoginResult> mCallback=new FacebookCallback<LoginResult>() {
         @Override
@@ -86,11 +91,19 @@ public class LoginActivity extends AppCompatActivity {
         username = (EditText)findViewById(R.id.input_login_username);
         password = (EditText)findViewById(R.id.input_login_password);
 
-
+        SellerRadio=(RadioButton)findViewById(R.id.SellerRadio);
+        CustomerRadio=(RadioButton)findViewById(R.id.CustomerRadio);
+        SellerSignup=(TextView)findViewById(R.id.Sellerlink_signup);
 
         login = (Button)findViewById(R.id.btn_login);
         signup = (TextView) findViewById(R.id.link_signup);
-
+        SellerSignup.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getApplicationContext(), SellerSignUp.class);
+                startActivity(i);
+            }
+        });
 
 
         signup.setOnClickListener(new View.OnClickListener() {
@@ -100,6 +113,11 @@ public class LoginActivity extends AppCompatActivity {
                 startActivity(i);
             }
         });
+
+        RadioGroup radioGroup = (RadioGroup)findViewById(R.id.LoginRadioGroup);
+
+
+
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -110,7 +128,7 @@ public class LoginActivity extends AppCompatActivity {
                     Toast toast = Toast.makeText(getApplicationContext(), "Please enter username and password", Toast.LENGTH_LONG);
                     toast.show();
                 }
-                else if(uname.equals("admin0")||uname.equals("admin1")||uname.equals("admin2")){
+                else if(SellerRadio.getText().toString().equals("Restaurant Owner")){
                     new SellerLoginProcess(v.getContext()).execute(uname, pwd);
                 }
                 else {
