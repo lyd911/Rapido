@@ -33,8 +33,7 @@ public class SellerSignUp extends AppCompatActivity {
 
     EditText username,password,conf_password,name,address,phone;
     Button signup;
-    String dbKeyRestaurants = "RESTAURANTS";
-    String dbKeyRestaurantName = "RESTAURANT_NAME";
+
 
     Context mContext;
     boolean mFlag = true;
@@ -70,23 +69,11 @@ public class SellerSignUp extends AppCompatActivity {
 
                 if(cnf_pwd.equals(pwd)) {
                     String restaurantName = nm;
-                    final FirebaseDatabase database = FirebaseDatabase.getInstance();
-                    final DatabaseReference myRef = database.getReference(dbKeyRestaurants);
+
                     mFlag = false;
 
 
-                    myRef.addValueEventListener(new ValueEventListener() {
-                        @Override
-                        public void onDataChange(DataSnapshot dataSnapshot) {
-                            if (dataSnapshot.hasChild(uname)) {
-                                Toast toast = Toast.makeText(getApplicationContext(), "Account ALready Exist", Toast.LENGTH_LONG);
-                                toast.show();// run some code
-                            }
-                            else
-                            {
-
-                                myRef.child(uname).child(dbKeyRestaurantName).setValue(nm); // add name
-                            //    Toast toast = Toast.makeText(getApplicationContext(), "Account Created", Toast.LENGTH_LONG);
+                                               //    Toast toast = Toast.makeText(getApplicationContext(), "Account Created", Toast.LENGTH_LONG);
                               //  toast.show();
                                 new SellerSignUpProcess(mContext).execute(uname,pwd,nm,ph,addr);
 
@@ -94,15 +81,12 @@ public class SellerSignUp extends AppCompatActivity {
                           //finish();
                                 // Create a new Account
 
-                            }
 
-                        }
 
-                        @Override
-                        public void onCancelled(DatabaseError databaseError) {
 
-                        }
-                    });
+
+
+
 
 
                   //  new SignUpProcess(v.getContext()).execute(uname, pwd, nm, ph, addr);

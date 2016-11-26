@@ -6,8 +6,11 @@ import android.os.AsyncTask;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.cs442.iitc_fall2016_g13.mad_proj.Map_distance.MapsActivity;
 import com.cs442.iitc_fall2016_g13.mad_proj.ServerConnect.LoginActivity;
 import com.cs442.iitc_fall2016_g13.mad_proj.ServerConnect.SignUpActivity;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
@@ -43,7 +46,9 @@ public class SellerSignUpProcess  extends AsyncTask<String,Void,String> {
     private TextView statusField,roleField;
     private Context context;
     public static ProgressDialog dialog ;
-
+    String dbKeyRestaurants = "RESTAURANTS";
+    String dbKeyRestaurantName = "RESTAURANT_NAME";
+    String username,name;
 
     //flag 0 means get and 1 means post.(By default it is get.)
     public SellerSignUpProcess(Context context) {
@@ -62,9 +67,9 @@ public class SellerSignUpProcess  extends AsyncTask<String,Void,String> {
     protected String doInBackground(String... arg0) {
 
         try{
-            String username = (String)arg0[0];
+            username = (String)arg0[0];
             String password = (String)arg0[1];
-            String name=(String)arg0[2];
+         name=(String)arg0[2];
             String phone=(String)arg0[3];
             String addr=(String)arg0[4];
 
@@ -96,8 +101,7 @@ public class SellerSignUpProcess  extends AsyncTask<String,Void,String> {
                 break;
             }
 
-                Intent i = new Intent(context, LoginActivity.class);
-                context.startActivity(i);
+
 
 
             return sb.toString();
@@ -111,9 +115,28 @@ public class SellerSignUpProcess  extends AsyncTask<String,Void,String> {
     @Override
     protected void onPostExecute(String result){
 
-        if (dialog.isShowing()) {
+
             dialog.dismiss();
+        if (result.equals("Completed"))
+        {
+            final FirebaseDatabase database = FirebaseDatabase.getInstance();
+            final DatabaseReference myRef = database.getReference(dbKeyRestaurants);
+            myRef.child(username).child(dbKeyRestaurantName).setValue(name); // add name
+            Toast toast = Toast.makeText(context, "Account Created", Toast.LENGTH_LONG);
+            toast.show();
+            Intent intent = new Intent(context, LoginActivity.class);
+            context.startActivity(intent);
+
         }
+        else
+        {
+            Toast toast = Toast.makeText(context, "Account Already Exists", Toast.LENGTH_LONG);
+            toast.show();
+            Intent intent = new Intent(context, LoginActivity.class);
+            context.startActivity(intent);
+
+        }
+
     }
 }
 
