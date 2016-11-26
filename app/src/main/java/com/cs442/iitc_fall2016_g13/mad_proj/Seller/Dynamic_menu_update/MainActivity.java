@@ -78,6 +78,7 @@ public class MainActivity extends AppCompatActivity {
         mMenuPrieTxt = (TextView) findViewById(R.id.editTextPrice);
         mMenuIngredientsTxt = (TextView) findViewById(R.id.editTextIngrediants);
         mListView = (ListView) findViewById(R.id.myListView);
+        mRestautantName = GlobalVariables.SellerUsername;
 
         Button mBtn = (Button) findViewById(R.id.button);
         LoadMenuListView();
