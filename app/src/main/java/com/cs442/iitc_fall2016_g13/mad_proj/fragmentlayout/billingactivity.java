@@ -61,34 +61,31 @@ public class billingactivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
+//                Intent data1 = new Intent();
+                String billingConfirmation;
 
 
                 if(finalBill > 0){
 
 //kiran
+                    Log.v(TAG,"finalBill > 0");
                     Intent data = new Intent(getApplicationContext(),Paypal.class);
                     data.putExtra("paymentAmount",finalBill);
                     startActivityForResult(data, PAYMENT_RESULT);
+                    if(mArrayList != null){
+                        for(int i=0;i<mArrayList.size();i++){
+                            mArrayList.get(i).setmOrderCount(0);
+                        }
+                    }
 
 //                    SingletonClass.initInstance().getmHistoryArray().add(currentDateTimeString+ "Total amount "+ finalBill.toString() +"$");
-                }else{
-
                     new CustomerPlaceOrderProcess(getApplicationContext()).execute(GlobalVariables.SellerUsername,GlobalVariables.username,GlobalVariables.OrderDetails);//billingConfirmation = "No item selected by you, try again";
+                }else{
+                    Log.v(TAG,"finalBill <= 0");
+                    billingConfirmation = "No item selected by you, try again";
+
+                    Toast.makeText(getApplicationContext(),billingConfirmation, Toast.LENGTH_SHORT).show();
                 }
-
-                if(mArrayList != null){
-                    for(int i=0;i<mArrayList.size();i++){
-                        mArrayList.get(i).setmOrderCount(0);
-                    }
-                }
-
-
-
-               /* data.putExtra("RESULT",billingConfirmation);
-                setResult(1,data);
-                finish();
-*/
-
             }
         });
 

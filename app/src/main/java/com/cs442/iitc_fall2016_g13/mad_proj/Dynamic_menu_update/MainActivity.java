@@ -101,8 +101,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                final ProgressDialog dialog = ProgressDialog.show(mContext, "",
-                        "Loading. Please wait...", true);
+
                 //String restaurantName = "SUBWAY";
                 String restaurantName = mRestautantName;
                 String menuName = mMenuNameTxt.getText().toString();
@@ -125,6 +124,8 @@ public class MainActivity extends AppCompatActivity {
                     return;
                 }
 
+                final ProgressDialog dialog = ProgressDialog.show(mContext, "",
+                        "Loading. Please wait...", true);
                 mMenuPrieTxt.setText("");
                 mMenuNameTxt.setText("");
                 mMenuIngredientsTxt.setText("");
