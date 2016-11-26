@@ -10,6 +10,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 import com.cs442.iitc_fall2016_g13.mad_proj.R;
+import com.cs442.iitc_fall2016_g13.mad_proj.ServerConnect.GlobalVariables;
 import com.cs442.iitc_fall2016_g13.mad_proj.ServerConnect.LoginActivity;
 
 import java.io.BufferedReader;
@@ -48,7 +49,7 @@ public class SellerOrderHistoryActivity extends Activity{
                 SellerOrderHistoryActivity.order_finished_String);
         history_listview.setAdapter(aa);
 
-        new SellerGetFinishedOrdersProcess(this).execute(LoginActivity.admin);
+        new SellerGetFinishedOrdersProcess(this).execute(GlobalVariables.SellerUsername);
     }
 
 
