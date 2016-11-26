@@ -83,7 +83,6 @@ public class CustomerPlaceOrderProcess extends AsyncTask<String,Void,String> {
             }
 
 
-            dialog.dismiss();
             Intent intent = new Intent(context, NotificationService.class);
             context.startService(intent);
             Intent i = new Intent(context,CustomerOrderHistoryActivity.class);
@@ -98,6 +97,7 @@ public class CustomerPlaceOrderProcess extends AsyncTask<String,Void,String> {
 
     @Override
     protected void onPostExecute(String result){
+        dialog.dismiss();
 
         Toast.makeText(getApplicationContext(),"Order placed!",Toast.LENGTH_LONG).show();
 

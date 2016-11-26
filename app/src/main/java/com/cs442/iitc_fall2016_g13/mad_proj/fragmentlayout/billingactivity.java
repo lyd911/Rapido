@@ -79,7 +79,7 @@ public class billingactivity extends AppCompatActivity {
                     }
 
 //                    SingletonClass.initInstance().getmHistoryArray().add(currentDateTimeString+ "Total amount "+ finalBill.toString() +"$");
-                    new CustomerPlaceOrderProcess(getApplicationContext()).execute(GlobalVariables.SellerUsername,GlobalVariables.username,GlobalVariables.OrderDetails);//billingConfirmation = "No item selected by you, try again";
+                    //new CustomerPlaceOrderProcess(getApplicationContext()).execute(GlobalVariables.SellerUsername,GlobalVariables.username,GlobalVariables.OrderDetails);//billingConfirmation = "No item selected by you, try again";
                 }else{
                     Log.v(TAG,"finalBill <= 0");
                     billingConfirmation = "No item selected by you, try again";
