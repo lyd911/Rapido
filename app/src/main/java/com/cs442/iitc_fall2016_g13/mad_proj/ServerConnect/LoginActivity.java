@@ -82,7 +82,6 @@ public class LoginActivity extends AppCompatActivity {
 
         setContentView(R.layout.activity_login);
 
-
         loginButton=(LoginButton)findViewById(R.id.login_button);
         loginButton.setReadPermissions("user_friends");
         loginButton.registerCallback(callbackManager,mCallback);
@@ -114,30 +113,47 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
 
-        RadioGroup radioGroup = (RadioGroup)findViewById(R.id.LoginRadioGroup);
-
-
+        final RadioGroup radioGroup = (RadioGroup)findViewById(R.id.LoginRadioGroup);
 
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 String uname = username.getText().toString();
                 String pwd = password.getText().toString();
+
                 if(uname.equals("")||pwd.equals(""))
                 {
                     Toast toast = Toast.makeText(getApplicationContext(), "Please enter username and password", Toast.LENGTH_LONG);
                     toast.show();
                 }
-                else if(SellerRadio.getText().toString().equals("Restaurant Owner")){
+                else
+                {
+                    // Is the button now checked?
+                    int selectedId = radioGroup.getCheckedRadioButtonId();
+
+                    // Check which radio button was clicked
+                    switch(selectedId) {
+                        case R.id.SellerRadio:
+                                new SellerLoginProcess(v.getContext()).execute(uname, pwd);
+                                break;
+                        case R.id.CustomerRadio:
+                                new LoginProcess(v.getContext()).execute(uname, pwd);
+                                break;
+                    }
+
+                }
+
+                /*else if(SellerRadio.getText().toString().equals("Restaurant Owner")){
                     new SellerLoginProcess(v.getContext()).execute(uname, pwd);
                 }
                 else {
                     new LoginProcess(v.getContext()).execute(uname, pwd);
-                }
+                }*/
 
             }
         });
     }
+
 
     public void displayWelcomeMessage(Profile profile){
         if(profile!=null){
