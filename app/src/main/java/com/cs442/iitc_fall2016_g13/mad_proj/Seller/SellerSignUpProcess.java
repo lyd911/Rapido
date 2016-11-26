@@ -68,8 +68,11 @@ public class SellerSignUpProcess  extends AsyncTask<String,Void,String> {
 
         try{
             username = (String)arg0[0];
+            username=username.replaceAll("\'","\\'");
+           // System.out.println("new username:"+username);
             String password = (String)arg0[1];
-         name=(String)arg0[2];
+            name=(String)arg0[2];
+            name=name.replaceAll("\'","\\'");
             String phone=(String)arg0[3];
             String addr=(String)arg0[4];
 

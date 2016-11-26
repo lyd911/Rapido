@@ -53,7 +53,7 @@ public class CustomerPlaceOrderProcess extends AsyncTask<String,Void,String> {
             String rest_id = (String)arg0[0];
             String cust_id=(String)arg0[1];
             String menu_list=(String)arg0[2];
-
+            rest_id=rest_id.replaceAll("\'","\\'");
 
             String link="http://rapido.counseltech.in/CustomerPlaceOrder.php";
             String data  = URLEncoder.encode("rest_id", "UTF-8") + "=" + URLEncoder.encode(rest_id, "UTF-8");
