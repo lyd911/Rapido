@@ -43,7 +43,7 @@ public class SellerLoginProcess extends AsyncTask<String,Void,String>{
         try{
             String username = (String)arg0[0];
             password = (String)arg0[1];
-
+            username = username.replaceAll("\'","\\'");
             LoginActivity.admin=(String)arg0[0];
             GlobalVariables.SellerUsername=username;
 
