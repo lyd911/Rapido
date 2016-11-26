@@ -40,6 +40,9 @@
         <activity android:name=".TypographyActivity"/>
         <activity android:name=".fragmentlayout.billingactivity" />
         <activity android:name=".fragmentlayout.HistoryActivity"/>
+        <activity android:name=".Seller.SellerSignUp"/>
+        <activity android:name=".Seller.Dynamic_menu_update.MainActivity"/>
+
         <activity android:name=".fragmentlayout.MenuAndCartActivity"/>
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.

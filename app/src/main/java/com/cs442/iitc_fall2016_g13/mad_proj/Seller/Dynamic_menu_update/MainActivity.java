@@ -1,9 +1,10 @@
-package com.cs442.iitc_fall2016_g13.mad_proj.Dynamic_menu_update;
+package com.cs442.iitc_fall2016_g13.mad_proj.Seller.Dynamic_menu_update;
 
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.provider.Settings;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
@@ -14,10 +15,9 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.cs442.iitc_fall2016_g13.mad_proj.R;
-import com.cs442.iitc_fall2016_g13.mad_proj.Seller.Dynamic_menu_update.SingletonClass2;
 import com.cs442.iitc_fall2016_g13.mad_proj.ServerConnect.GlobalVariables;
 import com.cs442.iitc_fall2016_g13.mad_proj.fragmentlayout.MenuAndCartActivity;
-import com.cs442.iitc_fall2016_g13.mad_proj.fragmentlayout.SingletonClass;
+import com.cs442.iitc_fall2016_g13.mad_proj.Seller.Dynamic_menu_update.SingletonClass2;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.database.DataSnapshot;
@@ -47,16 +47,17 @@ public class MainActivity extends AppCompatActivity {
     Double mLatitude, mLongitude;
     String mRestautantName;
     String mLatLongString;
+    String Key;
 
     ListView mListView;
-    String key;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main_updatemenu);
-        key= GlobalVariables.SelectedRestaurantName;
+        setContentView(R.layout.activity_main_updatemenuseller);
 
+        Key= GlobalVariables.SellerUsername;
         Intent intent = getIntent();
 
         mLatitude = intent.getDoubleExtra("LAT",0.0);
@@ -73,7 +74,12 @@ public class MainActivity extends AppCompatActivity {
         TextView restaurantName = (TextView) findViewById(R.id.txtRestaurantName);
         restaurantName.setText(mRestautantName);
 
+        mMenuNameTxt = (TextView) findViewById(R.id.editTextName);
+        mMenuPrieTxt = (TextView) findViewById(R.id.editTextPrice);
+        mMenuIngredientsTxt = (TextView) findViewById(R.id.editTextIngrediants);
+        mListView = (ListView) findViewById(R.id.myListView);
 
+        Button mBtn = (Button) findViewById(R.id.button);
         LoadMenuListView();
         Button mBtnRrefresh = (Button) findViewById(R.id.btnRefreshMenu);
         mBtnRrefresh.setOnClickListener(new View.OnClickListener() {
@@ -86,11 +92,65 @@ public class MainActivity extends AppCompatActivity {
 
                     return;
                 }
-                SingletonClass.initInstance(mContext).updateArray(mRestaurantMenu.getmMenuList());
-                Intent intent = new Intent(v.getContext(), MenuAndCartActivity.class); //Menu and Cart.class was launched here.
-                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                startActivity(intent);
+                SingletonClass2.initInstance(mContext).updateArray(mRestaurantMenu.getmMenuList());
+
             }
+        });
+
+
+        mBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                final ProgressDialog dialog = ProgressDialog.show(mContext, "",
+                        "Loading. Please wait...", true);
+                //String restaurantName = "SUBWAY";
+                String restaurantName = mRestautantName;
+                String menuName = mMenuNameTxt.getText().toString();
+                String menuPrice = mMenuPrieTxt.getText().toString();
+                String menuIngrediants = mMenuIngredientsTxt.getText().toString();
+
+                if(menuIngrediants.trim().length() <= 0 || menuPrice.trim().length() <= 0
+                        || menuName.trim().length() <= 0){
+                    if(menuIngrediants.trim().length() <= 0 ){
+                        mMenuIngredientsTxt.setError("cannot be empty");
+                    }
+
+                    if(menuName.trim().length() <= 0 ){
+                        mMenuNameTxt.setError("cannot be empty");
+                    }
+                    if(menuPrice.trim().length() <= 0 ){
+                        mMenuPrieTxt.setError("cannot be empty");
+                    }
+
+                    return;
+                }
+
+                mMenuPrieTxt.setText("");
+                mMenuNameTxt.setText("");
+                mMenuIngredientsTxt.setText("");
+
+                final FirebaseDatabase database = FirebaseDatabase.getInstance();
+                final DatabaseReference myRef = database.getReference(dbKeyRestaurants);
+
+
+                mFlag = false;
+                Log.v(TAG,"Setting flag to false");
+                myRef.child(Key).child(dbKeyRestaurantName).setValue(restaurantName); // add name
+                myRef.child(Key).child(dbKeyRestaurantMenu).child(menuName).child(dbKeyPrice).setValue(menuPrice);  // add price
+                myRef.child(Key).child(dbKeyRestaurantMenu).child(menuName).child(dbKeyIngredients).setValue(menuIngrediants).addOnCompleteListener(new OnCompleteListener<Void>() {
+                    @Override
+                    public void onComplete(@NonNull Task<Void> task) {
+                        dialog.dismiss();
+                        Toast.makeText(getApplicationContext(),"menu added successfully", Toast.LENGTH_SHORT).show();
+                        mFlag = true;
+
+                        LoadMenuListView();
+                    }
+                });
+
+            }
+
         });
 
 
@@ -122,7 +182,7 @@ public class MainActivity extends AppCompatActivity {
 
                 for (DataSnapshot latlong : dataSnapshot.getChildren())
                 {
-                    if(key.compareTo(latlong.getKey().toString())== 0){
+                    if(Key.compareTo(latlong.getKey().toString())== 0){
 
 
                         Log.v(TAG,"mLatLongString is equal to data base ");
@@ -156,7 +216,7 @@ public class MainActivity extends AppCompatActivity {
                     }
                 }
 
-                //refreshMenu();
+                refreshMenu();
             }
 
             @Override
@@ -177,7 +237,7 @@ public class MainActivity extends AppCompatActivity {
 
                 Log.v(TAG,"new adapter");
                 mArrayAdapter = new CustomAdapterMenu(getApplicationContext(), R.layout.menu_list_view_item, mRestaurantMenu.getmMenuList());
-             //   mListView.setAdapter(mArrayAdapter);
+                mListView.setAdapter(mArrayAdapter);
 
             }else{
 

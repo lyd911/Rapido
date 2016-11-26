@@ -185,7 +185,7 @@ public class MenuAndCartActivity extends AppCompatActivity implements TitleFragm
     @Override
     public void onHistoryClicked() {
 
-        Intent i = new Intent(this,HistoryActivity.class);
+        Intent i = new Intent(this,CustomerOrderHistoryActivity.class);
         startActivity(i);
 
     }
@@ -234,8 +234,7 @@ public class MenuAndCartActivity extends AppCompatActivity implements TitleFragm
                 });
                 builder.setView(tv);
                 builder.show();
-                Intent intent = new Intent(this,CustomerOrderHistoryActivity.class);
-                startActivity(intent);
+
             }
         }
     }

@@ -45,7 +45,7 @@ public class SellerLoginProcess extends AsyncTask<String,Void,String>{
             password = (String)arg0[1];
 
             LoginActivity.admin=(String)arg0[0];
-
+            GlobalVariables.SellerUsername=username;
 
             String link="http://rapido.counseltech.in/sellerlogin.php";
             String data  = URLEncoder.encode("username", "UTF-8") + "=" + URLEncoder.encode(username, "UTF-8");

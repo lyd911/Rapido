@@ -16,6 +16,7 @@ import android.widget.TextView;
 
 import com.cs442.iitc_fall2016_g13.mad_proj.QRCodeReader;
 import com.cs442.iitc_fall2016_g13.mad_proj.R;
+import com.cs442.iitc_fall2016_g13.mad_proj.Seller.Dynamic_menu_update.MainActivity;
 import com.cs442.iitc_fall2016_g13.mad_proj.ServerConnect.LoginActivity;
 
 import java.io.BufferedReader;
@@ -56,6 +57,7 @@ public class SellerMainActivity extends Activity{
         TextView pending_textview=(TextView)findViewById(R.id.detail_textview);
         Button order_history_button=(Button)findViewById(R.id.order_history_button);
         Button QR_reader_button=(Button)findViewById(R.id.QR_reader_button);
+        Button SellerMenuChange = (Button) findViewById(R.id.SellerAddMenu);
         orders_listview =(ListView)findViewById(R.id.orders_listview);
 
         String admin = LoginActivity.admin;
@@ -72,6 +74,17 @@ public class SellerMainActivity extends Activity{
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), QRCodeReader.class);
+                startActivity(intent);
+            }
+        });
+
+        SellerMenuChange.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                //intent.putExtra("LAT",currentPlaceLatlng.latitude);
+                //intent.putExtra("LON",currentPlaceLatlng.longitude);
+
                 startActivity(intent);
             }
         });
