@@ -1,6 +1,7 @@
 package com.cs442.iitc_fall2016_g13.mad_proj.ServerConnect;
 
         import android.app.ProgressDialog;
+        import android.content.Context;
         import android.content.Intent;
         import android.support.v7.app.AppCompatActivity;
         import android.os.Bundle;
@@ -15,11 +16,14 @@ public class SignUpActivity extends AppCompatActivity {
     public static int err=0;
     EditText username,password,conf_password,name,address,phone;
     Button signup;
+    Context mContext;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_up);
+        mContext = this;
+
         username = (EditText)findViewById(R.id.input_email);
         password = (EditText)findViewById(R.id.input_password);
         conf_password = (EditText)findViewById(R.id.input_confirm_password);
@@ -41,20 +45,15 @@ public class SignUpActivity extends AppCompatActivity {
                 String ph = phone.getText().toString();
 
                 if(cnf_pwd.equals(pwd)) {
-                    new SignUpProcess(v.getContext()).execute(uname, pwd, nm, ph, addr);
+                    new SignUpProcess(mContext).execute(uname, pwd, nm, ph, addr);
 
                 }
                 else
                 {
-                    Toast toast = Toast.makeText(getApplicationContext(), "Passwords do not Match", Toast.LENGTH_LONG);
+                    Toast toast = Toast.makeText(mContext, "Passwords do not Match", Toast.LENGTH_LONG);
                     toast.show();
                 }
-                if(err==0)
-                {
-                    Intent intent = new Intent(getApplicationContext(), LoginActivity.class);
-                    startActivity(intent);
-                    finish();
-                }
+
             }
         });
     }

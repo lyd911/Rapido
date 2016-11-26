@@ -24,19 +24,19 @@ package com.cs442.iitc_fall2016_g13.mad_proj.ServerConnect;
  * Created by karti on 29-10-2016.
  */
 public class SignUpProcess  extends AsyncTask<String,Void,String> {
-    private TextView statusField,roleField;
+    private TextView statusField, roleField;
     private Context context;
-    public static ProgressDialog dialog ;
+    public static ProgressDialog dialog;
 
 
     //flag 0 means get and 1 means post.(By default it is get.)
-    public SignUpProcess(Context context) {
-        this.context = context;
-        dialog = new ProgressDialog(context);
+    public SignUpProcess(Context context1) {
+        this.context = context1;
 
     }
 
-    protected void onPreExecute(){
+    protected void onPreExecute() {
+        dialog = new ProgressDialog(context);
         dialog.setMessage("Please wait");
         dialog.show();
 
@@ -45,15 +45,15 @@ public class SignUpProcess  extends AsyncTask<String,Void,String> {
     @Override
     protected String doInBackground(String... arg0) {
 
-        try{
-            String username = (String)arg0[0];
-            String password = (String)arg0[1];
-            String name=(String)arg0[2];
-            String phone=(String)arg0[3];
-            String addr=(String)arg0[4];
+        try {
+            String username = (String) arg0[0];
+            String password = (String) arg0[1];
+            String name = (String) arg0[2];
+            String phone = (String) arg0[3];
+            String addr = (String) arg0[4];
 
-            String link="http://rapido.counseltech.in/signup.php";
-            String data  = URLEncoder.encode("username", "UTF-8") + "=" + URLEncoder.encode(username, "UTF-8");
+            String link = "http://rapido.counseltech.in/signup.php";
+            String data = URLEncoder.encode("username", "UTF-8") + "=" + URLEncoder.encode(username, "UTF-8");
             data += "&" + URLEncoder.encode("password", "UTF-8") + "=" + URLEncoder.encode(password, "UTF-8");
             data += "&" + URLEncoder.encode("name", "UTF-8") + "=" + URLEncoder.encode(name, "UTF-8");
             data += "&" + URLEncoder.encode("phone", "UTF-8") + "=" + URLEncoder.encode(phone, "UTF-8");
@@ -65,7 +65,7 @@ public class SignUpProcess  extends AsyncTask<String,Void,String> {
             conn.setDoOutput(true);
             OutputStreamWriter wr = new OutputStreamWriter(conn.getOutputStream());
 
-            wr.write( data );
+            wr.write(data);
             wr.flush();
 
             BufferedReader reader = new BufferedReader(new InputStreamReader(conn.getInputStream()));
@@ -74,37 +74,36 @@ public class SignUpProcess  extends AsyncTask<String,Void,String> {
             String line = null;
 
             // Read Server Response
-            while((line = reader.readLine()) != null)
-            {
+            while ((line = reader.readLine()) != null) {
                 sb.append(line);
                 break;
             }
+System.out.println("status"+sb.toString());
+
             return sb.toString();
-        }
-        catch(Exception e){
+        } catch (Exception e) {
             return new String("Exception: " + e.getMessage());
 
         }
     }
 
     @Override
-    protected void onPostExecute(String result){
+    protected void onPostExecute(String result) {
 
-        if (dialog.isShowing()) {
-            if (result.equals("Completed"))
-
-                dialog.dismiss();
+        dialog.dismiss();
+        if (result.equals("Completed")) {
             Toast toast = Toast.makeText(context, result, Toast.LENGTH_LONG);
             toast.show();
-        }
-        else
-        {
-            Toast toast = Toast.makeText(context, "Something went wrong, Please try Again", Toast.LENGTH_LONG);
+            Intent t = new Intent(context,LoginActivity.class);
+            context.startActivity(t);
+        } else {
+            Toast toast = Toast.makeText(context, "Account Exists,Please try Again", Toast.LENGTH_LONG);
             toast.show();
-            SignUpActivity.err=1;
-            dialog.dismiss();
+            SignUpActivity.err = 1;
+            Intent t = new Intent(context,LoginActivity.class);
+            context.startActivity(t);
         }
 
-        }
     }
+}
 
