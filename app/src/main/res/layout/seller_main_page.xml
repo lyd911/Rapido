@@ -12,7 +12,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true">
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true">
 
         <TextView
             android:text="Pending Orders:"
@@ -31,14 +32,14 @@
             android:layout_height="335dp"
             android:id="@+id/orders_listview"
             android:layout_below="@+id/detail_textview"
-            android:layout_alignParentStart="true" />
+            android:layout_alignParentStart="true"
+            android:layout_weight="1.18" />
 
         <Button
             android:text="Add Menu Item"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/SellerAddMenu"
-            android:layout_weight="1" />
+            android:id="@+id/SellerAddMenu" />
 
         <LinearLayout
             android:orientation="horizontal"
