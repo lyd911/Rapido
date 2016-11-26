@@ -106,6 +106,7 @@ public class SellerMainActivity extends Activity{
         orders_listview.setAdapter(aa);
 
         callAsynchronousTask();
+        aa.notifyDataSetChanged();
 
     }
 
@@ -150,6 +151,8 @@ public class SellerMainActivity extends Activity{
             @Override
             protected void onPreExecute() {
                 super.onPreExecute();
+
+
             }
 
 
@@ -229,6 +232,8 @@ public class SellerMainActivity extends Activity{
             @Override
             protected void onPostExecute(String s) {
                 super.onPostExecute(s);
+                aa.notifyDataSetChanged();
+
             }
 
 

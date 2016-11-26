@@ -68,6 +68,8 @@ public class CustomerOrderHistoryActivity extends Activity {
 
 
         new CustomerGetOrderHistoryProcess(this).execute(username);
+        aa.notifyDataSetChanged();
+
     }
 
 
@@ -164,6 +166,9 @@ public class CustomerOrderHistoryActivity extends Activity {
 
         @Override
         protected void onPostExecute(String result) {
+
+            aa.notifyDataSetChanged();
+
             dialog.dismiss();
         }
     }
