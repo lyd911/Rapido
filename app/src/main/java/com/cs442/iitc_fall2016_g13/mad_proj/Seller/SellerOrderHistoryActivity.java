@@ -50,6 +50,8 @@ public class SellerOrderHistoryActivity extends Activity{
         history_listview.setAdapter(aa);
 
         new SellerGetFinishedOrdersProcess(this).execute(GlobalVariables.SellerUsername);
+        aa.notifyDataSetChanged();
+
     }
 
 
@@ -146,6 +148,9 @@ public class SellerOrderHistoryActivity extends Activity{
 
         @Override
         protected void onPostExecute(String result) {
+
+            aa.notifyDataSetChanged();
+
             dialog.dismiss();
         }
     }
