@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.cs442.iitc_fall2016_g13.mad_proj.Map_distance.MapsActivity"
+    tools:showIn="@layout/app_bar_main">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.cs442.iitc_fall2016_g13.mad_proj.Map_distance.MapsActivity">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:text="Search"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btn_search"
+                    android:layout_weight="0.1" />
+
+                <EditText
+                    android:layout_width="94dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:hint="Distance in Meters"
+                    android:ems="8"
+                    android:layout_weight="0.8"
+                    android:id="@+id/edtTxtDistanceInput" />
+
+                <Button
+                    android:text="MapView"
+                    android:layout_width="109dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1"
+                    android:id="@+id/btn_changeView" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="183dp"
+                android:orientation="vertical"
+                >
+
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="43dp">
+
+                    <Button
+                        android:text="Sort Distance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/btn_sortDistance"
+                        android:layout_weight="1" />
+
+                    <Button
+                        android:text="Sort by rating"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/btn_sortRating"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+                <ListView
+                    android:id="@+id/myListView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:divider="#ffffff"
+
+                    android:dividerHeight="2dp"
+                    android:layout_margin="3dp"
+                    android:padding="5dp"
+                    android:background="#0033cc"
+                    android:cacheColorHint="#ffffff"
+                    android:scrollbars="none" />
+
+                <!--
+                        <ListView
+                            android:id="@+id/myListView"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                             />
+                -->
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+
+                <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:map="http://schemas.android.com/apk/res-auto"
+                    xmlns:tools="http://schemas.android.com/tools"
+                    android:id="@+id/map"
+                    android:name="com.google.android.gms.maps.SupportMapFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:context="com.cs442.iitc_fall2016_g13.maps_detainincircle.MapsActivity" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
