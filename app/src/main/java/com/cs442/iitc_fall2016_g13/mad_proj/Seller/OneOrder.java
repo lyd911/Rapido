@@ -11,6 +11,8 @@ public class OneOrder {
     String cust_id;
     String menu_list;
     String Status;
+    String lat;
+    String lon;
 
     public String getOrder_id() {
         return order_id;
@@ -50,5 +52,21 @@ public class OneOrder {
 
     public void setStatus(String status) {
         Status = status;
+    }
+
+    public String getlat() {
+        return lat;
+    }
+
+    public void setlat(String Lat) {
+        lat = Lat;
+    }
+
+    public String getlon() {
+        return lon;
+    }
+
+    public void setlon(String Lon) {
+        lon = Lon;
     }
 }

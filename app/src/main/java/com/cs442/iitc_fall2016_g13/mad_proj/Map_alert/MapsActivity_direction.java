@@ -28,6 +28,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.cs442.iitc_fall2016_g13.mad_proj.R;
+import com.cs442.iitc_fall2016_g13.mad_proj.ServerConnect.GlobalVariables;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.GooglePlayServicesUtil;
 import com.google.android.gms.common.api.GoogleApiClient;
@@ -101,7 +102,8 @@ public class MapsActivity_direction extends FragmentActivity implements
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_maps_direction);
-
+       end_lat = GlobalVariables.lati;
+       end_lon = GlobalVariables.longi;
         mGoogleApiClient = new GoogleApiClient.Builder(this)
                 .addApi(LocationServices.API)
                 .addConnectionCallbacks(this)
@@ -500,9 +502,10 @@ public class MapsActivity_direction extends FragmentActivity implements
     @Override
     public void onConnected(@Nullable Bundle bundle) {
 
-        // Display the connection status
-        Location location = LocationServices.FusedLocationApi.getLastLocation(mGoogleApiClient);
-        if (location != null) {
+        try {
+            // Display the connection status
+            Location location = LocationServices.FusedLocationApi.getLastLocation(mGoogleApiClient);
+            if (location != null) {
 /*            Toast.makeText(this, "GPS location was found!", Toast.LENGTH_SHORT).show();
             LatLng sydney = new LatLng(location.getLatitude(), location.getLongitude());
             CameraUpdate cameraUpdate = CameraUpdateFactory.newLatLngZoom(latLng, 17);
@@ -511,35 +514,45 @@ public class MapsActivity_direction extends FragmentActivity implements
             // Add a marker in Sydney and move the camera
 
             LatLng sydney = new LatLng(lat, lon);*/
-            mMap.clear();
-            Toast.makeText(this, "onConnected", Toast.LENGTH_SHORT).show();
-            LatLng sydney = new LatLng(location.getLatitude(), location.getLongitude());
-            mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
-            mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(sydney, 20));
+                mMap.clear();
+                Toast.makeText(this, "onConnected", Toast.LENGTH_SHORT).show();
+                LatLng sydney = new LatLng(location.getLatitude(), location.getLongitude());
+                mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
+                mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(sydney, 20));
 
-            CircleOptions circleOptions = new CircleOptions()
-                    .center(new LatLng(lat, lon)).radius(10); // In meters
+                CircleOptions circleOptions = new CircleOptions()
+                        .center(new LatLng(lat, lon)).radius(10); // In meters
 // Get back the mutable Circle
-            Circle circle = mMap.addCircle(circleOptions);
+                Circle circle = mMap.addCircle(circleOptions);
 
 
+            } else {
+                Toast.makeText(this, "Current location was null, enable GPS on emulator!", Toast.LENGTH_SHORT).show();
+            }
+            startLocationUpdates();
 
-        } else {
-            Toast.makeText(this, "Current location was null, enable GPS on emulator!", Toast.LENGTH_SHORT).show();
         }
-        startLocationUpdates();
-
-
+        catch(SecurityException e)
+        {
+         System.out.println(e);
+        }
     }
 
 
-    protected void startLocationUpdates() {
-        mLocationRequest = new LocationRequest();
-        mLocationRequest.setPriority(LocationRequest.PRIORITY_HIGH_ACCURACY);
-        mLocationRequest.setInterval(UPDATE_INTERVAL);
+    protected void startLocationUpdates  () {
+        try {
+            mLocationRequest = new LocationRequest();
+            mLocationRequest.setPriority(LocationRequest.PRIORITY_HIGH_ACCURACY);
+            mLocationRequest.setInterval(UPDATE_INTERVAL);
 /*           mLocationRequest.setFastestInterval(FASTEST_INTERVAL);*/
-        LocationServices.FusedLocationApi.requestLocationUpdates(mGoogleApiClient,
-                mLocationRequest, this);
+            LocationServices.FusedLocationApi.requestLocationUpdates(mGoogleApiClient,
+                    mLocationRequest, this);
+        }
+        catch (SecurityException f)
+        {
+            System.out.println(f);
+
+        }
     }
 
 

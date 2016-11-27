@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+import com.cs442.iitc_fall2016_g13.mad_proj.Map_alert.MapsActivity_direction;
 import com.cs442.iitc_fall2016_g13.mad_proj.ServerConnect.GlobalVariables;
 import com.google.zxing.BarcodeFormat;
 import com.google.zxing.MultiFormatWriter;
@@ -19,7 +20,7 @@ import com.journeyapps.barcodescanner.BarcodeEncoder;
 public class QRCodeGenerator extends Activity {
 
 
-    private Button mGenerateButton;
+    private Button mGenerateButton, Navigate;
     private EditText mEditTextQRCodeInput;
 
     @Override
@@ -33,6 +34,14 @@ public class QRCodeGenerator extends Activity {
         final Context context = this;
 
 
+        Navigate=(Button)findViewById(R.id.navigation_button);
+        Navigate.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(v.getContext(), MapsActivity_direction.class);
+                v.getContext().startActivity(i);
+            }
+        });
 
         mGenerateButton = (Button) this.findViewById(R.id.btn_QRCodeGenerate);
         mGenerateButton.setOnClickListener(new View.OnClickListener() {

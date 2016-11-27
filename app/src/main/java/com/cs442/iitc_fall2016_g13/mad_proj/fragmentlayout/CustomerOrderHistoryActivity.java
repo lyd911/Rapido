@@ -6,6 +6,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.provider.Settings;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -61,6 +62,11 @@ public class CustomerOrderHistoryActivity extends Activity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 GlobalVariables.orderID_QR = customer_order_history.get(position).getOrder_id();
+                GlobalVariables.lati=Double.parseDouble(customer_order_history.get(position).getlat());
+                GlobalVariables.longi=Double.parseDouble(customer_order_history.get(position).getlon());
+                System.out.println("Lati is:"+GlobalVariables.lati);
+                System.out.println("Longi is:"+GlobalVariables.longi);
+
                 Intent intent = new Intent(getApplicationContext(), QRCodeGenerator.class);
                 startActivity(intent);
             }
@@ -132,6 +138,8 @@ public class CustomerOrderHistoryActivity extends Activity {
                         oneOrder.setCust_id(s2[11]);
                         oneOrder.setMenu_list(s2[15]);
                         oneOrder.setStatus(s2[19]);
+                        oneOrder.setlat(s2[23]);
+                        oneOrder.setlon(s2[27]);
 
                         customer_order_history.add(i,oneOrder);
                     }
