@@ -31,7 +31,7 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
-    private static final String TAG = "MainActivity";
+    private static final String TAG = "MainActivityDynamic";
     String dbKeyRestaurants = "RESTAURANTS";
     String dbKeyRestaurantName = "RESTAURANT_NAME";
     String dbKeyPrice = "PRICE";
@@ -86,7 +86,10 @@ public class MainActivity extends AppCompatActivity {
 
                     return;
                 }
+                Log.v(TAG,"mLongitude"+mLongitude+"mLatitude"+mLatitude);
                 SingletonClass.initInstance(mContext).updateArray(mRestaurantMenu.getmMenuList());
+                SingletonClass.initInstance(mContext).setmLong(mLongitude);
+                SingletonClass.initInstance(mContext).setmLat(mLatitude);
                 Intent intent = new Intent(v.getContext(), MenuAndCartActivity.class); //Menu and Cart.class was launched here.
                 intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 startActivity(intent);
@@ -141,15 +144,20 @@ public class MainActivity extends AppCompatActivity {
                             menuItems.add(new MenuItems(menuName,price,description));
                         }
 
+                        Log.v(TAG,"Location: mLatitude"+mLatitude+"mLongitude"+mLongitude);
                         if(mRestaurantMenu == null){
 
                             Log.v(TAG,"mRestaurantMenu created");
                             mRestaurantMenu = new RestaurantMenu(latlong.getKey(),menuItems);
+                            mRestaurantMenu.setmLatitude(mLatitude);
+                            mRestaurantMenu.setmLongitude(mLongitude);
                         }else{
                             Log.v(TAG,"mRestaurantMenu cleared and updated");
                             mRestaurantMenu.clearRestaurantMenu();
                             mRestaurantMenu.setmRestaurantName(latlong.getKey());
                             mRestaurantMenu.setmMenuList(menuItems);
+							mRestaurantMenu.setmLatitude(mLatitude);
+                            mRestaurantMenu.setmLongitude(mLongitude);
 
                         }
 

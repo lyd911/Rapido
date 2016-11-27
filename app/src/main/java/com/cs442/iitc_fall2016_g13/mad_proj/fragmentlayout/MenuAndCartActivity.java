@@ -198,6 +198,9 @@ public class MenuAndCartActivity extends AppCompatActivity implements TitleFragm
             Log.v(TAG, "Count = " + arrayList.get(i).getmOrderCount() + "Index =" + i);
             if (arrayList.get(i).getmOrderCount()>0) {
                 GlobalVariables.OrderDetails += arrayList.get(i).getmItemName() + "*" + arrayList.get(i).getmOrderCount() + ",";
+                GlobalVariables.mLon = SingletonClass.initInstance(getApplicationContext()).getmLong();
+                GlobalVariables.mLat = SingletonClass.initInstance(getApplicationContext()).getmLat();
+                Log.v(TAG,"Global lat lon"+GlobalVariables.mLon+" "+GlobalVariables.mLat);
             }
             }
         System.out.println(GlobalVariables.OrderDetails);

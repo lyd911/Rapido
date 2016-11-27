@@ -18,5 +18,7 @@ public class GlobalVariables {
     public static String SellerUsername="admin0";
     public static String OrderDetails="";
     public static String orderID_QR="";
+    public static Double mLat;
+    public static Double mLon;
 
 }

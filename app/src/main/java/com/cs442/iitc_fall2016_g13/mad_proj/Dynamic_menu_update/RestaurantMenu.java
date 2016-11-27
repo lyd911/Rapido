@@ -11,6 +11,8 @@ public class RestaurantMenu {
     String mRestaurantName;
     ArrayList<MenuItems> mMenuList;
 
+    Double mLatitude, mLongitude;
+
 
     public RestaurantMenu(String mRestaurantName, ArrayList<MenuItems> mMenuList) {
         this.mRestaurantName = mRestaurantName;
@@ -23,6 +25,22 @@ public class RestaurantMenu {
         this.mRestaurantName = null;
         this.mMenuList.clear();
 
+    }
+
+    public Double getmLatitude() {
+        return mLatitude;
+    }
+
+    public void setmLatitude(Double mLatitude) {
+        this.mLatitude = mLatitude;
+    }
+
+    public Double getmLongitude() {
+        return mLongitude;
+    }
+
+    public void setmLongitude(Double mLongitude) {
+        this.mLongitude = mLongitude;
     }
 
     public String getmRestaurantName() {

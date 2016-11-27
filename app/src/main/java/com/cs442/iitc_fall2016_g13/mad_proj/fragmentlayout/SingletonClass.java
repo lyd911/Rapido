@@ -3,6 +3,7 @@ package com.cs442.iitc_fall2016_g13.mad_proj.fragmentlayout;
 import android.app.Application;
 import android.content.Context;
 import android.content.SharedPreferences;
+import android.util.Log;
 
 import com.cs442.iitc_fall2016_g13.mad_proj.Dynamic_menu_update.MenuItems;
 
@@ -18,11 +19,35 @@ import static com.cs442.iitc_fall2016_g13.mad_proj.fragmentlayout.billingactivit
 public class SingletonClass extends Application{
 
 
+    private static final String TAG = "SingletonClass";
     private static SingletonClass instance;
     private static ArrayList<MenuItemObject>  mArrayList;
     private static ArrayList<MenuItemObject>  mBillingArrayList;
     private static ArrayList<String> mHistoryArray;
 
+    public static Double getmLong() {
+
+        Log.v(TAG,"getmLong"+mLong);
+        return mLong;
+    }
+
+    public static void setmLong(Double mLong) {
+        Log.v(TAG,"setmLong  :"+mLong);
+        SingletonClass.mLong = mLong;
+    }
+
+    public static Double getmLat() {
+        Log.v(TAG,"getmLat  :"+mLat);
+        return mLat;
+    }
+
+    public static void setmLat(Double mLat) {
+
+        Log.v(TAG,"setmLat  :"+mLat);
+        SingletonClass.mLat = mLat;
+    }
+
+    private static Double mLong, mLat;
     private static Double mTotalBill;
 
 

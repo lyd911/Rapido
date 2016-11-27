@@ -4,6 +4,7 @@ import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.os.AsyncTask;
+import android.util.Log;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -27,6 +28,7 @@ import static com.facebook.FacebookSdk.getApplicationContext;
 
 public class CustomerPlaceOrderProcess extends AsyncTask<String,Void,String> {
 
+    private static final String TAG = "CustomerPlaceOrderPro";
     private TextView statusField,roleField;
     private Context context;
     public static ProgressDialog dialog ;
@@ -53,6 +55,9 @@ public class CustomerPlaceOrderProcess extends AsyncTask<String,Void,String> {
             String rest_id = (String)arg0[0];
             String cust_id=(String)arg0[1];
             String menu_list=(String)arg0[2];
+            String lat = arg0[3]; // need to give to update db kartik
+            String lon = arg0[4];
+            Log.v(TAG,"lat"+lat+" lon"+lon);
             rest_id=rest_id.replaceAll("\'","\\'");
 
             String link="http://rapido.counseltech.in/CustomerPlaceOrder.php";

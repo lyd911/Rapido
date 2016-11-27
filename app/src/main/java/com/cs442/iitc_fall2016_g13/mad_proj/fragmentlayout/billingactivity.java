@@ -132,7 +132,7 @@ public class billingactivity extends AppCompatActivity {
                                 +paymentId+"paymentState"+paymentState, Toast.LENGTH_LONG).show();
                         updateHistory();
                         sendResultBack(billingDetail);
-                        new CustomerPlaceOrderProcess(this).execute(GlobalVariables.SellerUsername,GlobalVariables.username,GlobalVariables.OrderDetails);
+                        new CustomerPlaceOrderProcess(this).execute(GlobalVariables.SellerUsername,GlobalVariables.username,GlobalVariables.OrderDetails,GlobalVariables.mLat.toString(),GlobalVariables.mLon.toString());
                         // upload the order to database
 
                     }else{
