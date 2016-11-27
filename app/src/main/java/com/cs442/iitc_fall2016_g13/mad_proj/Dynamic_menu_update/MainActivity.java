@@ -80,7 +80,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                if(mRestaurantMenu == null ||mRestaurantMenu.getmMenuList().size() < 0 ){
+                if(mRestaurantMenu == null ||mRestaurantMenu.getmMenuList().size() <= 0 ){
 
                     Toast.makeText(getApplicationContext(),"There is no menu for this pls add some menu", Toast.LENGTH_SHORT).show();
 

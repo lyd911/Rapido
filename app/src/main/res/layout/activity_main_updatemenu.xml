@@ -8,6 +8,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/food_blur1"
     tools:context="com.cs442.iitc_fall2016_g13.mad_proj.Dynamic_menu_update.MainActivity">
 
 

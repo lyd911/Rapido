@@ -26,6 +26,7 @@
             android:inputType="number"
             android:hint="Distance in Meters"
             android:ems="8"
+            android:maxLength="6"
             android:layout_weight="0.8"
             android:id="@+id/edtTxtDistanceInput" />
 
