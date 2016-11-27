@@ -36,7 +36,7 @@ public class CustomerPlaceOrderProcess extends AsyncTask<String,Void,String> {
 
     //flag 0 means get and 1 means post.(By default it is get.)
     public CustomerPlaceOrderProcess(Context context) {
-        this.context = context;
+        this.context = getApplicationContext();
         dialog = new ProgressDialog(context);
 
     }
@@ -87,11 +87,12 @@ public class CustomerPlaceOrderProcess extends AsyncTask<String,Void,String> {
                 break;
             }
 
-
-            Intent intent = new Intent(context, NotificationService.class);
+            dialog.dismiss();
+            Intent intent = new Intent(getApplicationContext(), NotificationService.class);
             context.startService(intent);
-            Intent i = new Intent(context,CustomerOrderHistoryActivity.class);
+            Intent i = new Intent(getApplicationContext(),CustomerOrderHistoryActivity.class);
             context.startActivity(i);
+            
             return sb.toString();
         }
         catch(Exception e){
@@ -102,11 +103,6 @@ public class CustomerPlaceOrderProcess extends AsyncTask<String,Void,String> {
 
     @Override
     protected void onPostExecute(String result){
-        dialog.dismiss();
-
-        Toast.makeText(getApplicationContext(),"Order placed!",Toast.LENGTH_LONG).show();
-
-
 
 
     }
