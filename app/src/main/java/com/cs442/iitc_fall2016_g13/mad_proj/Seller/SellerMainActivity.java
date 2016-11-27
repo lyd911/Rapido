@@ -106,8 +106,7 @@ public class SellerMainActivity extends Activity{
         orders_listview.setAdapter(aa);
 
         callAsynchronousTask();
-        aa.notifyDataSetChanged();
-
+//        aa.notifyDataSetChanged();
     }
 
 
@@ -151,10 +150,7 @@ public class SellerMainActivity extends Activity{
             @Override
             protected void onPreExecute() {
                 super.onPreExecute();
-
-
             }
-
 
             @Override
             protected String doInBackground(String... params) {
@@ -221,7 +217,7 @@ public class SellerMainActivity extends Activity{
                             orderString.add(ss);
                         }}
 
-                    aa.notifyDataSetChanged();
+//                    aa.notifyDataSetChanged();
 
                     return null;
                 }catch (Exception e){
@@ -233,11 +229,7 @@ public class SellerMainActivity extends Activity{
             protected void onPostExecute(String s) {
                 super.onPostExecute(s);
                 aa.notifyDataSetChanged();
-
             }
-
-
-
         };
         if(Build.VERSION.SDK_INT >= 11)
             task.executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
