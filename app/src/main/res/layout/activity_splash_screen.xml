@@ -6,6 +6,6 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     tools:context="com.cs442.iitc_fall2016_g13.mad_proj.SplashScreen"
-    android:background="@drawable/splash_01">
+    android:background="@drawable/splash_screen">
 
 </RelativeLayout>
