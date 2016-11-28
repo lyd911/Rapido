@@ -64,8 +64,6 @@ public class CustomerPlaceOrderProcess extends AsyncTask<String,Void,String> {
             String data  = URLEncoder.encode("rest_id", "UTF-8") + "=" + URLEncoder.encode(rest_id, "UTF-8");
             data += "&" + URLEncoder.encode("cust_id", "UTF-8") + "=" + URLEncoder.encode(cust_id, "UTF-8");
             data += "&" + URLEncoder.encode("menu_list", "UTF-8") + "=" + URLEncoder.encode(menu_list, "UTF-8");
-            data += "&" + URLEncoder.encode("lat", "UTF-8") + "=" + URLEncoder.encode(lat, "UTF-8");
-            data += "&" + URLEncoder.encode("lon", "UTF-8") + "=" + URLEncoder.encode(lon, "UTF-8");
 
 
             URL url = new URL(link);

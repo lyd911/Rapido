@@ -20,8 +20,5 @@ public class GlobalVariables {
     public static String orderID_QR="";
     public static Double mLat;
     public static Double mLon;
-    public static Double lati;
-    public static Double longi;
-
 
 }
