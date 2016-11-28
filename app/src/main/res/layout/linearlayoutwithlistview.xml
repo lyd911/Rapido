@@ -7,7 +7,7 @@
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:background="#ccffcc"
+        android:background="#3b5998"
         android:layout_height="48dp">
 
         <TextView
@@ -16,7 +16,7 @@
             android:id="@+id/txtItem"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:textColor="@android:color/black"
+            android:textColor="#ffff"
             android:gravity="left"
             android:layout_weight="1"
             android:padding="10dp"
@@ -27,7 +27,7 @@
             android:layout_height="match_parent"
             android:textStyle="bold"
             android:layout_width="match_parent"
-            android:textColor="@android:color/black"
+            android:textColor="#ffff"
             android:id="@+id/txtPrice"
             android:layout_weight="1.2"
             android:gravity="left"
@@ -41,7 +41,7 @@
             android:id="@+id/txtTotalCount"
             android:gravity="left"
             android:textStyle="bold"
-            android:textColor="@android:color/black"
+            android:textColor="#ffff"
             android:padding="10dp"
             android:layout_weight="1.3" />
 
@@ -53,7 +53,7 @@
             android:gravity="right"
             android:padding="10dp"
             android:textStyle="bold"
-            android:textColor="@android:color/black"
+            android:textColor="#ffff"
             android:layout_weight="1.3" />
 
 
@@ -79,16 +79,16 @@
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:weightSum="8">
+        android:weightSum="9">
 
-        <Button
+<!--        <Button
             android:text="Add New Items"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
             android:layout_weight="2"
-            android:id="@+id/button2" />
+            android:id="@+id/button2" />-->
 
         <Button
             android:text="Reset count"
@@ -96,7 +96,11 @@
             android:layout_height="match_parent"
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
-            android:layout_weight="2"
+            android:background="#3B5998"
+            android:textColor="#fff"
+            android:layout_margin="3dp"
+            android:textStyle="bold"
+            android:layout_weight="3"
             android:id="@+id/buttonClear" />
 
         <Button
@@ -104,8 +108,12 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_alignParentBottom="true"
+            android:background="#3B5998"
+            android:textColor="#fff"
+            android:layout_margin="3dp"
+            android:textStyle="bold"
             android:layout_centerHorizontal="true"
-            android:layout_weight="2"
+            android:layout_weight="3"
             android:id="@+id/buttonHistory" />
 
         <Button
@@ -115,7 +123,11 @@
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
             android:layout_gravity="center_horizontal|center_vertical"
-            android:layout_weight="2"
+            android:layout_weight="3"
+            android:background="#3B5998"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:layout_margin="3dp"
             android:id="@+id/buttonOrder" />
 
     </LinearLayout>

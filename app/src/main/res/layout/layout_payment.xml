@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
+    android:background="@drawable/food_blur1"
     android:layout_height="match_parent">
 
 
@@ -16,20 +17,26 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Enter Amount"
+            android:text="You are paying Amount in $"
+            android:textColor="#000"
             android:textAlignment="center" />
 
-        <EditText
+        <TextView
             android:id="@+id/editTextAmount"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Enter Amount To Pay"
+            android:padding="10dp"
+            android:textColor="#000"
             android:textAlignment="center" />
 
         <Button
             android:id="@+id/buttonPay"
             android:text="Pay Now"
-            android:layout_width="match_parent"
+            android:textColor="@color/buttonText"
+            android:background="@color/buttonColors"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
     </LinearLayout>

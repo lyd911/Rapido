@@ -3,15 +3,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingLeft="16dp"
+    android:background="@drawable/food_blur1"
     android:paddingRight="16dp" >
 
 
     <TextView
-        android:text="History Orders:"
+        android:text="Order History:"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_alignParentStart="true"
+        android:textColor="#000"
+        android:textStyle="bold"
         android:layout_marginStart="9dp"
         android:layout_marginTop="14dp"
         android:id="@+id/customer_detail_textview"
@@ -19,7 +22,7 @@
 
     <ListView
         android:layout_width="match_parent"
-        android:layout_height="450dp"
+        android:layout_height="match_parent"
         android:id="@+id/customer_history_listview"
         android:layout_below="@+id/customer_detail_textview"
         android:layout_alignParentStart="true" />

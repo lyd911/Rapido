@@ -20,22 +20,37 @@
         android:layout_below="@+id/button">
 
         <TextView
+            android:text="You Have Selected Below Restaurant Press ORDER FOOD to continue"
+            android:padding="10dp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:textAllCaps="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView6" />
+
+        <TextView
             android:text="Restaurant Name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="5dp"
             android:textStyle="bold"
+            android:textSize="20dp"
             android:textColor="#000"
             android:id="@+id/txtRestaurantName"
             android:gravity="center_vertical|center_horizontal" />
 
         <Button
             android:text="Order Food"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
+            android:padding="8dp"
+       android:background="#3B5998"
+            android:textColor="#fff"
+            android:textStyle="bold"
             android:layout_toEndOf="@+id/button"
-            android:layout_marginStart="38dp"
+            android:layout_gravity="center_horizontal"
             android:id="@+id/btnRefreshMenu" />
 
     </LinearLayout>

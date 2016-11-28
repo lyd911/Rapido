@@ -21,6 +21,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_alignParentStart="true"
+            android:textColor="#000"
             android:layout_marginStart="9dp"
             android:layout_marginTop="14dp"
             android:id="@+id/detail_textview"
@@ -39,6 +40,12 @@
             android:text="Add Menu Item"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textColor="@color/buttonText"
+            android:background="@color/buttonColors"
+            android:textStyle="bold"
+            android:layout_margin="2dp"
+
+            android:padding="5dp"
             android:id="@+id/SellerAddMenu" />
 
         <LinearLayout
@@ -59,6 +66,12 @@
             <Button
                 android:text="Order History"
                 android:layout_width="match_parent"
+                android:textColor="@color/buttonText"
+                android:background="@color/buttonColors"
+                android:textStyle="bold"
+
+                android:layout_margin="2dp"
+                android:padding="5dp"
                 android:layout_height="40dp"
                 android:id="@+id/order_history_button"
                 android:layout_marginBottom="12dp"

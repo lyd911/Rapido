@@ -38,6 +38,12 @@
                     android:text="Search"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+
+                    android:textColor="@color/buttonText"
+                    android:background="@color/buttonColors"
+                    android:textStyle="bold"
+                    android:padding="1dp"
+                    android:layout_margin="1dp"
                     android:id="@+id/btn_search"
                     android:layout_weight="0.1" />
 
@@ -54,6 +60,11 @@
                     android:text="MapView"
                     android:layout_width="109dp"
                     android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:textColor="@color/buttonText"
+                    android:background="@color/buttonColors"
+                    android:textStyle="bold"
+                    android:padding="1dp"
                     android:layout_weight="0.1"
                     android:id="@+id/btn_changeView" />
 
@@ -73,8 +84,13 @@
                     android:layout_height="43dp">
 
                     <Button
-                        android:text="Sort Distance"
+                        android:text="Sort By Distance"
                         android:layout_width="wrap_content"
+                        android:layout_margin="1dp"
+                        android:textColor="@color/buttonText"
+                        android:background="@color/buttonColors"
+                        android:textStyle="bold"
+                        android:padding="1dp"
                         android:layout_height="wrap_content"
                         android:id="@+id/btn_sortDistance"
                         android:layout_weight="1" />
@@ -83,6 +99,11 @@
                         android:text="Sort by rating"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_margin="1dp"
+                        android:textColor="@color/buttonText"
+                        android:background="@color/buttonColors"
+                        android:textStyle="bold"
+                        android:padding="1dp"
                         android:id="@+id/btn_sortRating"
                         android:layout_weight="1" />
                 </LinearLayout>

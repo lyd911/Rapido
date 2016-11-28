@@ -209,7 +209,7 @@ public class TitleFragment extends ListFragment {
 //        ArrayAdapter<String> adapter=new ArrayAdapter<String>(getActivity(),R.layout.rowlayout,R.id.txtitem,datasource);
         mAdapter = new CustomAdapter(getActivity(),R.layout.rowlayout,mArrayList);
 
-        Button buttonAddNewItem = (Button) rootView.findViewById(R.id.button2);
+      /*  Button buttonAddNewItem = (Button) rootView.findViewById(R.id.button2);*/
 
         totalTextViewDetail = (TextView) rootView.findViewById(R.id.textView5total);
 
@@ -231,12 +231,12 @@ public class TitleFragment extends ListFragment {
             }
         });
 
-        buttonAddNewItem.setOnClickListener(new View.OnClickListener() {
+/*        buttonAddNewItem.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 getDescriptionForEnteredItem();
             }
-        });
+        });*/
 
         Button buttonClear = (Button) rootView.findViewById(R.id.buttonClear);
 

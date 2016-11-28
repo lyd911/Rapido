@@ -47,5 +47,9 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="19dp"
+        android:textColor="@color/buttonText"
+        android:background="@color/buttonColors"
+        android:textStyle="bold"
+        android:padding="5dp"
         android:id="@+id/QR_reader_button" />
 </RelativeLayout>

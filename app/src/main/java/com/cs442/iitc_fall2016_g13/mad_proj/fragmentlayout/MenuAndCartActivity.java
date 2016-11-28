@@ -219,23 +219,14 @@ public class MenuAndCartActivity extends AppCompatActivity implements TitleFragm
 
                 AlertDialog.Builder builder = new AlertDialog.Builder(this);
                 builder.setTitle("Billing Confirmation");
-
-                final TextView tv = new TextView(this);
-
-                tv.setTextColor(Color.BLACK);
-
-//                tv.setPadding(20,20,20,20);
-//                tv.setPadding();
-//                tv.setPadding(10, 10, 10, 10);
-                tv.setText(data.getStringExtra("RESULT"));
-//                builder.setCancelable(false);
+                builder.setMessage(data.getStringExtra("RESULT"));
                 builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         dialog.cancel();
                     }
                 });
-                builder.setView(tv);
+//                builder.setView(tv);
                 builder.show();
 
             }

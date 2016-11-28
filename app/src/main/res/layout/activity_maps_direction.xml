@@ -1,7 +1,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:map="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="com.cs442.iitc_fall2016_g13.maps.MapsActivity"
+    tools:context="com.cs442.iitc_fall2016_g13.mad_proj.Map_distance.MapsActivity"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -25,6 +25,10 @@
         android:text="Start Navigation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textColor="@color/buttonText"
+        android:background="@color/buttonColors"
+        android:textStyle="bold"
+
         android:id="@+id/btn_navigate" />
 
     <fragment

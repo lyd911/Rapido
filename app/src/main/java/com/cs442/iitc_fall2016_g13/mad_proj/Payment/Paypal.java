@@ -8,6 +8,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.cs442.iitc_fall2016_g13.mad_proj.Map_distance.MapsActivity;
@@ -31,7 +32,7 @@ public class Paypal extends AppCompatActivity implements View.OnClickListener {
 
     //The views
     private Button buttonPay;
-    private EditText editTextAmount;
+    private TextView editTextAmount;
 
     //Payment Amount
     private String paymentAmount;
@@ -57,7 +58,7 @@ public class Paypal extends AppCompatActivity implements View.OnClickListener {
         Double fillAmountToBePaid;
         fillAmountToBePaid = intent1.getDoubleExtra("paymentAmount",0);
         buttonPay = (Button) findViewById(R.id.buttonPay);
-        editTextAmount = (EditText) findViewById(R.id.editTextAmount);
+        editTextAmount = (TextView) findViewById(R.id.editTextAmount);
         editTextAmount.setText(String.valueOf(fillAmountToBePaid));
 
         buttonPay.setOnClickListener(this);

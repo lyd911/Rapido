@@ -7,4 +7,6 @@
     <color name="accent_color_5">#8EDC9D</color>
     <color name="accent_color_6">#473E3F</color>
     <color name="WHITE">#ffffff</color>
+        <color name="buttonColors">#3B5998</color>
+    <color name="buttonText">#ffff</color>
 </resources>

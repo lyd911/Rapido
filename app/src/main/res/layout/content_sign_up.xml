@@ -97,6 +97,9 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
             android:layout_marginBottom="24dp"
+            android:textColor="@color/buttonText"
+            android:background="@color/buttonColors"
+            android:textStyle="bold"
             android:padding="12dp"
             android:text="Create Account"/>
 
