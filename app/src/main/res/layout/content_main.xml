@@ -52,6 +52,7 @@
                     android:layout_height="wrap_content"
                     android:inputType="number"
                     android:hint="Distance in Meters"
+                    android:maxLength="6"
                     android:ems="8"
                     android:layout_weight="0.8"
                     android:id="@+id/edtTxtDistanceInput" />
