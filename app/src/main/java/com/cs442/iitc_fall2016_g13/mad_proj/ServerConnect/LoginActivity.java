@@ -1,6 +1,8 @@
 package com.cs442.iitc_fall2016_g13.mad_proj.ServerConnect;
 
         import android.content.Intent;
+        import android.content.SharedPreferences;
+        import android.preference.PreferenceManager;
         import android.support.v7.app.AppCompatActivity;
         import android.os.Bundle;
         import android.view.View;
@@ -11,7 +13,9 @@ package com.cs442.iitc_fall2016_g13.mad_proj.ServerConnect;
         import android.widget.TextView;
         import android.widget.Toast;
 
+        import com.cs442.iitc_fall2016_g13.mad_proj.Map_distance.MapsActivity;
         import com.cs442.iitc_fall2016_g13.mad_proj.R;
+        import com.cs442.iitc_fall2016_g13.mad_proj.Seller.SellerMainActivity;
         import com.cs442.iitc_fall2016_g13.mad_proj.Seller.SellerSignUp;
         import com.facebook.AccessToken;
         import com.facebook.AccessTokenTracker;
@@ -30,7 +34,7 @@ public class LoginActivity extends AppCompatActivity {
     TextView signup,SellerSignup;
     public static String admin="";
     public static String UserName="";
-
+    public static final String PREFS_NAME = "MyApp_Settings";
     private LoginButton loginButton;
     private CallbackManager callbackManager;
 
@@ -61,77 +65,96 @@ public class LoginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        FacebookSdk.sdkInitialize(getApplicationContext());
-        callbackManager = CallbackManager.Factory.create();
-        AccessTokenTracker tracker =new AccessTokenTracker() {
-            @Override
-            protected void onCurrentAccessTokenChanged(AccessToken oldAccessToken, AccessToken currentAccessToken) {
-                if(AccessToken.getCurrentAccessToken()==null)
-                {
-                    Toast.makeText(getApplicationContext(),"Log out",Toast.LENGTH_SHORT).show();
-                }
+
+        SharedPreferences settings = this.getSharedPreferences(PREFS_NAME, MODE_PRIVATE);
+        // Reading from SharedPreferences
+        String username1 = settings.getString("username", "");
+        String usertpye=settings.getString("usertype","");
+        if (!username1.equals(null) && username1.length() > 0) {
+            //System.out.println("reading username: "+username1);
+            Toast.makeText(getApplicationContext(), "Already logged in: " + username1, Toast.LENGTH_SHORT).show();
+            if(usertpye.equals("cust")) {
+                GlobalVariables.username=username1;
+                Intent intent = new Intent(this, MapsActivity.class);
+                startActivity(intent);
             }
-        };
+            else if(usertpye.equals("seller"))
+            {
+                GlobalVariables.SellerUsername=username1;
 
-        ProfileTracker profileTracker = new ProfileTracker() {
-            @Override
-            protected void onCurrentProfileChanged(Profile oldProfile, Profile newProfile) {
-                displayWelcomeMessage(newProfile);
+                Intent intent = new Intent(this, SellerMainActivity.class);
+                startActivity(intent);
             }
-        };
+            finish();
+        } else {
 
-        setContentView(R.layout.activity_login);
-
-        loginButton=(LoginButton)findViewById(R.id.login_button);
-        loginButton.setReadPermissions("user_friends");
-        loginButton.registerCallback(callbackManager,mCallback);
-        loginButton.setReadPermissions("public_profile", "email", "user_friends");
-
-        username = (EditText)findViewById(R.id.input_login_username);
-        password = (EditText)findViewById(R.id.input_login_password);
-
-        SellerRadio=(RadioButton)findViewById(R.id.SellerRadio);
-        CustomerRadio=(RadioButton)findViewById(R.id.CustomerRadio);
-        SellerSignup=(TextView)findViewById(R.id.Sellerlink_signup);
-
-        login = (Button)findViewById(R.id.btn_login);
-        signup = (TextView) findViewById(R.id.link_signup);
-        SellerSignup.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i = new Intent(getApplicationContext(), SellerSignUp.class);
-                startActivity(i);
-            }
-        });
-
-
-        signup.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i = new Intent(getApplicationContext(), SignUpActivity.class);
-                startActivity(i);
-            }
-        });
-
-        final RadioGroup radioGroup = (RadioGroup)findViewById(R.id.LoginRadioGroup);
-
-        login.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                String uname = username.getText().toString();
-                String pwd = password.getText().toString();
-                int checkedRadioButtonId = radioGroup.getCheckedRadioButtonId();
-                if(uname.equals("")||pwd.equals(""))
-                {
-                    Toast toast = Toast.makeText(getApplicationContext(), "Please enter username and password", Toast.LENGTH_LONG);
-                    toast.show();
+            FacebookSdk.sdkInitialize(getApplicationContext());
+            callbackManager = CallbackManager.Factory.create();
+            AccessTokenTracker tracker = new AccessTokenTracker() {
+                @Override
+                protected void onCurrentAccessTokenChanged(AccessToken oldAccessToken, AccessToken currentAccessToken) {
+                    if (AccessToken.getCurrentAccessToken() == null) {
+                        Toast.makeText(getApplicationContext(), "Log out", Toast.LENGTH_SHORT).show();
+                    }
                 }
-                else if(checkedRadioButtonId == R.id.SellerRadio){
-                    new SellerLoginProcess(v.getContext()).execute(uname, pwd);
+            };
+
+            ProfileTracker profileTracker = new ProfileTracker() {
+                @Override
+                protected void onCurrentProfileChanged(Profile oldProfile, Profile newProfile) {
+                    displayWelcomeMessage(newProfile);
                 }
-                else {
-                    new LoginProcess(v.getContext()).execute(uname, pwd);
+            };
+
+            setContentView(R.layout.activity_login);
+
+            loginButton = (LoginButton) findViewById(R.id.login_button);
+            loginButton.setReadPermissions("user_friends");
+            loginButton.registerCallback(callbackManager, mCallback);
+            loginButton.setReadPermissions("public_profile", "email", "user_friends");
+
+            username = (EditText) findViewById(R.id.input_login_username);
+            password = (EditText) findViewById(R.id.input_login_password);
+
+            SellerRadio = (RadioButton) findViewById(R.id.SellerRadio);
+            CustomerRadio = (RadioButton) findViewById(R.id.CustomerRadio);
+            SellerSignup = (TextView) findViewById(R.id.Sellerlink_signup);
+
+            login = (Button) findViewById(R.id.btn_login);
+            signup = (TextView) findViewById(R.id.link_signup);
+            SellerSignup.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent i = new Intent(getApplicationContext(), SellerSignUp.class);
+                    startActivity(i);
                 }
+            });
+
+
+            signup.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent i = new Intent(getApplicationContext(), SignUpActivity.class);
+                    startActivity(i);
+                }
+            });
+
+            final RadioGroup radioGroup = (RadioGroup) findViewById(R.id.LoginRadioGroup);
+
+            login.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    String uname = username.getText().toString();
+                    String pwd = password.getText().toString();
+                    int checkedRadioButtonId = radioGroup.getCheckedRadioButtonId();
+                    if (uname.equals("") || pwd.equals("")) {
+                        Toast toast = Toast.makeText(getApplicationContext(), "Please enter username and password", Toast.LENGTH_LONG);
+                        toast.show();
+                    } else if (checkedRadioButtonId == R.id.SellerRadio) {
+                        new SellerLoginProcess(v.getContext()).execute(uname, pwd);
+                    } else {
+                        new LoginProcess(v.getContext()).execute(uname, pwd);
+                    }
 
                 /*else if(SellerRadio.getText().toString().equals("Restaurant Owner")){
                     new SellerLoginProcess(v.getContext()).execute(uname, pwd);
@@ -140,10 +163,10 @@ public class LoginActivity extends AppCompatActivity {
                     new LoginProcess(v.getContext()).execute(uname, pwd);
                 }*/
 
-            }
-        });
+                }
+            });
+        }
     }
-
 
     public void displayWelcomeMessage(Profile profile){
         if(profile!=null){

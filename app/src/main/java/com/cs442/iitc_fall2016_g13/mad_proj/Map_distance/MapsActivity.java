@@ -4,6 +4,7 @@ import android.Manifest;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.location.Location;
 import android.location.LocationManager;
@@ -29,12 +30,15 @@ import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 
 import com.cs442.iitc_fall2016_g13.mad_proj.Dynamic_menu_update.MainActivity;
 import com.cs442.iitc_fall2016_g13.mad_proj.R;
+import com.cs442.iitc_fall2016_g13.mad_proj.Seller.SellerMainActivity;
 import com.cs442.iitc_fall2016_g13.mad_proj.ServerConnect.GlobalVariables;
+import com.cs442.iitc_fall2016_g13.mad_proj.ServerConnect.LoginActivity;
 import com.cs442.iitc_fall2016_g13.mad_proj.fragmentlayout.CustomerOrderHistoryActivity;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.GoogleApiAvailability;
@@ -55,6 +59,9 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.Comparator;
+
+import static com.cs442.iitc_fall2016_g13.mad_proj.ServerConnect.LoginActivity.PREFS_NAME;
+
 public class MapsActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener,
         OnMapReadyCallback,
@@ -77,17 +84,46 @@ public class MapsActivity extends AppCompatActivity
     ListView mListView;
     CustomAdapter mArrayAdapter;
     String[] stringArray = {"kiran 1", "kiran 2"};
-
+    private int REQUEST_CODE_ASK_PERMISSIONS_CAM=0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        if (ContextCompat.checkSelfPermission(this,
+                Manifest.permission.CAMERA)
+                != PackageManager.PERMISSION_GRANTED) {
+
+            // Should we show an explanation?
+            if (ActivityCompat.shouldShowRequestPermissionRationale(MapsActivity.this,
+                    Manifest.permission.ACCESS_FINE_LOCATION)) {
+
+                // Show an explanation to the user *asynchronously* -- don't block
+                // this thread waiting for the user's response! After the user
+                // sees the explanation, try again to request the permission.
+
+            } else {
+
+                // No explanation needed, we can request the permission.
+
+                ActivityCompat.requestPermissions(MapsActivity.this,
+                        new String[]{Manifest.permission.ACCESS_FINE_LOCATION},
+                        REQUEST_CODE_ASK_PERMISSIONS_CAM );
+
+                // MY_PERMISSIONS_REQUEST_READ_CONTACTS is an
+                // app-defined int constant. The callback method gets the
+                // result of the request.
+            }
+        }
+
+
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.setDrawerListener(toggle);
@@ -96,6 +132,7 @@ public class MapsActivity extends AppCompatActivity
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
         mContext = this;
+
 
        if (android.os.Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
             checkLocationPermission();
@@ -131,6 +168,8 @@ public class MapsActivity extends AppCompatActivity
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.main, menu);
+        TextView drawer_name=(TextView)findViewById(R.id.drawer_name);
+        drawer_name.setText("RAPIDO - "+GlobalVariables.username);
         return true;
     }
 
@@ -160,10 +199,17 @@ public class MapsActivity extends AppCompatActivity
             startActivity(i);
             // Handle the camera action
         } else if (id == R.id.log_out) {
-
+            SharedPreferences settings = this.getSharedPreferences(PREFS_NAME, MODE_PRIVATE);
+            // Writing data to SharedPreferences
+            SharedPreferences.Editor editor = settings.edit();
+            editor.clear();
+            editor.commit();
+            Intent i = new Intent(this, LoginActivity.class);
+            startActivity(i);
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }

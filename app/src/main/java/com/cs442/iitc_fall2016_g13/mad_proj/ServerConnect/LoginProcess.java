@@ -9,8 +9,11 @@ package com.cs442.iitc_fall2016_g13.mad_proj.ServerConnect;
         import android.app.ProgressDialog;
         import android.content.Context;
         import android.content.Intent;
+        import android.content.SharedPreferences;
         import android.os.AsyncTask;
+        import android.preference.PreferenceManager;
         import android.provider.Settings;
+        import android.util.Log;
         import android.widget.ProgressBar;
         import android.widget.TextView;
         import android.widget.Toast;
@@ -31,6 +34,10 @@ package com.cs442.iitc_fall2016_g13.mad_proj.ServerConnect;
         import org.apache.http.client.HttpClient;
         import org.apache.http.client.methods.HttpGet;
         import org.apache.http.impl.client.DefaultHttpClient;
+
+        import static android.content.Context.MODE_PRIVATE;
+        import static com.cs442.iitc_fall2016_g13.mad_proj.ServerConnect.LoginActivity.PREFS_NAME;
+        import static com.facebook.GraphRequest.TAG;
 
 /**
  * Created by karti on 29-10-2016.
@@ -100,8 +107,19 @@ public class LoginProcess  extends AsyncTask<String,Void,String> {
     protected void onPostExecute(String result){
 
         if (result.equals(MD5(password)))
+
+
         {
 
+            SharedPreferences settings = context.getSharedPreferences(PREFS_NAME, MODE_PRIVATE);
+
+            // Writing data to SharedPreferences
+            SharedPreferences.Editor editor = settings.edit();
+            editor.putString("username", GlobalVariables.username);
+            editor.putString("usertype","cust");
+            editor.commit();
+
+         ;
             Intent intent = new Intent(context, MapsActivity.class);
             context.startActivity(intent);
            // ((Activity)context).finish();

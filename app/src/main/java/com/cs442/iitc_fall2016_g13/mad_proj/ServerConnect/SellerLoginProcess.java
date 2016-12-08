@@ -3,6 +3,7 @@ package com.cs442.iitc_fall2016_g13.mad_proj.ServerConnect;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.AsyncTask;
 import android.widget.Toast;
 
@@ -14,6 +15,9 @@ import java.io.OutputStreamWriter;
 import java.net.URL;
 import java.net.URLConnection;
 import java.net.URLEncoder;
+
+import static android.content.Context.MODE_PRIVATE;
+import static com.cs442.iitc_fall2016_g13.mad_proj.ServerConnect.LoginActivity.PREFS_NAME;
 
 /**
  * Created by lyd on 2016/11/9.
@@ -85,6 +89,13 @@ public class SellerLoginProcess extends AsyncTask<String,Void,String>{
     protected void onPostExecute(String result){
             if (result.equals(MD5(password)))
             {
+                SharedPreferences settings = context.getSharedPreferences(PREFS_NAME, MODE_PRIVATE);
+
+                // Writing data to SharedPreferences
+                SharedPreferences.Editor editor = settings.edit();
+                editor.putString("username", GlobalVariables.SellerUsername);
+                editor.putString("usertype","seller");
+                editor.commit();
                 Intent intent = new Intent(context, SellerMainActivity.class);
                 Toast.makeText(context,"Seller log in",Toast.LENGTH_LONG).show();
                 context.startActivity(intent);

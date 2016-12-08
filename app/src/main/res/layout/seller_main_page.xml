@@ -1,95 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:background="@drawable/food"
-    android:paddingLeft="16dp"
-    android:paddingRight="16dp" >
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.cs442.iitc_fall2016_g13.mad_proj.Map_distance.MapsActivity">
 
-
-    <LinearLayout
-        android:orientation="vertical"
+    <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentBottom="true">
+        android:layout_height="match_parent"
+        android:theme="@style/AppTheme.AppBarOverlay">
 
-        <TextView
-            android:text="Pending Orders:"
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentStart="true"
-            android:textColor="#000"
-            android:layout_marginStart="9dp"
-            android:layout_marginTop="14dp"
-            android:id="@+id/detail_textview"
-            android:textSize="30sp"
-            android:gravity="center" />
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
 
-
-        <ListView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:id="@+id/orders_listview"
-                android:layout_below="@+id/detail_textview"
-                android:layout_alignParentStart="true"
-                android:background="@drawable/border"
+        <include layout="@layout/seller_main_final"
             android:layout_weight="1"
-
-                android:divider="@color/buttonColors"
-                android:dividerHeight="@dimen/divider_height"
-                android:layout_marginBottom="10dp" />
-
-        <Button
-            android:text="Add Menu Item"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textColor="@color/buttonText"
-            android:background="@color/buttonColors"
-            android:textStyle="bold"
-            android:layout_margin="2dp"
-            android:padding="5dp"
-            android:id="@+id/SellerAddMenu" />
+            android:layout_height="wrap_content" />
 
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <Button
-                android:id="@+id/QR_reader_button"
-                android:layout_width="match_parent"
-                android:background="@color/buttonColors"
-                android:layout_height="wrap_content"
-                android:layout_alignTop="@+id/order_history_button"
-                android:layout_alignParentEnd="true"
-                android:layout_weight="1"
-                android:textColor="@color/buttonText"
-
-                android:text="Scan Order ID"
-                android:layout_marginEnd="10dp" />
-
-            <Button
-                android:text="Order History"
-                android:layout_width="match_parent"
-                android:textColor="@color/buttonText"
-                android:background="@color/buttonColors"
-                android:textStyle="bold"
+    </android.support.design.widget.AppBarLayout>
 
 
-                android:layout_height="wrap_content"
-                android:id="@+id/order_history_button"
-
-                android:layout_alignParentBottom="true"
-                android:layout_alignStart="@+id/detail_textview"
-                android:layout_weight="1"
-                android:layout_margin="0dp" />
-
-        </LinearLayout>
-
-    </LinearLayout>
-
-</RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>
