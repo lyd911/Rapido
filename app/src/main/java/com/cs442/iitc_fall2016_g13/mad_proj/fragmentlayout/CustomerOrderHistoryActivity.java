@@ -34,7 +34,7 @@ import java.util.ArrayList;
  */
 
 public class CustomerOrderHistoryActivity extends Activity {
-    public static ArrayAdapter<String> aa;
+    public static ArrayAdapter<HistoryAdapter> aa;
 
     public static ArrayList<OneOrder> customer_order_history;
     public static ListView customer_history_listview;
@@ -52,28 +52,17 @@ public class CustomerOrderHistoryActivity extends Activity {
 
         String username = GlobalVariables.username;
 
-        aa = new ArrayAdapter<String>(this,
-                android.R.layout.simple_list_item_1,
-                customer_order_string);
-        customer_history_listview.setAdapter(aa);
 
-
-        customer_history_listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                GlobalVariables.orderID_QR = customer_order_history.get(position).getOrder_id();
-                GlobalVariables.lati=Double.parseDouble(customer_order_history.get(position).getlat());
-                GlobalVariables.longi=Double.parseDouble(customer_order_history.get(position).getlon());
-                System.out.println("Lati is:"+GlobalVariables.lati);
-                System.out.println("Longi is:"+GlobalVariables.longi);
-
-                Intent intent = new Intent(getApplicationContext(), QRCodeGenerator.class);
-                startActivity(intent);
-            }
-        });
 
 
         new CustomerGetOrderHistoryProcess(this).execute(username);
+        aa = new HistoryAdapter(this,
+                R.layout.historylayout,
+                customer_order_string,customer_order_history,this);
+        customer_history_listview.setAdapter(aa);
+
+
+
         aa.notifyDataSetChanged();
 
     }

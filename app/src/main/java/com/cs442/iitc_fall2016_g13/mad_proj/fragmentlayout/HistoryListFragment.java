@@ -31,7 +31,8 @@ public class HistoryListFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
-        ViewGroup rootView = (ViewGroup) inflater.inflate(R.layout.historylayout, container, false);
+        return null;
+      /*  ViewGroup rootView = (ViewGroup) inflater.inflate(R.layout.historylayout, container, false);
         // Create an array of string to be data source of the ListFragment
 
         SharedPreferences pref = getContext().getSharedPreferences(PREFS_NAME, getContext().MODE_PRIVATE);
@@ -55,11 +56,11 @@ public class HistoryListFragment extends Fragment {
             });
         }
 
-/*
+*//*
         mArrayList.add("Kiran");
         mArrayList.add("Arun");
         mArrayList.add("Ravi");
-        mArrayList.add("Ranbo");*/
+        mArrayList.add("Ranbo");*//*
 
 
         // Create ArrayAdapter object to wrap the data source
@@ -70,7 +71,7 @@ public class HistoryListFragment extends Fragment {
         lv.setAdapter(mAdapter);
 
         return rootView;
-
+*/
     }
 
 // getting bill  QR kiran

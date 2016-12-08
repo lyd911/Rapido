@@ -1,5 +1,6 @@
 package com.cs442.iitc_fall2016_g13.mad_proj.fragmentlayout;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.support.annotation.NonNull;
@@ -14,8 +15,12 @@ import android.widget.Toast;
 
 import com.cs442.iitc_fall2016_g13.mad_proj.QRCodeGenerator;
 import com.cs442.iitc_fall2016_g13.mad_proj.R;
+import com.cs442.iitc_fall2016_g13.mad_proj.Seller.OneOrder;
+import com.cs442.iitc_fall2016_g13.mad_proj.ServerConnect.GlobalVariables;
 
 import java.util.ArrayList;
+
+import static com.cs442.iitc_fall2016_g13.mad_proj.fragmentlayout.CustomerOrderHistoryActivity.customer_order_history;
 
 /**
  * Created by KiranCD on 10/7/2016.
@@ -31,10 +36,10 @@ public class HistoryAdapter extends ArrayAdapter {
     private static final String TAG = "HistoryAdapter";
     ArrayList<String> mObjects;
     Context mContext;
-    HistoryListFragment cont;
+    CustomerOrderHistoryActivity cont;
+    ArrayList<OneOrder> od;
 
-
-    public HistoryAdapter(Context context, int textViewResourceId, ArrayList<String> objects,HistoryListFragment con) {
+    public HistoryAdapter(Context context, int textViewResourceId, ArrayList<String> objects, ArrayList<OneOrder> od, CustomerOrderHistoryActivity con) {
         super(context, textViewResourceId, objects);
 
 
@@ -42,6 +47,7 @@ public class HistoryAdapter extends ArrayAdapter {
         this.mContext = context;
         cont = con;
         this.mObjects = objects;
+        this.od=od;
     }
 
     @NonNull
@@ -58,9 +64,22 @@ public class HistoryAdapter extends ArrayAdapter {
 
             v = convertView;
         }
+v.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View v) {
 
+        GlobalVariables.orderID_QR = od.get(position).getOrder_id();
+        GlobalVariables.lati=Double.parseDouble(od.get(position).getlat());
+        GlobalVariables.longi=Double.parseDouble(od.get(position).getlon());
+        System.out.println("Lati is:"+GlobalVariables.lati);
+        System.out.println("Longi is:"+GlobalVariables.longi);
 
-        Button qr = (Button) v.findViewById(R.id.btnQr);
+        Intent intent = new Intent(mContext, QRCodeGenerator.class);
+        mContext.startActivity(intent);
+    }
+});
+
+       /* Button qr = (Button) v.findViewById(R.id.btnQr);
 
         qr.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -74,11 +93,22 @@ public class HistoryAdapter extends ArrayAdapter {
                 }
 
             }
-        });
+        });*/
 
-        TextView  tv = (TextView) v.findViewById(R.id.historyRowText);
+        TextView  tv1 = (TextView) v.findViewById(R.id.historyRoworder);
+        TextView  tv3 = (TextView) v.findViewById(R.id.historyRowmenu);
+        TextView  tv4 = (TextView) v.findViewById(R.id.historyRowstatus);
 
-        tv.setText(mObjects.get(position));
+        tv1.setText(od.get(position).getOrder_id().toString());
+        tv3.setText(od.get(position).getMenu_list().toString());
+        String Status;
+        if(od.get(position).getStatus().equals("0")){
+            Status = "Status: Not Started";
+        } else if((od.get(position).getStatus().equals("1"))){Status = "Status: Cooking";}
+        else if((od.get(position).getStatus().equals("2"))){Status = "Status: Finished Cooking";}
+        else {Status = "Status: Taken Away";}
+        tv4.setText(Status);
+
 
         return v;
 
