@@ -2,8 +2,26 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
-        android:id="@+id/action_settings"
+        android:id="@+id/action_changeMapView"
         android:orderInCategory="100"
-        android:title="@string/action_settings"
+        android:title="@string/action_changeMapView"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_sortByDistance"
+        android:orderInCategory="100"
+        android:title="@string/action_sortByDistance"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_sortByRating"
+        android:orderInCategory="100"
+        android:title="@string/action_sortByRating"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_logout"
+        android:orderInCategory="100"
+        android:title="@string/action_logout"
         app:showAsAction="never" />
 </menu>

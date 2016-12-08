@@ -151,7 +151,7 @@ public class MapsActivity extends AppCompatActivity
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
-        mapFragment.getMapAsync(this);
+        mapFragment.getMapAsync(MapsActivity.this);
     }
 
     @Override
@@ -181,8 +181,38 @@ public class MapsActivity extends AppCompatActivity
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
+        if (id == R.id.action_changeMapView) {
+            mMap.setMapType(MapView.getInstance().getNextMapView());
             return true;
+        }
+
+        if(id == R.id.action_logout){
+            Toast.makeText(MapsActivity.this, "action_logout", Toast.LENGTH_LONG).show();
+            SharedPreferences settings = this.getSharedPreferences(PREFS_NAME, MODE_PRIVATE);
+            // Writing data to SharedPreferences
+            SharedPreferences.Editor editor = settings.edit();
+            editor.clear();
+            editor.commit();
+            Intent i = new Intent(this, LoginActivity.class);
+            startActivity(i);
+
+            return true;
+
+        }
+
+        if(id == R.id.action_sortByDistance){
+            Toast.makeText(MapsActivity.this, "action_sortByDistance", Toast.LENGTH_LONG).show();
+            updateListViewOrderByDistance();
+            return true;
+
+        }
+
+
+        if(id == R.id.action_sortByRating){
+            Toast.makeText(MapsActivity.this, "action_sortByRating", Toast.LENGTH_LONG).show();
+            updateListViewOrderByRating();
+            return true;
+
         }
 
         return super.onOptionsItemSelected(item);
@@ -297,6 +327,8 @@ public class MapsActivity extends AppCompatActivity
             }
         });
 
+        // shifted this to menu
+      /*
         Button btnChangeMapView = (Button) findViewById(R.id.btn_changeView);
         btnChangeMapView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -304,8 +336,7 @@ public class MapsActivity extends AppCompatActivity
                 mMap.setMapType(MapView.getInstance().getNextMapView());
             }
         });
-
-        Button btnSortByDistance = (Button) findViewById(R.id.btn_sortDistance);
+ Button btnSortByDistance = (Button) findViewById(R.id.btn_sortDistance);
 
         btnSortByDistance.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -326,7 +357,7 @@ public class MapsActivity extends AppCompatActivity
             }
         });
 
-
+*/
 
         // Add a marker in Sydney and move the camera
         LatLng sydney = new LatLng(-34, 151);
@@ -369,6 +400,7 @@ public class MapsActivity extends AppCompatActivity
     }
 
     void showAlertBilderToEnableGPS() {
+        Toast.makeText(MapsActivity.this, "showAlertBilderToEnableGPS", Toast.LENGTH_LONG).show();
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(
                 this);
         alertDialogBuilder

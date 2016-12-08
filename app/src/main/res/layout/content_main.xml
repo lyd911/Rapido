@@ -38,6 +38,8 @@
                     android:text="Search"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:shadowRadius="8"
+                    android:shadowColor="#8b9dc3"
 
                     android:textColor="@color/buttonText"
                     android:background="@color/buttonColors"
@@ -57,7 +59,7 @@
                     android:layout_weight="0.8"
                     android:id="@+id/edtTxtDistanceInput" />
 
-                <Button
+<!--                <Button
                     android:text="MapView"
                     android:layout_width="109dp"
                     android:layout_height="wrap_content"
@@ -67,19 +69,19 @@
                     android:textStyle="bold"
                     android:padding="1dp"
                     android:layout_weight="0.1"
-                    android:id="@+id/btn_changeView" />
+                    android:id="@+id/btn_changeView" />-->
 
             </LinearLayout>
 
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="183dp"
+                android:layout_height="143dp"
                 android:orientation="vertical"
                 >
 
 
-                <LinearLayout
+<!--                <LinearLayout
                     android:orientation="horizontal"
                     android:layout_width="match_parent"
                     android:layout_height="43dp">
@@ -107,20 +109,36 @@
                         android:padding="1dp"
                         android:id="@+id/btn_sortRating"
                         android:layout_weight="1" />
-                </LinearLayout>
+                </LinearLayout>-->
 
-                <ListView
-                    android:id="@+id/myListView"
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"
-                    android:divider="#ffffff"
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
 
-                    android:dividerHeight="2dp"
-                    android:layout_margin="3dp"
-                    android:padding="5dp"
-                    android:background="#0033cc"
-                    android:cacheColorHint="#ffffff"
-                    android:scrollbars="none" />
+
+                    <TextView
+                        android:text="Enter distance Above"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:id="@+id/textView7" />
+
+                    <ListView
+                        android:id="@+id/myListView"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:divider="#ffffff"
+
+                        android:dividerHeight="2dp"
+                        android:layout_margin="3dp"
+                        android:padding="5dp"
+                        android:background="#0033cc"
+                        android:cacheColorHint="#ffffff"
+                        android:scrollbars="none" />
+
+                </FrameLayout>
+
+
 
                 <!--
                         <ListView

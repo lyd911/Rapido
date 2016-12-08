@@ -36,14 +36,14 @@ public class CustomerPlaceOrderProcess extends AsyncTask<String,Void,String> {
 
     //flag 0 means get and 1 means post.(By default it is get.)
     public CustomerPlaceOrderProcess(Context context) {
-        this.context = getApplicationContext();
-        dialog = new ProgressDialog(context);
+        this.context = context;
+      //  dialog = new ProgressDialog(context);
 
     }
 
     protected void onPreExecute(){
-        dialog.setMessage("Please wait");
-        dialog.show();
+     //   dialog.setMessage("Please wait");
+       // dialog.show();
 
     }
 
@@ -89,7 +89,7 @@ public class CustomerPlaceOrderProcess extends AsyncTask<String,Void,String> {
                 break;
             }
 
-            dialog.dismiss();
+           // dialog.dismiss();
             Intent intent = new Intent(getApplicationContext(), NotificationService.class);
             context.startService(intent);
             Intent i = new Intent(getApplicationContext(),CustomerOrderHistoryActivity.class);
