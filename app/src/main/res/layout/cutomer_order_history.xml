@@ -18,12 +18,19 @@
         android:layout_marginStart="9dp"
         android:layout_marginTop="14dp"
         android:id="@+id/customer_detail_textview"
-        android:textSize="24sp" />
+        android:textSize="24sp"
+
+        />
 
     <ListView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/customer_history_listview"
         android:layout_below="@+id/customer_detail_textview"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:background="@drawable/border"
+
+        android:divider="@color/buttonColors"
+        android:dividerHeight="@dimen/divider_height"
+        />
 </RelativeLayout>

@@ -7,52 +7,79 @@
     android:paddingRight="16dp" >
 
 
-    <TextView
-        android:text="Order Details:"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_alignParentStart="true"
-        android:layout_marginStart="9dp"
-        android:layout_marginTop="14dp"
-        android:id="@+id/detail_textview"
-        android:textSize="30sp" />
+        android:layout_alignParentBottom="true">
+        >
 
-    <ListView
-        android:layout_width="match_parent"
-        android:layout_marginTop="23dp"
-        android:layout_height="450dp"
-        android:id="@+id/detail_listview"
-        android:layout_below="@+id/detail_textview"
-        android:layout_alignParentStart="true" />
+        <TextView
+            android:text="Order Details:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="9dp"
+            android:layout_marginTop="14dp"
+            android:id="@+id/detail_textview"
+            android:textSize="30sp" />
 
-    <Button
-        android:layout_height="wrap_content"
-        android:id="@+id/get_phone_button"
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_marginTop="23dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/detail_listview"
+            android:layout_below="@+id/detail_textview"
+            android:layout_alignParentStart="true"
 
-        android:padding="4dp"
-        android:text="CALL"
-        android:textColor="@color/buttonText"
-        android:background="@color/buttonColors"
-        android:textStyle="bold"
-        android:layout_marginBottom="16dp"
-        android:layout_width="140dp"
-        android:layout_marginEnd="22dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true" />
+            android:background="@drawable/border"
 
-    <Button
-        android:text="Process Order"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/proceed_button"
+            android:divider="@color/buttonColors"
+            android:dividerHeight="@dimen/divider_height"
+            />
 
-        android:textColor="@color/buttonText"
-        android:background="@color/buttonColors"
-        android:textStyle="bold"
-        android:padding="4dp"
-        android:layout_alignBaseline="@+id/get_phone_button"
-        android:layout_alignBottom="@+id/get_phone_button"
-        android:layout_alignStart="@+id/detail_textview"
-        android:layout_marginStart="13dp" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <Button
+                android:layout_height="wrap_content"
+                android:id="@+id/get_phone_button"
+
+                android:padding="4dp"
+                android:text="CALL"
+                android:textColor="@color/buttonText"
+                android:background="@color/buttonColors"
+                android:textStyle="bold"
+                android:layout_marginBottom="16dp"
+                android:layout_width="match_parent"
+                android:layout_marginEnd="22dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_weight="1" />
+
+            <Button
+                android:text="Process Order"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/proceed_button"
+
+                android:textColor="@color/buttonText"
+                android:background="@color/buttonColors"
+                android:textStyle="bold"
+                android:padding="4dp"
+                android:layout_alignBaseline="@+id/get_phone_button"
+                android:layout_alignBottom="@+id/get_phone_button"
+                android:layout_alignStart="@+id/detail_textview"
+                android:layout_marginStart="13dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+    </LinearLayout>
+
 </RelativeLayout>

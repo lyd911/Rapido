@@ -1,8 +1,12 @@
 package com.cs442.iitc_fall2016_g13.mad_proj;
 
+import android.*;
+import android.Manifest;
 import android.content.pm.PackageManager;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.app.ActivityCompat;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.util.SparseArray;
@@ -24,11 +28,13 @@ public class QRCodeReader extends AppCompatActivity {
     private CameraSource mCameraSource;
     private SurfaceView mCameraView;
     private TextView mTVBarcodeInfo;
+    private static final int REQUEST_CODE_ASK_PERMISSIONS =0 ;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_qrcode_reader);
+
 
 
         mCameraView = (SurfaceView) findViewById(R.id.camera_view);

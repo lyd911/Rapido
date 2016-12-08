@@ -1,12 +1,16 @@
 package com.cs442.iitc_fall2016_g13.mad_proj.Seller;
 
+import android.Manifest;
 import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
+import android.support.v4.app.ActivityCompat;
+import android.support.v4.content.ContextCompat;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -39,7 +43,7 @@ public class SellerMainActivity extends Activity{
     public static ArrayList<OneOrder> pendingOrders;
     public static ArrayAdapter<String> aa;
     private ProgressDialog dialog;
-
+    private int REQUEST_CODE_ASK_PERMISSIONS_CAM =0;
     public static ListView orders_listview;
     public static ArrayList<String> orderString;
     public static int currentOrder;
@@ -73,6 +77,31 @@ public class SellerMainActivity extends Activity{
         QR_reader_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                if (ContextCompat.checkSelfPermission(v.getContext(),
+                        Manifest.permission.CAMERA)
+                        != PackageManager.PERMISSION_GRANTED) {
+
+                    // Should we show an explanation?
+                    if (ActivityCompat.shouldShowRequestPermissionRationale(SellerMainActivity.this,
+                            Manifest.permission.CAMERA)) {
+
+                        // Show an explanation to the user *asynchronously* -- don't block
+                        // this thread waiting for the user's response! After the user
+                        // sees the explanation, try again to request the permission.
+
+                    } else {
+
+                        // No explanation needed, we can request the permission.
+
+                        ActivityCompat.requestPermissions(SellerMainActivity.this,
+                                new String[]{Manifest.permission.CAMERA},
+                                REQUEST_CODE_ASK_PERMISSIONS_CAM );
+
+                        // MY_PERMISSIONS_REQUEST_READ_CONTACTS is an
+                        // app-defined int constant. The callback method gets the
+                        // result of the request.
+                    }
+                }
                 Intent intent = new Intent(getApplicationContext(), QRCodeReader.class);
                 startActivity(intent);
             }
@@ -158,6 +187,7 @@ public class SellerMainActivity extends Activity{
                     orderString.removeAll(orderString);
                     pendingOrders.removeAll(pendingOrders);
                     String admin = LoginActivity.admin;
+                    admin=admin.replaceAll("\'","\\'");
 
                     String link="http://rapido.counseltech.in/sellerRefresh.php";
                     String data  = URLEncoder.encode("admin", "UTF-8") + "=" + URLEncoder.encode(admin, "UTF-8");
@@ -182,7 +212,7 @@ public class SellerMainActivity extends Activity{
                         break;
                     }
                     String rawdata=sb.toString();
-
+                    System.out.println(rawdata);
                     int i=0;
                     String s1[] = rawdata.split("\\}");
                     if(s1!=null){

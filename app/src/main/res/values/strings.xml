@@ -15,6 +15,7 @@
     <string name="permission_rationale">"Contacts permissions are needed for providing email
         completions."
     </string>
+
     <string name="title_activity_sign_up">Sign Up</string>
     <string name="facebook_app_id">1132013720179341</string>
     <string name="title_activity_main_menu">MainMenuActivity</string>
@@ -22,7 +23,7 @@
     <string name="customer">Customer</string>
     <string name="restaurant_owner">Restaurant Owner</string>
     <string name="temp_username">kartik</string>
-    <string name="temp_password">Restaurant Owner</string>
+    <string name="temp_password">123</string>
     <string name="restaurant_registration">Are you a Restaurant Owner? Register here.</string>
     <string name="login_button_label">Login</string>
     <string name="customer_registration">No account yet? Create one.</string>

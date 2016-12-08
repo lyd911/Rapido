@@ -78,6 +78,7 @@ public class SellerOrderHistoryActivity extends Activity{
 
             try{
                 admin = (String)params[0];
+                admin=admin.replaceAll("\'","\\'");
 
                 String link="http://rapido.counseltech.in/sellerGetFinished.php";
                 String data  = URLEncoder.encode("admin", "UTF-8") + "=" + URLEncoder.encode(admin, "UTF-8");
