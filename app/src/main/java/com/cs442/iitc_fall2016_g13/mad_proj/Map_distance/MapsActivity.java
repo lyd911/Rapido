@@ -297,7 +297,7 @@ public class MapsActivity extends AppCompatActivity
 
                     int distance = Integer.parseInt(mETxtDistanceInput.getText().toString());
                     if(distance > 15000 || distance <= 0){
-                        Toast.makeText(MapsActivity.this, "Distance should be less than 15000", Toast.LENGTH_LONG).show();
+                        Toast.makeText(MapsActivity.this, "Distance should be between 0 and 15000", Toast.LENGTH_LONG).show();
                         return;
                     }
 

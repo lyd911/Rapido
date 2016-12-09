@@ -65,7 +65,9 @@
 
         <activity android:name=".QRCodeGenerator" />
         <activity android:name=".QRActivity" />
-        <activity android:name=".QRCodeReader" />
+        <activity android:name=".QRCodeReader"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
         <activity android:name=".NearbyPlaces" />
         <activity android:name=".Map_distance.MapsActivity"
             android:configChanges="orientation"

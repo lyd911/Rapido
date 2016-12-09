@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_qrcode_reader"
     android:layout_width="match_parent"
@@ -8,25 +8,40 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
     tools:context="com.cs442.iitc_fall2016_g13.mad_proj.QRCodeReader">
 
 
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="Provide Food With Order#:"
+            android:textStyle="bold"
+            android:textSize="60px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/buttonColors"
+            android:id="@+id/textView10"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/buttonColors"
+            android:text="Please wait we are reading"
+            android:id="@+id/tv_QRCodeInfo"
+            android:layout_weight="3" />
+    </LinearLayout>
+
     <SurfaceView
-        android:layout_width="640px"
-        android:layout_height="480px"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:id="@+id/camera_view"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/tv_QRCodeInfo"
-        android:textSize="20sp"
-        android:layout_marginLeft="25dp"
-        android:text="Nothing to read."
-        android:layout_marginTop="16dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignStart="@+id/camera_view" />
-
-</RelativeLayout>
+</LinearLayout>

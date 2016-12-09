@@ -47,6 +47,8 @@ public class MainActivity extends AppCompatActivity {
     Double mLatitude, mLongitude;
     String mRestautantName;
     String mLatLongString;
+    ProgressDialog dialog;
+    boolean flag;
 
     ListView mListView;
     String key;
@@ -56,6 +58,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_updatemenu);
         key= GlobalVariables.SelectedRestaurantName;
+        flag = false;
 
         Intent intent = getIntent();
 
@@ -73,8 +76,11 @@ public class MainActivity extends AppCompatActivity {
         TextView restaurantName = (TextView) findViewById(R.id.txtRestaurantName);
         restaurantName.setText(mRestautantName);
 
-
+        if(flag == false)
+        dialog = ProgressDialog.show(this, "",
+                "Loading. Please wait...", true);
         LoadMenuListView();
+
         Button mBtnRrefresh = (Button) findViewById(R.id.btnRefreshMenu);
         mBtnRrefresh.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -102,6 +108,7 @@ public class MainActivity extends AppCompatActivity {
 
     void LoadMenuListView(){
 
+
         Log.v(TAG,"LoadMenuListView");
         final FirebaseDatabase database = FirebaseDatabase.getInstance();
         final DatabaseReference myRef = database.getReference(dbKeyRestaurants);
@@ -118,10 +125,7 @@ public class MainActivity extends AppCompatActivity {
 
                 }
 
-
 //               dataSnapshot.child("latlong");
-
-
 
                 for (DataSnapshot latlong : dataSnapshot.getChildren())
                 {
@@ -165,6 +169,11 @@ public class MainActivity extends AppCompatActivity {
                 }
 
                 //refreshMenu();
+
+                if(flag == false && dialog != null){
+                    dialog.dismiss();
+                    flag = true;
+                }
             }
 
             @Override

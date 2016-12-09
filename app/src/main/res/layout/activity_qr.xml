@@ -11,6 +11,15 @@
     tools:context="com.cs442.iitc_fall2016_g13.mad_proj.QRActivity">
 
 
+    <TextView
+        android:text="Show this to get food that you ordered"
+        android:textColor="@color/buttonColors"
+        android:textSize="60px"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView11" />
+
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
