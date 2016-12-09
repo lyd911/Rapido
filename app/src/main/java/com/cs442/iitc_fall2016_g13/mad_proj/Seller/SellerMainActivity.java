@@ -30,6 +30,7 @@ import android.widget.Toast;
 import com.cs442.iitc_fall2016_g13.mad_proj.QRCodeReader;
 import com.cs442.iitc_fall2016_g13.mad_proj.R;
 import com.cs442.iitc_fall2016_g13.mad_proj.Seller.Dynamic_menu_update.MainActivity;
+import com.cs442.iitc_fall2016_g13.mad_proj.ServerConnect.GlobalVariables;
 import com.cs442.iitc_fall2016_g13.mad_proj.ServerConnect.LoginActivity;
 import com.cs442.iitc_fall2016_g13.mad_proj.fragmentlayout.CustomerOrderHistoryActivity;
 
@@ -156,13 +157,34 @@ public class SellerMainActivity extends AppCompatActivity implements NavigationV
             }
         });
 
-        aa = new ArrayAdapter<String>(this,
-                android.R.layout.simple_list_item_1,
+        aa = new ArrayAdapter<String>(getApplicationContext(),
+                R.layout.sellerpending,
                 SellerMainActivity.orderString);
         orders_listview.setAdapter(aa);
+        new doMysql().execute();
+       // callAsynchronousTask();
+        final Handler handler = new Handler();
+        Timer timer = new Timer();
+        TimerTask doAsynchronousTask = new TimerTask() {
+            @Override
+            public void run() {
 
-        callAsynchronousTask();
-//        aa.notifyDataSetChanged();
+                handler.post(new Runnable() {
+
+                    public void run() {
+                        try {
+                            orders_listview.setAdapter(aa);
+                            //aa.notifyDataSetChanged();
+                            new doMysql().execute();
+                        } catch (Exception e) {
+                            // TODO Auto-generated catch block
+                        }
+                    }
+                });
+            }
+        };
+        timer.schedule(doAsynchronousTask, 1, 20000);//cute in every 10000 ms
+
     }
 
 
@@ -179,29 +201,12 @@ public class SellerMainActivity extends AppCompatActivity implements NavigationV
 
 
     public void callAsynchronousTask() {
-        final Handler handler = new Handler();
-        Timer timer = new Timer();
-        TimerTask doAsynchronousTask = new TimerTask() {
-            @Override
-            public void run() {
-                handler.post(new Runnable() {
-                    public void run() {
-                        try {
-                            doMysql();
-                        } catch (Exception e) {
-                            // TODO Auto-generated catch block
-                        }
-                    }
-                });
-            }
-        };
-        timer.schedule(doAsynchronousTask, 1, 10000); //execute in every 10000 ms
-    }
+
+}
 
 
-    public void doMysql(){
-
-        AsyncTask<String,OneOrder,String> task = new AsyncTask<String, OneOrder, String>() {
+    public class doMysql extends AsyncTask<String,Void,String>{
+ProgressDialog dialog ;
 
             @Override
             protected void onPreExecute() {
@@ -213,8 +218,10 @@ public class SellerMainActivity extends AppCompatActivity implements NavigationV
                 try{
                     orderString.removeAll(orderString);
                     pendingOrders.removeAll(pendingOrders);
-                    String admin = LoginActivity.admin;
+                    String admin = GlobalVariables.SellerUsername;
+                    System.out.println("seller username "+admin);
                     admin=admin.replaceAll("\'","\\'");
+                    System.out.println("pending order size intially: "+pendingOrders.size());
 
                     String link="http://rapido.counseltech.in/sellerRefresh.php";
                     String data  = URLEncoder.encode("admin", "UTF-8") + "=" + URLEncoder.encode(admin, "UTF-8");
@@ -242,9 +249,13 @@ public class SellerMainActivity extends AppCompatActivity implements NavigationV
                     System.out.println(rawdata);
                     int i=0;
                     String s1[] = rawdata.split("\\}");
+                    System.out.println("pending order size at split: "+pendingOrders.size());
+                    System.out.println("s1 size "+s1.length);
                     if(s1!=null){
                         for(i=0;i<s1.length-1;i++){
                             String s2[]=s1[i].split("\"");
+                            System.out.println("Size of s2 after split"+s2.length);
+
                             OneOrder oneOrder = new OneOrder();
                             oneOrder.setOrder_id(s2[3]);
                             oneOrder.setRest_id(s2[7]);
@@ -256,6 +267,7 @@ public class SellerMainActivity extends AppCompatActivity implements NavigationV
                         }}
 
                     if(pendingOrders !=null){
+                        System.out.println("pending order size: "+pendingOrders.size());
                         numberOfOrders = pendingOrders.size();
                         for(i=0;i<numberOfOrders;i++){
                             String Status;
@@ -287,12 +299,8 @@ public class SellerMainActivity extends AppCompatActivity implements NavigationV
                 super.onPostExecute(s);
                 aa.notifyDataSetChanged();
             }
-        };
-        if(Build.VERSION.SDK_INT >= 11)
-            task.executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
-        else
-            task.execute();
-    }
+        }
+
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {

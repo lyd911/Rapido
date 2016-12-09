@@ -90,9 +90,9 @@ public class CustomerPlaceOrderProcess extends AsyncTask<String,Void,String> {
             }
 
            // dialog.dismiss();
-            Intent intent = new Intent(getApplicationContext(), NotificationService.class);
+            Intent intent = new Intent(context, NotificationService.class);
             context.startService(intent);
-            Intent i = new Intent(getApplicationContext(),CustomerOrderHistoryActivity.class);
+            Intent i = new Intent(context,CustomerOrderHistoryActivity.class);
             context.startActivity(i);
             
             return sb.toString();
