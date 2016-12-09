@@ -92,7 +92,10 @@
         <activity android:name=".FB_Signup" />
         <activity android:name=".Seller.SellerMainActivity" />
         <activity android:name=".Seller.SellerOrderHistoryActivity" />
-        <activity android:name=".Seller.SellerOrderDetailActivity" />
+        <activity android:name=".Seller.SellerOrderDetailActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            />
         <activity android:name=".Seller.SellerGetMenuListActivity"/>
         <activity android:name=".fragmentlayout.CustomerOrderHistoryActivity"/>
         <activity android:name=".OrderHistory" />
