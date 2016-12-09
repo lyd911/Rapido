@@ -76,7 +76,8 @@
         <activity android:name=".Dynamic_menu_update.MainActivity" />
         <activity
             android:name=".ServerConnect.LoginActivity"
-            android:label="@string/title_activity_login" />
+            android:label="@string/title_activity_login"
+            android:launchMode = "singleInstance"/>
         <activity
             android:name=".ServerConnect.SignUpActivity"
             android:label="@string/title_activity_sign_up">

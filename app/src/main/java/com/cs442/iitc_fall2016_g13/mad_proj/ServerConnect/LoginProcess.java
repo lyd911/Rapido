@@ -5,14 +5,18 @@ package com.cs442.iitc_fall2016_g13.mad_proj.ServerConnect;
  */
 
 
+        import android.Manifest;
         import android.app.Activity;
         import android.app.ProgressDialog;
         import android.content.Context;
         import android.content.Intent;
         import android.content.SharedPreferences;
+        import android.content.pm.PackageManager;
         import android.os.AsyncTask;
         import android.preference.PreferenceManager;
         import android.provider.Settings;
+        import android.support.v4.app.ActivityCompat;
+        import android.support.v4.content.ContextCompat;
         import android.util.Log;
         import android.widget.ProgressBar;
         import android.widget.TextView;
@@ -119,7 +123,9 @@ public class LoginProcess  extends AsyncTask<String,Void,String> {
             editor.putString("usertype","cust");
             editor.commit();
 
-         ;
+
+
+            ;
             Intent intent = new Intent(context, MapsActivity.class);
             context.startActivity(intent);
            // ((Activity)context).finish();

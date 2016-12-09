@@ -1,8 +1,12 @@
 package com.cs442.iitc_fall2016_g13.mad_proj.ServerConnect;
 
+        import android.Manifest;
         import android.content.Intent;
         import android.content.SharedPreferences;
+        import android.content.pm.PackageManager;
         import android.preference.PreferenceManager;
+        import android.support.v4.app.ActivityCompat;
+        import android.support.v4.content.ContextCompat;
         import android.support.v7.app.AppCompatActivity;
         import android.os.Bundle;
         import android.view.View;
@@ -37,7 +41,7 @@ public class LoginActivity extends AppCompatActivity {
     public static final String PREFS_NAME = "MyApp_Settings";
     private LoginButton loginButton;
     private CallbackManager callbackManager;
-
+    private int REQUEST_CODE_ASK_PERMISSIONS_LOC=0;
     private RadioButton SellerRadio,CustomerRadio;
 
     private FacebookCallback<LoginResult> mCallback=new FacebookCallback<LoginResult>() {
@@ -64,7 +68,31 @@ public class LoginActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        if (ContextCompat.checkSelfPermission(this,
+                Manifest.permission.ACCESS_FINE_LOCATION)
+                != PackageManager.PERMISSION_GRANTED) {
 
+            // Should we show an explanation?
+            if (ActivityCompat.shouldShowRequestPermissionRationale(LoginActivity.this,
+                    Manifest.permission.ACCESS_FINE_LOCATION)) {
+
+                // Show an explanation to the user *asynchronously* -- don't block
+                // this thread waiting for the user's response! After the user
+                // sees the explanation, try again to request the permission.
+
+            } else {
+
+                // No explanation needed, we can request the permission.
+
+                ActivityCompat.requestPermissions(LoginActivity.this,
+                        new String[]{Manifest.permission.ACCESS_FINE_LOCATION},
+                        REQUEST_CODE_ASK_PERMISSIONS_LOC );
+
+                // MY_PERMISSIONS_REQUEST_READ_CONTACTS is an
+                // app-defined int constant. The callback method gets the
+                // result of the request.
+            }
+        }
 
         SharedPreferences settings = this.getSharedPreferences(PREFS_NAME, MODE_PRIVATE);
         // Reading from SharedPreferences
@@ -72,7 +100,7 @@ public class LoginActivity extends AppCompatActivity {
         String usertpye=settings.getString("usertype","");
         if (!username1.equals(null) && username1.length() > 0) {
             //System.out.println("reading username: "+username1);
-            Toast.makeText(getApplicationContext(), "Already logged in: " + username1, Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(), "Welcome Back: " + username1, Toast.LENGTH_SHORT).show();
             if(usertpye.equals("cust")) {
                 GlobalVariables.username=username1;
                 Intent intent = new Intent(this, MapsActivity.class);
@@ -81,11 +109,11 @@ public class LoginActivity extends AppCompatActivity {
             else if(usertpye.equals("seller"))
             {
                 GlobalVariables.SellerUsername=username1;
-
                 Intent intent = new Intent(this, SellerMainActivity.class);
                 startActivity(intent);
             }
             finish();
+
         } else {
 
             FacebookSdk.sdkInitialize(getApplicationContext());

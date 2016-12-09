@@ -7,7 +7,7 @@ package com.cs442.iitc_fall2016_g13.mad_proj.ServerConnect;
 public class GlobalVariables {
     public static int err=0;
     public static String[][] res_data;
-    public static String username;
+    public static String username="";
     public static String FB_Name;
     public static String SelectedRestaurantName;
     public static String[] res_ids;
@@ -15,7 +15,7 @@ public class GlobalVariables {
     public static String[][] res_menu;
     public static int menu_check;
     public static String url;
-    public static String SellerUsername="admin0";
+    public static String SellerUsername="";
     public static String OrderDetails="";
     public static String orderID_QR="";
     public static Double mLat;
