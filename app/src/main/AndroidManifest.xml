@@ -90,7 +90,10 @@
             android:label="rapido"
             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
         <activity android:name=".FB_Signup" />
-        <activity android:name=".Seller.SellerMainActivity" />
+        <activity android:name=".Seller.SellerMainActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            />
         <activity android:name=".Seller.SellerOrderHistoryActivity" />
         <activity android:name=".Seller.SellerOrderDetailActivity"
             android:configChanges="orientation"
