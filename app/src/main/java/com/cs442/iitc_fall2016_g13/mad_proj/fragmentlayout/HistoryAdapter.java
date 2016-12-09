@@ -16,6 +16,7 @@ import android.widget.Toast;
 import com.cs442.iitc_fall2016_g13.mad_proj.QRCodeGenerator;
 import com.cs442.iitc_fall2016_g13.mad_proj.R;
 import com.cs442.iitc_fall2016_g13.mad_proj.Seller.OneOrder;
+import com.cs442.iitc_fall2016_g13.mad_proj.Seller.SellerOrderHistoryActivity;
 import com.cs442.iitc_fall2016_g13.mad_proj.ServerConnect.GlobalVariables;
 
 import java.util.ArrayList;
@@ -37,6 +38,7 @@ public class HistoryAdapter extends ArrayAdapter {
     ArrayList<String> mObjects;
     Context mContext;
     CustomerOrderHistoryActivity cont;
+    SellerOrderHistoryActivity sel;
     ArrayList<OneOrder> od;
 
     public HistoryAdapter(Context context, int textViewResourceId, ArrayList<String> objects, ArrayList<OneOrder> od, CustomerOrderHistoryActivity con) {
@@ -49,7 +51,16 @@ public class HistoryAdapter extends ArrayAdapter {
         this.mObjects = objects;
         this.od=od;
     }
+    public HistoryAdapter(Context context, int textViewResourceId, ArrayList<String> objects, ArrayList<OneOrder> od, SellerOrderHistoryActivity sel) {
+        super(context, textViewResourceId, objects);
 
+
+
+        this.mContext = context;
+        sel = sel;
+        this.mObjects = objects;
+        this.od=od;
+    }
     @NonNull
     @Override
     public View getView(final int position, View convertView, ViewGroup parent) {

@@ -12,6 +12,7 @@ import android.widget.TextView;
 import com.cs442.iitc_fall2016_g13.mad_proj.R;
 import com.cs442.iitc_fall2016_g13.mad_proj.ServerConnect.GlobalVariables;
 import com.cs442.iitc_fall2016_g13.mad_proj.ServerConnect.LoginActivity;
+import com.cs442.iitc_fall2016_g13.mad_proj.fragmentlayout.HistoryAdapter;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
@@ -26,7 +27,7 @@ import java.util.ArrayList;
  */
 
 public class SellerOrderHistoryActivity extends Activity{
-    public static ArrayAdapter<String> aa;
+    public static ArrayAdapter<SellerHistoryAdapter> aa;
 
     public static ArrayList<OneOrder> orders_finished;
     public static ListView history_listview;
@@ -43,10 +44,10 @@ public class SellerOrderHistoryActivity extends Activity{
         history_listview = (ListView)findViewById(R.id.history_listview);
 
         String admin = LoginActivity.admin;
-
-        aa = new ArrayAdapter<String>(this,
-                android.R.layout.simple_list_item_1,
-                SellerOrderHistoryActivity.order_finished_String);
+        Context c;
+        aa = new SellerHistoryAdapter(this,
+                R.layout.historylayout,
+                SellerOrderHistoryActivity.order_finished_String,orders_finished,this);
         history_listview.setAdapter(aa);
 
         new SellerGetFinishedOrdersProcess(this).execute(GlobalVariables.SellerUsername);

@@ -79,7 +79,7 @@ public class FB_SignupProcess  extends AsyncTask<String,Void,String> {
                 sb.append(line);
                 break;
             }
-            Intent intent = new Intent(context, NearbyPlaces.class);
+            Intent intent = new Intent(context, LoginActivity.class);
             context.startActivity(intent);
 
             return sb.toString();

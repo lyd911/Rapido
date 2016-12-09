@@ -4,9 +4,12 @@ package com.cs442.iitc_fall2016_g13.mad_proj.ServerConnect;
         import android.content.Intent;
         import android.content.SharedPreferences;
         import android.content.pm.PackageManager;
+        import android.os.Handler;
         import android.preference.PreferenceManager;
         import android.support.v4.app.ActivityCompat;
         import android.support.v4.content.ContextCompat;
+        import android.support.v4.view.GravityCompat;
+        import android.support.v4.widget.DrawerLayout;
         import android.support.v7.app.AppCompatActivity;
         import android.os.Bundle;
         import android.view.View;
@@ -216,4 +219,25 @@ public class LoginActivity extends AppCompatActivity {
         super.onActivityResult(requestCode, resultCode, data);
         callbackManager.onActivityResult(requestCode,resultCode,data);
     }
+    boolean doubleBackToExitPressedOnce = false;
+
+    public void onBackPressed() {
+
+        if (doubleBackToExitPressedOnce) {
+            super.onBackPressed();
+            return;
+        }
+
+        this.doubleBackToExitPressedOnce = true;
+        Toast.makeText(this, "Please click BACK again to exit", Toast.LENGTH_SHORT).show();
+
+        new Handler().postDelayed(new Runnable() {
+
+            @Override
+            public void run() {
+                doubleBackToExitPressedOnce=false;
+            }
+        }, 2000);
+    }
+
 }

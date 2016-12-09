@@ -184,8 +184,6 @@ public class MapsActivity extends AppCompatActivity
             SharedPreferences.Editor editor = settings.edit();
             editor.clear();
             editor.commit();
-            Intent i = new Intent(this, LoginActivity.class);
-            startActivity(i);
 
             return true;
 
@@ -226,7 +224,10 @@ public class MapsActivity extends AppCompatActivity
             editor.clear();
             editor.commit();
             Intent i = new Intent(this, LoginActivity.class);
+            i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
             startActivity(i);
+            finish();
+
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

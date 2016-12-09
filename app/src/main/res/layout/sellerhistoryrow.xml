@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginBottom="10dp"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="4">
+
+        <TextView
+            android:text="Order Id:"
+            android:layout_width="match_parent"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView7"
+            android:layout_weight="3"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/buttonColors"
+            android:textSize="@dimen/place_autocomplete_prediction_horizontal_margin" />
+
+        <TextView
+            android:text="textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/historyRoworder"
+            android:textColor="#000"
+            android:padding="10dp"
+            android:layout_weight="1"
+            android:textSize="20dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="4">
+        <TextView
+            android:text="Customer Id:"
+            android:layout_width="match_parent"
+            android:textStyle="bold"
+            android:layout_height="match_parent"
+            android:id="@+id/textView25"
+            android:layout_weight="3"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/buttonColors"
+            android:textSize="@dimen/place_autocomplete_prediction_horizontal_margin" />
+
+        <TextView
+            android:text="textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/historyRowcustid"
+            android:textColor="#000"
+            android:padding="10dp"
+            android:layout_weight="1"
+            android:textSize="20dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="4">
+
+        <TextView
+            android:text="Items:"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView8"
+            android:layout_weight="3"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/buttonColors"
+            android:textSize="@dimen/place_autocomplete_prediction_horizontal_margin" />
+
+        <TextView
+            android:text="textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/historyRowmenu"
+            android:textColor="#000"
+            android:padding="10dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="4">
+
+        <TextView
+            android:text="Status:"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/textView9"
+            android:layout_weight="3"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/buttonColors"
+            android:textSize="@dimen/place_autocomplete_prediction_horizontal_margin" />
+
+        <TextView
+            android:text="textVilkadjf;lkjdasf;lkajd;flkjasd;fklja;dkl;lsjdjkjfew"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/historyRowstatus"
+            android:textColor="#000"
+            android:padding="10dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+</LinearLayout>
