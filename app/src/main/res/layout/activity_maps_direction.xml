@@ -12,12 +12,16 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="0 min"
+        android:textColor="@color/listviewText"
+        android:textStyle="bold"
         android:id="@+id/tvDuration" />
     <TextView
         android:padding="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="0 km"
+        android:textColor="@color/listviewText"
+        android:textStyle="bold"
         android:id="@+id/tvDistance" />
 
 

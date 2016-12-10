@@ -184,6 +184,9 @@ public class MapsActivity extends AppCompatActivity
             SharedPreferences.Editor editor = settings.edit();
             editor.clear();
             editor.commit();
+            Intent i = new Intent(this, LoginActivity.class);
+            startActivity(i);
+            finish();
 
             return true;
 
