@@ -43,16 +43,20 @@ public class SignUpActivity extends AppCompatActivity {
                 String nm = name.getText().toString();
                 String addr = address.getText().toString();
                 String ph = phone.getText().toString();
+if(uname.equals("")||pwd.equals("")||cnf_pwd.equals("")||nm.equals("")||addr.equals("")||ph.equals(""))
+{
+    Toast toast = Toast.makeText(mContext, "Please Enter all details", Toast.LENGTH_LONG);
+    toast.show();
+}
+                else {
+    if (cnf_pwd.equals(pwd)) {
+        new SignUpProcess(mContext).execute(uname, pwd, nm, ph, addr);
 
-                if(cnf_pwd.equals(pwd)) {
-                    new SignUpProcess(mContext).execute(uname, pwd, nm, ph, addr);
-
-                }
-                else
-                {
-                    Toast toast = Toast.makeText(mContext, "Passwords do not Match", Toast.LENGTH_LONG);
-                    toast.show();
-                }
+    } else {
+        Toast toast = Toast.makeText(mContext, "Passwords do not Match", Toast.LENGTH_LONG);
+        toast.show();
+    }
+}
 
             }
         });
