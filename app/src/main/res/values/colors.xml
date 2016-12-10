@@ -9,4 +9,5 @@
     <color name="WHITE">#ffffff</color>
         <color name="buttonColors">#3b5998</color>
     <color name="buttonText">#ffff</color>
+    <color name="listviewText">#000000</color>
 </resources>
