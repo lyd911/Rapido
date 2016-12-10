@@ -66,36 +66,22 @@ public class SellerSignUp extends AppCompatActivity {
                 final String nm = name.getText().toString();
                 final String addr = address.getText().toString();
                final String ph = phone.getText().toString();
-
-                if(cnf_pwd.equals(pwd)) {
-                    String restaurantName = nm;
-
-                    mFlag = false;
-
-
-                                               //    Toast toast = Toast.makeText(getApplicationContext(), "Account Created", Toast.LENGTH_LONG);
-                              //  toast.show();
-                                new SellerSignUpProcess(mContext).execute(uname,pwd,nm,ph,addr);
-
-
-                          //finish();
-                                // Create a new Account
-
-
-
-
-
-
-
-
-
-                  //  new SignUpProcess(v.getContext()).execute(uname, pwd, nm, ph, addr);
-
-                }
-                else
+                if(uname.equals("")||pwd.equals("")||cnf_pwd.equals("")||nm.equals("")||addr.equals("")||ph.equals(""))
                 {
-                    Toast toast = Toast.makeText(getApplicationContext(), "Passwords do not Match", Toast.LENGTH_LONG);
+                    Toast toast = Toast.makeText(mContext, "Please Enter all details", Toast.LENGTH_LONG);
                     toast.show();
+                }
+                else {
+                    if (cnf_pwd.equals(pwd)) {
+                        String restaurantName = nm;
+                        mFlag = false;
+                        new SellerSignUpProcess(mContext).execute(uname, pwd, nm, ph, addr);
+
+
+                    } else {
+                        Toast toast = Toast.makeText(getApplicationContext(), "Passwords do not Match", Toast.LENGTH_LONG);
+                        toast.show();
+                    }
                 }
             }
         });
