@@ -1,5 +1,6 @@
 package com.cs442.iitc_fall2016_g13.mad_proj.Map_alert;
 
+import android.Manifest;
 import android.app.Activity;
 import android.app.Dialog;
 import android.app.ProgressDialog;
@@ -19,6 +20,7 @@ import android.support.annotation.Nullable;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.DialogFragment;
 import android.support.v4.app.FragmentActivity;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AlertDialog;
 import android.util.Log;
 import android.view.View;
@@ -295,9 +297,39 @@ public class MapsActivity_direction extends FragmentActivity implements
     private void sendRequest() {
        /* String origin = etOrigin.getText().toString();
         String destination = etDestination.getText().toString();*/
-
+int REQUEST_CODE_ASK_PERMISSIONS_LOC=0;
         //  origin  = Double.toString(start_lat)+","+Double.toString(start_lon);
-        origin = "41.84183,-87.61667";
+        if (ContextCompat.checkSelfPermission(this,
+                Manifest.permission.ACCESS_FINE_LOCATION)
+                != PackageManager.PERMISSION_GRANTED) {
+
+            // Should we show an explanation?
+            if (ActivityCompat.shouldShowRequestPermissionRationale(MapsActivity_direction.this,
+                    Manifest.permission.ACCESS_FINE_LOCATION)) {
+
+                // Show an explanation to the user *asynchronously* -- don't block
+                // this thread waiting for the user's response! After the user
+                // sees the explanation, try again to request the permission.
+
+            } else {
+
+                // No explanation needed, we can request the permission.
+
+                ActivityCompat.requestPermissions(MapsActivity_direction.this,
+                        new String[]{Manifest.permission.ACCESS_FINE_LOCATION},
+                        REQUEST_CODE_ASK_PERMISSIONS_LOC );
+
+                // MY_PERMISSIONS_REQUEST_READ_CONTACTS is an
+                // app-defined int constant. The callback method gets the
+                // result of the request.
+            }
+        }
+        LocationManager lm = (LocationManager)getSystemService(Context.LOCATION_SERVICE);
+        Location location = lm.getLastKnownLocation(LocationManager.GPS_PROVIDER);
+        double longitude = location.getLongitude();
+        double latitude = location.getLatitude();
+     //   origin = "41.84183,-87.61667";
+        origin=latitude+","+longitude;
         destination= Double.toString(end_lat)+","+Double.toString(end_lon);
 
 
