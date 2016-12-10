@@ -20,6 +20,7 @@ import android.widget.Toast;
 
 import com.cs442.iitc_fall2016_g13.mad_proj.R;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 import static android.view.View.INVISIBLE;
@@ -35,6 +36,8 @@ public class SellerOrderDetailActivity extends Activity {
     public static String cust_phone;
     private static final int REQUEST_CODE_ASK_PERMISSIONS = 0;
     public static ArrayList<String> OneOrderDetail;
+    public static ArrayList<OneOrder> tempArr;
+    public static ArrayList<String> tempListView;
     String message = "Your order is Ready. From- RAPIDO";
 
     @Override
@@ -42,21 +45,26 @@ public class SellerOrderDetailActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.order_detail);
 
+        tempArr = SellerMainActivity.pendingOrders;
+        tempListView = SellerMainActivity.orderString;
+//        tempListView = getIntent().getStringArrayListExtra("orderString");
+        selected_order_position = SellerMainActivity.currentOrder;
+
         TextView detail_textview = (TextView) findViewById(R.id.detail_textview);
         ListView detail_listview = (ListView) findViewById(R.id.detail_listview);
         final Button proceed_button = (Button) findViewById(R.id.proceed_button);
         final Button get_phone_button = (Button) findViewById(R.id.get_phone_button);
-        selected_order_position = SellerMainActivity.currentOrder;
 
-        order_id_for_process = SellerMainActivity.pendingOrders.get(selected_order_position).getOrder_id();
 
-        final String order_id = "Order ID: " + SellerMainActivity.pendingOrders.get(selected_order_position).getOrder_id();
-        final String customer_id = "Customer ID: " + SellerMainActivity.pendingOrders.get(selected_order_position).getCust_id();
-        String menu_list = "Menu list: " + SellerMainActivity.pendingOrders.get(selected_order_position).getMenu_list();
+        order_id_for_process = tempArr.get(selected_order_position).getOrder_id();
+
+        final String order_id = "Order ID: " + tempArr.get(selected_order_position).getOrder_id();
+        final String customer_id = "Customer ID: " + tempArr.get(selected_order_position).getCust_id();
+        String menu_list = "Menu list: " + tempArr.get(selected_order_position).getMenu_list();
         String Status;
-        if (SellerMainActivity.pendingOrders.get(selected_order_position).getStatus().equals("0")) {
+        if (tempArr.get(selected_order_position).getStatus().equals("0")) {
             Status = "Status: Not Started";
-        } else if (SellerMainActivity.pendingOrders.get(selected_order_position).getStatus().equals("1")) {
+        } else if (tempArr.get(selected_order_position).getStatus().equals("1")) {
             Status = "Status: Cooking";
         } else {
             Status = "Status: Finished Cooking";
@@ -79,7 +87,7 @@ public class SellerOrderDetailActivity extends Activity {
         aa.notifyDataSetChanged();
 
 
-        new SellerGetPhoneProcess(SellerOrderDetailActivity.this).execute(SellerMainActivity.pendingOrders.get(selected_order_position).getCust_id());
+        new SellerGetPhoneProcess(SellerOrderDetailActivity.this).execute(tempArr.get(selected_order_position).getCust_id());
 
         get_phone_button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -96,20 +104,20 @@ public class SellerOrderDetailActivity extends Activity {
             public void onClick(View v) {
 
 
-                if (SellerMainActivity.pendingOrders.get(selected_order_position).getStatus().equals("3")) {
+                if (tempArr.get(selected_order_position).getStatus().equals("4")) {
                     Toast.makeText(getApplicationContext(), "Already finished.", Toast.LENGTH_LONG).show();
-                } else if (SellerMainActivity.pendingOrders.get(selected_order_position).getStatus().equals("0")) {
+                } else if (tempArr.get(selected_order_position).getStatus().equals("0")) {
                     Toast.makeText(getApplicationContext(), "Starting cooking now", Toast.LENGTH_LONG).show();
-                    SellerMainActivity.pendingOrders.get(selected_order_position).setStatus("1");
-                    SellerMainActivity.orderString.set(selected_order_position,
-                            "Order ID: " + SellerMainActivity.pendingOrders.get(selected_order_position).getOrder_id() + "\n" +
-                                    "Customer ID: " + SellerMainActivity.pendingOrders.get(selected_order_position).getCust_id() + "\n" +
-                                    "Menu List: " + SellerMainActivity.pendingOrders.get(selected_order_position).getMenu_list() + "\n" +
+                    tempArr.get(selected_order_position).setStatus("1");
+                    tempListView.set(selected_order_position,
+                            "Order ID: " + tempArr.get(selected_order_position).getOrder_id() + "\n" +
+                                    "Customer ID: " + tempArr.get(selected_order_position).getCust_id() + "\n" +
+                                    "Menu List: " + tempArr.get(selected_order_position).getMenu_list() + "\n" +
                                     "Status: Cooking");
                     OneOrderDetail.set(3, "Status: Cooking");
                     aa.notifyDataSetChanged();
                     new SellerUpdateOrderStatusProcess(SellerOrderDetailActivity.this).execute(order_id_for_process);
-                } else if (SellerMainActivity.pendingOrders.get(selected_order_position).getStatus().equals("1")) {
+                } else if (tempArr.get(selected_order_position).getStatus().equals("1")) {
                     PopupMenu popup = new PopupMenu(SellerOrderDetailActivity.this, proceed_button);
                     //Inflating the Popup using xml file
                     popup.getMenuInflater().inflate(R.menu.sms, popup.getMenu());
@@ -121,22 +129,22 @@ public class SellerOrderDetailActivity extends Activity {
                             if (item.getItemId() == R.id.process_sms) {
                                 sendSMSMessage();
                                 Toast.makeText(getApplicationContext(), "Finished Cooking", Toast.LENGTH_LONG).show();
-                                SellerMainActivity.pendingOrders.get(selected_order_position).setStatus("2");
-                                SellerMainActivity.orderString.set(selected_order_position,
-                                        "Order ID: " + SellerMainActivity.pendingOrders.get(selected_order_position).getOrder_id() + "\n" +
-                                                "Customer ID: " + SellerMainActivity.pendingOrders.get(selected_order_position).getCust_id() + "\n" +
-                                                "Menu List: " + SellerMainActivity.pendingOrders.get(selected_order_position).getMenu_list() + "\n" +
+                                tempArr.get(selected_order_position).setStatus("2");
+                                tempListView.set(selected_order_position,
+                                        "Order ID: " + tempArr.get(selected_order_position).getOrder_id() + "\n" +
+                                                "Customer ID: " + tempArr.get(selected_order_position).getCust_id() + "\n" +
+                                                "Menu List: " + tempArr.get(selected_order_position).getMenu_list() + "\n" +
                                                 "Status: Finished Cooking");
                                 OneOrderDetail.set(3, "Status: Finished Cooking");
                                 aa.notifyDataSetChanged();
                                 new SellerUpdateOrderStatusProcess(SellerOrderDetailActivity.this).execute(order_id_for_process);
                             } else if (item.getItemId() == R.id.process_without_sms) {
                                 Toast.makeText(getApplicationContext(), "Finished Cooking", Toast.LENGTH_LONG).show();
-                                SellerMainActivity.pendingOrders.get(selected_order_position).setStatus("2");
-                                SellerMainActivity.orderString.set(selected_order_position,
-                                        "Order ID: " + SellerMainActivity.pendingOrders.get(selected_order_position).getOrder_id() + "\n" +
-                                                "Customer ID: " + SellerMainActivity.pendingOrders.get(selected_order_position).getCust_id() + "\n" +
-                                                "Menu List: " + SellerMainActivity.pendingOrders.get(selected_order_position).getMenu_list() + "\n" +
+                                tempArr.get(selected_order_position).setStatus("2");
+                                tempListView.set(selected_order_position,
+                                        "Order ID: " + tempArr.get(selected_order_position).getOrder_id() + "\n" +
+                                                "Customer ID: " + tempArr.get(selected_order_position).getCust_id() + "\n" +
+                                                "Menu List: " + tempArr.get(selected_order_position).getMenu_list() + "\n" +
                                                 "Status: Finished Cooking");
                                 OneOrderDetail.set(3, "Status: Finished Cooking");
                                 aa.notifyDataSetChanged();
@@ -151,19 +159,14 @@ public class SellerOrderDetailActivity extends Activity {
 
                 } else {
                     Toast.makeText(getApplicationContext(), "Order is Taken away!", Toast.LENGTH_LONG).show();
-                    SellerMainActivity.pendingOrders.get(selected_order_position).setStatus("3");
-                    SellerMainActivity.orderString.set(selected_order_position,
-                            "Order ID: " + SellerMainActivity.pendingOrders.get(selected_order_position).getOrder_id() + "\n" +
-                                    "Customer ID: " + SellerMainActivity.pendingOrders.get(selected_order_position).getCust_id() + "\n" +
-                                    "Menu List: " + SellerMainActivity.pendingOrders.get(selected_order_position).getMenu_list() + "\n" +
-                                    "Status: Finished");
-                    OneOrderDetail.set(3, "Status: Taken Away");
+                    tempArr.get(selected_order_position).setStatus("3");
+
                     OneOrderDetail.removeAll(OneOrderDetail);
                     aa.notifyDataSetChanged();
                     proceed_button.setVisibility(INVISIBLE);
                     get_phone_button.setVisibility(INVISIBLE);
-                    SellerMainActivity.orderString.remove(selected_order_position);
-                    SellerMainActivity.pendingOrders.remove(selected_order_position);
+                    tempListView.remove(selected_order_position);
+                    tempArr.remove(selected_order_position);
                     new SellerUpdateOrderStatusProcess(SellerOrderDetailActivity.this).execute(order_id_for_process);
                 }
             }
@@ -172,7 +175,7 @@ public class SellerOrderDetailActivity extends Activity {
 
     protected void sendSMSMessage() {
 
-        message="Your order with "+SellerMainActivity.pendingOrders.get(selected_order_position).getRest_id()+" is Ready. From- RAPIDO";
+        message="Your order with "+tempArr.get(selected_order_position).getRest_id()+" is Ready. From- RAPIDO";
         if (ContextCompat.checkSelfPermission(this,
                 Manifest.permission.SEND_SMS)
                 != PackageManager.PERMISSION_GRANTED) {
@@ -206,6 +209,15 @@ public class SellerOrderDetailActivity extends Activity {
                     Toast.LENGTH_LONG).show();
         }
     }
+
+//    @Override
+//    public void onBackPressed() {
+//        super.onBackPressed();
+//        Intent intent = new Intent(this,SellerMainActivity.class);
+////        intent.putExtra("tempListView",tempListView);
+//        startActivity(intent);
+//    }
+
     @Override
     public void onRequestPermissionsResult(int requestCode,
                                            String permissions[], int[] grantResults) {

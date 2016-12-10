@@ -70,7 +70,7 @@ public class SellerMainActivity extends AppCompatActivity implements NavigationV
         setContentView(R.layout.activity_seller_main);
         pendingOrders = new ArrayList<OneOrder>();
         orderString = new ArrayList<String>();
-
+//        orderString = getIntent().getStringArrayListExtra("tempListView");
 
         TextView pending_textview=(TextView)findViewById(R.id.detail_textview);
         Button order_history_button=(Button)findViewById(R.id.order_history_button);
@@ -78,7 +78,7 @@ public class SellerMainActivity extends AppCompatActivity implements NavigationV
         Button SellerMenuChange = (Button) findViewById(R.id.SellerAddMenu);
         orders_listview =(ListView)findViewById(R.id.orders_listview);
 
-        String admin = LoginActivity.admin;
+        String admin = GlobalVariables.SellerUsername;
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -162,7 +162,7 @@ public class SellerMainActivity extends AppCompatActivity implements NavigationV
                 SellerMainActivity.orderString);
         orders_listview.setAdapter(aa);
         new doMysql().execute();
-       // callAsynchronousTask();
+        // callAsynchronousTask();
         final Handler handler = new Handler();
         Timer timer = new Timer();
         TimerTask doAsynchronousTask = new TimerTask() {
@@ -183,7 +183,7 @@ public class SellerMainActivity extends AppCompatActivity implements NavigationV
                 });
             }
         };
-        timer.schedule(doAsynchronousTask, 1, 20000);//cute in every 10000 ms
+        timer.schedule(doAsynchronousTask,1,20000);//cute in every 10000 ms
 
     }
 
@@ -202,104 +202,104 @@ public class SellerMainActivity extends AppCompatActivity implements NavigationV
 
     public void callAsynchronousTask() {
 
-}
+    }
 
 
     public class doMysql extends AsyncTask<String,Void,String>{
-ProgressDialog dialog ;
+        ProgressDialog dialog ;
 
-            @Override
-            protected void onPreExecute() {
-                super.onPreExecute();
-            }
+        @Override
+        protected void onPreExecute() {
+            super.onPreExecute();
+        }
 
-            @Override
-            protected String doInBackground(String... params) {
-                try{
-                    orderString.removeAll(orderString);
-                    pendingOrders.removeAll(pendingOrders);
-                    String admin = GlobalVariables.SellerUsername;
-                    System.out.println("seller username "+admin);
-                    admin=admin.replaceAll("\'","\\'");
-                    System.out.println("pending order size intially: "+pendingOrders.size());
+        @Override
+        protected String doInBackground(String... params) {
+            try{
+                orderString.removeAll(orderString);
+                pendingOrders.removeAll(pendingOrders);
+                String admin = GlobalVariables.SellerUsername;
+//                    System.out.println("seller username "+admin);
+                admin=admin.replaceAll("\'","\\'");
+//                    System.out.println("pending order size intially: "+pendingOrders.size());
 
-                    String link="http://rapido.counseltech.in/sellerRefresh.php";
-                    String data  = URLEncoder.encode("admin", "UTF-8") + "=" + URLEncoder.encode(admin, "UTF-8");
+                String link="http://rapido.counseltech.in/sellerRefresh.php";
+                String data  = URLEncoder.encode("admin", "UTF-8") + "=" + URLEncoder.encode(admin, "UTF-8");
 
-                    URL url = new URL(link);
-                    URLConnection conn = url.openConnection();
+                URL url = new URL(link);
+                URLConnection conn = url.openConnection();
 
-                    conn.setDoOutput(true);
-                    OutputStreamWriter wr = new OutputStreamWriter(conn.getOutputStream());
+                conn.setDoOutput(true);
+                OutputStreamWriter wr = new OutputStreamWriter(conn.getOutputStream());
 
-                    wr.write( data );
-                    wr.flush();
+                wr.write( data );
+                wr.flush();
 
-                    BufferedReader reader = new BufferedReader(new InputStreamReader(conn.getInputStream()));
+                BufferedReader reader = new BufferedReader(new InputStreamReader(conn.getInputStream()));
 
-                    StringBuilder sb = new StringBuilder();
-                    String line = null;
+                StringBuilder sb = new StringBuilder();
+                String line = null;
 
-                    while((line = reader.readLine()) != null)
-                    {
-                        sb.append(line);
-                        break;
-                    }
-                    String rawdata=sb.toString();
-                    System.out.println(rawdata);
-                    int i=0;
-                    String s1[] = rawdata.split("\\}");
-                    System.out.println("pending order size at split: "+pendingOrders.size());
-                    System.out.println("s1 size "+s1.length);
-                    if(s1!=null){
-                        for(i=0;i<s1.length-1;i++){
-                            String s2[]=s1[i].split("\"");
-                            System.out.println("Size of s2 after split"+s2.length);
+                while((line = reader.readLine()) != null)
+                {
+                    sb.append(line);
+                    break;
+                }
+                String rawdata=sb.toString();
+//                    System.out.println(rawdata);
+                int i=0;
+                String s1[] = rawdata.split("\\}");
+//                    System.out.println("pending order size at split: "+pendingOrders.size());
+//                    System.out.println("s1 size "+s1.length);
+                if(s1!=null){
+                    for(i=0;i<s1.length-1;i++){
+                        String s2[]=s1[i].split("\"");
+//                            System.out.println("Size of s2 after split"+s2.length);
 
-                            OneOrder oneOrder = new OneOrder();
-                            oneOrder.setOrder_id(s2[3]);
-                            oneOrder.setRest_id(s2[7]);
-                            oneOrder.setCust_id(s2[11]);
-                            oneOrder.setMenu_list(s2[15]);
-                            oneOrder.setStatus(s2[19]);
+                        OneOrder oneOrder = new OneOrder();
+                        oneOrder.setOrder_id(s2[3]);
+                        oneOrder.setRest_id(s2[7]);
+                        oneOrder.setCust_id(s2[11]);
+                        oneOrder.setMenu_list(s2[15]);
+                        oneOrder.setStatus(s2[19]);
 
-                            SellerMainActivity.pendingOrders.add(i,oneOrder);
-                        }}
+                        SellerMainActivity.pendingOrders.add(i,oneOrder);
+                    }}
 
-                    if(pendingOrders !=null){
-                        System.out.println("pending order size: "+pendingOrders.size());
-                        numberOfOrders = pendingOrders.size();
-                        for(i=0;i<numberOfOrders;i++){
-                            String Status;
-                            if(pendingOrders.get(i).getStatus().equals("0")){
-                                Status = "Status: Not Started";
-                            }
-                            else if(pendingOrders.get(i).getStatus().equals("1")){
-                                Status = "Status: Cooking";
-                            }
-                            else Status = "Status: Finished Cooking";
-                            String ss= "Order ID: " + pendingOrders.get(i).getOrder_id()+"\n"+
-                                    "Customer ID: " + pendingOrders.get(i).getCust_id()+"\n"+
-                                    "Menu List: " + pendingOrders.get(i).getMenu_list()+"\n"+
-                                    Status;
+                if(pendingOrders !=null){
+//                        System.out.println("pending order size: "+pendingOrders.size());
+                    numberOfOrders = pendingOrders.size();
+                    for(i=0;i<numberOfOrders;i++){
+                        String Status;
+                        if(pendingOrders.get(i).getStatus().equals("0")){
+                            Status = "Status: Not Started";
+                        }
+                        else if(pendingOrders.get(i).getStatus().equals("1")){
+                            Status = "Status: Cooking";
+                        }
+                        else Status = "Status: Finished Cooking";
+                        String ss= "Order ID: " + pendingOrders.get(i).getOrder_id()+"\n"+
+                                "Customer ID: " + pendingOrders.get(i).getCust_id()+"\n"+
+                                "Menu List: " + pendingOrders.get(i).getMenu_list()+"\n"+
+                                Status;
 
-                            orderString.add(ss);
-                        }}
+                        orderString.add(ss);
+                    }}
 
 //                    aa.notifyDataSetChanged();
 
-                    return null;
-                }catch (Exception e){
-                    return new String("Exception: " + e.getMessage());
-                }
-            }
-
-            @Override
-            protected void onPostExecute(String s) {
-                super.onPostExecute(s);
-                aa.notifyDataSetChanged();
+                return null;
+            }catch (Exception e){
+                return new String("Exception: " + e.getMessage());
             }
         }
+
+        @Override
+        protected void onPostExecute(String s) {
+            super.onPostExecute(s);
+            aa.notifyDataSetChanged();
+        }
+    }
 
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
