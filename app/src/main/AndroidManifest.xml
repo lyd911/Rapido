@@ -38,12 +38,14 @@
             </intent-filter>
         </activity>
         <activity android:name=".TypographyActivity"/>
-        <activity android:name=".fragmentlayout.billingactivity" />
+        <activity android:name=".fragmentlayout.billingactivity"
+            android:theme="@style/AppThemeWithBar"/>
         <activity android:name=".fragmentlayout.HistoryActivity"/>
         <activity android:name=".Seller.SellerSignUp"/>
         <activity android:name=".Seller.Dynamic_menu_update.MainActivity"/>
 
-        <activity android:name=".fragmentlayout.MenuAndCartActivity"/>
+        <activity android:name=".fragmentlayout.MenuAndCartActivity"
+            android:theme="@style/AppThemeWithBar"/>
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -60,10 +62,13 @@
             android:value="@string/google_maps_key" />
 
 
-        <activity android:name=".Payment.Paypal" />
+        <activity android:name=".Payment.Paypal"
+            android:theme="@style/AppThemeWithBar"/>
         <activity android:name=".Payment.PaypalConfirmation" />
 
-        <activity android:name=".QRCodeGenerator" />
+        <activity android:name=".QRCodeGenerator"
+            android:theme="@style/AppThemeWithBar"
+            />
         <activity android:name=".QRActivity" />
         <activity android:name=".QRCodeReader"
             android:configChanges="orientation"
@@ -73,7 +78,9 @@
             android:configChanges="orientation"
             android:screenOrientation="portrait"/>
         <activity android:name=".Map_alert.MapsActivity_direction" />
-        <activity android:name=".Dynamic_menu_update.MainActivity" />
+        <activity android:name=".Dynamic_menu_update.MainActivity"
+            android:theme="@style/AppThemeWithBar"
+            />
         <activity
             android:name=".ServerConnect.LoginActivity"
             android:label="@string/title_activity_login"

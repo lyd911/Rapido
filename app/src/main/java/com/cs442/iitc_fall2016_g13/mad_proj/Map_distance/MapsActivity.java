@@ -40,8 +40,11 @@ import com.cs442.iitc_fall2016_g13.mad_proj.R;
 import com.cs442.iitc_fall2016_g13.mad_proj.Seller.SellerMainActivity;
 import com.cs442.iitc_fall2016_g13.mad_proj.ServerConnect.GlobalVariables;
 import com.cs442.iitc_fall2016_g13.mad_proj.ServerConnect.LoginActivity;
+import com.cs442.iitc_fall2016_g13.mad_proj.SimpleShowcaseEventListener;
 import com.cs442.iitc_fall2016_g13.mad_proj.fragmentlayout.CustomerOrderHistoryActivity;
-import com.facebook.login.LoginManager;
+import com.github.amlcurran.showcaseview.ShowcaseView;
+import com.github.amlcurran.showcaseview.targets.Target;
+import com.github.amlcurran.showcaseview.targets.ViewTarget;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.GoogleApiAvailability;
 import com.google.android.gms.common.api.GoogleApiClient;
@@ -82,6 +85,8 @@ public class MapsActivity extends AppCompatActivity
     Marker mCurrLocationMarker;
     Location mLastLocation;
     Context mContext;
+
+    int currentShowcase = 1;
 
     ListView mListView;
     CustomAdapter mArrayAdapter;
@@ -165,6 +170,93 @@ public class MapsActivity extends AppCompatActivity
         return true;
     }
 
+    private void showcase() {
+        new ShowcaseView.Builder(this)
+                .withMaterialShowcase()
+                .setContentTitle("Search Button")
+                .setContentText("Enter distance in meters and click this button to search nearby restaurants")
+                .setTarget(new ViewTarget(R.id.btn_search, this))
+                .setStyle(R.style.CustomShowcaseTheme3)
+                .setShowcaseEventListener(
+                        new SimpleShowcaseEventListener() {
+                            @Override
+                            public void onShowcaseViewDidHide(ShowcaseView showcaseView) {
+                                //currentShowcase++;
+                              //  showcase();
+                               // showcaseMenu();
+                                showcaseListView();
+                            }
+                        }
+                )
+                .build();
+    }
+
+    private void showcaseMenu() {
+        new ShowcaseView.Builder(this)
+                .withMaterialShowcase()
+                .setContentTitle("Menu")
+                .setContentText("Menu to logout, sort the list")
+                .setStyle(R.style.CustomShowcaseTheme3)
+                .setTarget(new ViewTarget(R.menu.main, this))
+                .setShowcaseEventListener(
+                        new SimpleShowcaseEventListener() {
+                            @Override
+                            public void onShowcaseViewDidHide(ShowcaseView showcaseView) {
+                                //currentShowcase++;
+                                //  showcase();
+                                showcaseMenu_down();
+                            }
+                        }
+                )
+                .build();
+    }
+
+    private void showcaseListView() {
+        new ShowcaseView.Builder(this)
+                .withMaterialShowcase()
+                .setContentTitle("Restaurant List")
+                .setContentText("Press on any one Restaurant\n\nCheck menu to \n1.Change map view \n2.Sort list\n3.Logout")
+                .setStyle(R.style.CustomShowcaseTheme3)
+                .setTarget(new ViewTarget(R.id.myListView, this))
+                .setShowcaseEventListener(
+                        new SimpleShowcaseEventListener() {
+                            @Override
+                            public void onShowcaseViewDidHide(ShowcaseView showcaseView) {
+                                //currentShowcase++;
+                                //  showcase();
+                              //  showcaseMenu_down();
+                            }
+                        }
+                )
+                .build();
+    }
+
+
+
+    private void showcaseMenu_down() {
+        Target target = new ViewTarget(R.id.action_settings, this);
+        new ShowcaseView.Builder(this)
+                .withMaterialShowcase()
+                .setContentTitle("Press Menu to")
+                .setContentText("1. Sort by distance\n2.Sort by rating\n3.Change map view\n4.logout\n5.Help")
+                .setTarget(target)
+                .setStyle(R.style.CustomShowcaseTheme3)
+                .setShowcaseEventListener(
+                        new SimpleShowcaseEventListener() {
+                            @Override
+                            public void onShowcaseViewDidHide(ShowcaseView showcaseView) {
+                                //currentShowcase++;
+                                //  showcase();
+                            }
+                        }
+                )
+                .build();
+    }
+
+
+
+
+
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle action bar item clicks here. The action bar will
@@ -176,6 +268,14 @@ public class MapsActivity extends AppCompatActivity
         if (id == R.id.action_changeMapView) {
             mMap.setMapType(MapView.getInstance().getNextMapView());
             return true;
+        }
+
+        if(id == R.id.action_help){
+
+
+            showcase();
+            return true;
+
         }
 
         if(id == R.id.action_logout){
@@ -227,8 +327,8 @@ public class MapsActivity extends AppCompatActivity
             // Writing data to SharedPreferences
             SharedPreferences.Editor editor = settings.edit();
             editor.clear();
-
-         Intent i = new Intent(this, LoginActivity.class);
+            editor.commit();
+            Intent i = new Intent(this, LoginActivity.class);
             i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
             startActivity(i);
             finish();

@@ -33,6 +33,8 @@
 
     <string name="action_changeMapView">Change MapView</string>
     <string name="action_logout">Logout</string>
+    <string name="action_help">Help</string>
+
     <string name="action_settings">setting</string>
     <string name="action_sortByDistance">Sort By Distance</string>
     <string name="action_sortByRating">Sort By Rating</string>

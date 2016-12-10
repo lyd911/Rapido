@@ -5,19 +5,24 @@ import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
 import com.cs442.iitc_fall2016_g13.mad_proj.Map_alert.MapsActivity_direction;
 import com.cs442.iitc_fall2016_g13.mad_proj.ServerConnect.GlobalVariables;
+import com.github.amlcurran.showcaseview.ShowcaseView;
+import com.github.amlcurran.showcaseview.targets.ViewTarget;
 import com.google.zxing.BarcodeFormat;
 import com.google.zxing.MultiFormatWriter;
 import com.google.zxing.WriterException;
 import com.google.zxing.common.BitMatrix;
 import com.journeyapps.barcodescanner.BarcodeEncoder;
 
-public class QRCodeGenerator extends Activity {
+public class QRCodeGenerator extends AppCompatActivity {
 
 
     private Button mGenerateButton, Navigate;
@@ -66,4 +71,72 @@ public class QRCodeGenerator extends Activity {
             }
         });
     }
+
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.main_help, menu);
+        // TextView drawer_name=(TextView)findViewById(R.id.drawer_name);
+        //drawer_name.setText("Kiran - ");
+        return true;
+    }
+
+
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle action bar item clicks here. The action bar will
+        // automatically handle clicks on the Home/Up button, so long
+        // as you specify a parent activity in AndroidManifest.xml.
+        int id = item.getItemId();
+
+        //noinspection SimplifiableIfStatement
+        if (id == R.id.action_help) {
+
+
+            showcaseNavigation();
+            return true;
+        }
+
+        return super.onOptionsItemSelected(item);
+    }
+
+    private void showcaseNavigation() {
+        new ShowcaseView.Builder(this)
+                .withMaterialShowcase()
+                .setContentTitle("Route to destination")
+                .setContentText("Pressing this button will show you the route to destination")
+                .setStyle(R.style.CustomShowcaseTheme3)
+                .setTarget(new ViewTarget(R.id.navigation_button, this))
+                .setShowcaseEventListener(
+                        new SimpleShowcaseEventListener() {
+                            @Override
+                            public void onShowcaseViewDidHide(ShowcaseView showcaseView) {
+                                //currentShowcase++;
+                                //  showcase();
+                                showcaseQR();
+
+                            }
+                        }
+                )
+                .build();
+    }
+
+    private void showcaseQR() {
+        new ShowcaseView.Builder(this)
+                .withMaterialShowcase()
+                .setContentTitle("Generate QRCode")
+                .setContentText("Pressing this button will generate QR code show this to collect food")
+                .setStyle(R.style.CustomShowcaseTheme3)
+                .setTarget(new ViewTarget(R.id.btn_QRCodeGenerate, this))
+                .setShowcaseEventListener(
+                        new SimpleShowcaseEventListener() {
+                            @Override
+                            public void onShowcaseViewDidHide(ShowcaseView showcaseView) {
+                                //currentShowcase++;
+                                //  showcase();
+
+                            }
+                        }
+                )
+                .build();
+    }
+
 }

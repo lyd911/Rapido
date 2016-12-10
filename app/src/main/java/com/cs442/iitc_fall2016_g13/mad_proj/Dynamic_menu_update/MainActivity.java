@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ListView;
@@ -16,8 +18,11 @@ import android.widget.Toast;
 import com.cs442.iitc_fall2016_g13.mad_proj.R;
 import com.cs442.iitc_fall2016_g13.mad_proj.Seller.Dynamic_menu_update.SingletonClass2;
 import com.cs442.iitc_fall2016_g13.mad_proj.ServerConnect.GlobalVariables;
+import com.cs442.iitc_fall2016_g13.mad_proj.SimpleShowcaseEventListener;
 import com.cs442.iitc_fall2016_g13.mad_proj.fragmentlayout.MenuAndCartActivity;
 import com.cs442.iitc_fall2016_g13.mad_proj.fragmentlayout.SingletonClass;
+import com.github.amlcurran.showcaseview.ShowcaseView;
+import com.github.amlcurran.showcaseview.targets.ViewTarget;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.database.DataSnapshot;
@@ -105,6 +110,13 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.main_help, menu);
+       // TextView drawer_name=(TextView)findViewById(R.id.drawer_name);
+        //drawer_name.setText("Kiran - ");
+        return true;
+    }
 
     void LoadMenuListView(){
 
@@ -184,6 +196,44 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
+
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle action bar item clicks here. The action bar will
+        // automatically handle clicks on the Home/Up button, so long
+        // as you specify a parent activity in AndroidManifest.xml.
+        int id = item.getItemId();
+
+        //noinspection SimplifiableIfStatement
+        if (id == R.id.action_help) {
+
+
+            showcaseShowMenu();
+            return true;
+        }
+
+        return super.onOptionsItemSelected(item);
+    }
+
+    private void showcaseShowMenu() {
+        new ShowcaseView.Builder(this)
+                .withMaterialShowcase()
+                .setContentTitle("Order Food")
+                .setContentText("This button will take you to choose menu in Restaurant")
+                .setStyle(R.style.CustomShowcaseTheme3)
+                .setTarget(new ViewTarget(R.id.btnRefreshMenu, this))
+                .setShowcaseEventListener(
+                        new SimpleShowcaseEventListener() {
+                            @Override
+                            public void onShowcaseViewDidHide(ShowcaseView showcaseView) {
+                                //currentShowcase++;
+                                //  showcase();
+
+                            }
+                        }
+                )
+                .build();
+    }
+
 
     void refreshMenu(){
 

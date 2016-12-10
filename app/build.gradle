@@ -40,6 +40,7 @@ dependencies {
     compile 'com.android.support:support-v4:24.2.1'
     compile 'com.paypal.sdk:paypal-android-sdk:2.15.1'
     testCompile 'junit:junit:4.12'
+    compile 'com.github.amlcurran.showcaseview:library:5.4.3'
 }
 
 apply plugin: 'com.google.gms.google-services'

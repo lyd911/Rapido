@@ -8,6 +8,8 @@ import android.os.Bundle;
 import android.provider.Settings;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
@@ -20,6 +22,9 @@ import com.cs442.iitc_fall2016_g13.mad_proj.Payment.Paypal;
 import com.cs442.iitc_fall2016_g13.mad_proj.R;
 import com.cs442.iitc_fall2016_g13.mad_proj.ServerConnect.CustomerPlaceOrderProcess;
 import com.cs442.iitc_fall2016_g13.mad_proj.ServerConnect.GlobalVariables;
+import com.cs442.iitc_fall2016_g13.mad_proj.SimpleShowcaseEventListener;
+import com.github.amlcurran.showcaseview.ShowcaseView;
+import com.github.amlcurran.showcaseview.targets.ViewTarget;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -291,5 +296,75 @@ public class billingactivity extends AppCompatActivity {
         finish();
 
     }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.main_help, menu);
+      //  TextView drawer_name=(TextView)findViewById(R.id.drawer_name);
+       // drawer_name.setText("RAPIDO - "+GlobalVariables.username);
+        return true;
+    }
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle action bar item clicks here. The action bar will
+        // automatically handle clicks on the Home/Up button, so long
+        // as you specify a parent activity in AndroidManifest.xml.
+        int id = item.getItemId();
+
+        //noinspection SimplifiableIfStatement
+        if (id == R.id.action_help) {
+
+
+            showcaseFinalBill();
+            return true;
+        }
+
+        return super.onOptionsItemSelected(item);
+    }
+
+    private void showcaseFinalBill() {
+        new ShowcaseView.Builder(this)
+                .withMaterialShowcase()
+                .setContentTitle("Total amount")
+                .setContentText("This is the final amount which you had to pay")
+                .setStyle(R.style.CustomShowcaseTheme3)
+
+                .setTarget(new ViewTarget(R.id.textView_bill, this))
+                //.setTarget(new ViewTarget(R.id.ButtonConfirmation, this))
+                .setShowcaseEventListener(
+                        new SimpleShowcaseEventListener() {
+                            @Override
+                            public void onShowcaseViewDidHide(ShowcaseView showcaseView) {
+                                //currentShowcase++;
+                                  showcaseButton();
+
+                            }
+                        }
+                )
+                .build();
+    }
+
+    private void showcaseButton() {
+        new ShowcaseView.Builder(this)
+                .withMaterialShowcase()
+                .setContentTitle("Confirmation")
+                .setContentText("This button will take you to payment")
+                .setStyle(R.style.CustomShowcaseTheme3)
+
+                //.setTarget(new ViewTarget(R.id.textView_bill, this))
+                .setTarget(new ViewTarget(R.id.ButtonConfirmation, this))
+                .setShowcaseEventListener(
+                        new SimpleShowcaseEventListener() {
+                            @Override
+                            public void onShowcaseViewDidHide(ShowcaseView showcaseView) {
+                                //currentShowcase++;
+                                //  showcase();
+
+                            }
+                        }
+                )
+                .build();
+    }
+
 
 }
