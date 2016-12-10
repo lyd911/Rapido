@@ -23,7 +23,7 @@ public class SignUpActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_up);
         mContext = this;
-
+        setTitle("Sign Up Customer");
         username = (EditText)findViewById(R.id.input_email);
         password = (EditText)findViewById(R.id.input_password);
         conf_password = (EditText)findViewById(R.id.input_confirm_password);

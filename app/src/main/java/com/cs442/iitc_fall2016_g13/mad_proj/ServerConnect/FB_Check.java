@@ -59,7 +59,7 @@ public class FB_Check  extends AsyncTask<String,Void,String> {
 
         try{
             String username = (String)arg0[0];
-
+            username=username.replaceAll(" ","" );
             String link="http://rapido.counseltech.in/FB_Check.php";
             String data  = URLEncoder.encode("username", "UTF-8") + "=" + URLEncoder.encode(username, "UTF-8");
 
