@@ -362,7 +362,7 @@ new doMysql().execute();
         getMenuInflater().inflate(R.menu.main, menu);
         TextView drawer_name=(TextView)findViewById(R.id.drawer_name);
         drawer_name.setText("RAPIDO - "+GlobalVariables.SellerUsername);
-        return true;
+        return false;
     }
     public void onRestart()
     {
