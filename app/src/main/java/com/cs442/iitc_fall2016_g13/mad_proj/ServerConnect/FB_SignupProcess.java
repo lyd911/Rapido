@@ -8,6 +8,7 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.cs442.iitc_fall2016_g13.mad_proj.Map_distance.MapsActivity;
 import com.cs442.iitc_fall2016_g13.mad_proj.NearbyPlaces;
 
 import java.io.BufferedReader;
@@ -93,7 +94,8 @@ public class FB_SignupProcess  extends AsyncTask<String,Void,String> {
     @Override
     protected void onPostExecute(String result){
 
-
+        Intent t = new Intent(context,MapsActivity.class);
+        context.startActivity(t);
 
             dialog.dismiss();
 

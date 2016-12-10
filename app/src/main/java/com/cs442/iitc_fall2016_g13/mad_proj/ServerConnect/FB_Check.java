@@ -16,6 +16,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.cs442.iitc_fall2016_g13.mad_proj.FB_Signup;
+import com.cs442.iitc_fall2016_g13.mad_proj.Map_distance.MapsActivity;
 import com.cs442.iitc_fall2016_g13.mad_proj.NearbyPlaces;
 
 import java.io.BufferedReader;
@@ -92,7 +93,7 @@ public class FB_Check  extends AsyncTask<String,Void,String> {
             }
             else if (sb.toString().equals("1"))
             {
-                Intent intent = new Intent(context, NearbyPlaces.class);
+                Intent intent = new Intent(context, MapsActivity.class);
                 context.startActivity(intent);
                 // redirect to main activity
             }

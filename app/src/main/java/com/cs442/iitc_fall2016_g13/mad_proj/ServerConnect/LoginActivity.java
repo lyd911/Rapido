@@ -54,6 +54,7 @@ public class LoginActivity extends AppCompatActivity {
             Profile profile= Profile.getCurrentProfile();
             displayWelcomeMessage(profile);
             gotoMainActivity();
+
         }
 
         @Override
@@ -209,7 +210,7 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     private void gotoMainActivity() {
-        System.out.println("Checking FB");
+//        System.out.println("Checking FB");
         new FB_Check(this).execute(GlobalVariables.username);
 
     }
