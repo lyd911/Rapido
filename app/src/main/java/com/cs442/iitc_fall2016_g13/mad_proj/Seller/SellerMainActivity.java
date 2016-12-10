@@ -18,6 +18,7 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
@@ -175,7 +176,7 @@ public class SellerMainActivity extends AppCompatActivity implements NavigationV
                         try {
                             orders_listview.setAdapter(aa);
                             //aa.notifyDataSetChanged();
-                            new doMysql().execute();
+new doMysql().execute();
                         } catch (Exception e) {
                             // TODO Auto-generated catch block
                         }
@@ -183,7 +184,7 @@ public class SellerMainActivity extends AppCompatActivity implements NavigationV
                 });
             }
         };
-        timer.schedule(doAsynchronousTask,1,20000);//cute in every 10000 ms
+        timer.schedule(doAsynchronousTask,1,20000);//execute in every 10000 ms
 
     }
 
@@ -246,47 +247,49 @@ public class SellerMainActivity extends AppCompatActivity implements NavigationV
                     break;
                 }
                 String rawdata=sb.toString();
-//                    System.out.println(rawdata);
-                int i=0;
-                String s1[] = rawdata.split("\\}");
+                System.out.println("Strin before crash "+rawdata);
+                if(rawdata.length()>10) {
+                    int i = 0;
+                    String s1[] = rawdata.split("\\}");
 //                    System.out.println("pending order size at split: "+pendingOrders.size());
 //                    System.out.println("s1 size "+s1.length);
-                if(s1!=null){
-                    for(i=0;i<s1.length-1;i++){
-                        String s2[]=s1[i].split("\"");
+                    if (s1 != null) {
+                        for (i = 0; i < s1.length - 1; i++) {
+                            String s2[] = s1[i].split("\"");
 //                            System.out.println("Size of s2 after split"+s2.length);
 
-                        OneOrder oneOrder = new OneOrder();
-                        oneOrder.setOrder_id(s2[3]);
-                        oneOrder.setRest_id(s2[7]);
-                        oneOrder.setCust_id(s2[11]);
-                        oneOrder.setMenu_list(s2[15]);
-                        oneOrder.setStatus(s2[19]);
+                            OneOrder oneOrder = new OneOrder();
+                            oneOrder.setOrder_id(s2[3]);
+                            oneOrder.setRest_id(s2[7]);
+                            oneOrder.setCust_id(s2[11]);
+                            oneOrder.setMenu_list(s2[15]);
+                            oneOrder.setStatus(s2[19]);
 
-                        SellerMainActivity.pendingOrders.add(i,oneOrder);
-                    }}
+                            SellerMainActivity.pendingOrders.add(i, oneOrder);
+                        }
+                    }
 
-                if(pendingOrders !=null){
+                    if (pendingOrders != null) {
 //                        System.out.println("pending order size: "+pendingOrders.size());
-                    numberOfOrders = pendingOrders.size();
-                    for(i=0;i<numberOfOrders;i++){
-                        String Status;
-                        if(pendingOrders.get(i).getStatus().equals("0")){
-                            Status = "Status: Not Started";
-                        }
-                        else if(pendingOrders.get(i).getStatus().equals("1")){
-                            Status = "Status: Cooking";
-                        }
-                        else Status = "Status: Finished Cooking";
-                        String ss= "Order ID: " + pendingOrders.get(i).getOrder_id()+"\n"+
-                                "Customer ID: " + pendingOrders.get(i).getCust_id()+"\n"+
-                                "Menu List: " + pendingOrders.get(i).getMenu_list()+"\n"+
-                                Status;
+                        numberOfOrders = pendingOrders.size();
+                        for (i = 0; i < numberOfOrders; i++) {
+                            String Status;
+                            if (pendingOrders.get(i).getStatus().equals("0")) {
+                                Status = "Status: Not Started";
+                            } else if (pendingOrders.get(i).getStatus().equals("1")) {
+                                Status = "Status: Cooking";
+                            } else Status = "Status: Finished Cooking";
+                            String ss = "Order ID: " + pendingOrders.get(i).getOrder_id() + "\n" +
+                                    "Customer ID: " + pendingOrders.get(i).getCust_id() + "\n" +
+                                    "Menu List: " + pendingOrders.get(i).getMenu_list() + "\n" +
+                                    Status;
 
-                        orderString.add(ss);
-                    }}
+                            orderString.add(ss);
+                        }
+                    }
 
 //                    aa.notifyDataSetChanged();
+                }
 
                 return null;
             }catch (Exception e){
@@ -352,5 +355,17 @@ public class SellerMainActivity extends AppCompatActivity implements NavigationV
                 doubleBackToExitPressedOnce=false;
             }
         }, 2000);
+    }
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.main, menu);
+        TextView drawer_name=(TextView)findViewById(R.id.drawer_name);
+        drawer_name.setText("RAPIDO - "+GlobalVariables.SellerUsername);
+        return true;
+    }
+    public void onRestart()
+    {
+        super.onRestart();
     }
 }
