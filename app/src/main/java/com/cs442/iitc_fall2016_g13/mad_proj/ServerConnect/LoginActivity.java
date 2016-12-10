@@ -130,7 +130,7 @@ public class LoginActivity extends AppCompatActivity {
                 @Override
                 protected void onCurrentAccessTokenChanged(AccessToken oldAccessToken, AccessToken currentAccessToken) {
                     if (AccessToken.getCurrentAccessToken() == null) {
-                        Toast.makeText(getApplicationContext(), "Log out", Toast.LENGTH_SHORT).show();
+//                        Toast.makeText(getApplicationContext(), "Log out", Toast.LENGTH_SHORT).show();
                     }
                 }
             };
