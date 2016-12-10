@@ -93,6 +93,7 @@ public class FB_Check  extends AsyncTask<String,Void,String> {
             }
             else if (sb.toString().equals("1"))
             {
+
                 Intent intent = new Intent(context, MapsActivity.class);
                 context.startActivity(intent);
                 // redirect to main activity

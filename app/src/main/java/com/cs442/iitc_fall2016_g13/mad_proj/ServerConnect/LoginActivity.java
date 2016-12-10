@@ -30,8 +30,12 @@ package com.cs442.iitc_fall2016_g13.mad_proj.ServerConnect;
         import com.facebook.FacebookCallback;
         import com.facebook.FacebookException;
         import com.facebook.FacebookSdk;
+        import com.facebook.GraphRequest;
+        import com.facebook.GraphResponse;
+        import com.facebook.HttpMethod;
         import com.facebook.Profile;
         import com.facebook.ProfileTracker;
+        import com.facebook.login.LoginManager;
         import com.facebook.login.LoginResult;
         import com.facebook.login.widget.LoginButton;
 
@@ -71,6 +75,7 @@ public class LoginActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         if (ContextCompat.checkSelfPermission(this,
                 Manifest.permission.ACCESS_FINE_LOCATION)
@@ -119,7 +124,6 @@ public class LoginActivity extends AppCompatActivity {
             finish();
 
         } else {
-
             FacebookSdk.sdkInitialize(getApplicationContext());
             callbackManager = CallbackManager.Factory.create();
             AccessTokenTracker tracker = new AccessTokenTracker() {
@@ -144,6 +148,8 @@ public class LoginActivity extends AppCompatActivity {
             loginButton.setReadPermissions("user_friends");
             loginButton.registerCallback(callbackManager, mCallback);
             loginButton.setReadPermissions("public_profile", "email", "user_friends");
+
+            //loginButton.callOnClick();
 
             username = (EditText) findViewById(R.id.input_login_username);
             password = (EditText) findViewById(R.id.input_login_password);
@@ -197,6 +203,7 @@ public class LoginActivity extends AppCompatActivity {
 
                 }
             });
+
         }
     }
 
@@ -211,6 +218,13 @@ public class LoginActivity extends AppCompatActivity {
 
     private void gotoMainActivity() {
 //        System.out.println("Checking FB");
+        SharedPreferences settings = this.getSharedPreferences(PREFS_NAME, MODE_PRIVATE);
+
+        // Writing data to SharedPreferences
+        SharedPreferences.Editor editor = settings.edit();
+        editor.putString("username", GlobalVariables.username);
+        editor.putString("usertype","cust");
+        editor.commit();
         new FB_Check(this).execute(GlobalVariables.username);
 
     }
@@ -240,5 +254,25 @@ public class LoginActivity extends AppCompatActivity {
             }
         }, 2000);
     }
+    public static void disconnectFromFacebook() {
 
+        if (AccessToken.getCurrentAccessToken() == null) {
+            return; // already logged out
+        }
+
+        new GraphRequest(AccessToken.getCurrentAccessToken(), "/me/permissions/", null, HttpMethod.DELETE, new GraphRequest
+                .Callback() {
+            @Override
+            public void onCompleted(GraphResponse graphResponse) {
+
+                LoginManager.getInstance().logOut();
+
+            }
+        }).executeAsync();
+    }
+    public void onResume()
+    {
+        super.onResume();
+
+    }
 }

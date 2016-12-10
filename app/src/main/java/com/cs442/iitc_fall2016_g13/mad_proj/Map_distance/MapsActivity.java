@@ -41,6 +41,7 @@ import com.cs442.iitc_fall2016_g13.mad_proj.Seller.SellerMainActivity;
 import com.cs442.iitc_fall2016_g13.mad_proj.ServerConnect.GlobalVariables;
 import com.cs442.iitc_fall2016_g13.mad_proj.ServerConnect.LoginActivity;
 import com.cs442.iitc_fall2016_g13.mad_proj.fragmentlayout.CustomerOrderHistoryActivity;
+import com.facebook.login.LoginManager;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.GoogleApiAvailability;
 import com.google.android.gms.common.api.GoogleApiClient;
@@ -184,6 +185,7 @@ public class MapsActivity extends AppCompatActivity
             SharedPreferences.Editor editor = settings.edit();
             editor.clear();
             editor.commit();
+            LoginActivity.disconnectFromFacebook();
             Intent i = new Intent(this, LoginActivity.class);
             startActivity(i);
             finish();
@@ -225,8 +227,8 @@ public class MapsActivity extends AppCompatActivity
             // Writing data to SharedPreferences
             SharedPreferences.Editor editor = settings.edit();
             editor.clear();
-            editor.commit();
-            Intent i = new Intent(this, LoginActivity.class);
+
+         Intent i = new Intent(this, LoginActivity.class);
             i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
             startActivity(i);
             finish();
