@@ -24,3 +24,12 @@ Application to order food in nearby restaurants which provide both buyer and sel
 * QR Code Third Party API
 * ShowCaseView API
 
+
+# What
+* GPS - to track location.
+* Camera - Used to scan a QR code
+* Notification - Used to update user about the status of their order
+* Calling feature, messaging, sending e-mail from the application.
+* Firebase Database - Used to access restaurant information
+* PHP Database Server Integration -Used to store and access login information and order history
+* Services, Fragments, Activity
