@@ -23,6 +23,7 @@ Application to order food in nearby restaurants which provide both buyer and sel
 * Facebook API
 * QR Code Third Party API
 * ShowCaseView API
+* Firebase API
 
 
 # What
